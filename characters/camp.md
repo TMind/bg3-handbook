@@ -4,7 +4,7 @@ This note tracks non-active characters and camp-side jobs for the current handbo
 
 ## Current Active Party
 
-Confirmed from `AutoSave_120`:
+Confirmed from `Rivington - 96h 28m`:
 
 | Character | Current state |
 |---|---|
@@ -15,7 +15,7 @@ Confirmed from `AutoSave_120`:
 | Skeleton summon | Active level 3 skeleton summon |
 | Scratch | Active familiar / summon |
 
-Everyone is currently in `BGO_Main_A`, subregion `WYR_Bridge_SUB`.
+Everyone is currently in `BGO_Main_A`, subregion `WYR_Rivington_SUB`.
 
 ## Shadowheart
 
@@ -62,5 +62,5 @@ Before a serious fight:
 2. Refresh **Aid** so Lae'zel is included.
 3. Add **Death Ward** to Stefan and Astarion if resources allow.
 4. Add **Freedom of Movement** to Astarion before control-heavy areas.
-5. Keep Lae'zel's **Elixir of Bloodlust** and Astarion's **Elixir of Viciousness** in mind; do not overwrite them casually.
+5. Choose elixirs deliberately; the latest save does not detect Bloodlust on Lae'zel or Viciousness on Astarion.
 6. Move emergency scrolls, invisibility, arrows, and healing potions onto the characters expected to use them.

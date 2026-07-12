@@ -2,14 +2,14 @@
 
 ## Current Save State
 
-- **Source save**: `AutoSave_120`
-- **Save modified**: 2026-07-11 15:29:03 +02:00
-- **Synced into handbook**: 2026-07-12 23:36:05 +02:00
-- **Region / subregion**: `BGO_Main_A` / `WYR_Bridge_SUB`
+- **Source save**: `Rivington - 96h 28m`
+- **Save modified**: 2026-07-12 23:37:38 +02:00
+- **Synced into handbook**: 2026-07-12 23:40:58 +02:00
+- **Region / subregion**: `BGO_Main_A` / `WYR_Rivington_SUB`
 - **Active party**: yes
 - **Class**: Cleric 10 / Death Domain
 - **Race**: Seldarine Drow
-- **XP**: 58,827 total; 2,827 into current level
+- **XP**: 58,477 total; 2,477 into current level
 - **Position**: grouped with Lae'zel, Kao, Astarion, skeleton summon, and Scratch
 
 ## Detected Active Effects
@@ -22,12 +22,13 @@ Confirmed from the extracted save:
 - Longstrider
 - Aid, level 3
 - Freedom of Movement
+- Death Ward
 - Undead-presence gear aura from the current setup
 - Tadpole-related Peace Breaker status
 
 Not detected in the current save:
 
-- Death Ward
+- No major daily-buff gap detected in this pass
 
 ## Current Role
 
@@ -43,7 +44,7 @@ Stefan is the active Cleric and should be treated as the party's durable support
 1. Do not spend Cleric actions on weak healing unless someone is downed or a healing rider matters.
 2. Use **Spirit Guardians** or other Cleric concentration only when the fight is worth the slot.
 3. Keep Stefan close enough to support Lae'zel, but do not overextend if Warding Bond damage is already stacking.
-4. Add **Death Ward** before hard fights if Stefan is staying in the active party.
+4. Keep **Death Ward** active before hard fights.
 
 ## Coordination
 

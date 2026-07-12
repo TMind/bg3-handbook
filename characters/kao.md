@@ -2,14 +2,14 @@
 
 ## Current Save State
 
-- **Source save**: `AutoSave_120`
-- **Save modified**: 2026-07-11 15:29:03 +02:00
-- **Synced into handbook**: 2026-07-12 23:36:05 +02:00
-- **Region / subregion**: `BGO_Main_A` / `WYR_Bridge_SUB`
+- **Source save**: `Rivington - 96h 28m`
+- **Save modified**: 2026-07-12 23:37:38 +02:00
+- **Synced into handbook**: 2026-07-12 23:40:58 +02:00
+- **Region / subregion**: `BGO_Main_A` / `WYR_Rivington_SUB`
 - **Active party**: yes
 - **Class**: Wizard 10 / Conjuration School
 - **Race**: Human
-- **XP**: 58,427 total; 2,427 into current level
+- **XP**: 58,077 total; 2,077 into current level
 - **Position**: grouped with Stefan, Lae'zel, Astarion, skeleton summon, and Scratch
 
 ## Detected Active Effects

@@ -21,14 +21,17 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ### Changed
 
-- Refreshed the `characters/` notes from the latest local save, `AutoSave_120`.
+- Updated the save sync workflow so the selected latest save folder is also copied into `saves/`.
+- Refreshed the `characters/` notes from the latest local save, `Rivington - 96h 28m`.
 - Replaced old Act 2 / level-planning character notes with current active-party summaries for Stefan, Lae'zel, Kao, and Astarion.
 - Updated camp notes for Shadowheart, Gale, the active summons, and current before-fight checks.
 
 ### Verified
 
-- Synced and extracted `AutoSave_120`, modified 2026-07-11 15:29:03 +02:00.
-- Rebuilt the local save index from `tools/save-extract/Globals.lsf`.
+- Ran the save sync workflow against the current latest save, `Rivington - 96h 28m`, modified 2026-07-12 23:37:38 +02:00.
+- Mirrored `Rivington - 96h 28m` into `saves/`.
+- Character notes in this entry were refreshed from `Rivington - 96h 28m`, modified 2026-07-12 23:37:38 +02:00.
+- Rebuilt the local save index during the `Rivington - 96h 28m` character refresh.
 
 ### Added
 

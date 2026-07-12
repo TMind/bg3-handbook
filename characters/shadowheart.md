@@ -39,4 +39,4 @@ Do not treat Shadowheart as a direct Lae'zel replacement unless the plan intenti
 
 ## Verify In Game
 
-Shadowheart is not in the active party in `AutoSave_120`, so the extractor did not provide the same current class/status detail as it did for the active four. Verify her exact prepared spells and whether Divine Intervention has been spent before relying on her for a specific setup.
+Shadowheart is not in the active party in `Rivington - 96h 28m`, so the extractor did not provide the same current class/status detail as it did for the active four. Verify her exact prepared spells and whether Divine Intervention has been spent before relying on her for a specific setup.

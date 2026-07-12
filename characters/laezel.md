@@ -2,14 +2,14 @@
 
 ## Current Save State
 
-- **Source save**: `AutoSave_120`
-- **Save modified**: 2026-07-11 15:29:03 +02:00
-- **Synced into handbook**: 2026-07-12 23:36:05 +02:00
-- **Region / subregion**: `BGO_Main_A` / `WYR_Bridge_SUB`
+- **Source save**: `Rivington - 96h 28m`
+- **Save modified**: 2026-07-12 23:37:38 +02:00
+- **Synced into handbook**: 2026-07-12 23:40:58 +02:00
+- **Region / subregion**: `BGO_Main_A` / `WYR_Rivington_SUB`
 - **Active party**: yes
 - **Class**: Fighter 10 / Battle Master
 - **Race**: Githyanki
-- **XP**: 58,827 total; 2,827 into current level
+- **XP**: 58,477 total; 2,477 into current level
 - **Position**: grouped with Stefan, Kao, Astarion, skeleton summon, and Scratch
 
 ## Detected Active Effects
@@ -22,16 +22,16 @@ Confirmed from the extracted save:
 - Death Ward
 - Darkvision
 - Longstrider
-- Elixir of Bloodlust
 - Tadpole-related Peace Breaker status
 
 Not detected in the current save:
 
 - Aid
+- Elixir of Bloodlust
 
 ## Current Role
 
-Lae'zel is the main frontline damage engine. In the current save she is already set up with **Elixir of Bloodlust**, so fights with multiple killable enemies should be routed through her whenever possible.
+Lae'zel is the main frontline damage engine. In the current save she does **not** have Elixir of Bloodlust detected, so choose and drink the correct elixir before a serious fight.
 
 Use her to:
 
@@ -45,7 +45,7 @@ Use her to:
 
 1. Before a serious fight, refresh **Aid** so Lae'zel is included.
 2. Keep **Death Ward** and **Freedom of Movement** active for hard fights.
-3. Use Bloodlust turns to kill weaker enemies first when that creates an extra action.
+3. If Bloodlust is chosen, use those turns to kill weaker enemies first when that creates an extra action.
 4. Use Battle Master control when a missed or uncontrolled enemy would get a dangerous turn.
 
 ## Party Synergy

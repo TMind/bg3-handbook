@@ -21,8 +21,7 @@ tools/Packed/
 # yt-dlp metadata contains volatile, expiring URLs. Keep transcripts instead.
 tools/video-transcripts/*.info.json
 
-# Manual savegame copies. Large binaries, and sync_latest_save.py reads the
-# Steam userdata dir directly rather than this folder.
+# Savegame mirrors copied by sync_latest_save.py. Large local binaries.
 saves/
 
 # Source archive for tools/Packed/, which is itself ignored above.

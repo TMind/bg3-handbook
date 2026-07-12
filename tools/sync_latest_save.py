@@ -22,6 +22,7 @@ TOOLS = ROOT / "tools"
 DEFAULT_CURRENT_SAVE = TOOLS / "current-save" / "latest.lsv"
 DEFAULT_EXTRACT_DIR = TOOLS / "save-extract"
 DEFAULT_LIB_DIR = Path("/private/tmp/bg3-py-libs")
+DEFAULT_SAVES_DIR = ROOT / "saves"
 
 
 def add_dependency_path() -> None:
@@ -80,6 +81,15 @@ def copy_save(source: Path, destination: Path) -> None:
     shutil.copy2(source, destination)
 
 
+def copy_save_folder(source: Path, saves_dir: Path) -> Path:
+    destination = saves_dir / source.parent.name
+    destination.mkdir(parents=True, exist_ok=True)
+    for entry in source.parent.iterdir():
+        if entry.is_file():
+            shutil.copy2(entry, destination / entry.name)
+    return destination
+
+
 def extract_save(source: Path, destination: Path) -> int:
     add_dependency_path()
     try:
@@ -93,11 +103,18 @@ def extract_save(source: Path, destination: Path) -> int:
     return len(extracted)
 
 
-def write_manifest(source: Path, mirrored: Path, extract_dir: Path, extracted_count: int | None) -> None:
+def write_manifest(
+    source: Path,
+    mirrored: Path,
+    extract_dir: Path,
+    extracted_count: int | None,
+    saves_copy: Path | None,
+) -> None:
     manifest = {
         "synced_at_local": datetime.now().astimezone().isoformat(timespec="seconds"),
         "source_save": save_summary(source),
         "mirrored_save": str(mirrored),
+        "saves_copy": str(saves_copy) if saves_copy else None,
         "extract_dir": str(extract_dir),
         "extracted_file_count": extracted_count,
         "workflow_note": "Run the LSLib/Divine convert-resource step from tools/SAVEGAME_WORKFLOW.md if Globals.lsx needs to be refreshed from Globals.lsf.",
@@ -114,6 +131,8 @@ def main() -> int:
     parser.add_argument("--index", type=int, default=0, help="Use save at this zero-based index after sorting by mtime.")
     parser.add_argument("--copy-to", type=Path, default=DEFAULT_CURRENT_SAVE, help="Where to mirror the chosen .lsv.")
     parser.add_argument("--extract-to", type=Path, default=DEFAULT_EXTRACT_DIR, help="Where to extract the mirrored save.")
+    parser.add_argument("--saves-dir", type=Path, default=DEFAULT_SAVES_DIR, help="Folder where the selected save folder is also copied.")
+    parser.add_argument("--no-saves-copy", action="store_true", help="Do not copy the selected save folder into saves/.")
     parser.add_argument("--no-extract", action="store_true", help="Only copy the save and write a manifest.")
     args = parser.parse_args()
 
@@ -136,15 +155,18 @@ def main() -> int:
 
     source = saves[args.index]
     copy_save(source, args.copy_to)
+    saves_copy = None if args.no_saves_copy else copy_save_folder(source, args.saves_dir)
     extracted_count: int | None = None
     if not args.no_extract:
         extracted_count = extract_save(args.copy_to, args.extract_to)
-    write_manifest(source, args.copy_to, args.extract_to, extracted_count)
+    write_manifest(source, args.copy_to, args.extract_to, extracted_count, saves_copy)
 
     summary = save_summary(source)
     print(f"Synced save: {summary['folder']} / {summary['file']}")
     print(f"Source: {source}")
     print(f"Mirrored: {args.copy_to}")
+    if saves_copy:
+        print(f"Save folder copy: {saves_copy}")
     if extracted_count is not None:
         print(f"Extracted {extracted_count} files to {args.extract_to}")
     print(f"Manifest: {args.extract_to / 'source_manifest.json'}")
