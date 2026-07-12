@@ -17,7 +17,7 @@ This note is for maintaining the handbook. It is not part of the player-facing c
 
 - **Standards:** [[#Scope|Scope]] · [[#Language|Language]] · [[#Spoiler Policy|Spoiler Policy]]
 - **Formatting:** [[#Wikilinks and Tables|Wikilinks and Tables]] · [[#Marker Scale|Marker Scale]]
-- **Maintenance:** [[#Source Policy|Source Policy]] · [[#Validation|Validation]] · [[#Save-Based Audits|Save-Based Audits]]
+- **Maintenance:** [[#Source Policy|Source Policy]] · [[#History Entries|History Entries]] · [[#Validation|Validation]] · [[#Save-Based Audits|Save-Based Audits]]
 
 ## Scope
 
@@ -113,6 +113,16 @@ When adding video references:
 - put spoiler-prone videos in collapsed callouts,
 - prefer chapter-level source tables over inline source clutter,
 - add central source entries in [Appendix](15_Appendix.md).
+
+## History Entries
+
+Update [Handbook History](00_History.md) after meaningful changes:
+
+- new chapters, sections, source videos, or save-audit outputs,
+- major rewrites, reorganizations, or corrections,
+- Git setup changes or maintenance workflow changes.
+
+Small typo fixes do not need a history entry unless they correct gameplay advice.
 
 ## Validation
 

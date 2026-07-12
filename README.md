@@ -75,6 +75,7 @@ These notes reflect the latest extracted save and can change whenever the save i
 |---|---|
 | 📎 [Appendix](docs/15_Appendix.md) | Shortcuts, quick-reference tables, sources, spell/item/mechanic glossary |
 | 🛠️ [Editing Guide](docs/00_Editing_Guide.md) | Spoiler policy, source handling, Wikilink rules, validation, save workflow |
+| 🕰️ [Handbook History](docs/00_History.md) | What changed, what was added, and what was verified |
 
 ## 🏅 Reading Markers
 
