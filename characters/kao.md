@@ -1,35 +1,53 @@
-# Kao — Conjuration Wizard (Kai's Character)
+# Kao — Conjuration Wizard
 
-## Stats (Act 2)
-- **Class**: Conjuration Wizard
-- **INT**: 17
-- **Role**: Battlefield control + utility
+## Current Save State
 
-## Key Spells
-### Core Combat (Bar 1)
-- **Web** — primary control, keeps enemies in Spirit Guardians
-- **Hold Person** — paralysis = auto-crit for Lae'zel
-- **Fireball** — AoE damage when enemies are grouped but not already in Web
-- **Misty Step** — emergency repositioning, keep Kao alive
-- **Counterspell** — must be prepared and reaction enabled to trigger; shuts down dangerous casters
+- **Source save**: `AutoSave_120`
+- **Save modified**: 2026-07-11 15:29:03 +02:00
+- **Synced into handbook**: 2026-07-12 23:36:05 +02:00
+- **Region / subregion**: `BGO_Main_A` / `WYR_Bridge_SUB`
+- **Active party**: yes
+- **Class**: Wizard 10 / Conjuration School
+- **Race**: Human
+- **XP**: 58,427 total; 2,427 into current level
+- **Position**: grouped with Stefan, Lae'zel, Astarion, skeleton summon, and Scratch
 
-### Utility (Bar 2)
-- **Cloud of Daggers** — stack with Spirit Guardians at chokepoints
-- **See Invisibility** — very strong in Act 2 specifically
-- **Grease** — secondary control zone
-- **Scrolls / ritual spells**
+## Detected Active Effects
 
-## Role in Party
-Kao doesn't win fights through damage — he wins by making enemies unable to act.
-- Sets up fights with control before Lae'zel engages
-- Places Web/Grease **on enemies**, not between allies and enemies
-- Concentration priority: Web or Hold Person (don't compete with yourself)
+Confirmed from the extracted save:
 
-## Positioning
-- Stay behind the frontline
-- Cast into enemy clusters, not on top of Lae'zel + Stefan
-- Drop AoE (Fireball, etc.) *behind* enemies, not on the melee line
+- `DYING`
 
-## Notes
-- Conjuration subclass: summoned creatures are more durable (act as backup tanks)
-- Can learn spells from scrolls — add useful finds to spellbook
+Important: the extracted character subtree for Kao currently contains the `DYING` status. Treat this as a current-state warning and verify in game before starting any fight.
+
+## Current Role
+
+Kao is the active Wizard and should be used as battlefield control first, damage second:
+
+- disable enemy turns,
+- shape enemy movement,
+- protect the party with high-impact scrolls when needed,
+- keep utility spells available for movement, scouting, and route solving.
+
+## Immediate Priority
+
+1. Check Kao in game and resolve the detected `DYING` state if it is still present.
+2. Confirm his prepared spell list before leaving camp or entering a serious fight.
+3. Put high-impact scrolls on the hotbar when a boss or large fight is expected.
+
+## Combat Priorities
+
+- Prefer control when enemies are dangerous and not easy to kill immediately.
+- Use burst damage when enemies are grouped or when one kill changes the whole round.
+- Protect concentration; do not stand where Lae'zel and Stefan will pull melee pressure.
+- Use summons and scrolls when action economy matters more than conserving resources.
+
+## Party Synergy
+
+- **Lae'zel** benefits from control that creates advantage or keeps enemies reachable.
+- **Stefan** can stack area pressure with Spirit Guardians when enemies are already slowed or trapped.
+- **Astarion** benefits from controlled, prone, or engaged targets for Sneak Attack access.
+
+## Verify In Game
+
+The save confirms Wizard 10 / Conjuration School and the current `DYING` status. It does not cleanly expose prepared spells, learned spellbook coverage, or exact hotbar setup in this pass.

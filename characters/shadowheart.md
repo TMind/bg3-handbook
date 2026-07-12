@@ -1,63 +1,42 @@
-# Shadowheart — Light Domain Cleric (Companion)
+# Shadowheart — Light Domain Cleric
 
-## Stats (Act 2)
-- **Race**: High Half-Elf
-- **Class**: Light Domain Cleric, Level 8
-- **STR**: 10 | **DEX**: 14 | **CON**: 16 | **INT**: 8 | **WIS**: 20 | **CHA**: 10
-- **AC**: 16
-- **Spell Attack**: +8 | **Spell Save DC**: 16
-- **Spell Slots**: I×4 / II×3 / III×3 / IV×2
-- **Role**: Radiant/fire offense + party support
+## Current Role
 
-## Active Conditions
-- Silvanus' Blessing
-- Blessing of Selûne
-- Pixie Blessing
+- **Active party**: no
+- **Current handbook role**: camp Cleric buffer and optional backline support
+- **Current build note**: Light Cleric 10 from the latest readiness audit
+- **Primary value**: spend camp Cleric resources so Stefan keeps more active-party spell slots
 
-## Key Abilities
+Shadowheart is currently most useful as the camp-side Cleric who prepares the party before leaving camp. Bring her in when the party needs extra Cleric support, radiant/fire pressure, or camp-cast daily buffs.
 
-### Cantrips
-- Guidance, Sacred Flame / Fire Bolt, Produce Flame, Resistance, Spare the Dying (approx — 5 cantrips visible)
+## Camp Buff Priorities
 
-### Light Domain Spells (auto-prepared, always available)
-- **Burning Hands / Faerie Fire** — level 1 domain
-- **Flaming Sphere / Scorching Ray** — level 2 domain
-- **Daylight / Fireball** — level 3 domain
-- **Guardian of Faith / Wall of Fire** — level 4 domain
+Use Shadowheart before Stefan when possible for:
 
-### Prepared Cleric Spells (confirmed from spell screen)
-- **Spirit Guardians** (III) — AoE grind; high WIS makes this potent
-- **Healing Word** (I) — bonus action heal
-- **Bless** (I) — concentration; coordinate with Stefan
-- **Guiding Bolt** (I) — grants Advantage to next attacker
-- **Spiritual Weapon** (II) — bonus action summon; free damage each turn
-- **Aid** (II) — pre-combat HP buffer for the party
-- **Silence** (II) — shuts down enemy casters
-- Additional level III and IV spells prepared (icons partially readable)
+- Aid
+- Death Ward
+- Freedom of Movement
+- Warding Bond, selectively
+- Protection from Poison, when the area calls for it
 
-### Light Domain Feature
-- **Warding Flare** (reaction) — impose disadvantage on an attack targeting Shadowheart or nearby ally; use proactively vs. high-damage enemies
-- **Radiance of the Dawn** (Channel Divinity) — radiant AoE, hurts undead hard; strong in Act 2
+At Cleric 10, she can use **Divine Intervention: Arm Thy Servant** if it has not already been spent. The handbook currently treats the Devotee's Mace transfer to Stefan as done.
 
-## Role in Party
-- **Offensive cleric**: Light Domain leans into damage (radiant + fire) more than Trickery
-- **Secondary healer**: Healing Word as bonus action keeps her efficient; not a dedicated healer
-- **Radiant synergy**: Radiant spells are especially strong in Act 2 (undead enemies)
-- Two clerics in party — coordinate spell slots and concentration carefully with Stefan
+## Swap-In Role
 
-## Coordination with Stefan
-- Don't double-cast Spirit Guardians unless they're targeting different clusters
-- Only one of them should hold Bless (concentration conflict)
-- Shadowheart takes backline/ranged role; Stefan takes melee frontline
-- Healing Word coverage: both can do it — split responsibility by positioning zone
+Bring Shadowheart into the active party when:
 
-## Story Decision — Nightsong (Act 2)
-- **Shadowheart spared the Nightsong** — defied Shar, embraced Selûne
-- Shadowheart is alive and continuing with the party
+- the fight rewards radiant or fire damage,
+- a second Cleric support kit is more valuable than Astarion's scouting,
+- the party needs Bless, Healing Word, Spiritual Weapon, Silence, Fireball, or extra emergency recovery.
 
-## Notes
-- WIS 20 = excellent spell save DC and spell attack bonus
-- CON 16 = solid concentration checks
-- High Half-Elf: bonus cantrip, proficiency flexibility
-- Civil Militia: light armor + spear proficiency — now relevant (see story decision above)
-- Approval meter is near full — high approval unlocks stronger story options
+Do not treat Shadowheart as a direct Lae'zel replacement unless the plan intentionally gives up frontline pressure.
+
+## Coordination With Stefan
+
+- Avoid overlapping concentration unless the effects cover different needs.
+- Decide which Cleric is responsible for Bless-style support, Spirit Guardians, or defensive concentration.
+- If Stefan is active, Shadowheart's best job is usually to spend camp resources and then leave the active party.
+
+## Verify In Game
+
+Shadowheart is not in the active party in `AutoSave_120`, so the extractor did not provide the same current class/status detail as it did for the active four. Verify her exact prepared spells and whether Divine Intervention has been spent before relying on her for a specific setup.

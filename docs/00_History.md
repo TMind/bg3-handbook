@@ -19,6 +19,17 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ## 2026-07-12
 
+### Changed
+
+- Refreshed the `characters/` notes from the latest local save, `AutoSave_120`.
+- Replaced old Act 2 / level-planning character notes with current active-party summaries for Stefan, Lae'zel, Kao, and Astarion.
+- Updated camp notes for Shadowheart, Gale, the active summons, and current before-fight checks.
+
+### Verified
+
+- Synced and extracted `AutoSave_120`, modified 2026-07-11 15:29:03 +02:00.
+- Rebuilt the local save index from `tools/save-extract/Globals.lsf`.
+
 ### Added
 
 - Created the first Git-backed handbook snapshot.

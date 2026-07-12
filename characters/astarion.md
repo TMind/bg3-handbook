@@ -1,36 +1,62 @@
-# Astarion — Thief Rogue (Active Party)
+# Astarion — Thief Rogue
 
-## Stats (Act 2)
-- **Class**: Thief Rogue
-- **DEX**: 19
-- **Role**: Single-target burst damage + stealth + utility
+## Current Save State
 
-## Key Features
-- **Sneak Attack** — primary damage source; requires either Advantage OR an ally adjacent to target
-- **Fast Hands (Thief)** — extra Bonus Action every turn; use for: off-hand attack, Hide, Dash, Disengage, or items
-- **Stealth / Hide** — can re-hide after attacking in some circumstances
+- **Source save**: `AutoSave_120`
+- **Save modified**: 2026-07-11 15:29:03 +02:00
+- **Synced into handbook**: 2026-07-12 23:36:05 +02:00
+- **Region / subregion**: `BGO_Main_A` / `WYR_Bridge_SUB`
+- **Active party**: yes
+- **Class**: Rogue 10 / Thief
+- **Race**: High Elf
+- **XP**: 58,827 total; 2,827 into current level
+- **Position**: grouped with Stefan, Lae'zel, Kao, skeleton summon, and Scratch
 
-## Sneak Attack Conditions (must meet ONE)
-- Attacking from stealth (unseen)
-- Attacking with Advantage (flanking, high ground ranged, target is prone, etc.)
-- An ally is within 1.5m (5ft) of the target — no Advantage required
+## Detected Active Effects
 
-## Combat Role
-- Open from stealth when possible for Sneak Attack + Advantage
-- Target prone or stuck enemies (from Lae'zel's Trip Attack or Kao's control)
-- Use extra Bonus Action every turn — never waste it
-- Priority target: fragile casters/archers in the enemy backline
+Confirmed from the extracted save:
 
-## Quickbar Setup
-- Slot 1–4: Sneak Attack (melee), Sneak Attack (ranged), Hide, Dash/Disengage
-- Slot 5–0: bombs, arrows, potions, special consumables
+- Cat's Grace / Graceful Cloth effect
+- Darkvision
+- Longstrider
+- Aid, level 3
+- Elixir of Viciousness / criticals effect
+- Tadpole-related Peace Breaker status
 
-## Out-of-Combat Role
-- Scout ahead
-- Trap detection and disarming
-- Lockpicking
+Not detected in the current save:
 
-## Notes
-- Greater Invisibility is extremely strong on Astarion: Advantage every turn = guaranteed Sneak Attack without needing to re-hide
-- Magical Darkness (Arrow of Darkness) does NOT benefit Astarion — he can't see through it, loses Sneak Attack
-- Swap to Gale in camp if you need AoE damage instead of precision; Astarion favors tactical/stealth-heavy fights
+- Death Ward
+- Freedom of Movement
+
+## Current Role
+
+Astarion is the active scout, lockpicker, trap handler, and precision damage character. In the current save he has **Elixir of Viciousness**, so critical-hit support is already committed for the day.
+
+Use him to:
+
+- scout before committing the whole party,
+- open fights from stealth when possible,
+- remove fragile casters or archers,
+- carry lockpicks, trap tools, invisibility, arrows, and poisons,
+- use Fast Hands every round instead of wasting bonus actions.
+
+## Sneak Attack Conditions
+
+Astarion needs at least one:
+
+- advantage,
+- stealth / unseen attack,
+- an ally adjacent to the target.
+
+Lae'zel's melee engagement and Kao's control both help create Sneak Attack access.
+
+## Combat Priorities
+
+1. Move invisibility tools and special arrows to Astarion before leaving camp.
+2. Add **Death Ward** before hard fights if resources allow.
+3. Add **Freedom of Movement** when restraint, webs, difficult terrain, or control effects are expected.
+4. Use bonus actions actively: Hide, off-hand attack, Dash, Disengage, or consumables.
+
+## Verify In Game
+
+The save confirms Rogue 10 / Thief and active buffs, but this pass does not reliably expose exact feats, skill expertise, weapon slots, or hotbar layout.

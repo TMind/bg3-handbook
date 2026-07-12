@@ -1,44 +1,57 @@
-# Stefan — Death Domain Cleric (tmind's Character)
+# Stefan — Death Domain Cleric
 
-## Stats (Act 2)
-- **Class**: Death Domain Cleric
-- **WIS**: 18
-- **Role**: Melee frontline + AoE aura damage + limited support
+## Current Save State
 
-## Key Abilities
-- **Spirit Guardians** — primary damage engine; 10-round AoE aura, slow enemies, constant damage
-- **Warding Bond** — cast on Lae'zel (shared damage, so keep Stefan healed)
-- **Healing Word** — bonus action heal, use to keep allies up without sacrificing full turns
-- **Guiding Bolt / necrotic damage spells** — secondary offense
+- **Source save**: `AutoSave_120`
+- **Save modified**: 2026-07-11 15:29:03 +02:00
+- **Synced into handbook**: 2026-07-12 23:36:05 +02:00
+- **Region / subregion**: `BGO_Main_A` / `WYR_Bridge_SUB`
+- **Active party**: yes
+- **Class**: Cleric 10 / Death Domain
+- **Race**: Seldarine Drow
+- **XP**: 58,827 total; 2,827 into current level
+- **Position**: grouped with Lae'zel, Kao, Astarion, skeleton summon, and Scratch
 
-## Spirit Guardians — How to Use Well
-### Pre-casting
-- Cast *before* combat starts — round timer only ticks during combat, not while walking/positioning
-- Cast out of enemy line-of-sight (behind a rock, wall, or pillar)
-- Bless and other round-based buffs work the same way
+## Detected Active Effects
 
-### Positioning in combat
-- Let Lae'zel engage first, then Stefan walks into the enemy cluster
-- Don't rush in early — wait for enemies to commit, then step in
-- Stay in the middle of the fight; enemies walking toward Lae'zel pass through the aura
+Confirmed from the extracted save:
 
-### Efficiency
-- Only use it for real fights: groups, elites, anything that surrounds you
-- Don't waste it on 1–2 weak enemies
-- Fight in chokepoints and tight spaces to maximize aura overlap
-- Short Rest after a Spirit Guardians fight to recover HP before next encounter (spell slots don't refresh, but HP does)
+- Shield of Devotion technical effect and extra spell slot
+- Warding Bond
+- Darkvision
+- Longstrider
+- Aid, level 3
+- Freedom of Movement
+- Undead-presence gear aura from the current setup
+- Tadpole-related Peace Breaker status
 
-## Combat Role
-- **Off-tank**: enters melee after Lae'zel anchors; not a primary tank but very durable
-- **AoE grinder**: Spirit Guardians + slow = death zone for grouped enemies
-- **Flex support**: Healing Word as bonus action when needed; not a dedicated healer
+Not detected in the current save:
 
-## Synergy
-- Lae'zel pins enemies → Stefan walks in → enemies can't escape → aura grinds them down
-- Kao's Web/Grease stacks with Spirit Guardians slow (enemies truly cannot move)
-- Sentinel on Lae'zel (when taken) will be the final lock: enemies physically can't leave
+- Death Ward
 
-## Notes
-- Death Domain: not a traditional healer — don't rely on Stefan as primary healing
-- Melee focus means Stefan will take hits; watch his HP since Warding Bond transfers damage from Lae'zel
-- Party needs awareness that this isn't a "backline healer" setup
+## Current Role
+
+Stefan is the active Cleric and should be treated as the party's durable support anchor:
+
+- keep **Longstrider / Aid / Freedom of Movement** active,
+- use **Warding Bond** deliberately because Stefan receives shared damage,
+- use **Healing Word** and other bonus-action recovery to keep action economy intact,
+- decide before serious fights whether he is carrying the **Blood of Lathander** safety plan or the **Devotee's Mace** healing-aura plan.
+
+## Combat Priorities
+
+1. Do not spend Cleric actions on weak healing unless someone is downed or a healing rider matters.
+2. Use **Spirit Guardians** or other Cleric concentration only when the fight is worth the slot.
+3. Keep Stefan close enough to support Lae'zel, but do not overextend if Warding Bond damage is already stacking.
+4. Add **Death Ward** before hard fights if Stefan is staying in the active party.
+
+## Coordination
+
+- **Lae'zel** anchors melee and turns kills into value with Bloodlust.
+- **Kao** supplies control and utility; do not overwrite his concentration plan without a reason.
+- **Astarion** handles scouting, lockpicking, and precision kills.
+- **Shadowheart** remains the best camp Cleric buffer when Stefan should preserve active-party spell slots.
+
+## Verify In Game
+
+The save extractor confirms class, level, race, position, and active statuses. It does not cleanly expose prepared spells, exact gear slots, or feats in this pass. Check Stefan's prepared spell list and reaction toggles before a boss fight.
