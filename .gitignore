@@ -1,0 +1,22 @@
+.DS_Store
+
+# Local editor state
+.obsidian/workspace.json
+
+# Local trash / scratch files
+.trash/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Generated BG3 save extracts and indexes
+tools/current-save/
+tools/save-extract/
+tools/save-index/
+
+# Bundled external tooling
+tools/Packed/
+
+# yt-dlp metadata contains volatile, expiring URLs. Keep transcripts instead.
+tools/video-transcripts/*.info.json
