@@ -160,6 +160,8 @@ Strength elixirs improve these tactics significantly. See [Elixirs and Potions](
 
 For weapon throws, check whether the weapon has the **Thrown** tag. A thrown weapon with that tag uses its real weapon damage; random weapons without the tag are usually poor throw weapons.
 
+World objects can also be thrown directly **at** enemies as improvised attacks: pick up a box, crate, chair, or similar object and throw it at a target for bludgeoning damage. Heavier objects hit harder, and the damage scales with Strength. This costs no ammunition or spell slots, so it is a solid fallback when a character has nothing better to do with an action, and it works with whatever clutter is already lying around the battlefield.
+
 Throw range and throw value depend on Strength, object weight, and height difference. High ground improves thrown-object play, but do not build a whole fight around stacking crates unless it solves a specific encounter.
 
 With very high Strength, Medium enemies can be thrown, not only Small enemies. **Throw** uses an action, while **Shove** uses a bonus action. If positioning is good, one strong character can potentially remove two enemies from a ledge in the same round.

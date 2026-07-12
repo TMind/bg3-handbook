@@ -620,7 +620,9 @@ Potions and elixirs behave differently when thrown.
 
 Important elixirs should be drunk intentionally, not thrown. Throwing an elixir such as [[06_Elixirs_and_Potions#^elixir-of-cloud-giant-strength\|Cloud Giant Strength]] can turn a Long-Rest buff into a short-duration effect, which wastes a rare resource.
 
-For healing potions, aim at the ground near the ally rather than directly at the character when possible. The goal is to splash the healing effect, not to add unnecessary impact damage. Summons or low-priority characters can sometimes deliver a thrown potion when a main character's action is more valuable.
+For healing potions, aim at the ground near the ally rather than directly at the character when possible. The goal is to splash the healing effect, not to add unnecessary impact damage.
+
+Prefer to deliver thrown potions with a summon instead of a real character. A **Mage Hand** has its own inventory and its own action, so it can carry potions and bombs and throw them while every party member still acts normally. Details are in [[08_Magic_and_Useful_Items#^summon-throwers|Summons as Item Throwers]].
 
 Life Cleric-style healing bonuses can make thrown healing potions much stronger when several allies are grouped. This can turn one potion into meaningful group recovery, but it requires careful aim and party positioning.
 

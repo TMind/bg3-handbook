@@ -31,7 +31,7 @@ Referenced spells and magical effects are summarized in [[15_Appendix#^glossary-
 | Support checks or exploration | [[08_Magic_and_Useful_Items#^skill-support\|Skill Support]] · [[08_Magic_and_Useful_Items#^movement-utility\|Movement Utility]] |
 | Communicate or change form | [[#💀 Speak with Dead\|Speak with Dead]] · [[#🎭 Form Changes and Race-Conditional Gear\|Form Changes]] |
 | Check useful or missable items | [[#🗼 Missable Magic-Item Area\|Missable Magic-Item Area]] · [[08_Magic_and_Useful_Items#^weapon-bond\|Weapon Bond]] · [[#👁️ See Invisibility Without an Elixir Slot\|See Invisibility]] |
-| Use practical utility magic | [[08_Magic_and_Useful_Items#^utility-spells\|Utility Spells]] · [[08_Magic_and_Useful_Items#^spell-interactions\|Spell Interactions]] |
+| Use practical utility magic | [[08_Magic_and_Useful_Items#^utility-spells\|Utility Spells]] · [[08_Magic_and_Useful_Items#^summon-throwers\|Summons as Item Throwers]] · [[08_Magic_and_Useful_Items#^spell-interactions\|Spell Interactions]] |
 | Protect resources and concentration | [[08_Magic_and_Useful_Items#^spell-resources\|Spell Resources]] · [[#🧠 End Concentration Manually\|End Concentration]] |
 | Run a final check | [[08_Magic_and_Useful_Items#^magic-checklist\|Magic Checklist]] |
 | Sources | [[#📺 Video References\|Video References]] |
@@ -242,13 +242,35 @@ Some low-level utility spells are stronger when used as tools rather than as dir
 |---|---|
 | Light | Cast it on a cheap object, then throw or place that object to create a movable light source for characters without Darkvision |
 | Find Familiar | Scout small routes, distract enemies, lure groups into better positions, or keep the familiar after resting if it was summoned before the Long Rest |
-| Mage Hand | Pre-place bombs or objects, shove a ranged enemy from high ground, or interact with dangerous positions without risking a party member |
+| Mage Hand | Pre-place bombs or objects, shove a ranged enemy from high ground, throw items from its own inventory (see [[#🖐️ Summons as Item Throwers\|Summons as Item Throwers]]), or interact with dangerous positions without risking a party member |
 | Silence | Stop spellcasting, mute noisy actions in an area, and protect creatures inside the area from Thunder damage |
 | Feather Fall | Cast before vertical routing, risky drops, or fights where falling damage or shove risk matters |
 
 Treat these as preparation tools. The best use is usually before the fight or before the route problem, not after the party is already in a bad position.
 
 Source: [13 Things That are Actually Overpowered in Baldur's Gate 3 - Toyhouze](https://www.youtube.com/watch?v=1g8TJBjPfqw).
+
+## 🖐️ Summons as Item Throwers ^summon-throwers
+
+**Markers:** ⭐⭐ ⚔️ 🎯
+
+Summons have their own turn and their own action. That action is free from the party's perspective, so spending it on item delivery costs nothing that a real character wanted to do.
+
+**Mage Hand** is the clearest example. It has its own inventory: move potions, bombs, or other throwables into it before or during the fight, then let the Hand throw them. Common uses:
+
+| Delivery | Why the Hand is a good carrier |
+|---|---|
+| Healing potion to a downed or hurt ally | The Hand splashes the heal without a party member spending an action or walking into danger |
+| Alchemist's Fire, Smokepowder, or similar bombs | Damage or a hazard surface lands without exposing a real character to opportunity attacks |
+| [[06_Elixirs_and_Potions#^potion-of-speed\|Potion of Speed]] onto a grouped party | Buffs the group while every real character still acts normally |
+
+Points to keep in mind:
+
+- The Hand must be summoned **before** it is needed, and items must be transferred into its inventory in advance. Doing all of that mid-fight burns the tempo the trick was supposed to save.
+- The Hand is fragile and has low Strength, so treat it as a delivery tool rather than a damage dealer.
+- Other summons and familiars can carry and throw items the same way. The principle is general: **the party's throwables should usually be delivered by whichever body has the least valuable action.**
+
+Aiming rules for thrown potions and elixirs are in [[06_Elixirs_and_Potions#^throwing-rules|Throwing Rules]] — in particular, important elixirs should still be drunk, never thrown.
 
 ## 🧩 Hidden Spell Interactions ^spell-interactions
 
