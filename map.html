@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BG3 World Map — Kai & Stefan</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d0d0f;
+      color: #c9b88a;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      letter-spacing: 0.15em;
+      color: #e8d8a0;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 0.8rem;
+      color: #7a6a4a;
+      letter-spacing: 0.1em;
+      margin-bottom: 32px;
+    }
+
+    .map-container {
+      position: relative;
+      width: 820px;
+      max-width: 100%;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 0 24px rgba(0,0,0,0.8));
+    }
+
+    .legend {
+      margin-top: 24px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: #8a7a5a;
+    }
+
+    .legend-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 0.72rem;
+      color: #5a4a3a;
+      letter-spacing: 0.05em;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>World Map</h1>
+<div class="subtitle">Baldur's Gate 3 — Kai &amp; Stefan's Journey</div>
+
+<div class="map-container">
+<svg viewBox="0 0 820 660" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Parchment/ground texture via noise pattern -->
+    <filter id="roughen">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="glow-silver">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-gold">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow-soft">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Surface ground gradient -->
+    <linearGradient id="grad-surface" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e3d1e"/>
+      <stop offset="100%" stop-color="#1e2a10"/>
+    </linearGradient>
+
+    <!-- Underdark gradient -->
+    <linearGradient id="grad-underdark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1230"/>
+      <stop offset="100%" stop-color="#0e0b1e"/>
+    </linearGradient>
+
+    <!-- Shadow-Cursed Lands gradient -->
+    <linearGradient id="grad-shadow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1408"/>
+      <stop offset="100%" stop-color="#2a1a0a"/>
+    </linearGradient>
+
+    <!-- Fog (unvisited) gradient -->
+    <linearGradient id="grad-fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#101010"/>
+    </linearGradient>
+
+    <!-- Road gradient -->
+    <linearGradient id="grad-road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5a4a2a"/>
+      <stop offset="100%" stop-color="#4a3a1a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  BACKGROUND (unvisited fog)                    -->
+  <!-- ══════════════════════════════════════════════ -->
+  <rect width="820" height="660" fill="#0e0e10"/>
+
+  <!-- Map border / frame -->
+  <rect x="8" y="8" width="804" height="644" fill="none"
+        stroke="#3a2e1a" stroke-width="2" rx="4"/>
+  <rect x="12" y="12" width="796" height="636" fill="none"
+        stroke="#2a2010" stroke-width="1" rx="3"/>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  ACT 1 — SURFACE (WILDERNESS)                  -->
+  <!--  Rough region: upper-left                      -->
+  <!-- ══════════════════════════════════════════════ -->
+
+  <!-- Surface land mass -->
+  <path d="M 40 40
+           L 560 40
+           L 560 280
+           C 480 290 420 310 360 330
+           C 300 350 240 360 180 350
+           C 120 340 70 310 50 280
+           Z"
+        fill="url(#grad-surface)"
+        stroke="#3a5020" stroke-width="1.5"
+        filter="url(#roughen)"/>
+
+  <!-- Surface region label -->
+  <text x="200" y="75" text-anchor="middle"
+        font-size="11" fill="#7a9a50" letter-spacing="0.15em"
+        font-family="Georgia, serif" text-decoration="none"
+        opacity="0.8">ACT I — SURFACE</text>
+
+  <!-- ── Blighted Village ── -->
+  <g filter="url(#shadow-soft)">
+    <!-- village icon: small building cluster -->
+    <rect x="175" y="110" width="10" height="12" fill="#6a5030" stroke="#8a6a40" stroke-width="0.8"/>
+    <polygon points="175,110 185,110 180,103" fill="#5a3a20" stroke="#7a5a30" stroke-width="0.8"/>
+    <rect x="188" y="113" width="8" height="9" fill="#6a5030" stroke="#8a6a40" stroke-width="0.8"/>
+    <polygon points="188,113 196,113 192,107" fill="#5a3a20" stroke="#7a5a30" stroke-width="0.8"/>
+  </g>
+  <text x="195" y="136" text-anchor="middle"
+        font-size="9.5" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Blighted Village</text>
+  <text x="195" y="147" text-anchor="middle"
+        font-size="7.5" fill="#6a8a40" letter-spacing="0.05em"
+        font-family="Georgia, serif">(Sussur Tree / Forge)</text>
+
+  <!-- ── Goblin Camp (visited, Act 1 surface) ── -->
+  <g>
+    <circle cx="310" cy="130" r="5" fill="#3a2a10" stroke="#7a6030" stroke-width="1"/>
+    <line x1="307" y1="123" x2="310" y2="117" stroke="#7a6030" stroke-width="1"/>
+    <line x1="313" y1="123" x2="310" y2="117" stroke="#7a6030" stroke-width="1"/>
+  </g>
+  <text x="310" y="152" text-anchor="middle"
+        font-size="9.5" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Goblin Camp</text>
+
+  <!-- ── Druid Grove ── -->
+  <g>
+    <!-- tree icon -->
+    <circle cx="120" cy="155" r="9" fill="#2a4a18" stroke="#4a7a28" stroke-width="1"/>
+    <rect x="118" y="162" width="4" height="7" fill="#4a3020"/>
+  </g>
+  <text x="120" y="182" text-anchor="middle"
+        font-size="9.5" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Druid Grove</text>
+
+  <!-- ── Waukeen's Rest ── -->
+  <g>
+    <rect x="420" y="148" width="11" height="13" fill="#6a5030" stroke="#8a6a40" stroke-width="0.8"/>
+    <polygon points="420,148 431,148 425.5,140" fill="#5a3a20" stroke="#7a5a30" stroke-width="0.8"/>
+  </g>
+  <text x="430" y="174" text-anchor="middle"
+        font-size="9.5" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Waukeen's Rest</text>
+
+  <!-- ── Ravaged Beach ── -->
+  <g>
+    <path d="M 490 220 Q 510 210 530 220 Q 510 230 490 220" fill="#8a7040" stroke="#a08050" stroke-width="0.8"/>
+  </g>
+  <text x="510" y="245" text-anchor="middle"
+        font-size="9.5" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Ravaged Beach</text>
+
+  <!-- ROAD: Druid Grove → Blighted Village → Goblin Camp -->
+  <path d="M 130 160 Q 160 135 175 128" fill="none"
+        stroke="#5a4a2a" stroke-width="2" stroke-dasharray="4,3" opacity="0.6"/>
+  <path d="M 193 128 Q 250 128 302 130" fill="none"
+        stroke="#5a4a2a" stroke-width="2" stroke-dasharray="4,3" opacity="0.6"/>
+  <!-- Road to Waukeen's Rest -->
+  <path d="M 318 130 Q 370 125 418 148" fill="none"
+        stroke="#5a4a2a" stroke-width="2" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- Descent route markers -->
+  <path d="M 310 137 L 310 270" fill="none"
+        stroke="#4a3a20" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  TRANSITION ZONE — DESCENT TO UNDERDARK         -->
+  <!-- ══════════════════════════════════════════════ -->
+  <path d="M 180 350 C 240 360 300 350 360 330
+           C 420 310 480 290 560 280
+           L 560 340 L 180 370 Z"
+        fill="#16100a" stroke="#2a2010" stroke-width="1" opacity="0.9"/>
+  <text x="370" y="320" text-anchor="middle"
+        font-size="8" fill="#4a3a2a" letter-spacing="0.2em"
+        font-family="Georgia, serif">— DESCENT —</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  ACT 1 — UNDERDARK                             -->
+  <!--  Below the surface, underground cavern feel    -->
+  <!-- ══════════════════════════════════════════════ -->
+  <path d="M 40 370
+           C 70 355 120 345 180 360
+           C 240 375 300 380 360 370
+           L 560 340 L 560 510
+           C 480 530 400 540 300 535
+           C 200 530 100 520 40 500
+           Z"
+        fill="url(#grad-underdark)"
+        stroke="#2a1a4a" stroke-width="1.5"
+        filter="url(#roughen)"/>
+
+  <!-- Stalactite hints -->
+  <g opacity="0.4" stroke="#3a2a5a" stroke-width="0.8" fill="none">
+    <path d="M 80 375 L 75 395 L 85 395 Z"/>
+    <path d="M 150 368 L 145 388 L 155 388 Z"/>
+    <path d="M 260 375 L 255 398 L 265 398 Z"/>
+    <path d="M 420 355 L 415 378 L 425 378 Z"/>
+    <path d="M 500 360 L 495 382 L 505 382 Z"/>
+  </g>
+
+  <!-- Underdark label -->
+  <text x="300" y="420" text-anchor="middle"
+        font-size="12" fill="#5a4a8a" letter-spacing="0.15em"
+        font-family="Georgia, serif" opacity="0.9">ACT I — UNDERDARK</text>
+  <text x="300" y="435" text-anchor="middle"
+        font-size="8.5" fill="#4a3a6a" letter-spacing="0.1em"
+        font-family="Georgia, serif" opacity="0.7">(Complete)</text>
+
+  <!-- ── Sussur Tree ── -->
+  <g filter="url(#shadow-soft)">
+    <circle cx="160" cy="465" r="11" fill="#0a1a2a" stroke="#3060a0" stroke-width="1.2"/>
+    <circle cx="160" cy="465" r="7" fill="#081420" stroke="#2050808" stroke-width="0.8" opacity="0.8"/>
+    <!-- glow rings -->
+    <circle cx="160" cy="465" r="13" fill="none" stroke="#3060a0" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="160" cy="465" r="16" fill="none" stroke="#3060a0" stroke-width="0.3" opacity="0.2"/>
+    <!-- tree shape -->
+    <rect x="158" y="465" width="4" height="8" fill="#2a1a0a"/>
+    <path d="M 152 465 Q 160 448 168 465 Z" fill="#0a2a3a" stroke="#3060a0" stroke-width="0.8"/>
+    <path d="M 154 458 Q 160 444 166 458 Z" fill="#0a2a3a" stroke="#3060a0" stroke-width="0.8"/>
+  </g>
+  <text x="160" y="490" text-anchor="middle"
+        font-size="9.5" fill="#6090c0" letter-spacing="0.08em"
+        font-family="Georgia, serif">Sussur Tree</text>
+  <text x="160" y="500" text-anchor="middle"
+        font-size="7.5" fill="#405070" letter-spacing="0.05em"
+        font-family="Georgia, serif">(Sussur Bark collected)</text>
+
+  <!-- ── Myconid Colony / Underdark Hub ── -->
+  <g>
+    <circle cx="290" cy="475" r="6" fill="#2a1a3a" stroke="#7a5a9a" stroke-width="1"/>
+    <circle cx="280" cy="480" r="4" fill="#2a1a3a" stroke="#6a4a8a" stroke-width="0.8"/>
+    <circle cx="300" cy="483" r="4" fill="#2a1a3a" stroke="#6a4a8a" stroke-width="0.8"/>
+  </g>
+  <text x="290" y="500" text-anchor="middle"
+        font-size="9.5" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Myconid Colony</text>
+
+  <!-- ── Grymforge ── -->
+  <g>
+    <rect x="435" y="458" width="13" height="16" fill="#2a1a0a" stroke="#8a5020" stroke-width="1"/>
+    <polygon points="435,458 448,458 441.5,448" fill="#1a0e08" stroke="#7a4010" stroke-width="1"/>
+    <!-- forge fire -->
+    <path d="M 439 467 Q 441 462 443 467 Q 441 464 439 467" fill="#c04000" opacity="0.7"/>
+  </g>
+  <text x="442" y="488" text-anchor="middle"
+        font-size="9.5" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Grymforge</text>
+
+  <!-- Underground path -->
+  <path d="M 172 465 Q 230 470 280 476" fill="none"
+        stroke="#3a2a5a" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <path d="M 298 476 Q 365 470 432 462" fill="none"
+        stroke="#3a2a5a" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- Transition upward to Act 2 -->
+  <path d="M 442 458 Q 445 420 448 385 Q 451 360 455 340" fill="none"
+        stroke="#4a3a2a" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5"/>
+  <text x="470" y="410" text-anchor="start"
+        font-size="7.5" fill="#4a3a2a" letter-spacing="0.1em"
+        font-family="Georgia, serif">↑ to Act 2</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  ACT 2 — SHADOW-CURSED LANDS                   -->
+  <!--  Right side of map, dark & cursed              -->
+  <!-- ══════════════════════════════════════════════ -->
+  <path d="M 560 40
+           L 800 40
+           L 800 560
+           L 560 560
+           L 560 510
+           L 560 340
+           L 560 280
+           Z"
+        fill="url(#grad-shadow)"
+        stroke="#4a2a0a" stroke-width="1.5"
+        filter="url(#roughen)"/>
+
+  <!-- Shadow curse atmosphere — dark vignette overlay -->
+  <radialGradient id="shadow-vignette" cx="80%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="#00000000"/>
+    <stop offset="60%" stop-color="#00000033"/>
+    <stop offset="100%" stop-color="#000000aa"/>
+  </radialGradient>
+  <rect x="560" y="40" width="240" height="520" fill="url(#shadow-vignette)" opacity="0.7"/>
+
+  <!-- Shadow mist tendrils -->
+  <g opacity="0.15" fill="#1a0a00">
+    <path d="M 570 80 Q 620 100 600 140 Q 640 120 660 160"/>
+    <path d="M 590 200 Q 640 220 620 260 Q 660 240 680 280"/>
+    <path d="M 580 350 Q 630 370 610 410 Q 650 390 670 430"/>
+  </g>
+
+  <!-- ACT 2 label -->
+  <text x="680" y="80" text-anchor="middle"
+        font-size="11" fill="#9a6a2a" letter-spacing="0.15em"
+        font-family="Georgia, serif" opacity="0.9">ACT II</text>
+  <text x="680" y="95" text-anchor="middle"
+        font-size="10" fill="#7a5020" letter-spacing="0.12em"
+        font-family="Georgia, serif" opacity="0.8">SHADOW-CURSED LANDS</text>
+  <text x="680" y="108" text-anchor="middle"
+        font-size="8" fill="#5a3a18" letter-spacing="0.08em"
+        font-family="Georgia, serif" opacity="0.7">(In Progress)</text>
+
+  <!-- ── Last Light Inn (Selûne shrine, safe zone) ── -->
+  <g filter="url(#shadow-soft)">
+    <!-- Inn building -->
+    <rect x="614" y="185" width="14" height="16" fill="#3a2a10" stroke="#7a5a28" stroke-width="1"/>
+    <polygon points="614,185 628,185 621,175" fill="#2a1a08" stroke="#6a4a20" stroke-width="1"/>
+    <!-- Selûne glow -->
+    <circle cx="621" cy="186" r="6" fill="none" stroke="#8090c0" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="621" cy="186" r="9" fill="none" stroke="#6070a0" stroke-width="0.4" opacity="0.3"/>
+  </g>
+  <text x="621" y="215" text-anchor="middle"
+        font-size="9" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Last Light Inn</text>
+  <text x="621" y="225" text-anchor="middle"
+        font-size="7" fill="#6070a0" letter-spacing="0.05em"
+        font-family="Georgia, serif">(Selûne safe zone)</text>
+
+  <!-- ── Moonrise Towers (visible/nearby) ── -->
+  <g>
+    <rect x="730" y="155" width="8" height="20" fill="#1a0a00" stroke="#5a3010" stroke-width="1"/>
+    <rect x="744" y="148" width="8" height="27" fill="#1a0a00" stroke="#5a3010" stroke-width="1"/>
+    <!-- battlements -->
+    <rect x="728" y="153" width="4" height="4" fill="#1a0a00" stroke="#5a3010" stroke-width="0.8"/>
+    <rect x="734" y="153" width="4" height="4" fill="#1a0a00" stroke="#5a3010" stroke-width="0.8"/>
+    <rect x="742" y="146" width="4" height="4" fill="#1a0a00" stroke="#5a3010" stroke-width="0.8"/>
+    <rect x="748" y="146" width="4" height="4" fill="#1a0a00" stroke="#5a3010" stroke-width="0.8"/>
+    <!-- ominous glow at base -->
+    <ellipse cx="744" cy="178" rx="12" ry="4" fill="#300000" opacity="0.5"/>
+  </g>
+  <text x="748" y="192" text-anchor="middle"
+        font-size="9" fill="#7a3020" letter-spacing="0.08em"
+        font-family="Georgia, serif">Moonrise Towers</text>
+  <text x="748" y="202" text-anchor="middle"
+        font-size="7" fill="#4a2010" letter-spacing="0.05em"
+        font-family="Georgia, serif">(visible, not entered)</text>
+
+  <!-- ── Reithwin Town ── -->
+  <g>
+    <rect x="615" y="310" width="9" height="11" fill="#2a1a08" stroke="#6a4a20" stroke-width="0.8"/>
+    <polygon points="615,310 624,310 619.5,303" fill="#1a1008" stroke="#5a3a18" stroke-width="0.8"/>
+    <rect x="626" y="313" width="7" height="8" fill="#2a1a08" stroke="#6a4a20" stroke-width="0.8"/>
+    <polygon points="626,313 633,313 629.5,307" fill="#1a1008" stroke="#5a3a18" stroke-width="0.8"/>
+  </g>
+  <text x="624" y="334" text-anchor="middle"
+        font-size="9" fill="#c9a060" letter-spacing="0.08em"
+        font-family="Georgia, serif">Reithwin Town</text>
+
+  <!-- ── House of Healing ── (CURRENT LOCATION) ── -->
+  <g filter="url(#glow-gold)">
+    <!-- Building -->
+    <rect x="624" y="420" width="16" height="18" fill="#3a2010" stroke="#c09040" stroke-width="1.5"/>
+    <polygon points="624,420 640,420 632,410" fill="#2a1808" stroke="#b08030" stroke-width="1.5"/>
+    <!-- Cross symbol on building -->
+    <rect x="630" y="424" width="4" height="10" fill="#c09040" opacity="0.8"/>
+    <rect x="627" y="427" width="10" height="4" fill="#c09040" opacity="0.8"/>
+    <!-- Outer glow pulse ring -->
+    <circle cx="632" cy="429" r="18" fill="none" stroke="#e0b050" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="632" cy="429" r="24" fill="none" stroke="#c09040" stroke-width="0.6" opacity="0.25"/>
+  </g>
+  <text x="632" y="458" text-anchor="middle"
+        font-size="9.5" fill="#e8c870" letter-spacing="0.08em"
+        font-family="Georgia, serif" font-weight="bold">House of Healing</text>
+
+  <!-- CURRENT LOCATION marker -->
+  <g filter="url(#glow-gold)">
+    <!-- Pin -->
+    <circle cx="632" cy="410" r="6" fill="#e8c030" stroke="#f0d040" stroke-width="1.5"/>
+    <line x1="632" y1="416" x2="632" y2="425" stroke="#e8c030" stroke-width="2"/>
+    <!-- Pulsing ring animation -->
+    <circle cx="632" cy="410" r="10" fill="none" stroke="#f0d040" stroke-width="1" opacity="0.6">
+      <animate attributeName="r" values="10;18;10" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="645" y="407" text-anchor="start"
+        font-size="8" fill="#f0d040" letter-spacing="0.08em"
+        font-family="Georgia, serif" font-weight="bold">← YOU ARE HERE</text>
+
+  <!-- Roads in Act 2 -->
+  <!-- Last Light → Reithwin -->
+  <path d="M 621 201 Q 622 255 622 308" fill="none"
+        stroke="#3a2a10" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+  <!-- Reithwin → House of Healing -->
+  <path d="M 624 334 Q 625 380 628 418" fill="none"
+        stroke="#3a2a10" stroke-width="2" stroke-dasharray="5,4" opacity="0.6"/>
+
+  <!-- Entry point from Act 1 surface (Mountain Pass road) -->
+  <path d="M 560 120 Q 580 130 614 185" fill="none"
+        stroke="#4a3a1a" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.4"/>
+  <text x="567" y="115" text-anchor="start"
+        font-size="7.5" fill="#4a3a1a" letter-spacing="0.08em"
+        font-family="Georgia, serif">Mountain Pass</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  UNVISITED REGIONS (fog of war)               -->
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- Bottom of map — future content, fogged -->
+  <rect x="40" y="530" width="760" height="110" fill="#0a0a0c" rx="2"/>
+  <rect x="40" y="530" width="760" height="110"
+        fill="none" stroke="#1a1a1c" stroke-width="1" rx="2"/>
+  <text x="420" y="585" text-anchor="middle"
+        font-size="10" fill="#2a2a2c" letter-spacing="0.3em"
+        font-family="Georgia, serif">∿  SHROUDED IN FOG OF WAR  ∿</text>
+  <text x="420" y="600" text-anchor="middle"
+        font-size="8" fill="#1e1e20" letter-spacing="0.15em"
+        font-family="Georgia, serif">— uncharted territory ahead —</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  COMPASS ROSE                                  -->
+  <!-- ══════════════════════════════════════════════ -->
+  <g transform="translate(755, 560)" opacity="0.7">
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#5a4a2a" stroke-width="0.8"/>
+    <!-- N -->
+    <polygon points="0,-15 -4,-5 4,-5" fill="#c9a060"/>
+    <!-- S -->
+    <polygon points="0,15 -3,5 3,5" fill="#6a5030"/>
+    <!-- E -->
+    <polygon points="15,0 5,-3 5,3" fill="#6a5030"/>
+    <!-- W -->
+    <polygon points="-15,0 -5,-3 -5,3" fill="#6a5030"/>
+    <circle cx="0" cy="0" r="2.5" fill="#c9a060"/>
+    <text x="0" y="-20" text-anchor="middle" font-size="9" fill="#c9a060" font-family="Georgia">N</text>
+    <text x="0" y="27" text-anchor="middle" font-size="8" fill="#6a5030" font-family="Georgia">S</text>
+    <text x="25" y="3" text-anchor="middle" font-size="8" fill="#6a5030" font-family="Georgia">E</text>
+    <text x="-25" y="3" text-anchor="middle" font-size="8" fill="#6a5030" font-family="Georgia">W</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!--  ACT / REGION DIVIDER LINE                     -->
+  <!-- ══════════════════════════════════════════════ -->
+  <line x1="560" y1="40" x2="560" y2="530"
+        stroke="#3a2a10" stroke-width="1.5" stroke-dasharray="8,5" opacity="0.6"/>
+
+  <!-- Divider label -->
+  <text x="558" y="300" text-anchor="end"
+        font-size="7.5" fill="#3a2a10" letter-spacing="0.05em"
+        transform="rotate(-90, 558, 300)"
+        font-family="Georgia, serif">ACT I ←→ ACT II</text>
+
+</svg>
+</div>
+
+<div class="legend">
+  <div class="legend-item">
+    <div class="legend-swatch" style="background:#2e3d1e; border:1px solid #3a5020;"></div>
+    Act I — Surface (Complete)
+  </div>
+  <div class="legend-item">
+    <div class="legend-swatch" style="background:#1a1230; border:1px solid #2a1a4a;"></div>
+    Act I — Underdark (Complete)
+  </div>
+  <div class="legend-item">
+    <div class="legend-swatch" style="background:#1c1408; border:1px solid #4a2a0a;"></div>
+    Act II — Shadow-Cursed Lands (Active)
+  </div>
+  <div class="legend-item">
+    <div class="legend-swatch" style="background:#0a0a0c; border:1px solid #2a2a2c;"></div>
+    Fog of War
+  </div>
+  <div class="legend-item">
+    <div class="legend-swatch" style="background:#e8c030; border-radius:50%;"></div>
+    Current Location
+  </div>
+</div>
+
+<div class="note">No spoilers — only territories visited by Kai &amp; Stefan are shown.</div>
+
+</body>
+</html>

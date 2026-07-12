@@ -347,7 +347,7 @@ Use this before respeccing:
 
 **Markers:** ⭐ ⏱️
 
-These sources were used as reference points, then adjusted to the local party notes in `bg3-expert/characters/` and `bg3-expert/party/strategy.md`.
+These sources were used as reference points, then adjusted to the local party notes in `characters/` and `party/strategy.md`.
 
 | Source | Used for | Review decision |
 |---|---|---|

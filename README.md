@@ -98,6 +98,7 @@ These notes reflect the latest extracted save and can change whenever the save i
 - Pin this note as the home page.
 - Keep the numbered filenames so the file explorer preserves chapter order.
 - Treat the Appendix as the final chapter; add new player-facing chapters before it.
+- The vault root also holds the live campaign state — `characters/`, `party/strategy.md`, and `session-notes.md` — alongside the handbook chapters in `docs/`.
 
 > [!quote] Guiding principle
 > I wish I had known this earlier.
