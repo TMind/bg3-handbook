@@ -24,6 +24,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 - Refreshed the current save snapshot, item snapshot, and readiness audit from `Wyrms Crossing - 98h 15m`.
 - Updated active-party buff coverage: the main party is grouped in `WYR_Bridge_SUB`, Death Ward and Freedom of Movement are active on all four main characters, and Aid is still missing from Lae'zel.
 - Updated visible inventory/resource counts for the latest extracted save, including Bloodlust, Viciousness, Revivify, Potion of Speed, Globe, Conjure Elemental, and healing-potion stock.
+- Added current-holder information to the item snapshot's resource and best-use tables.
 
 ### Verified
 

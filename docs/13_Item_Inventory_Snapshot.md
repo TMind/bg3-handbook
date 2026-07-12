@@ -39,6 +39,8 @@ This note summarizes practical active-party and camp-storage items visible in th
 - Exact equipped slots still need a deeper pass; this is a carried/available snapshot, not a final gear-slot audit.
 - Rarity was removed because the save does not expose a reliable full rarity field.
 - Character totals below are position-based item records from the latest extracted save. Exact category labels are approximate because the save exposes internal item stat names, not a polished inventory UI export.
+- Current holder fields are also position-based. `Elsewhere / storage` means the item is visible in the save but not at Stefan, Lae'zel, Kao, or Astarion's active-party position.
+- In the character sections, the section name is the current holder unless a row explicitly says otherwise.
 
 ## Rating Key
 
@@ -59,20 +61,20 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Current Resource Spot Check
 
-| Resource | Latest visible count | Practical note |
-|---|---:|---|
-| Scroll of Revivify | 10 | Strong emergency stock; keep at least two holders. |
-| Potion of Speed | 3 | Enough for one serious opener, not for repeated casual use. |
-| Elixir of Bloodlust | 3 | Good stock for Lae'zel; choose before initiative matters. |
-| Elixir of Viciousness | 1 | Currently visible with Astarion; decide whether he or Lae'zel wants the crit plan. |
-| Potion of Invisibility | 7 | Plenty for scouting, resets, and emergency exits. |
-| Scroll of Globe of Invulnerability | 2 | Keep on Kao for hard fights. |
-| Scroll of Conjure Elemental | 3 | Good summon stock for action economy. |
-| Healing potions | 39 | Split before leaving camp; Lae'zel should not be under-supplied. |
+| Resource | Latest visible count | Current holder(s) | Practical note |
+|---|---:|---|---|
+| Scroll of Revivify | 10 | Kao 1; Elsewhere / storage 9 | Strong emergency stock; keep at least two holders. |
+| Potion of Speed | 3 | Lae'zel 1; Elsewhere / storage 2 | Enough for one serious opener, not for repeated casual use. |
+| Elixir of Bloodlust | 3 | Stefan 1; Lae'zel 1; Elsewhere / storage 1 | Good stock for Lae'zel; choose before initiative matters. |
+| Elixir of Viciousness | 1 | Astarion 1 | Decide whether Astarion or Lae'zel wants the crit plan. |
+| Potion of Invisibility | 7 | Kao 1; Elsewhere / storage 6 | Plenty for scouting, resets, and emergency exits. |
+| Scroll of Globe of Invulnerability | 2 | Kao 2 | Keep on Kao for hard fights. |
+| Scroll of Conjure Elemental | 3 | Kao 1; Elsewhere / storage 2 | Good summon stock for action economy. |
+| Healing potions | 39 | Stefan 8; Lae'zel 2; Kao 3; Astarion 3; Elsewhere / storage 23 | Split before leaving camp; Lae'zel should not be under-supplied. |
 
 ## Best Immediate Uses ^inventory-best-uses
 
-| Use | Item | Character | Best fit | Note |
+| Use | Item | Current holder | Best fit | Note |
 |---|---|---|---|---|
 | ⭐⭐⭐ | Blood of Lathander | Stefan | Stefan | cleric aura / safety |
 | ⭐⭐⭐ | Devotee's Mace | Stefan | Stefan | healing aura swap |
@@ -181,7 +183,6 @@ This note summarizes practical active-party and camp-storage items visible in th
 |---|---|---:|---|---|
 | ⭐⭐⭐ | Elixir of Bloodlust | 1 | Lae'zel | kill chains |
 | ⭐⭐⭐ | Potion of Speed | 1 | Lae'zel / group | decisive Haste |
-| ⭐⭐ | Elixir of Viciousness | 1 | Lae'zel / Astarion | crit support |
 | ⭐⭐ | Potion of Angelic Reprieve | 2 | Caster / martial | short recovery |
 
 ## Kao ^inventory-kao
