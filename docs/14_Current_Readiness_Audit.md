@@ -36,17 +36,17 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 
 **Markers:** ⭐⭐⭐ ⚠️ ⚔️
 
-The party is **mostly prepared, but not hard-fight ready yet**.
+The party is **mostly prepared and close to hard-fight ready**.
 
 | Area | Status | Reason |
 |---|---|---|
-| Core party | ⚠️ Needs attention | The save has Stefan and Lae'zel in camp while Kao and Astarion are outside camp. Regroup before starting a serious fight. |
+| Core party | ✅ Good | Stefan, Lae'zel, Kao, and Astarion are grouped in `WYR_Bridge_SUB`; the skeleton summon is also nearby. |
 | Daily movement | ✅ Good | Longstrider is active on Stefan, Lae'zel, Kao, and Astarion. |
-| Maximum HP | ⚠️ Patchy | Aid level 3 is active on Stefan, Kao, and Astarion, but not currently detected on Lae'zel. |
-| Death protection | ⚠️ Patchy | Death Ward is active on Lae'zel and Kao, but not currently detected on Stefan or Astarion. |
-| Control protection | ⚠️ Patchy | Freedom of Movement is active on Stefan, Lae'zel, and Kao, but not currently detected on Astarion. |
+| Maximum HP | ⚠️ Minor gap | Aid level 3 is active on Stefan, Kao, and Astarion, but not currently detected on Lae'zel. |
+| Death protection | ✅ Good | Death Ward is active on Stefan, Lae'zel, Kao, and Astarion. |
+| Control protection | ✅ Good | Freedom of Movement is active on Stefan, Lae'zel, Kao, and Astarion. |
 | Emergency recovery | ✅ Strong | Revivify scroll stock is strong, but most scrolls are not on active characters. |
-| Burst resources | ✅ Good | Potion of Speed, Elixir of Bloodlust, Globe scrolls, and Conjure Elemental scrolls are available. |
+| Burst resources | ✅ Good | Potion of Speed, Elixir of Bloodlust, Globe scrolls, and Conjure Elemental scrolls are available. Bloodlust is not active yet. |
 | Healing synergy | ✅ Improved | Devotee's Mace is now with Stefan; Hellrider's Pride is also with Stefan. |
 
 ## Active Buff Coverage
@@ -55,10 +55,10 @@ The party is **mostly prepared, but not hard-fight ready yet**.
 
 | Character | Confirmed useful buffs | Missing before hard fights |
 |---|---|---|
-| Stefan | Longstrider, Aid level 3, Freedom of Movement, Warding Bond, Darkvision, Shield of Devotion spell slot | Death Ward if he is staying active |
-| Lae'zel | Longstrider, Death Ward, Freedom of Movement, Darkvision | Aid; consider Warding Bond only if the caster can absorb the damage |
-| Kao | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Mage Armor, Warding Bond, Darkvision, Animal Speaking, Shovel flag | No major daily-buff gap detected |
-| Astarion | Longstrider, Aid level 3, Darkvision, Cat's Grace | Death Ward; Freedom of Movement if control or restraint is expected |
+| Stefan | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Warding Bond, Darkvision, Shield of Devotion spell slot, Pass Without Trace | No major daily-buff gap detected |
+| Lae'zel | Longstrider, Death Ward, Freedom of Movement, Darkvision, Pass Without Trace, critical-execution ring support | Aid; choose and drink the intended elixir |
+| Kao | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Mage Armor, Warding Bond, Darkvision, Animal Speaking, Fox's Cunning, Shovel flag, Pass Without Trace | No major daily-buff gap detected |
+| Astarion | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Darkvision, Cat's Grace, Pass Without Trace aura, happy status | No major daily-buff gap detected |
 
 ## Available Camp-Buff Casters ^available-buff-casters
 
@@ -118,14 +118,15 @@ Default principle: let camp characters pay for daily utility first, then keep th
 |---|---:|---|---|
 | Scroll of Revivify | 10 | 1 with Kao, 9 elsewhere | Strong stock; distribute before hard fights |
 | Potion of Speed | 3 | 1 with Lae'zel, 2 elsewhere | Good for one serious opener; low for repeated use |
-| Elixir of Bloodlust | 2 | 1 with Lae'zel, 1 elsewhere | Good for Lae'zel; scarce |
-| Elixir of Vigilance | 1 | Elsewhere | Decide who needs first-turn reliability |
+| Elixir of Bloodlust | 3 | 1 with Lae'zel, 2 elsewhere | Good for Lae'zel; choose before initiative matters |
+| Elixir of Viciousness | 1 | With Astarion | Crit-support option for Astarion or Lae'zel |
+| Elixir of Vigilance | 1 | Elsewhere / not in active-party inventory | Decide who needs first-turn reliability if it is found in storage |
 | Potion of Invisibility | 7 | 1 with Kao, 6 elsewhere | Move at least 1-2 to Astarion |
 | Scroll of Globe of Invulnerability | 2 | Both with Kao | Excellent boss-defense stock |
 | Scroll of Conjure Elemental | 3 | 1 with Kao, 2 elsewhere | Good summon stock |
-| Arcane Cultivation elixirs | 5 | Mostly with Kao / storage | Consolidate on Kao |
-| Remedial Potion | 3 | Elsewhere | Distribute one to a non-caster |
-| Healing potions | 38 | Stefan, Kao, Astarion, storage | Give Lae'zel a stack before leaving camp |
+| Arcane Cultivation / Meditation elixirs | Several | Mostly with Kao / storage | Consolidate caster day-extension tools on Kao |
+| Remedial Potion | Not visible in the refreshed spot check | Elsewhere if still present in game | Search storage before relying on it |
+| Healing potions | 39 | Stefan, Kao, Astarion, storage | Give Lae'zel a stack before leaving camp |
 
 ## Gear and Synergy Checks ^gear-synergies
 
@@ -145,13 +146,13 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 **Markers:** ⭐⭐⭐ ⏱️ ⚔️
 
-1. Regroup Stefan, Lae'zel, Kao, and Astarion into the intended active party.
-2. Use Shadowheart or Stefan to cast or refresh **Aid** so Lae'zel is included.
-3. Use Shadowheart, Stefan, or a Bard 10 Magical Secrets pick to add **Death Ward** to Stefan and Astarion if enough camp-caster resources remain.
-4. Use Shadowheart, Stefan, or a Bard 7+ hireling to add **Freedom of Movement** to Astarion before control-heavy areas.
-5. Move one Revivify scroll to Stefan, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
-6. Move one or two Potion of Invisibility items to Astarion.
-7. Give Lae'zel a small healing-potion stack.
+1. Use Shadowheart or Stefan to cast or refresh **Aid** so Lae'zel is included.
+2. Move one Revivify scroll to Stefan, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
+3. Move one or two Potion of Invisibility items to Astarion.
+4. Give Lae'zel a small healing-potion stack.
+5. Decide whether Lae'zel drinks Bloodlust now or saves it for a known serious fight.
+6. Decide whether Astarion keeps the Viciousness elixir plan or hands it to Lae'zel.
+7. Confirm Scratch and the quasit are intentionally away from the bridge group, or resummon/regroup them if wanted.
 8. Decide whether Stefan starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
 
 ## Before a Hard Fight ^before-hard-fight
@@ -174,9 +175,9 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 | Field | Current value |
 |---|---|
-| Save name | Arm Thy Ally |
-| Save modified | 2026-07-07 11:51:01 +02:00 |
-| Synced into handbook | 2026-07-07 12:20:57 +02:00 |
+| Save name | Wyrms Crossing - 98h 15m |
+| Save modified | 2026-07-13 01:25:09 +02:00 |
+| Synced into handbook | 2026-07-13 01:25:41 +02:00 |
 | Game version | 4.1.1.7209685 |
 | Difficulty | DifficultyMedium / RulesetLarian |
 | Source record | `tools/save-extract/source_manifest.json` |
@@ -187,5 +188,6 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 - This audit used the current `.lsf` index, not a refreshed `Globals.lsx` text export.
 - Active buff detection is reliable for the four named party members because it reads their current status managers.
+- The broader save contains many `DYING` statuses on old or non-active entities; the active-party status managers for the four named characters do not show `DYING` in this save.
 - Item counts are reliable for practical stock checks, but exact equipped slots still need in-game confirmation.
 - Camp storage and world/storage-like inventories are summarized as “elsewhere” rather than by raw container or position.

@@ -17,6 +17,20 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
+## 2026-07-13
+
+### Changed
+
+- Refreshed the current save snapshot, item snapshot, and readiness audit from `Wyrms Crossing - 98h 15m`.
+- Updated active-party buff coverage: the main party is grouped in `WYR_Bridge_SUB`, Death Ward and Freedom of Movement are active on all four main characters, and Aid is still missing from Lae'zel.
+- Updated visible inventory/resource counts for the latest extracted save, including Bloodlust, Viciousness, Revivify, Potion of Speed, Globe, Conjure Elemental, and healing-potion stock.
+
+### Verified
+
+- Synced and extracted `Wyrms Crossing - 98h 15m`, modified 2026-07-13 01:25:09 +02:00.
+- Mirrored the save into `saves/Stefan-25121262363__Wyrms Crossing - 98h 15m/`.
+- Rebuilt the local `.lsf` index for the refreshed snapshot.
+
 ## 2026-07-12
 
 ### Changed

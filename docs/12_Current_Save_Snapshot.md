@@ -24,45 +24,49 @@ This note summarizes the current save state extracted from the local save file. 
 
 ## Save
 
-- Save name: `Arm Thy Ally`
-- Save modified: `2026-07-07 11:51:01 +02:00`
+- Save name: `Wyrms Crossing - 98h 15m`
+- Save modified: `2026-07-13 01:25:09 +02:00`
+- Synced into handbook: `2026-07-13 01:25:41 +02:00`
 - Game version: `4.1.1.7209685`
 - Difficulty: `DifficultyMedium / RulesetLarian`
 - Current region: `BGO_Main_A`
 
 ## Active Party
 
-- Stefan: Level 10 Cleric / Death Domain (Drow Cleric)
-- Lae'zel: Level 10 Fighter / Battle Master (frontline fighter)
-- Kao: Level 10 Wizard / Conjuration School (human mage)
-- Astarion: Level 10 Rogue / Thief (scout / lockpicker)
-- Current save also has a skeleton summon and Scratch active.
-- Stefan and Lae'zel are currently in camp; Kao and Astarion are outside camp. Regroup before a serious fight.
+| Character | Level / build | XP | Current subregion | Practical note |
+|---|---|---:|---|---|
+| Stefan | Level 10 Cleric / Death Domain | 61,597 total; 5,597 into level | `WYR_Bridge_SUB` | Grouped with the main party. |
+| Lae'zel | Level 10 Fighter / Battle Master | 61,597 total; 5,597 into level | `WYR_Bridge_SUB` | Grouped with the main party; no active Bloodlust detected. |
+| Kao | Level 10 Wizard / Conjuration School | 61,197 total; 5,197 into level | `WYR_Bridge_SUB` | Grouped with the main party; no active `DYING` status detected in the active-party block. |
+| Astarion | Level 10 Rogue / Thief | 61,597 total; 5,597 into level | `WYR_Bridge_SUB` | Grouped with the main party and has stealth support active. |
+
+Current save also has a skeleton summon grouped with the party. Scratch and Shovel / quasit are active but currently appear in `WYR_Flophouse_SUB`, away from the bridge group.
 
 ## Active Practical Buffs
 
 ### Stefan
 
-- Blood of Lathander light aura
-- Blood of Lathander self-revive resource
 - Shield of Devotion extra spell slot
 - Warding Bond
 - Darkvision
 - Longstrider
 - Aid, level 3
 - Freedom of Movement
+- Death Ward
+- Pass Without Trace
 
 ### Lae'zel
 
 - Killer's Sweetheart / critical execution ring effect
+- Partial ceremorphosis status
 - Freedom of Movement
 - Death Ward
 - Darkvision
 - Longstrider
+- Pass Without Trace
 
 ### Kao
 
-- Absorb Elements resource
 - Darkvision
 - Death Ward
 - Freedom of Movement
@@ -72,6 +76,8 @@ This note summarizes the current save state extracted from the local save file. 
 - Aid, level 3
 - Can summon Shovel / familiar flag
 - Potion of Animal Speaking
+- Fox's Cunning
+- Pass Without Trace
 
 ### Astarion
 
@@ -79,17 +85,22 @@ This note summarizes the current save state extracted from the local save file. 
 - Darkvision
 - Longstrider
 - Aid, level 3
+- Death Ward
+- Freedom of Movement
+- Pass Without Trace aura
+- Astarion happy status
 
 ## Confirmed Item-Sourced Buffs
 
-- Stefan has Blood of Lathander and Devotee's Mace available.
 - Stefan has Shield of Devotion spell-slot support active.
 - Lae'zel has Killer's Sweetheart / critical execution ring support active.
 - Astarion has Cat's Grace / Graceful Cloth support active.
+- Astarion has Pass Without Trace support active.
 
 ## Extraction Notes
 
 - The source save for generated snapshots is recorded in `tools/save-extract/source_manifest.json`.
 - Active buff extraction is reliable because it reads the active character status managers directly.
 - Inventory extraction works, but exact equipped-slot mapping still needs a separate pass; many carried items share the character position.
+- The broader save contains many `DYING` statuses on old or non-active entities. The active-party status managers for Stefan, Lae'zel, Kao, and Astarion do not show `DYING` in this save.
 - Current hard-fight readiness is summarized in [Current Readiness Audit](14_Current_Readiness_Audit.md).
