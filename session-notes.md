@@ -12,7 +12,7 @@ Kai (Kao), Stefan, Lae'zel, Gale → later swapped Gale for Astarion
 ### Key decisions
 - **Swapped Gale → Astarion**: gained stealth, trapping, lockpicking; lost AoE. Gale remains available in camp.
 - **Kept Lae'zel over Shadowheart**: Shadowheart would remove the frontline tank; Lae'zel is essential for the Spirit Guardians strategy.
-- **Sussur Bark collected** at the Sussur Tree — usable for Masterwork Weapon crafting at the Blighted Village forge.
+- **Sussur Bark collected** at the Sussur Tree, later crafted into the **Sussur Dagger** at the Blighted Village forge — currently held by Astarion for caster silence.
 
 ### Lae'zel feat progression (Act 1)
 - GWM taken
@@ -32,7 +32,6 @@ Silent Library completed. **Nightsong freed.** **Shadowheart spared the Nightson
 Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), Stefan (Death Domain Cleric)
 
 ### Open decisions
-- **Lae'zel Level 7 feat**: Decision between +1 STR/+1 CON (recommended — brings STR to 20) vs Sentinel (strong party synergy but better after STR is capped). Sentinel was also seriously considered.
 - **Stefan's Warding Bond**: Currently on Lae'zel. Keep Stefan's HP topped off as a result.
 
 ### Mechanics learned this session
@@ -60,5 +59,4 @@ Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter
 ---
 
 ## Open Questions
-- What Masterwork weapon to craft from the Sussur Bark?
-- Lae'zel level 7 feat: finalize +STR/CON vs Sentinel
+- Lae'zel is now Fighter 10 — the level 7/8 feat question has passed. Exact feat/maneuver picks aren't reliably readable from the save extract; check her in-game character sheet if it matters for a build recommendation.

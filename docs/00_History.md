@@ -17,6 +17,13 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
+## 2026-07-18
+
+### Changed
+
+- Resolved the stale Sussur Bark open question in `session-notes.md`: the bark was crafted into the Sussur Dagger, currently held by Astarion.
+- Removed the outdated Lae'zel level 7 feat decision from `session-notes.md` and `11_Main_Character_Builds.md` — she is now Fighter 10, so the decision point has passed. Noted that exact feat/maneuver picks aren't reliably readable from the save extract and should be verified in game.
+
 ## 2026-07-13
 
 ### Changed

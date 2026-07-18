@@ -68,8 +68,8 @@ These are the current main builds from the local character notes. The party plan
 | Current active party is Kao, Astarion, Lae'zel, Stefan | Builds should support the aura blender rather than isolated damage races |
 | Gale remains available in camp | Use him when AoE damage matters more than stealth and trap utility |
 | Shadowheart remains available in camp | Use her as support/radiant backup, not as a Lae'zel replacement unless the frontline plan changes |
-| Sussur Bark is available | Keep the Masterwork Weapon choice as an open utility decision |
-| Lae'zel level 7 feat was still open in local notes | Strength to 20 is the practical first recommendation; Sentinel comes after accuracy is solved |
+| Sussur Bark was crafted into the Sussur Dagger, held by Astarion | Masterwork Weapon decision resolved; dagger provides caster silence utility |
+| Lae'zel is now Fighter 10 | Level 7/8 feat question has passed; exact feat/maneuver picks aren't reliably readable from the save extract — verify in game before assuming STR 20 or Sentinel |
 
 ## ⚔️ Lae'zel: Battle Master Frontline Pin ^laezel-build
 
