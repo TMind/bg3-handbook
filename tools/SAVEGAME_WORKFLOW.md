@@ -4,24 +4,24 @@ Purpose: keep handbook audits based on the newest real BG3 save, without manuall
 
 ## Source
 
-The original saves live on **Stefan's (tmind's) Mac**, under his Steam userdata:
+The original saves live on **tmind's Mac**, under his Steam userdata:
 
 `~/Library/Application Support/Steam/userdata/13763549/1086940/remote/_SAVE_Public/Savegames/Story`
 
 The sync tool scans that path plus the common Larian profile save folders by default.
 
-### On Kai's machine
+### On Kao's machine
 
-Kai has no BG3 saves in Steam userdata — that folder holds profile data only, no `.lsv` files — so the default scan finds nothing and the bare `sync_latest_save.py` will not work.
+Kao has no BG3 saves in Steam userdata — that folder holds profile data only, no `.lsv` files — so the default scan finds nothing and the bare `sync_latest_save.py` will not work.
 
-Kai's copies of Stefan's saves live in the repo's gitignored `saves/` folder instead. It uses the same `folder/name.lsv` layout, so point the tool at it explicitly:
+Kao's copies of TMind's saves live in the repo's gitignored `saves/` folder instead. It uses the same `folder/name.lsv` layout, so point the tool at it explicitly:
 
 ```sh
 python3 tools/sync_latest_save.py --source-root saves --list 5
 python3 tools/sync_latest_save.py --source-root saves
 ```
 
-Everything downstream (extract, manifest, index) behaves the same. The limitation is upstream: `saves/` only refreshes when a new save is copied over from tmind, so Kai cannot pull fresh in-game state on his own. Every command below assumes `--source-root saves` when run on Kai's machine.
+Everything downstream (extract, manifest, index) behaves the same. The limitation is upstream: `saves/` only refreshes when a new save is copied over from tmind, so Kao cannot pull fresh in-game state on his own. Every command below assumes `--source-root saves` when run on Kao's machine.
 
 ## First-Time Setup
 

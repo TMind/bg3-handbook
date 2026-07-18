@@ -10,7 +10,7 @@
 - **Class**: Rogue 10 / Thief
 - **Race**: High Elf
 - **XP**: 58,477 total; 2,477 into current level
-- **Position**: grouped with Stefan, Lae'zel, Kao, skeleton summon, and Scratch
+- **Position**: grouped with TMind, Lae'zel, Kao, skeleton summon, and Scratch
 
 ## Detected Active Effects
 

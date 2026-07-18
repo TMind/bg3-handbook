@@ -40,14 +40,14 @@ The party is **mostly prepared and close to hard-fight ready**.
 
 | Area | Status | Reason |
 |---|---|---|
-| Core party | ✅ Good | Stefan, Lae'zel, Kao, and Astarion are grouped in `WYR_Bridge_SUB`; the skeleton summon is also nearby. |
-| Daily movement | ✅ Good | Longstrider is active on Stefan, Lae'zel, Kao, and Astarion. |
-| Maximum HP | ⚠️ Minor gap | Aid level 3 is active on Stefan, Kao, and Astarion, but not currently detected on Lae'zel. |
-| Death protection | ✅ Good | Death Ward is active on Stefan, Lae'zel, Kao, and Astarion. |
-| Control protection | ✅ Good | Freedom of Movement is active on Stefan, Lae'zel, Kao, and Astarion. |
+| Core party | ✅ Good | TMind, Lae'zel, Kao, and Astarion are grouped in `WYR_Bridge_SUB`; the skeleton summon is also nearby. |
+| Daily movement | ✅ Good | Longstrider is active on TMind, Lae'zel, Kao, and Astarion. |
+| Maximum HP | ⚠️ Minor gap | Aid level 3 is active on TMind, Kao, and Astarion, but not currently detected on Lae'zel. |
+| Death protection | ✅ Good | Death Ward is active on TMind, Lae'zel, Kao, and Astarion. |
+| Control protection | ✅ Good | Freedom of Movement is active on TMind, Lae'zel, Kao, and Astarion. |
 | Emergency recovery | ✅ Strong | Revivify scroll stock is strong, but most scrolls are not on active characters. |
 | Burst resources | ✅ Good | Potion of Speed, Elixir of Bloodlust, Globe scrolls, and Conjure Elemental scrolls are available. Bloodlust is not active yet. |
-| Healing synergy | ✅ Improved | Devotee's Mace is now with Stefan; Hellrider's Pride is also with Stefan. |
+| Healing synergy | ✅ Improved | Devotee's Mace is now with TMind; Hellrider's Pride is also with TMind. |
 
 ## Active Buff Coverage
 
@@ -55,7 +55,7 @@ The party is **mostly prepared and close to hard-fight ready**.
 
 | Character | Confirmed useful buffs | Missing before hard fights |
 |---|---|---|
-| Stefan | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Warding Bond, Darkvision, Shield of Devotion spell slot, Pass Without Trace | No major daily-buff gap detected |
+| TMind | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Warding Bond, Darkvision, Shield of Devotion spell slot, Pass Without Trace | No major daily-buff gap detected |
 | Lae'zel | Longstrider, Death Ward, Freedom of Movement, Darkvision, Pass Without Trace, critical-execution ring support | Aid; choose and drink the intended elixir |
 | Kao | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Mage Armor, Warding Bond, Darkvision, Animal Speaking, Fox's Cunning, Shovel flag, Pass Without Trace | No major daily-buff gap detected |
 | Astarion | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Darkvision, Cat's Grace, Pass Without Trace aura, happy status | No major daily-buff gap detected |
@@ -68,7 +68,7 @@ This table is about **spell access**, not currently active buffs. It answers who
 
 | Character | Current role | Camp-buff spells or features they can provide | Practical note |
 |---|---|---|---|
-| Stefan | Death Cleric 10 | Aid, Protection from Poison, Warding Bond, Death Ward, Freedom of Movement; Divine Intervention: Arm Thy Servant if unused | Strong Cleric buffer, but using him as the active cleric means these spell slots come from the adventuring party. Heroes' Feast requires Cleric 11. |
+| TMind | Death Cleric 10 | Aid, Protection from Poison, Warding Bond, Death Ward, Freedom of Movement; Divine Intervention: Arm Thy Servant if unused | Strong Cleric buffer, but using him as the active cleric means these spell slots come from the adventuring party. Heroes' Feast requires Cleric 11. |
 | Shadowheart | Camp Light Cleric 10 | Aid, Protection from Poison, Warding Bond, Death Ward, Freedom of Movement; Divine Intervention: Arm Thy Servant if unused | Best current camp source for Cleric buffs because she can spend camp spell slots and then leave the active party. Heroes' Feast requires Cleric 11. |
 | Kao | Human Wizard 10 | Longstrider, Mage Armor, Darkvision, See Invisibility; short utility such as Feather Fall, Enhance Leap, Invisibility if known and prepared | Excellent Wizard utility buffer. Does not naturally cover Aid, Warding Bond, Death Ward, Freedom of Movement, or Heroes' Feast. |
 | Gale | Camp Wizard, if used | Longstrider, Mage Armor, Darkvision, See Invisibility; short utility if known and prepared | Same practical job as Kao: free the active Wizard from routine utility casting. |
@@ -86,16 +86,16 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 | Buff or setup | Best caster | Main targets | Why this assignment is best |
 |---|---|---|---|
-| Longstrider | Bard hireling first; Gale or Kao as backup | Stefan, Lae'zel, Kao, Astarion, summons | Ritual casting makes this cheap. A camp Bard or camp Wizard keeps Kao's active resources cleaner. |
+| Longstrider | Bard hireling first; Gale or Kao as backup | TMind, Lae'zel, Kao, Astarion, summons | Ritual casting makes this cheap. A camp Bard or camp Wizard keeps Kao's active resources cleaner. |
 | Mage Armor | Gale if available; Kao as backup | Kao if unarmored; eligible summons or unarmored allies | Wizard utility job. Skip armored characters because the spell does nothing for them. |
 | Darkvision | Gale or Kao | Anyone without natural or item-based Darkvision | Useful exploration comfort. Prioritize the party member who actually lacks Darkvision. |
 | See Invisibility | Gale or Kao | Kao or the character expected to reveal invisible enemies | Keep this on the scout/caster who is most likely to notice or expose targets. |
-| Aid | Shadowheart first; Stefan only as backup | All four active characters, then summons if included | Shadowheart can spend camp slots while Stefan keeps his Cleric slots for the active day. Upcast when practical. |
-| Protection from Poison | Shadowheart first; Stefan only if poison risk is high and she is unavailable | Frontline and anyone likely to fail poison saves | Situational daily buff. Do not spend time on it every day unless the area calls for it. |
-| Warding Bond | Shadowheart, selectively | Lae'zel first; optionally Stefan or Astarion for a hard fight | Strong but risky because Shadowheart receives shared damage. Use on one key target unless her HP and healing setup are managed. |
-| Death Ward | Shadowheart first; Bard 10 Magical Secrets or Stefan as backup | Lae'zel, Stefan, Kao, then Astarion | Best insurance on characters who must not drop early. Use Stefan only if camp sources are exhausted. |
-| Freedom of Movement | Bard hireling if Bard 7+; Shadowheart second; Stefan backup | Lae'zel and Astarion first, then Stefan/Kao if control is expected | Bard is a clean source if available. Prioritize melee and mobility-dependent characters. |
-| Heroes' Feast | Future Shadowheart or Stefan at Cleric 11 | Whole party and summons | Not available from current Cleric 10 setup. Make this the next major daily-buff upgrade. |
+| Aid | Shadowheart first; TMind only as backup | All four active characters, then summons if included | Shadowheart can spend camp slots while TMind keeps his Cleric slots for the active day. Upcast when practical. |
+| Protection from Poison | Shadowheart first; TMind only if poison risk is high and she is unavailable | Frontline and anyone likely to fail poison saves | Situational daily buff. Do not spend time on it every day unless the area calls for it. |
+| Warding Bond | Shadowheart, selectively | Lae'zel first; optionally TMind or Astarion for a hard fight | Strong but risky because Shadowheart receives shared damage. Use on one key target unless her HP and healing setup are managed. |
+| Death Ward | Shadowheart first; Bard 10 Magical Secrets or TMind as backup | Lae'zel, TMind, Kao, then Astarion | Best insurance on characters who must not drop early. Use TMind only if camp sources are exhausted. |
+| Freedom of Movement | Bard hireling if Bard 7+; Shadowheart second; TMind backup | Lae'zel and Astarion first, then TMind/Kao if control is expected | Bard is a clean source if available. Prioritize melee and mobility-dependent characters. |
+| Heroes' Feast | Future Shadowheart or TMind at Cleric 11 | Whole party and summons | Not available from current Cleric 10 setup. Make this the next major daily-buff upgrade. |
 | Song of Rest | Bard hireling | Whole party after short-rest resources are spent | Not a buff spell, but it extends the adventuring day and should be used after meaningful short-rest value is missing. |
 
 ### Recommended Daily Caster Roles
@@ -106,7 +106,7 @@ Default principle: let camp characters pay for daily utility first, then keep th
 | Bard hireling | Longstrider routine, Freedom of Movement at Bard 7+, Death Ward only if Bard 10 Magical Secrets selected it, Song of Rest for day extension. |
 | Gale | Camp Wizard utility: Longstrider backup, Mage Armor, Darkvision, See Invisibility. |
 | Kao | Active Wizard utility backup only; avoid spending his slots if Gale or Bard can cover the same setup. |
-| Stefan | Active Cleric fallback; use his slots only when Shadowheart cannot cover the buff or the fight needs immediate recasting. |
+| TMind | Active Cleric fallback; use his slots only when Shadowheart cannot cover the buff or the fight needs immediate recasting. |
 | Lae'zel | Main recipient for movement, Aid, Death Ward, Freedom of Movement, and selective Warding Bond. |
 | Astarion | Recipient for Longstrider, Aid, Death Ward, Freedom of Movement when control or restraint is expected. |
 
@@ -126,7 +126,7 @@ Default principle: let camp characters pay for daily utility first, then keep th
 | Scroll of Conjure Elemental | 3 | 1 with Kao, 2 elsewhere | Good summon stock |
 | Arcane Cultivation / Meditation elixirs | Several | Mostly with Kao / storage | Consolidate caster day-extension tools on Kao |
 | Remedial Potion | Not visible in the refreshed spot check | Elsewhere if still present in game | Search storage before relying on it |
-| Healing potions | 39 | Stefan, Kao, Astarion, storage | Give Lae'zel a stack before leaving camp |
+| Healing potions | 39 | TMind, Kao, Astarion, storage | Give Lae'zel a stack before leaving camp |
 
 ## Gear and Synergy Checks ^gear-synergies
 
@@ -134,26 +134,26 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 | Check | Status | Note |
 |---|---|---|
-| Shadowheart weapon trick | ✅ Done | Devotee's Mace is now with Stefan. |
-| Blood of Lathander | ✅ With Stefan | Keep as the default cleric weapon unless the healing-aura plan is needed. |
-| Devotee's Mace | ✅ With Stefan | Use as a swap for Healing Incense Aura and on-heal item synergies. |
-| Hellrider's Pride | ✅ With Stefan | Works well with multi-target healing and rescue turns. |
-| Cloak of Protection | ✅ With Stefan | Good defensive pickup already consolidated. |
-| Spell Slot Restoration Amulet | ✅ With Stefan | Strong day-extension tool; consider whether Kao needs it more before a caster-heavy fight. |
+| Shadowheart weapon trick | ✅ Done | Devotee's Mace is now with TMind. |
+| Blood of Lathander | ✅ With TMind | Keep as the default cleric weapon unless the healing-aura plan is needed. |
+| Devotee's Mace | ✅ With TMind | Use as a swap for Healing Incense Aura and on-heal item synergies. |
+| Hellrider's Pride | ✅ With TMind | Works well with multi-target healing and rescue turns. |
+| Cloak of Protection | ✅ With TMind | Good defensive pickup already consolidated. |
+| Spell Slot Restoration Amulet | ✅ With TMind | Strong day-extension tool; consider whether Kao needs it more before a caster-heavy fight. |
 | Whispering Promise style ring | ⚠️ Not confirmed in this pass | If available in game, pair it with Devotee's Mace aura for concentration-free Bless-style value. |
 
 ## Before Leaving Camp ^before-leaving-camp
 
 **Markers:** ⭐⭐⭐ ⏱️ ⚔️
 
-1. Use Shadowheart or Stefan to cast or refresh **Aid** so Lae'zel is included.
-2. Move one Revivify scroll to Stefan, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
+1. Use Shadowheart or TMind to cast or refresh **Aid** so Lae'zel is included.
+2. Move one Revivify scroll to TMind, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
 3. Move one or two Potion of Invisibility items to Astarion.
 4. Give Lae'zel a small healing-potion stack.
 5. Decide whether Lae'zel drinks Bloodlust now or saves it for a known serious fight.
 6. Decide whether Astarion keeps the Viciousness elixir plan or hands it to Lae'zel.
 7. Confirm Scratch and the quasit are intentionally away from the bridge group, or resummon/regroup them if wanted.
-8. Decide whether Stefan starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
+8. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
 
 ## Before a Hard Fight ^before-hard-fight
 
@@ -167,7 +167,7 @@ Default principle: let camp characters pay for daily utility first, then keep th
 | 4 | Put Globe of Invulnerability and Conjure Elemental scrolls on Kao's hotbar. |
 | 5 | Put invisibility tools, anti-caster arrows, and poisons on Astarion. |
 | 6 | Put Bloodlust / Colossus elixir choice on Lae'zel before initiative matters. |
-| 7 | Keep Stefan's Divine Intervention unused unless the fight collapses. |
+| 7 | Keep TMind's Divine Intervention unused unless the fight collapses. |
 
 ## Source ^readiness-source
 

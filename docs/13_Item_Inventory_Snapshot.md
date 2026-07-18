@@ -27,19 +27,19 @@ This note summarizes practical active-party and camp-storage items visible in th
 |---|---|
 | Understand scope and ratings | [[#Scope\|Scope]] · [[#Rating Key\|Rating Key]] · [[#Character Summary\|Character Summary]] |
 | Highest-value actions | [[13_Item_Inventory_Snapshot#^inventory-best-uses\|Best Immediate Uses]] |
-| Review a character | [[13_Item_Inventory_Snapshot#^inventory-stefan\|Stefan]] · [[13_Item_Inventory_Snapshot#^inventory-laezel\|Lae'zel]] · [[13_Item_Inventory_Snapshot#^inventory-kao\|Kao]] · [[13_Item_Inventory_Snapshot#^inventory-astarion\|Astarion]] |
+| Review a character | [[13_Item_Inventory_Snapshot#^inventory-tmind\|TMind]] · [[13_Item_Inventory_Snapshot#^inventory-laezel\|Lae'zel]] · [[13_Item_Inventory_Snapshot#^inventory-kao\|Kao]] · [[13_Item_Inventory_Snapshot#^inventory-astarion\|Astarion]] |
 | Pull or consolidate stored items | [[13_Item_Inventory_Snapshot#^camp-storage\|Camp Storage]] |
 | Understand omissions | [[13_Item_Inventory_Snapshot#^inventory-omissions\|Hidden From This Practical List]] |
 
 ## Scope
 
 - Source: `Wyrms Crossing - 98h 15m`, modified `2026-07-13 01:25:09 +02:00`, synced into the handbook at `2026-07-13 01:25:41 +02:00`.
-- Active-party grouping uses the current extracted save state for Stefan, Lae'zel, Kao, and Astarion.
+- Active-party grouping uses the current extracted save state for TMind, Lae'zel, Kao, and Astarion.
 - Camp storage is summarized in a gameplay-facing way, without coordinates or internal save identifiers.
 - Exact equipped slots still need a deeper pass; this is a carried/available snapshot, not a final gear-slot audit.
 - Rarity was removed because the save does not expose a reliable full rarity field.
 - Character totals below are position-based item records from the latest extracted save. Exact category labels are approximate because the save exposes internal item stat names, not a polished inventory UI export.
-- Current holder fields are also position-based. `Elsewhere / storage` means the item is visible in the save but not at Stefan, Lae'zel, Kao, or Astarion's active-party position.
+- Current holder fields are also position-based. `Elsewhere / storage` means the item is visible in the save but not at TMind, Lae'zel, Kao, or Astarion's active-party position.
 - In the character sections, the section name is the current holder unless a row explicitly says otherwise.
 
 ## Rating Key
@@ -54,7 +54,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 | Character | Total | Equipment | Potions / elixirs | Scrolls | Combat consumables | Alchemy | Utility / keys |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Stefan | 230 | 22 | 19 | 13 | 4 | 90 | 60 |
+| TMind | 230 | 22 | 19 | 13 | 4 | 90 | 60 |
 | Lae'zel | 49 | 17 | 5 | 0 | 4 | 3 | 19 |
 | Kao | 182 | 47 | 14 | 33 | 8 | 4 | 23 |
 | Astarion | 89 | 22 | 9 | 0 | 15 | 10 | 13 |
@@ -65,23 +65,23 @@ This note summarizes practical active-party and camp-storage items visible in th
 |---|---:|---|---|
 | Scroll of Revivify | 10 | Kao 1; Elsewhere / storage 9 | Strong emergency stock; keep at least two holders. |
 | Potion of Speed | 3 | Lae'zel 1; Elsewhere / storage 2 | Enough for one serious opener, not for repeated casual use. |
-| Elixir of Bloodlust | 3 | Stefan 1; Lae'zel 1; Elsewhere / storage 1 | Good stock for Lae'zel; choose before initiative matters. |
+| Elixir of Bloodlust | 3 | TMind 1; Lae'zel 1; Elsewhere / storage 1 | Good stock for Lae'zel; choose before initiative matters. |
 | Elixir of Viciousness | 1 | Astarion 1 | Decide whether Astarion or Lae'zel wants the crit plan. |
 | Potion of Invisibility | 7 | Kao 1; Elsewhere / storage 6 | Plenty for scouting, resets, and emergency exits. |
 | Scroll of Globe of Invulnerability | 2 | Kao 2 | Keep on Kao for hard fights. |
 | Scroll of Conjure Elemental | 3 | Kao 1; Elsewhere / storage 2 | Good summon stock for action economy. |
-| Healing potions | 39 | Stefan 8; Lae'zel 2; Kao 3; Astarion 3; Elsewhere / storage 23 | Split before leaving camp; Lae'zel should not be under-supplied. |
+| Healing potions | 39 | TMind 8; Lae'zel 2; Kao 3; Astarion 3; Elsewhere / storage 23 | Split before leaving camp; Lae'zel should not be under-supplied. |
 
 ## Best Immediate Uses ^inventory-best-uses
 
 | Use | Item | Current holder | Best fit | Note |
 |---|---|---|---|---|
-| ⭐⭐⭐ | Blood of Lathander | Stefan | Stefan | cleric aura / safety |
-| ⭐⭐⭐ | Devotee's Mace | Stefan | Stefan | healing aura swap |
-| ⭐⭐⭐ | Hellrider's Pride | Stefan | Stefan | heal-triggered defense |
-| ⭐⭐⭐ | Mass Healing Ring | Stefan | Stefan | healing support |
-| ⭐⭐⭐ | Radiating Orb Gloves | Stefan | Stefan | Spirit Guardians synergy |
-| ⭐⭐⭐ | Shield of Devotion | Stefan | Stefan | spell slot + shield |
+| ⭐⭐⭐ | Blood of Lathander | TMind | TMind | cleric aura / safety |
+| ⭐⭐⭐ | Devotee's Mace | TMind | TMind | healing aura swap |
+| ⭐⭐⭐ | Hellrider's Pride | TMind | TMind | heal-triggered defense |
+| ⭐⭐⭐ | Mass Healing Ring | TMind | TMind | healing support |
+| ⭐⭐⭐ | Radiating Orb Gloves | TMind | TMind | Spirit Guardians synergy |
+| ⭐⭐⭐ | Shield of Devotion | TMind | TMind | spell slot + shield |
 | ⭐⭐⭐ | Boots of Speed | Lae'zel | Lae'zel | frontline mobility |
 | ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | Lae'zel | frontline crit |
 | ⭐⭐⭐ | Moonlight Glaive | Lae'zel | Lae'zel | martial weapon |
@@ -93,7 +93,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 | ⭐⭐⭐ | Ring of Pass Without Trace | Astarion | Astarion | party stealth |
 | ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | Astarion | scout invisibility |
 | ⭐⭐⭐ | The Graceful Cloth | Astarion | Astarion | DEX / Cat's Grace |
-| ⭐⭐⭐ | Potion of Angelic Slumber | Stefan | Kao / Stefan | extend caster day |
+| ⭐⭐⭐ | Potion of Angelic Slumber | TMind | Kao / TMind | extend caster day |
 | ⭐⭐⭐ | Elixir of Bloodlust | Lae'zel | Lae'zel | kill chains |
 | ⭐⭐⭐ | Potion of Speed | Lae'zel | Lae'zel / group | decisive Haste |
 | ⭐⭐⭐ | Scroll of Chain Lightning | Kao | Kao | burst damage |
@@ -102,24 +102,24 @@ This note summarizes practical active-party and camp-storage items visible in th
 | ⭐⭐⭐ | Scroll of Revivify | Kao | Any | emergency revive |
 | ⭐⭐ | Elixir of Viciousness | Astarion | Astarion / Lae'zel | crit-support option |
 
-## Stefan ^inventory-stefan
+## TMind ^inventory-tmind
 
 ### Equipment and Build Fit
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
-| ⭐⭐⭐ | Blood of Lathander | Stefan | cleric aura / safety |
-| ⭐⭐⭐ | Devotee's Mace | Stefan | healing aura swap |
-| ⭐⭐⭐ | Hellrider's Pride | Stefan | heal-triggered defense |
-| ⭐⭐⭐ | Mass Healing Ring | Stefan | healing support |
-| ⭐⭐⭐ | Radiating Orb Gloves | Stefan | Spirit Guardians synergy |
-| ⭐⭐⭐ | Shield of Devotion | Stefan | spell slot + shield |
-| ⭐⭐ | Blindness Immunity Ring | Stefan | darkness/blindness |
+| ⭐⭐⭐ | Blood of Lathander | TMind | cleric aura / safety |
+| ⭐⭐⭐ | Devotee's Mace | TMind | healing aura swap |
+| ⭐⭐⭐ | Hellrider's Pride | TMind | heal-triggered defense |
+| ⭐⭐⭐ | Mass Healing Ring | TMind | healing support |
+| ⭐⭐⭐ | Radiating Orb Gloves | TMind | Spirit Guardians synergy |
+| ⭐⭐⭐ | Shield of Devotion | TMind | spell slot + shield |
+| ⭐⭐ | Blindness Immunity Ring | TMind | darkness/blindness |
 | ⭐⭐ | Hellfire Hand Crossbow | Astarion | ranged bonus use |
-| ⭐⭐ | Helmet of Arcane Acuity | Stefan? | weapon-then-cast |
-| ⭐⭐ | Nymph Cloak | Kao / Stefan | control utility |
-| ⭐⭐ | Pearl of Power Amulet | Stefan / Kao | slot recovery |
-| ⭐⭐ | Spectator Eye Amulet | Stefan / Kao | spell utility |
+| ⭐⭐ | Helmet of Arcane Acuity | TMind? | weapon-then-cast |
+| ⭐⭐ | Nymph Cloak | Kao / TMind | control utility |
+| ⭐⭐ | Pearl of Power Amulet | TMind / Kao | slot recovery |
+| ⭐⭐ | Spectator Eye Amulet | TMind / Kao | spell utility |
 | ⭐ | Clown Hammer | Any | review in game |
 | ⭐ | Drow Commander Amulet | Any | review in game |
 | ⭐ | Melee Debuff Scale Mail | Any | review in game |
@@ -128,7 +128,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Potion of Angelic Slumber | 1 | Kao / Stefan | extend caster day |
+| ⭐⭐⭐ | Potion of Angelic Slumber | 1 | Kao / TMind | extend caster day |
 | ⭐ | Potion of Glorious Vaulting | 1 | Lae'zel / Astarion | mobility |
 | ⭐ | Potion of Greater Healing | 1 | Any | situational |
 | ⭐ | Potion of Healing | 4 | Any | situational |
@@ -172,7 +172,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 | ⭐⭐ | Githborn Heavy Crossbow | Lae'zel | ranged fallback |
 | ⭐⭐ | Melee Debuff Helmet | Lae'zel | melee debuff |
 | ⭐⭐ | Melee Debuff Splint Mail | Lae'zel | frontline debuff |
-| ⭐ | Caster Temp HP Cloak | Kao / Stefan | caster filler |
+| ⭐ | Caster Temp HP Cloak | Kao / TMind | caster filler |
 | ⭐ | Mental Fatigue Gloves | Lae'zel? | needs psychic plan |
 | ⭐ | Roaring Maul | Any | review in game |
 | ⭐ | Weakness Branding Amulet | Lae'zel | melee utility |
@@ -222,7 +222,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 | ⭐⭐ | Elixir of See Invisibility | 1 | Scout / caster | specific encounters |
 | ⭐⭐ | Potion of Invisibility | 1 | Astarion | scout escape |
 | ⭐⭐ | Scroll of Black Tentacles | 1 | Kao | aura control |
-| ⭐⭐ | Scroll of Blight | 1 | Kao / Stefan | necrotic burst |
+| ⭐⭐ | Scroll of Blight | 1 | Kao / TMind | necrotic burst |
 | ⭐⭐ | Scroll of Cloudkill | 1 | Kao | area denial |
 | ⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | action economy |
 | ⭐ | Acid Vial | 2 | Any | situational |
@@ -338,7 +338,7 @@ This section summarizes useful resources seen in camp-storage-like inventories. 
 
 - Storage appears to contain several emergency resources, including multiple Revivify scrolls.
 - The best pre-fight pulls are Revivify scrolls, Elixir of Vigilance, Elixir of Bloodlust, Arcane Cultivation elixirs, Remedial Potions, Potion of Invisibility, and anti-caster arrows.
-- Several gear pieces should be inspected in game because they may fit Stefan, Kao, Lae'zel, Astarion, or a camp-support setup.
+- Several gear pieces should be inspected in game because they may fit TMind, Kao, Lae'zel, Astarion, or a camp-support setup.
 
 ### Priority Pulls from Storage
 
@@ -347,20 +347,20 @@ This section summarizes useful resources seen in camp-storage-like inventories. 
 | ⭐⭐⭐ | Scroll of Revivify | 7 | Any | Emergency revive stock. |
 | ⭐⭐⭐ | Elixir of Vigilance | 1 | Any key opener | Better first-turn safety. |
 | ⭐⭐⭐ | Elixir of Bloodlust | 1 | Lae'zel | Kill chains for martial turns. |
-| ⭐⭐⭐ | Cloak of Protection | 1 | Stefan / Kao / Lae'zel | Universal defensive upgrade candidate. |
-| ⭐⭐⭐ | Healing Restoration Amulet | 1 | Stefan / Shadowheart | Strong support-healing candidate. |
-| ⭐⭐⭐ | Healing Temp HP Boots | 1 | Stefan / Shadowheart | Adds defensive value to healing turns. |
-| ⭐⭐⭐ | Spell Slot Restoration Amulet | 1 | Kao / Stefan | Improves spell-slot economy. |
-| ⭐⭐⭐ | Spoiler-named shield | 1 | Stefan / shield user | Inspect as a defensive shield option. |
+| ⭐⭐⭐ | Cloak of Protection | 1 | TMind / Kao / Lae'zel | Universal defensive upgrade candidate. |
+| ⭐⭐⭐ | Healing Restoration Amulet | 1 | TMind / Shadowheart | Strong support-healing candidate. |
+| ⭐⭐⭐ | Healing Temp HP Boots | 1 | TMind / Shadowheart | Adds defensive value to healing turns. |
+| ⭐⭐⭐ | Spell Slot Restoration Amulet | 1 | Kao / TMind | Improves spell-slot economy. |
+| ⭐⭐⭐ | Spoiler-named shield | 1 | TMind / shield user | Inspect as a defensive shield option. |
 | ⭐⭐ | Remedial Potion | 3 | Any | Condition cleanup without spending spell slots. |
 | ⭐⭐ | Potion of Invisibility | 4 | Astarion / scout | Scouting, escape, or setup tool. |
 | ⭐⭐ | Elixir of Arcane Cultivation | 1 | Kao | More spell-slot flexibility. |
 | ⭐⭐ | Elixir of Superior Arcane Cultivation | 1 | Kao | Higher-value spell-slot flexibility. |
 | ⭐⭐ | Elixir of Freedom of Movement | 1 | Lae'zel / frontliner | Helps prevent movement shutdown. |
-| ⭐⭐ | Elixir of Peerless Focus | 1 | Stefan / Kao | Concentration protection. |
+| ⭐⭐ | Elixir of Peerless Focus | 1 | TMind / Kao | Concentration protection. |
 | ⭐⭐ | Elixir of the Colossus | 3 | Lae'zel | Martial damage option. |
 | ⭐⭐ | Scroll of Conjure Elemental | 2 | Kao | Extra action economy for hard fights. |
-| ⭐⭐ | Scroll of Blight | 1 | Kao / Stefan | Necrotic burst option. |
+| ⭐⭐ | Scroll of Blight | 1 | Kao / TMind | Necrotic burst option. |
 | ⭐⭐ | Bow of the Banshee | 1 | Astarion | Control bow to inspect. |
 | ⭐⭐ | Dwarven Thrower | 1 | Lae'zel / throw build | Only valuable if the build supports throwing. |
 | ⭐⭐ | Robe of Arcane Defense | 1 | Kao | Caster robe to inspect against current gear. |
@@ -389,11 +389,11 @@ This section summarizes useful resources seen in camp-storage-like inventories. 
 
 | Build | Use | Item | Why inspect it |
 |---|---|---|---|
-| Stefan / support cleric | ⭐⭐⭐ | Healing Restoration Amulet | May improve the healing-support package. |
-| Stefan / support cleric | ⭐⭐⭐ | Healing Temp HP Boots | Pairs well with healing-triggered support. |
-| Stefan / support cleric | ⭐⭐⭐ | Spell Slot Restoration Amulet | Useful when cleric spell slots are stretched. |
-| Stefan / support cleric | ⭐⭐⭐ | Spoiler-named shield | Possible defensive shield upgrade. |
-| Stefan / support cleric | ⭐⭐⭐ | Cloak of Protection | Strong general defense if the cloak slot is open. |
+| TMind / support cleric | ⭐⭐⭐ | Healing Restoration Amulet | May improve the healing-support package. |
+| TMind / support cleric | ⭐⭐⭐ | Healing Temp HP Boots | Pairs well with healing-triggered support. |
+| TMind / support cleric | ⭐⭐⭐ | Spell Slot Restoration Amulet | Useful when cleric spell slots are stretched. |
+| TMind / support cleric | ⭐⭐⭐ | Spoiler-named shield | Possible defensive shield upgrade. |
+| TMind / support cleric | ⭐⭐⭐ | Cloak of Protection | Strong general defense if the cloak slot is open. |
 | Kao / human mage | ⭐⭐⭐ | Spell Slot Restoration Amulet | Strong day-extension tool. |
 | Kao / human mage | ⭐⭐ | Robe of Arcane Defense | Compare against current robe. |
 | Kao / human mage | ⭐⭐ | Scroll of Conjure Elemental | Strong setup for difficult fights. |
@@ -414,7 +414,7 @@ This section summarizes useful resources seen in camp-storage-like inventories. 
 3. Move caster scrolls and Arcane Cultivation elixirs to Kao.
 4. Move arrows, poisons, invisibility tools, and scouting consumables to Astarion.
 5. Move martial elixirs to Lae'zel.
-6. Keep healing-support gear together for Stefan or Shadowheart, depending on who is active or handling camp support.
+6. Keep healing-support gear together for TMind or Shadowheart, depending on who is active or handling camp support.
 7. Leave books, keys, story objects, and generic containers untouched unless a specific quest or vendor cleanup requires them.
 
 ### Storage Uncertainty

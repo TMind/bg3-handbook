@@ -7,7 +7,7 @@ Running log of decisions, discoveries, and open questions.
 ## Act 1 — Underdark (Complete)
 
 ### Party at the time
-Kai (Kao), Stefan, Lae'zel, Gale → later swapped Gale for Astarion
+Kao, TMind, Lae'zel, Gale → later swapped Gale for Astarion
 
 ### Key decisions
 - **Swapped Gale → Astarion**: gained stealth, trapping, lockpicking; lost AoE. Gale remains available in camp.
@@ -29,10 +29,10 @@ Moonrise Towers cleared. Act 2 complete.
 Silent Library completed. **Nightsong freed.** **Shadowheart spared the Nightsong** — she chose to defy Shar and embrace Selûne. Major Act 2 story decision with lasting consequences for Shadowheart's character arc and abilities.
 
 ### Active party
-Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), Stefan (Death Domain Cleric)
+Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric)
 
 ### Open decisions
-- **Stefan's Warding Bond**: Currently on Lae'zel. Keep Stefan's HP topped off as a result.
+- **TMind's Warding Bond**: Currently on Lae'zel. Keep TMind's HP topped off as a result.
 
 ### Mechanics learned this session
 - Spirit Guardians round timer doesn't tick outside combat — safe to pre-cast before engaging
@@ -42,7 +42,7 @@ Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter
 - Counterspell must be *prepared* AND reaction must be set to "Ask" or "On" in the reactions menu
 - Healing potions can be *thrown* at an ally's feet to splash-heal at range (works on downed allies)
 - Lae'zel can Jump over Web/Grease to bypass difficult terrain and reach enemies
-- **Bless and Spirit Guardians are both concentration** — cannot run simultaneously. However, certain items (e.g. Hellrider's Pride gloves) apply Blessed to an ally when you heal them, no concentration required. Stefan can hold Spirit Guardians and still generate Bless through healing actions.
+- **Bless and Spirit Guardians are both concentration** — cannot run simultaneously. However, certain items (e.g. Hellrider's Pride gloves) apply Blessed to an ally when you heal them, no concentration required. TMind can hold Spirit Guardians and still generate Bless through healing actions.
 
 ---
 
@@ -54,7 +54,7 @@ Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter
 **Wyrm's Crossing** — just arrived, entering Act 3.
 
 ### Active party
-Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), Stefan (Death Domain Cleric)
+Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric)
 
 ---
 

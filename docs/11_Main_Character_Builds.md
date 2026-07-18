@@ -29,7 +29,7 @@ This chapter keeps practical, spoiler-free build templates for the characters an
 | Understand the build rules | [[#✅ Build Principles\|Build Principles]] |
 | Review the active party | [[11_Main_Character_Builds#^party-build-snapshot\|Party Snapshot]] |
 | Build Lae'zel or Astarion | [[11_Main_Character_Builds#^laezel-build\|Lae'zel]] · [[11_Main_Character_Builds#^astarion-build\|Astarion]] |
-| Build Kao or Stefan | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^stefan-build\|Stefan]] |
+| Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] |
 | Configure camp support | [[11_Main_Character_Builds#^camp-options\|Bench and Camp]] · [[11_Main_Character_Builds#^hireling-bard\|Hireling Bard]] · [[11_Main_Character_Builds#^camp-specialists\|Camp Specialists]] |
 | Check equipment goals | [[11_Main_Character_Builds#^target-equipment\|Target Equipment]] |
 | Use a generic role template | [[#⚔️ Frontliner Template\|Frontliner]] · [[#🗡️ Scout and Skill Template\|Scout and Skill]] |
@@ -59,13 +59,13 @@ These are the current main builds from the local character notes. The party plan
 | Lae'zel | Frontline pin and damage engine | Battle Master Fighter | Trip, push, disarm, and keep enemies inside the danger zone |
 | Astarion | Scout, lockpicker, precision damage | Thief Rogue now; optional Gloom Stalker / Assassin upgrade | Start fights, delete weak targets, handle traps and locks |
 | Kao | Human Mage / control caster | Conjuration Wizard | Web, Grease, Hold Person, Counterspell, utility casting |
-| Stefan | Drow Cleric / necromancer aura | Death Domain Cleric; optional Stars Druid dip | Spirit Guardians, Warding Bond, Healing Word, necrotic/radiant pressure |
+| TMind | Drow Cleric / necromancer aura | Death Domain Cleric; optional Stars Druid dip | Spirit Guardians, Warding Bond, Healing Word, necrotic/radiant pressure |
 
 ### Local Notes Applied
 
 | Local note | Build impact |
 |---|---|
-| Current active party is Kao, Astarion, Lae'zel, Stefan | Builds should support the aura blender rather than isolated damage races |
+| Current active party is Kao, Astarion, Lae'zel, TMind | Builds should support the aura blender rather than isolated damage races |
 | Gale remains available in camp | Use him when AoE damage matters more than stealth and trap utility |
 | Shadowheart remains available in camp | Use her as support/radiant backup, not as a Lae'zel replacement unless the frontline plan changes |
 | Sussur Bark was crafted into the Sussur Dagger, held by Astarion | Masterwork Weapon decision resolved; dagger provides caster silence utility |
@@ -89,7 +89,7 @@ Keep Lae'zel as a **Battle Master Fighter** unless you deliberately want a diffe
 | Key feats | Great Weapon Master, Strength ASI to 20, Sentinel, Savage Attacker / Alert |
 | Core maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
 | Later maneuvers | Precision Attack for GWM accuracy, Menacing Attack or Riposte by taste |
-| Buffs | Longstrider, Aid, Warding Bond if Stefan can absorb the shared damage, Potion of Speed for serious fights |
+| Buffs | Longstrider, Aid, Warding Bond if TMind can absorb the shared damage, Potion of Speed for serious fights |
 
 ### Feat Priority
 
@@ -164,19 +164,19 @@ Keep Kao as a control-first Wizard. The party already has martial damage and Spi
 
 ### Party Role
 
-Kao makes the aura blender work. Web, Grease, Hold Person, and chokepoint control keep enemies where Stefan and Lae'zel want them. Fireball is secondary: use it when enemies are grouped and allies are not standing in the blast plan.
+Kao makes the aura blender work. Web, Grease, Hold Person, and chokepoint control keep enemies where TMind and Lae'zel want them. Fireball is secondary: use it when enemies are grouped and allies are not standing in the blast plan.
 
 Wizard guide sources agree on the core principle that Wizard is strongest through spell breadth, Intelligence scaling, and careful spell-slot management; the subclass does not prevent learning other Wizard spells.
 
-## 💀 Stefan: Drow Death Cleric / Necromancer Aura ^stefan-build
+## 💀 TMind: Drow Death Cleric / Necromancer Aura ^tmind-build
 
 **Markers:** ⭐⭐⭐ ⚠️ ⚔️ ✨
 
-Stefan is not a backline healer. Treat him as an off-tank aura caster and necromantic pressure piece: he enters after the pin starts, carries Spirit Guardians, and uses Healing Word only when needed.
+TMind is not a backline healer. Treat him as an off-tank aura caster and necromantic pressure piece: he enters after the pin starts, carries Spirit Guardians, and uses Healing Word only when needed.
 
 | Build | Role | When to use |
 |---|---|---|
-| Death Domain Cleric 12 | Simple aura cleric, full Cleric spell access, final feat | Best if Stefan must provide Heroes' Feast and full Cleric utility |
+| Death Domain Cleric 12 | Simple aura cleric, full Cleric spell access, final feat | Best if TMind must provide Heroes' Feast and full Cleric utility |
 | Death Cleric 10 / Circle of Stars Druid 2 | Spirit Guardians specialist with stronger concentration support and Starry Form utility | Strong if another Cleric handles Heroes' Feast and late Cleric buffs |
 
 ### Practical Setup
@@ -186,10 +186,10 @@ Stefan is not a backline healer. Treat him as an off-tank aura caster and necrom
 | Main stats | Wisdom first, then Constitution and Dexterity |
 | Feats | Wisdom ASI, War Caster or Resilient: Constitution, Alert / Tough by need |
 | Core concentration | Spirit Guardians for meaningful fights |
-| Daily support | Warding Bond on Lae'zel only if Stefan's HP and healing plan can support shared damage |
+| Daily support | Warding Bond on Lae'zel only if TMind's HP and healing plan can support shared damage |
 | Necromancer identity | Use Death Domain offense and summons as support, but do not let summons break party positioning |
 | Item synergy | Healing Word can trigger on-heal gear; this can add Bless-style value without using concentration |
-| Divine Intervention | Keep Stefan's own use as an emergency button; use Shadowheart for the weapon trick instead |
+| Divine Intervention | Keep TMind's own use as an emergency button; use Shadowheart for the weapon trick instead |
 
 ### Necromancer Logistics
 
@@ -209,12 +209,12 @@ Source video: [Baldur's Gate 3: 20+ Easily Missed Tips (Spoiler Free) - Proxy Ga
 ### Party Role
 
 1. Let Lae'zel or control magic start the pin.
-2. Move Stefan into the cluster with Spirit Guardians active.
+2. Move TMind into the cluster with Spirit Guardians active.
 3. Use Healing Word as a bonus-action rescue, not as a full healing plan.
-4. Keep Warding Bond damage in mind; if Lae'zel takes repeated hits, Stefan is also paying for them.
+4. Keep Warding Bond damage in mind; if Lae'zel takes repeated hits, TMind is also paying for them.
 5. Short Rest after serious aura fights to restore HP even when spell slots remain spent.
 
-The online Death Cleric / Stars Druid build is attractive for Spirit Guardians because Starry Form can support concentration and bonus-action value. The tradeoff is real: going Cleric 10 / Druid 2 means losing Cleric 11 spell access such as Heroes' Feast on Stefan.
+The online Death Cleric / Stars Druid build is attractive for Spirit Guardians because Starry Form can support concentration and bonus-action value. The tradeoff is real: going Cleric 10 / Druid 2 means losing Cleric 11 spell access such as Heroes' Feast on TMind.
 
 ## 🏕️ Bench and Camp Options ^camp-options
 
@@ -229,22 +229,22 @@ These characters are not part of the default four-person plan, but the local not
 
 ### Shadowheart Support Note
 
-Shadowheart is useful as a backline Light Cleric support option: Bless, Spiritual Weapon, Healing Word, Radiance of the Dawn, Fireball, Silence, and Aid all fit the broader party plan. The important constraint is concentration: Shadowheart, Stefan, and Kao should not overwrite each other's key concentration effects.
+Shadowheart is useful as a backline Light Cleric support option: Bless, Spiritual Weapon, Healing Word, Radiance of the Dawn, Fireball, Silence, and Aid all fit the broader party plan. The important constraint is concentration: Shadowheart, TMind, and Kao should not overwrite each other's key concentration effects.
 
 ### Shadowheart Divine Intervention Trick
 
 **Markers:** ⭐⭐⭐ 💰 ✨ 🎯
 
-Once Shadowheart reaches Cleric level 10, she can use **Divine Intervention: Arm Thy Servant** in camp, create **Devotee's Mace**, and hand the mace to Stefan. This spends Shadowheart's once-per-character Divine Intervention, not Stefan's.
+Once Shadowheart reaches Cleric level 10, she can use **Divine Intervention: Arm Thy Servant** in camp, create **Devotee's Mace**, and hand the mace to TMind. This spends Shadowheart's once-per-character Divine Intervention, not TMind's.
 
 | Step | Practical result |
 |---|---|
 | Bring Shadowheart into the active party | She needs access to her Cleric level 10 action |
 | Use Divine Intervention: Arm Thy Servant | Creates Devotee's Mace in Shadowheart's inventory |
-| Move Devotee's Mace to Stefan | Stefan gains the weapon without spending his own Divine Intervention |
-| Keep Stefan's Divine Intervention unused | Save it for Opulent Revival as a true emergency button |
+| Move Devotee's Mace to TMind | TMind gains the weapon without spending his own Divine Intervention |
+| Keep TMind's Divine Intervention unused | Save it for Opulent Revival as a true emergency button |
 
-Use **Blood of Lathander** as Stefan's default weapon unless a fight specifically wants Devotee's Mace healing aura or extra on-hit Radiant damage. Blood of Lathander is usually the safer everyday cleric weapon; Devotee's Mace is a strong swap option.
+Use **Blood of Lathander** as TMind's default weapon unless a fight specifically wants Devotee's Mace healing aura or extra on-hit Radiant damage. Blood of Lathander is usually the safer everyday cleric weapon; Devotee's Mace is a strong swap option.
 
 Source: [bg3.wiki: Divine Intervention](https://bg3.wiki/wiki/Divine_Intervention), [bg3.wiki: Devotee's Mace](https://bg3.wiki/wiki/Devotee%27s_Mace).
 
@@ -256,7 +256,7 @@ This is not a shopping checklist for every run. It is the final-target watchlist
 
 | Character | Final target items | Why they fit |
 |---|---|---|
-| Stefan | Blood of Lathander; Devotee's Mace as swap; Luminous Armour; Boots of Stormy Clamour; Gloves of Belligerent Skies or Radiating Orb Gloves; Coruscation Ring; Ring of Spiteful Thunder; Cloak of Protection; Amulet of Greater Health or Fey Semblance Amulet | Spirit Guardians, Radiating Orb, Reverberation, concentration, and survivability |
+| TMind | Blood of Lathander; Devotee's Mace as swap; Luminous Armour; Boots of Stormy Clamour; Gloves of Belligerent Skies or Radiating Orb Gloves; Coruscation Ring; Ring of Spiteful Thunder; Cloak of Protection; Amulet of Greater Health or Fey Semblance Amulet | Spirit Guardians, Radiating Orb, Reverberation, concentration, and survivability |
 | Lae'zel | Best available two-handed weapon; Moonlight Glaive until a clear upgrade; Killer's Sweetheart; Legacy of the Masters; Helldusk Gloves; Boots of Speed or Disintegrating Night Walkers; Cloak of Protection | Fighter damage, GWM accuracy, frontline mobility, and defensive consistency |
 | Lae'zel throw variant | Dwarven Thrower or Nyrulna; Ring of Flinging; Gloves of Uninhibited Kushigo; Caustic Band | Only use this if respeccing toward thrown-weapon play; do not mix it halfway into the current Battle Master plan |
 | Kao | Markoheshkir; Staff of Spellpower; Robe of the Weave or Potent Robe; Cloak of the Weave or Cloak of Protection; Hood of the Weave; Quickspell Gloves; Spellcrux Amulet or Amulet of Greater Health | More spell DC, more spell slots, better concentration, and stronger control casting |
@@ -354,8 +354,8 @@ These sources were used as reference points, then adjusted to the local party no
 | [PC Gamer: The best Baldur's Gate 3 builds for Patch 8 and beyond](https://www.pcgamer.com/baldurs-gate-3-multiclass-builds/) | Astarion-style stealth burst, Death Cleric / Stars Druid concept, multiclass tradeoffs | Useful, but not copied blindly; party synergy matters more than isolated burst |
 | [Polygon: Wizard subclass, feats, and build](https://www.polygon.com/baldurs-gate-3-guides/23814037/wizard-class-subclasses-stats-features-proficiencies) | Wizard role, Intelligence/Constitution priority, subclass framing | Supports keeping Kao as a spell-breadth control Wizard |
 | [bg3.wiki: Battle Master](https://bg3.wiki/wiki/Battle_Master) | Battle Master maneuver mechanics | Supports keeping Lae'zel as a tactical pin/control Fighter |
-| [bg3.wiki: Divine Intervention](https://bg3.wiki/wiki/Divine_Intervention) | Cleric level 10 one-time Divine Intervention options | Supports saving Stefan's use and spending Shadowheart's use for Arm Thy Servant |
-| [bg3.wiki: Devotee's Mace](https://bg3.wiki/wiki/Devotee%27s_Mace) | Devotee's Mace properties and transfer use | Supports treating the mace as a strong Stefan swap, not an automatic Blood of Lathander replacement |
+| [bg3.wiki: Divine Intervention](https://bg3.wiki/wiki/Divine_Intervention) | Cleric level 10 one-time Divine Intervention options | Supports saving TMind's use and spending Shadowheart's use for Arm Thy Servant |
+| [bg3.wiki: Devotee's Mace](https://bg3.wiki/wiki/Devotee%27s_Mace) | Devotee's Mace properties and transfer use | Supports treating the mace as a strong TMind swap, not an automatic Blood of Lathander replacement |
 | Local character notes | Actual party roles and current builds | Primary source for final recommendations |
 | Local party strategy notes | Aura blender flow, swaps, concentration conflicts, tactical synergies | Primary source for party-specific recommendations |
 | Local session notes | Current party, open build decisions, learned mechanics | Used to add current priorities and avoid stale generic advice |

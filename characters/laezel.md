@@ -10,7 +10,7 @@
 - **Class**: Fighter 10 / Battle Master
 - **Race**: Githyanki
 - **XP**: 58,477 total; 2,477 into current level
-- **Position**: grouped with Stefan, Kao, Astarion, skeleton summon, and Scratch
+- **Position**: grouped with TMind, Kao, Astarion, skeleton summon, and Scratch
 
 ## Detected Active Effects
 
@@ -50,7 +50,7 @@ Use her to:
 
 ## Party Synergy
 
-- **Stefan** can support with Warding Bond, healing riders, and Cleric control.
+- **TMind** can support with Warding Bond, healing riders, and Cleric control.
 - **Kao** can create advantage or deny movement with Wizard control.
 - **Astarion** benefits from Lae'zel engaging targets because adjacent allies enable Sneak Attack.
 

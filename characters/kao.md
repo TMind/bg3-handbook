@@ -10,7 +10,7 @@
 - **Class**: Wizard 10 / Conjuration School
 - **Race**: Human
 - **XP**: 58,077 total; 2,077 into current level
-- **Position**: grouped with Stefan, Lae'zel, Astarion, skeleton summon, and Scratch
+- **Position**: grouped with TMind, Lae'zel, Astarion, skeleton summon, and Scratch
 
 ## Detected Active Effects
 
@@ -39,13 +39,13 @@ Kao is the active Wizard and should be used as battlefield control first, damage
 
 - Prefer control when enemies are dangerous and not easy to kill immediately.
 - Use burst damage when enemies are grouped or when one kill changes the whole round.
-- Protect concentration; do not stand where Lae'zel and Stefan will pull melee pressure.
+- Protect concentration; do not stand where Lae'zel and TMind will pull melee pressure.
 - Use summons and scrolls when action economy matters more than conserving resources.
 
 ## Party Synergy
 
 - **Lae'zel** benefits from control that creates advantage or keeps enemies reachable.
-- **Stefan** can stack area pressure with Spirit Guardians when enemies are already slowed or trapped.
+- **TMind** can stack area pressure with Spirit Guardians when enemies are already slowed or trapped.
 - **Astarion** benefits from controlled, prone, or engaged targets for Sneak Attack access.
 
 ## Verify In Game

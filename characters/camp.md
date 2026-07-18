@@ -8,7 +8,7 @@ Confirmed from `Rivington - 96h 28m`:
 
 | Character | Current state |
 |---|---|
-| Stefan | Active Cleric 10 / Death Domain |
+| TMind | Active Cleric 10 / Death Domain |
 | Lae'zel | Active Fighter 10 / Battle Master |
 | Kao | Active Wizard 10 / Conjuration School; extracted status includes `DYING` |
 | Astarion | Active Rogue 10 / Thief |
@@ -21,7 +21,7 @@ Everyone is currently in `BGO_Main_A`, subregion `WYR_Rivington_SUB`.
 
 - **Active party**: no
 - **Current handbook role**: Light Cleric 10 camp buffer and optional backline support
-- **Best use**: spend camp Cleric resources before Stefan spends active-party slots
+- **Best use**: spend camp Cleric resources before TMind spends active-party slots
 
 Use her for:
 
@@ -60,7 +60,7 @@ Before a serious fight:
 
 1. Resolve Kao's extracted `DYING` state if it is still present in game.
 2. Refresh **Aid** so Lae'zel is included.
-3. Add **Death Ward** to Stefan and Astarion if resources allow.
+3. Add **Death Ward** to TMind and Astarion if resources allow.
 4. Add **Freedom of Movement** to Astarion before control-heavy areas.
 5. Choose elixirs deliberately; the latest save does not detect Bloodlust on Lae'zel or Viciousness on Astarion.
 6. Move emergency scrolls, invisibility, arrows, and healing potions onto the characters expected to use them.

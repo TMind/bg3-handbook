@@ -35,7 +35,7 @@ This note summarizes the current save state extracted from the local save file. 
 
 | Character | Level / build | XP | Current subregion | Practical note |
 |---|---|---:|---|---|
-| Stefan | Level 10 Cleric / Death Domain | 61,597 total; 5,597 into level | `WYR_Bridge_SUB` | Grouped with the main party. |
+| TMind | Level 10 Cleric / Death Domain | 61,597 total; 5,597 into level | `WYR_Bridge_SUB` | Grouped with the main party. |
 | Lae'zel | Level 10 Fighter / Battle Master | 61,597 total; 5,597 into level | `WYR_Bridge_SUB` | Grouped with the main party; no active Bloodlust detected. |
 | Kao | Level 10 Wizard / Conjuration School | 61,197 total; 5,197 into level | `WYR_Bridge_SUB` | Grouped with the main party; no active `DYING` status detected in the active-party block. |
 | Astarion | Level 10 Rogue / Thief | 61,597 total; 5,597 into level | `WYR_Bridge_SUB` | Grouped with the main party and has stealth support active. |
@@ -44,7 +44,7 @@ Current save also has a skeleton summon grouped with the party. Scratch and Shov
 
 ## Active Practical Buffs
 
-### Stefan
+### TMind
 
 - Shield of Devotion extra spell slot
 - Warding Bond
@@ -92,7 +92,7 @@ Current save also has a skeleton summon grouped with the party. Scratch and Shov
 
 ## Confirmed Item-Sourced Buffs
 
-- Stefan has Shield of Devotion spell-slot support active.
+- TMind has Shield of Devotion spell-slot support active.
 - Lae'zel has Killer's Sweetheart / critical execution ring support active.
 - Astarion has Cat's Grace / Graceful Cloth support active.
 - Astarion has Pass Without Trace support active.
@@ -102,5 +102,5 @@ Current save also has a skeleton summon grouped with the party. Scratch and Shov
 - The source save for generated snapshots is recorded in `tools/save-extract/source_manifest.json`.
 - Active buff extraction is reliable because it reads the active character status managers directly.
 - Inventory extraction works, but exact equipped-slot mapping still needs a separate pass; many carried items share the character position.
-- The broader save contains many `DYING` statuses on old or non-active entities. The active-party status managers for Stefan, Lae'zel, Kao, and Astarion do not show `DYING` in this save.
+- The broader save contains many `DYING` statuses on old or non-active entities. The active-party status managers for TMind, Lae'zel, Kao, and Astarion do not show `DYING` in this save.
 - Current hard-fight readiness is summarized in [Current Readiness Audit](14_Current_Readiness_Audit.md).

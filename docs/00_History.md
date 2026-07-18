@@ -19,6 +19,10 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ## 2026-07-18
 
+### Changed
+
+- Standardized all player references to handles (`Kao`, `tmind`/`TMind`) across the handbook, notes, character files, and map, and renamed the cleric's character notes to `characters/tmind.md`. Anchor ids and the save tooling's default focus pattern were updated to match.
+
 ### Added
 
 - Added `scripts/build_site.py` and `scripts/site_template.html`, which build a single self-contained `site/index.html` from the vault — a navigable web version of the handbook with a chapter sidebar and working internal links (Obsidian Wikilinks and Markdown links both resolve). `site/` is gitignored as a generated artifact.
@@ -41,7 +45,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 ### Verified
 
 - Synced and extracted `Wyrms Crossing - 98h 15m`, modified 2026-07-13 01:25:09 +02:00.
-- Mirrored the save into `saves/Stefan-25121262363__Wyrms Crossing - 98h 15m/`.
+- Mirrored the save into `saves/TMind-25121262363__Wyrms Crossing - 98h 15m/`.
 - Rebuilt the local `.lsf` index for the refreshed snapshot.
 
 ## 2026-07-12
@@ -50,7 +54,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 - Updated the save sync workflow so the selected latest save folder is also copied into `saves/`.
 - Refreshed the `characters/` notes from the latest local save, `Rivington - 96h 28m`.
-- Replaced old Act 2 / level-planning character notes with current active-party summaries for Stefan, Lae'zel, Kao, and Astarion.
+- Replaced old Act 2 / level-planning character notes with current active-party summaries for TMind, Lae'zel, Kao, and Astarion.
 - Updated camp notes for Shadowheart, Gale, the active summons, and current before-fight checks.
 
 ### Verified

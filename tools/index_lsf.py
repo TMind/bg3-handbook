@@ -388,7 +388,7 @@ def main() -> int:
     parser.add_argument(
         "--focus-pattern",
         default=(
-            "Kao|Stefan|Astarion|Lae'?zel|Shadowheart|Gale|Wizard|Cleric|Fighter|"
+            "Kao|TMind|Astarion|Lae'?zel|Shadowheart|Gale|Wizard|Cleric|Fighter|"
             "Rogue|DeathDomain|Conjuration|BattleMaster|Thief|Spell|Passive|Boost|"
             "Longstrider|Aid|Warding|Bond|Elixir|Potion|Feat|Class|Level|Prepared|"
             "Inventory|Item"
