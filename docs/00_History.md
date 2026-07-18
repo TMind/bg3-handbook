@@ -19,6 +19,11 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ## 2026-07-18
 
+### Added
+
+- Added `scripts/build_site.py` and `scripts/site_template.html`, which build a single self-contained `site/index.html` from the vault — a navigable web version of the handbook with a chapter sidebar and working internal links (Obsidian Wikilinks and Markdown links both resolve). `site/` is gitignored as a generated artifact.
+- Added `.github/workflows/pages.yml` to rebuild and deploy the site to GitHub Pages on every push to `main` (requires enabling Pages with the GitHub Actions source).
+
 ### Changed
 
 - Resolved the stale Sussur Bark open question in `session-notes.md`: the bark was crafted into the Sussur Dagger, currently held by Astarion.

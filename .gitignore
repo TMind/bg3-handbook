@@ -32,3 +32,6 @@ tools/ExportTool-*.zip
 
 # Local-only permissions
 .claude/settings.local.json
+
+# Generated site (rebuild with scripts/build_site.py; published by CI)
+site/

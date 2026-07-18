@@ -32,6 +32,7 @@ This repo is the whole project: campaign state, handbook, and save tooling. It i
 - `README.md` — handbook home page and chapter index
 - `docs/` — the practical BG3 mechanics handbook (see below)
 - `scripts/check_vault.py` — validates `README.md` + `docs/*.md`; run after editing the handbook
+- `scripts/build_site.py` + `scripts/site_template.html` — build the standalone navigable site into `site/index.html`
 - `tools/` — savegame sync and extraction (`SAVEGAME_WORKFLOW.md` has the workflow)
 - `saves/` — human-accessible savegame mirror copied by the sync tool (gitignored)
 - `map.html` — standalone campaign map
@@ -64,6 +65,18 @@ Validate the handbook after any edit to `README.md` or `docs/*.md`:
 python3 scripts/check_vault.py
 ```
 
+Build the standalone navigable site (one self-contained `site/index.html` with a
+chapter sidebar and working internal links; open it directly or host it static):
+
+```sh
+python3 scripts/build_site.py            # write site/index.html
+python3 scripts/build_site.py --check    # verify it is up to date (used in CI)
+```
+
+`site/` is gitignored — it is a generated artifact. Pushing to a GitHub remote
+triggers `.github/workflows/pages.yml`, which rebuilds and deploys it to GitHub
+Pages (enable once under Settings → Pages → Source: "GitHub Actions").
+
 Sync and extract a BG3 savegame (see `tools/SAVEGAME_WORKFLOW.md` for the full workflow):
 
 ```sh
@@ -90,7 +103,7 @@ One-time setup for the save tools — the dependencies install to a temp dir, no
 python3 -m pip install --target /private/tmp/bg3-py-libs -r tools/requirements-save-tools.txt
 ```
 
-There is no build, lint, or test suite. `check_vault.py` is the only automated check.
+There is no lint or test suite. `check_vault.py` is the only automated check, and `build_site.py` is the only build.
 
 ## Architecture
 

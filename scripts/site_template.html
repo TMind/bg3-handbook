@@ -1,0 +1,796 @@
+<title>BG3 Handbook</title>
+<style>
+  :root {
+    --ink-950: #10121a;
+    --ink-900: #181c27;
+    --ink-850: #1f2431;
+    --ink-800: #262c3b;
+    --ink-border: #2c3242;
+    --ink-text: #e6e8f1;
+    --ink-text-dim: #9aa1b4;
+
+    --page-50: #eef0f4;
+    --page-100: #e4e7ee;
+    --page-0: #ffffff;
+    --page-border: #d9dce6;
+    --page-text: #1c1f2b;
+    --page-text-dim: #565d70;
+
+    --moon: #6f9bcf;
+    --moon-soft: #dbe6f2;
+    --brass: #ad8a2c;
+    --warn: #a5741f;
+    --crit: #b8524f;
+    --quote: #7a6f96;
+
+    --bg: var(--page-50);
+    --surface: var(--page-0);
+    --sidebar: var(--page-100);
+    --border: var(--page-border);
+    --text: var(--page-text);
+    --text-dim: var(--page-text-dim);
+    --accent: #3f6f9e;
+    --accent-soft: var(--moon-soft);
+    --code-bg: #e5e8f0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: var(--ink-950);
+      --surface: var(--ink-900);
+      --sidebar: var(--ink-850);
+      --border: var(--ink-border);
+      --text: var(--ink-text);
+      --text-dim: var(--ink-text-dim);
+      --accent: var(--moon);
+      --accent-soft: #26344a;
+      --code-bg: #20242f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: var(--ink-950);
+    --surface: var(--ink-900);
+    --sidebar: var(--ink-850);
+    --border: var(--ink-border);
+    --text: var(--ink-text);
+    --text-dim: var(--ink-text-dim);
+    --accent: var(--moon);
+    --accent-soft: #26344a;
+    --code-bg: #20242f;
+  }
+  :root[data-theme="light"] {
+    --bg: var(--page-50);
+    --surface: var(--page-0);
+    --sidebar: var(--page-100);
+    --border: var(--page-border);
+    --text: var(--page-text);
+    --text-dim: var(--page-text-dim);
+    --accent: #3f6f9e;
+    --accent-soft: var(--moon-soft);
+    --code-bg: #e5e8f0;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Seravek", "Avenir Next", "Century Gothic", "Trebuchet MS", sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .app {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    min-height: 100vh;
+  }
+
+  /* ---------- Sidebar ---------- */
+  .sidebar {
+    background: var(--sidebar);
+    border-right: 1px solid var(--border);
+    padding: 1.4rem 1rem 3rem;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.02rem;
+    padding: 0.2rem 0.5rem 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0.9rem;
+    text-wrap: balance;
+  }
+  .brand .dice { font-size: 1.3rem; }
+  .nav-group { margin-bottom: 1.3rem; }
+  .nav-group-label {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--text-dim);
+    padding: 0 0.5rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+  .nav-link {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.38rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.86rem;
+    color: var(--text);
+    text-decoration: none;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+  }
+  .nav-link .glyph { font-size: 0.85rem; width: 1.1rem; flex-shrink: 0; }
+  .nav-link:hover { background: var(--accent-soft); }
+  .nav-link.active {
+    background: var(--accent-soft);
+    border-left-color: var(--accent);
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .mobile-toggle {
+    display: none;
+    position: fixed;
+    top: 0.8rem;
+    left: 0.8rem;
+    z-index: 20;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 0.4rem 0.65rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* ---------- Content ---------- */
+  .content-scroll {
+    overflow-y: auto;
+    height: 100vh;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3.2rem 1.75rem 6rem;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 0.22rem 0.55rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .doc h1 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    font-size: 2.05rem;
+    letter-spacing: 0.002em;
+    margin: 0 0 1.1rem;
+    text-wrap: balance;
+  }
+  .doc h2 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 2.6rem 0 0.9rem;
+    text-wrap: balance;
+    scroll-margin-top: 1.5rem;
+  }
+  .doc h3 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.12rem;
+    margin: 1.9rem 0 0.7rem;
+    scroll-margin-top: 1.5rem;
+  }
+  .doc h4, .doc h5, .doc h6 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 1.4rem 0 0.5rem;
+    scroll-margin-top: 1.5rem;
+  }
+  .doc p { margin: 0.7rem 0; }
+  .doc hr { border: none; border-top: 1px solid var(--border); margin: 2.2rem 0; }
+  .doc strong { font-weight: 700; }
+  .doc code {
+    background: var(--code-bg);
+    border-radius: 4px;
+    padding: 0.1rem 0.35rem;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.86em;
+  }
+  .doc pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.9rem 1.05rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+  .doc pre code { background: none; padding: 0; font-size: 0.83rem; }
+
+  .doc ul, .doc ol { padding-left: 1.3rem; margin: 0.7rem 0; }
+  .doc li { margin-bottom: 0.32rem; }
+  .doc li::marker { color: var(--text-dim); }
+
+  .doclink {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent);
+    cursor: pointer;
+  }
+  .doclink:hover { border-bottom-style: solid; }
+  .doc a.external {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  .doc a.broken {
+    color: var(--crit);
+    border-bottom: 1px dotted var(--crit);
+    cursor: not-allowed;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    margin: 1.1rem 0;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+  thead th {
+    text-align: left;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-dim);
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid var(--border);
+    font-weight: 700;
+  }
+  td {
+    padding: 0.62rem 0.85rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  .col-num { font-variant-numeric: tabular-nums; }
+
+  .callout {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 0.85rem 1.05rem;
+    margin: 1.15rem 0;
+    font-size: 0.93rem;
+  }
+  .callout-label {
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 0.35rem;
+  }
+  .callout > .callout-label:only-child { margin-bottom: 0; }
+  .callout.type-tip, .callout.type-info { border-left-color: var(--accent); }
+  .callout.type-tip .callout-label, .callout.type-info .callout-label { color: var(--accent); }
+  .callout.type-warning { border-left-color: var(--warn); }
+  .callout.type-warning .callout-label { color: var(--warn); }
+  .callout.type-danger { border-left-color: var(--crit); }
+  .callout.type-danger .callout-label { color: var(--crit); }
+  .callout.type-quote {
+    border-left-color: var(--quote);
+    font-style: italic;
+    color: var(--text-dim);
+    text-align: center;
+  }
+  .callout.type-quote .callout-label { color: var(--quote); justify-content: center; }
+  .callout > *:last-child { margin-bottom: 0; }
+  .callout summary { cursor: pointer; }
+  .callout summary::marker { color: var(--text-dim); }
+  .callout .callout-body > *:first-child { margin-top: 0.5rem; }
+
+  blockquote.plain {
+    border-left: 3px solid var(--border);
+    margin: 1rem 0;
+    padding: 0.2rem 0 0.2rem 1rem;
+    color: var(--text-dim);
+  }
+
+  .page-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border);
+  }
+  .page-nav a {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    text-decoration: none;
+  }
+  .page-nav a:hover { color: var(--accent); }
+
+  @media (max-width: 860px) {
+    .app { grid-template-columns: 1fr; }
+    .sidebar {
+      position: fixed;
+      left: 0; top: 0; bottom: 0;
+      width: 260px;
+      transform: translateX(-100%);
+      transition: transform 0.2s ease;
+      z-index: 15;
+      box-shadow: 2px 0 18px rgba(0,0,0,0.25);
+    }
+    .app.nav-open .sidebar { transform: translateX(0); }
+    .mobile-toggle { display: block; }
+    .page { padding-top: 4.2rem; }
+  }
+</style>
+
+<div class="app" id="app">
+  <button class="mobile-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+  <nav class="sidebar" id="sidebar"></nav>
+  <div class="content-scroll" id="contentScroll">
+    <main class="page">
+      <span class="eyebrow" id="eyebrow"></span>
+      <article class="doc" id="content"></article>
+      <div class="page-nav" id="pageNav"></div>
+    </main>
+  </div>
+</div>
+
+<script type="application/json" id="doc-data">__DOC_DATA__</script>
+
+<script>
+(function () {
+  "use strict";
+
+  var raw = JSON.parse(document.getElementById("doc-data").textContent);
+
+  function b64ToUtf8(b64) {
+    var bin = atob(b64);
+    var bytes = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return new TextDecoder("utf-8").decode(bytes);
+  }
+
+  function stripFrontmatter(text) {
+    if (text.slice(0, 4) === "---\n" || text.slice(0,4) === "---\r") {
+      var end = text.indexOf("\n---", 3);
+      if (end !== -1) {
+        var nl = text.indexOf("\n", end + 1);
+        return text.slice(nl === -1 ? text.length : nl + 1);
+      }
+    }
+    return text;
+  }
+
+  function stripComments(text) {
+    return text.replace(/<!--[\s\S]*?-->/g, "");
+  }
+
+  var relpathByStem = {};
+  var rawByStem = {};
+  var order = [];
+  Object.keys(raw).forEach(function (relpath) {
+    var text = stripComments(stripFrontmatter(b64ToUtf8(raw[relpath])));
+    var stem = relpath.split("/").pop().replace(/\.md$/, "");
+    relpathByStem[stem] = relpath;
+    rawByStem[stem] = text;
+    order.push(stem);
+  });
+
+  // ---------- Step A: index headings + block ids per stem ----------
+  var headingsByStem = {};
+  var blocksByStem = {};
+
+  function indexDoc(stem) {
+    var headings = {};
+    var blocks = {};
+    var counter = 0;
+    var lines = rawByStem[stem].split("\n");
+    lines.forEach(function (line) {
+      var m = line.match(/^(#{1,6})\s+(.+)$/);
+      if (!m) return;
+      var textPart = m[2];
+      var blockId = null;
+      var bm = textPart.match(/\s+\^([A-Za-z0-9_-]+)\s*$/);
+      if (bm) {
+        blockId = bm[1];
+        textPart = textPart.slice(0, bm.index);
+      }
+      textPart = textPart.trim();
+      var id = blockId ? (stem + "--b-" + blockId) : (stem + "--h" + counter);
+      counter++;
+      headings[textPart] = id;
+      if (blockId) blocks[blockId] = id;
+    });
+    headingsByStem[stem] = headings;
+    blocksByStem[stem] = blocks;
+  }
+  order.forEach(indexDoc);
+
+  // ---------- Link resolution ----------
+  function splitWikilink(body) {
+    var escIdx = body.indexOf("\\|");
+    var plainIdx = body.indexOf("|");
+    var candidates = [escIdx, plainIdx].filter(function (i) { return i !== -1; });
+    if (!candidates.length) return [body, null];
+    var idx = Math.min.apply(null, candidates);
+    var sepLen = idx === escIdx ? 2 : 1;
+    return [body.slice(0, idx), body.slice(idx + sepLen)];
+  }
+
+  function resolveWikilinkTarget(targetRaw, currentStem) {
+    var target = targetRaw.replace(/\\\|/g, "|");
+    var filePart, blockId = null, heading = null;
+    if (target.indexOf("#^") !== -1) {
+      var parts = target.split("#^");
+      filePart = parts[0]; blockId = parts.slice(1).join("#^");
+    } else if (target.indexOf("#") !== -1) {
+      var idx = target.indexOf("#");
+      filePart = target.slice(0, idx); heading = target.slice(idx + 1);
+    } else {
+      filePart = target;
+    }
+    filePart = filePart.trim();
+    if (!filePart) filePart = currentStem;
+    if (!rawByStem[filePart]) return null;
+    var id = null;
+    if (blockId) id = (blocksByStem[filePart] || {})[blockId.trim()];
+    else if (heading) id = (headingsByStem[filePart] || {})[heading.trim()];
+    return { stem: filePart, id: id || null };
+  }
+
+  function resolveRelativeHref(currentStem, href) {
+    var hashIdx = href.indexOf("#");
+    var pathPart = hashIdx === -1 ? href : href.slice(0, hashIdx);
+    var fragment = hashIdx === -1 ? null : href.slice(hashIdx + 1);
+    var currentRel = relpathByStem[currentStem] || "";
+    var currentDir = currentRel.indexOf("/") !== -1 ? currentRel.split("/").slice(0, -1) : [];
+    var stack = currentDir.slice();
+    pathPart.split("/").forEach(function (p) {
+      if (p === "" || p === ".") return;
+      if (p === "..") stack.pop();
+      else stack.push(p);
+    });
+    var resolvedStem = stack.join("/").replace(/\.md$/, "").split("/").pop();
+    if (!rawByStem[resolvedStem]) return null;
+    var id = null;
+    if (fragment) {
+      if (fragment[0] === "^") id = (blocksByStem[resolvedStem] || {})[fragment.slice(1)];
+      else id = (headingsByStem[resolvedStem] || {})[fragment];
+    }
+    return { stem: resolvedStem, id: id || null };
+  }
+
+  function routeHref(stem, id) {
+    return "#/" + stem + (id ? "~" + id : "");
+  }
+
+  // ---------- Inline markdown ----------
+  function escapeHtml(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function renderInline(raw, currentStem) {
+    var text = escapeHtml(raw);
+
+    var codeStore = [];
+    text = text.replace(/`([^`]+)`/g, function (_, c) {
+      codeStore.push(c);
+      return "" + (codeStore.length - 1) + "";
+    });
+
+    // wikilinks [[target]] or [[target|alias]]
+    text = text.replace(/\[\[([^\]]+)\]\]/g, function (_, body) {
+      var parts = splitWikilink(body);
+      var targetRaw = parts[0], alias = parts[1];
+      var label = (alias != null ? alias : targetRaw).replace(/\\\|/g, "|");
+      var resolved = resolveWikilinkTarget(targetRaw, currentStem);
+      if (!resolved) return '<a class="doclink broken" title="unresolved link">' + label + "</a>";
+      return '<a class="doclink" data-route="' + routeHref(resolved.stem, resolved.id) + '">' + label + "</a>";
+    });
+
+    // markdown links [text](href)
+    text = text.replace(/\[([^\]]*)\]\(([^)]+)\)/g, function (_, label, href) {
+      if (/^https?:\/\//.test(href)) {
+        return '<a class="external" href="' + href + '" target="_blank" rel="noopener noreferrer">' + label + "</a>";
+      }
+      var resolved = resolveRelativeHref(currentStem, href);
+      if (!resolved) return '<a class="doclink broken" title="unresolved link">' + label + "</a>";
+      return '<a class="doclink" data-route="' + routeHref(resolved.stem, resolved.id) + '">' + label + "</a>";
+    });
+
+    text = text.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    text = text.replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, "$1<em>$2</em>");
+
+    text = text.replace(/(\d+)/g, function (_, i) {
+      return "<code>" + codeStore[parseInt(i, 10)] + "</code>";
+    });
+    text = text.replace(/\\\|/g, "|");
+    return text;
+  }
+
+  // ---------- Table row split (respects \| escaping) ----------
+  function splitTableRow(line) {
+    var t = line.trim();
+    if (t.charAt(0) === "|") t = t.slice(1);
+    if (t.charAt(t.length - 1) === "|") t = t.slice(0, -1);
+    var cells = [];
+    var cur = "";
+    for (var i = 0; i < t.length; i++) {
+      var ch = t[i];
+      if (ch === "\\" && t[i + 1] === "|") { cur += "\\|"; i++; continue; }
+      if (ch === "|") { cells.push(cur); cur = ""; continue; }
+      cur += ch;
+    }
+    cells.push(cur);
+    return cells.map(function (c) { return c.trim(); });
+  }
+
+  var TABLE_SEP = /^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)*\|?\s*$/;
+
+  // ---------- Block parser (recursive) ----------
+  function parseBlocks(text, currentStem) {
+    var lines = text.replace(/\r\n/g, "\n").split("\n");
+    var out = [];
+    var i = 0;
+
+    function isListLine(line) { return /^\s*([-*+]|\d+[.)])\s+/.test(line); }
+
+    while (i < lines.length) {
+      var line = lines[i];
+
+      if (line.trim() === "") { i++; continue; }
+
+      // fenced code block
+      var fence = line.match(/^\s*```(\w*)\s*$/);
+      if (fence) {
+        var lang = fence[1];
+        var body = [];
+        i++;
+        while (i < lines.length && !/^\s*```\s*$/.test(lines[i])) { body.push(lines[i]); i++; }
+        i++; // skip closing fence
+        out.push('<pre><code class="lang-' + lang + '">' + escapeHtml(body.join("\n")) + "</code></pre>");
+        continue;
+      }
+
+      // heading
+      var hm = line.match(/^(#{1,6})\s+(.+)$/);
+      if (hm) {
+        var level = hm[1].length;
+        var textPart = hm[2];
+        var blockId = null;
+        var bm = textPart.match(/\s+\^([A-Za-z0-9_-]+)\s*$/);
+        if (bm) { blockId = bm[1]; textPart = textPart.slice(0, bm.index); }
+        textPart = textPart.trim();
+        var id = blockId
+          ? (blocksByStem[currentStem] || {})[blockId]
+          : (headingsByStem[currentStem] || {})[textPart];
+        out.push('<h' + level + (id ? ' id="' + id + '"' : "") + ">" + renderInline(textPart, currentStem) + "</h" + level + ">");
+        i++;
+        continue;
+      }
+
+      // blockquote / callout
+      if (/^\s*>/.test(line)) {
+        var qLines = [];
+        while (i < lines.length && /^\s*>/.test(lines[i])) {
+          qLines.push(lines[i].replace(/^\s*>\s?/, ""));
+          i++;
+        }
+        var first = qLines[0] || "";
+        var cm = first.match(/^\[!(\w+)\]([-+])?\s*(.*)$/);
+        if (cm) {
+          var type = cm[1].toLowerCase();
+          var collapse = cm[2];
+          var title = cm[3];
+          var rest = qLines.slice(1).join("\n");
+          var bodyHtml = parseBlocks(rest, currentStem);
+          var icon = { tip: "💡", info: "ℹ️", warning: "⚠️", danger: "☠️", quote: "" }[type] || "📌";
+          var labelHtml = '<span class="callout-label">' + (icon ? icon + " " : "") + escapeHtml(title || type) + "</span>";
+          if (collapse === "-" || collapse === "+") {
+            out.push('<details class="callout type-' + type + '"' + (collapse === "+" ? " open" : "") + "><summary>" + labelHtml + '</summary><div class="callout-body">' + bodyHtml + "</div></details>");
+          } else {
+            out.push('<div class="callout type-' + type + '">' + labelHtml + '<div class="callout-body">' + bodyHtml + "</div></div>");
+          }
+        } else {
+          out.push('<blockquote class="plain">' + parseBlocks(qLines.join("\n"), currentStem) + "</blockquote>");
+        }
+        continue;
+      }
+
+      // table
+      if (/^\s*\|/.test(line) && i + 1 < lines.length && TABLE_SEP.test(lines[i + 1])) {
+        var header = splitTableRow(line);
+        var sepCells = splitTableRow(lines[i + 1]);
+        var aligns = sepCells.map(function (c) {
+          var l = c.charAt(0) === ":", r = c.charAt(c.length - 1) === ":";
+          return l && r ? "center" : r ? "right" : l ? "left" : "";
+        });
+        i += 2;
+        var rows = [];
+        while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(splitTableRow(lines[i])); i++; }
+        var html = '<div class="table-wrap"><table><thead><tr>';
+        header.forEach(function (c, idx) {
+          var st = aligns[idx] ? ' style="text-align:' + aligns[idx] + '"' : "";
+          html += "<th" + st + ">" + renderInline(c, currentStem) + "</th>";
+        });
+        html += "</tr></thead><tbody>";
+        rows.forEach(function (r) {
+          html += "<tr>";
+          r.forEach(function (c, idx) {
+            var st = aligns[idx] ? ' style="text-align:' + aligns[idx] + '"' : "";
+            html += "<td" + st + ">" + renderInline(c, currentStem) + "</td>";
+          });
+          html += "</tr>";
+        });
+        html += "</tbody></table></div>";
+        out.push(html);
+        continue;
+      }
+
+      // horizontal rule
+      if (/^\s*(---+|\*\*\*+|___+)\s*$/.test(line)) { out.push("<hr>"); i++; continue; }
+
+      // list
+      if (isListLine(line)) {
+        var ordered = /^\s*\d+[.)]\s+/.test(line);
+        var items = [];
+        while (i < lines.length && isListLine(lines[i])) {
+          var lm = lines[i].match(/^\s*(?:[-*+]|\d+[.)])\s+(.*)$/);
+          items.push(lm[1]);
+          i++;
+        }
+        var tag = ordered ? "ol" : "ul";
+        out.push("<" + tag + ">" + items.map(function (it) { return "<li>" + renderInline(it, currentStem) + "</li>"; }).join("") + "</" + tag + ">");
+        continue;
+      }
+
+      // paragraph
+      var para = [];
+      while (i < lines.length && lines[i].trim() !== "" &&
+             !/^\s*```/.test(lines[i]) && !/^(#{1,6})\s+/.test(lines[i]) &&
+             !/^\s*>/.test(lines[i]) && !isListLine(lines[i]) &&
+             !/^\s*(---+|\*\*\*+|___+)\s*$/.test(lines[i]) &&
+             !(/^\s*\|/.test(lines[i]) && i + 1 < lines.length && TABLE_SEP.test(lines[i + 1]))) {
+        para.push(lines[i]);
+        i++;
+      }
+      out.push("<p>" + renderInline(para.join(" "), currentStem) + "</p>");
+    }
+    return out.join("\n");
+  }
+
+  var renderCache = {};
+  function renderDoc(stem) {
+    if (!renderCache[stem]) renderCache[stem] = parseBlocks(rawByStem[stem], stem);
+    return renderCache[stem];
+  }
+
+  // ---------- Sidebar ----------
+  var NAV = [
+    { label: "Home", links: [["README", "🎲", "Home"]] },
+    { label: "Current Campaign", links: [
+      ["14_Current_Readiness_Audit", "⚠️", "Readiness Audit"],
+      ["12_Current_Save_Snapshot", "📸", "Save Snapshot"],
+      ["13_Item_Inventory_Snapshot", "🎒", "Item Snapshot"],
+      ["11_Main_Character_Builds", "🤝", "Main Character Builds"]
+    ]},
+    { label: "Learn the Systems", links: [
+      ["01_Basics_and_User_Interface", "🧭", "Basics and UI"],
+      ["02_Combat_System", "⚔️", "Combat System"],
+      ["03_Using_the_Environment", "🏔️", "Using the Environment"],
+      ["04_Inventory_and_Equipment", "🎒", "Inventory and Equipment"]
+    ]},
+    { label: "Manage Resources", links: [
+      ["05_Alchemy", "🧪", "Alchemy"],
+      ["06_Elixirs_and_Potions", "🍷", "Elixirs and Potions"],
+      ["07_Vendors_and_Resources", "🛒", "Vendors and Resources"],
+      ["08_Magic_and_Useful_Items", "✨", "Magic and Useful Items"]
+    ]},
+    { label: "Prepare the Party", links: [
+      ["09_Preparation_and_Battle_Setup", "🧰", "Preparation and Battle Setup"],
+      ["10_Endgame_and_Boss_Fights", "🐉", "Endgame and Boss Fights"]
+    ]},
+    { label: "Reference", links: [
+      ["15_Appendix", "📎", "Appendix"],
+      ["00_Editing_Guide", "🛠️", "Editing Guide"],
+      ["00_History", "🕰️", "Handbook History"]
+    ]}
+  ];
+
+  var sidebar = document.getElementById("sidebar");
+  var sidebarHtml = '<div class="brand" data-route="#/README"><span class="dice">🎲</span> BG3 Handbook</div>';
+  NAV.forEach(function (group) {
+    sidebarHtml += '<div class="nav-group"><div class="nav-group-label">' + group.label + "</div>";
+    group.links.forEach(function (l) {
+      sidebarHtml += '<a class="nav-link" data-stem="' + l[0] + '" data-route="#/' + l[0] + '"><span class="glyph">' + l[1] + "</span>" + l[2] + "</a>";
+    });
+    sidebarHtml += "</div>";
+  });
+  sidebar.innerHTML = sidebarHtml;
+
+  // ---------- Router ----------
+  var contentEl = document.getElementById("content");
+  var eyebrowEl = document.getElementById("eyebrow");
+  var scrollEl = document.getElementById("contentScroll");
+
+  function setActive(stem) {
+    var links = sidebar.querySelectorAll(".nav-link");
+    for (var i = 0; i < links.length; i++) {
+      links[i].classList.toggle("active", links[i].getAttribute("data-stem") === stem);
+    }
+  }
+
+  function navigate() {
+    var hash = location.hash.replace(/^#\/?/, "");
+    var stem = hash, anchor = null;
+    var tildeIdx = hash.indexOf("~");
+    if (tildeIdx !== -1) { stem = hash.slice(0, tildeIdx); anchor = hash.slice(tildeIdx + 1); }
+    if (!stem || !rawByStem[stem]) stem = "README";
+
+    contentEl.innerHTML = renderDoc(stem);
+    eyebrowEl.textContent = relpathByStem[stem];
+    setActive(stem);
+
+    var links = contentEl.querySelectorAll("a.doclink[data-route]");
+    links.forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        location.hash = a.getAttribute("data-route");
+      });
+    });
+
+    if (anchor) {
+      var target = document.getElementById(anchor);
+      if (target) { setTimeout(function () { target.scrollIntoView({ behavior: "smooth", block: "start" }); }, 30); }
+    } else {
+      scrollEl.scrollTop = 0;
+    }
+
+    document.getElementById("app").classList.remove("nav-open");
+  }
+
+  window.addEventListener("hashchange", navigate);
+  sidebar.addEventListener("click", function (e) {
+    var el = e.target.closest("[data-route]");
+    if (el) { location.hash = el.getAttribute("data-route"); }
+  });
+
+  document.getElementById("navToggle").addEventListener("click", function () {
+    document.getElementById("app").classList.toggle("nav-open");
+  });
+
+  if (!location.hash) location.hash = "#/README";
+  navigate();
+})();
+</script>
