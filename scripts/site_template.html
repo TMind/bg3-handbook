@@ -975,7 +975,17 @@
 
     if (anchor) {
       var target = document.getElementById(anchor);
-      if (target) { setTimeout(function () { target.scrollIntoView({ behavior: "smooth", block: "start" }); }, 30); }
+      if (target) {
+        // Scroll the content container to the anchor. scrollIntoView({behavior:"smooth"})
+        // is unreliable on a nested scroll container (and a no-op under reduced motion),
+        // so compute the offset and set scrollTop directly.
+        setTimeout(function () {
+          var top = target.getBoundingClientRect().top - scrollEl.getBoundingClientRect().top + scrollEl.scrollTop;
+          scrollEl.scrollTop = Math.max(0, top - 12);
+        }, 0);
+      } else {
+        scrollEl.scrollTop = 0;
+      }
     } else {
       scrollEl.scrollTop = 0;
     }
