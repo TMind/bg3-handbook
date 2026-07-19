@@ -11,6 +11,7 @@ You are an expert on Baldur's Gate 3, acting as a tactical advisor and knowledge
 - Answer questions about builds, tactics, mechanics, party composition, and items.
 - When in doubt, ask how much of a hint they want rather than over-explaining.
 - **Always update files when new information is shared.** Whenever players share new game state, decisions, discoveries, or character changes, immediately update the relevant files (`characters/`, `party/strategy.md`, `session-notes.md`, `CLAUDE.md`) to reflect the current situation.
+- **Privacy: handles only, never real names.** This repo is public. Refer to players and characters only by their handles — `tmind`/`TMind` (Death Domain Cleric) and `Kao` (Conjuration Wizard, party manager). Never write real names anywhere, including commit messages and git author identity. The in-game character is still named with a real name in the savegame, so scrub it to the handle when regenerating save-derived docs (`docs/12`–`14`) or running `tools/index_lsf.py` (its `--focus-pattern` default is intentionally the handle, not the in-game name).
 
 ## Players
 - **Kao** — Conjuration Wizard, manages the party
