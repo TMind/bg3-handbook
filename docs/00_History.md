@@ -17,6 +17,12 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
+## 2026-07-19
+
+### Added
+
+- Added a client-side search box to the generated site (`scripts/site_template.html`): indexes every chapter section in the browser, ranks results, shows highlighted snippets, and jumps to the matching heading. No backend — all content is already embedded in the page. Press `/` to focus it, `Esc` to clear.
+
 ## 2026-07-18
 
 ### Changed

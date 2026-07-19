@@ -352,6 +352,62 @@
     .mobile-toggle { display: block; }
     .page { padding-top: 4.2rem; }
   }
+
+  /* ---------- Search ---------- */
+  .search-wrap { padding: 0.2rem 0.5rem 1rem; }
+  #searchInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0.65rem;
+    font: inherit;
+    font-size: 0.85rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    outline: none;
+  }
+  #searchInput:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-soft);
+  }
+  #searchInput::placeholder { color: var(--text-dim); }
+
+  .search-results { max-width: 760px; }
+  .search-count {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin: 0 0 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  a.search-hit {
+    display: block;
+    padding: 0.7rem 0.9rem;
+    margin-bottom: 0.55rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
+  }
+  a.search-hit:hover { border-color: var(--accent); }
+  a.search-hit:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .hit-crumb {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+  .hit-crumb .crumb-sep { color: var(--text-dim); font-weight: 400; }
+  .hit-snip { font-size: 0.85rem; color: var(--text-dim); line-height: 1.5; }
+  .search-hit mark, .hit-crumb mark {
+    background: var(--accent-soft);
+    color: var(--text);
+    border-radius: 2px;
+    padding: 0 1px;
+  }
 </style>
 
 <div class="app" id="app">
@@ -730,6 +786,7 @@
 
   var sidebar = document.getElementById("sidebar");
   var sidebarHtml = '<div class="brand" data-route="#/README"><span class="dice">🎲</span> BG3 Handbook</div>';
+  sidebarHtml += '<div class="search-wrap"><input id="searchInput" type="search" placeholder="Search the handbook…" autocomplete="off" spellcheck="false" aria-label="Search the handbook"></div>';
   NAV.forEach(function (group) {
     sidebarHtml += '<div class="nav-group"><div class="nav-group-label">' + group.label + "</div>";
     group.links.forEach(function (l) {
@@ -738,6 +795,149 @@
     sidebarHtml += "</div>";
   });
   sidebar.innerHTML = sidebarHtml;
+
+  var labelByStem = {};
+  NAV.forEach(function (group) {
+    group.links.forEach(function (l) { labelByStem[l[0]] = l[2]; });
+  });
+
+  // ---------- Search ----------
+  function stripMd(s) {
+    return s
+      .replace(/`([^`]+)`/g, "$1")
+      .replace(/\[\[([^\]]+)\]\]/g, function (_, b) {
+        var p = splitWikilink(b);
+        return (p[1] != null ? p[1] : p[0]).replace(/\\\|/g, "|");
+      })
+      .replace(/\[([^\]]*)\]\([^)]+\)/g, "$1")
+      .replace(/\*\*([^*]+)\*\*/g, "$1")
+      .replace(/\*([^*]+)\*/g, "$1")
+      .replace(/^\s*#{1,6}\s+/, "")
+      .replace(/\s+\^[A-Za-z0-9_-]+\s*$/, "")
+      .replace(/^\s*>\s?/, "")
+      .replace(/^\s*[-*+]\s+/, "")
+      .replace(/^\s*\d+[.)]\s+/, "")
+      .replace(/\\\|/g, "|")
+      .replace(/\|/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  var searchIndex = null;
+  function buildIndex() {
+    var sections = [];
+    order.forEach(function (stem) {
+      var label = labelByStem[stem] || relpathByStem[stem];
+      var lines = rawByStem[stem].split("\n");
+      var cur = null;
+      var inFence = false;
+      function flush() {
+        if (cur && (cur.heading || cur.parts.length)) {
+          cur.text = cur.parts.join(" ");
+          delete cur.parts;
+          sections.push(cur);
+        }
+      }
+      lines.forEach(function (line) {
+        if (/^\s*```/.test(line)) { inFence = !inFence; return; }
+        if (inFence) { var ct = line.trim(); if (ct && cur) cur.parts.push(ct); return; }
+        var hm = line.match(/^(#{1,6})\s+(.+)$/);
+        if (hm) {
+          flush();
+          var tp = hm[2], bid = null;
+          var bm = tp.match(/\s+\^([A-Za-z0-9_-]+)\s*$/);
+          if (bm) { bid = bm[1]; tp = tp.slice(0, bm.index); }
+          tp = tp.trim();
+          var id = bid ? (blocksByStem[stem] || {})[bid] : (headingsByStem[stem] || {})[tp];
+          cur = { stem: stem, label: label, id: id || null, level: hm[1].length, heading: tp, parts: [] };
+        } else {
+          if (!cur) cur = { stem: stem, label: label, id: null, level: 0, heading: "", parts: [] };
+          if (TABLE_SEP.test(line)) return;
+          var txt = stripMd(line);
+          if (txt) cur.parts.push(txt);
+        }
+      });
+      flush();
+    });
+    return sections;
+  }
+
+  function escapeReg(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+
+  function runSearch(query) {
+    var terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!terms.length) return [];
+    var out = [];
+    searchIndex.forEach(function (sec) {
+      var h = sec.heading.toLowerCase();
+      var t = sec.text.toLowerCase();
+      var hay = h + " " + t;
+      var ok = terms.every(function (term) { return hay.indexOf(term) !== -1; });
+      if (!ok) return;
+      var score = 0;
+      terms.forEach(function (term) {
+        if (h.indexOf(term) !== -1) score += 12;
+        score += t.split(term).length - 1;
+      });
+      if (sec.level === 1) score += 6;
+      else if (sec.level === 2) score += 2;
+      out.push({ sec: sec, score: score });
+    });
+    out.sort(function (a, b) { return b.score - a.score; });
+    return out.slice(0, 40);
+  }
+
+  function makeSnippet(sec, terms) {
+    var text = sec.text || sec.heading;
+    if (!text) return "";
+    var lc = text.toLowerCase();
+    var pos = -1;
+    terms.forEach(function (term) {
+      var p = lc.indexOf(term);
+      if (p !== -1 && (pos === -1 || p < pos)) pos = p;
+    });
+    if (pos === -1) pos = 0;
+    var start = Math.max(0, pos - 55);
+    var end = Math.min(text.length, pos + 125);
+    var s = (start > 0 ? "…" : "") + text.slice(start, end) + (end < text.length ? "…" : "");
+    s = escapeHtml(s);
+    terms.forEach(function (term) {
+      s = s.replace(new RegExp("(" + escapeReg(term) + ")", "ig"), "<mark>$1</mark>");
+    });
+    return s;
+  }
+
+  function renderSearch(query) {
+    if (!searchIndex) searchIndex = buildIndex();
+    var terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+    var results = runSearch(query);
+    eyebrowEl.textContent = "search: " + query;
+    setActive(null);
+    if (!results.length) {
+      contentEl.innerHTML = '<div class="search-results"><p class="search-count">No matches</p><p>Nothing found for &ldquo;' + escapeHtml(query) + '&rdquo;. Try a different term.</p></div>';
+      scrollEl.scrollTop = 0;
+      return;
+    }
+    var html = '<div class="search-results"><p class="search-count">' + results.length + (results.length === 40 ? "+" : "") + " result" + (results.length > 1 ? "s" : "") + " for &ldquo;" + escapeHtml(query) + "&rdquo;</p>";
+    results.forEach(function (r) {
+      var sec = r.sec;
+      var crumb = escapeHtml(sec.label);
+      if (sec.heading && sec.level > 1) crumb += ' <span class="crumb-sep">›</span> ' + escapeHtml(sec.heading);
+      html += '<a class="search-hit" href="' + routeHref(sec.stem, sec.id) + '" data-route="' + routeHref(sec.stem, sec.id) + '"><div class="hit-crumb">' + crumb + '</div><div class="hit-snip">' + makeSnippet(sec, terms) + "</div></a>";
+    });
+    html += "</div>";
+    contentEl.innerHTML = html;
+    contentEl.querySelectorAll("a.search-hit[data-route]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var input = document.getElementById("searchInput");
+        if (input) input.value = "";
+        location.hash = a.getAttribute("data-route");
+      });
+    });
+    scrollEl.scrollTop = 0;
+    document.getElementById("app").classList.remove("nav-open");
+  }
 
   // ---------- Router ----------
   var contentEl = document.getElementById("content");
@@ -752,6 +952,9 @@
   }
 
   function navigate() {
+    var searchInputEl = document.getElementById("searchInput");
+    if (searchInputEl) searchInputEl.value = "";
+
     var hash = location.hash.replace(/^#\/?/, "");
     var stem = hash, anchor = null;
     var tildeIdx = hash.indexOf("~");
@@ -788,6 +991,30 @@
 
   document.getElementById("navToggle").addEventListener("click", function () {
     document.getElementById("app").classList.toggle("nav-open");
+  });
+
+  var searchInput = document.getElementById("searchInput");
+  searchInput.addEventListener("input", function () {
+    var v = searchInput.value.trim();
+    if (v) renderSearch(v);
+    else navigate();
+  });
+  searchInput.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      searchInput.value = "";
+      searchInput.blur();
+      navigate();
+    } else if (e.key === "Enter") {
+      var first = contentEl.querySelector("a.search-hit[data-route]");
+      if (first) { searchInput.value = ""; location.hash = first.getAttribute("data-route"); }
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "/" && document.activeElement !== searchInput &&
+        !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "")) {
+      e.preventDefault();
+      searchInput.focus();
+    }
   });
 
   if (!location.hash) location.hash = "#/README";
