@@ -7,7 +7,7 @@
 - **Game time (internal):** 361260
 - **Open / in progress:** 40  ·  **Completed:** 72
 
-## 🟡 Offene / laufende Quests
+## 🟡 Open / in-progress quests
 
 ### Prologue — Interlude
 
@@ -307,7 +307,7 @@
 </ul>
 </details>
 
-## ✅ Abgeschlossene Quests
+## ✅ Completed quests
 
 ### Prologue — Nautiloid
 

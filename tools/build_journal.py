@@ -180,8 +180,8 @@ def render(quests, meta):
             out.append("")
         return out
 
-    lines += block("🟡 Offene / laufende Quests", open_q)
-    lines += block("✅ Abgeschlossene Quests", done_q)
+    lines += block("🟡 Open / in-progress quests", open_q)
+    lines += block("✅ Completed quests", done_q)
     return "\n".join(lines).rstrip() + "\n"
 
 
