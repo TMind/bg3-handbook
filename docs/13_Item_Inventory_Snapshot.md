@@ -33,7 +33,9 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Scope
 
-- Source: `Wyrms Crossing - 98h 15m`, modified `2026-07-13 01:25:09 +02:00`, synced into the handbook at `2026-07-13 01:25:41 +02:00`.
+> [!warning] Item lists below are from the `Wyrms Crossing - 98h 15m` inventory pass and were **not** re-extracted for the current `Wyrms Rock Fortress - 100h 29m` save. Party and buffs are refreshed in [Current Save Snapshot](12_Current_Save_Snapshot.md); a full item re-audit is still pending. New effects seen active in the current save (Cloak of Displacement on Astarion, Absorb Elements on Kao, Blood of Lathander light on TMind) are not yet reflected in the tables here.
+
+- Source (last full item pass): `Wyrms Crossing - 98h 15m`, modified `2026-07-13 01:25:09 +02:00`, synced into the handbook at `2026-07-13 01:25:41 +02:00`.
 - Active-party grouping uses the current extracted save state for TMind, Lae'zel, Kao, and Astarion.
 - Camp storage is summarized in a gameplay-facing way, without coordinates or internal save identifiers.
 - Exact equipped slots still need a deeper pass; this is a carried/available snapshot, not a final gear-slot audit.

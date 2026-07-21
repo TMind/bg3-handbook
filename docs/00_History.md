@@ -19,6 +19,10 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ## 2026-07-22
 
+### Changed
+
+- Refreshed the save-derived snapshots from the `Wyrms Rock Fortress - 100h 29m` save: rewrote the party, buff, and item-source sections of [Current Save Snapshot](12_Current_Save_Snapshot.md) (party now in `WYR_Fortress_SUB`, XP ~63.7k, Flying Ghoul summon, Elixir of Bloodlust now active on Lae'zel, Pass Without Trace no longer active, new item effects), and updated the verdict, buff coverage, and source in [Current Readiness Audit](14_Current_Readiness_Audit.md). The item snapshot (`docs/13`) got the new source reference and a note that its detailed tables still reflect the prior inventory pass pending a full item re-audit. Also updated the current location in `CLAUDE.md` and `session-notes.md`.
+
 ### Fixed
 
 - Corrected the quest journal to show only genuine journal entries. The save's `QuestUnlockedSteps` were resolved to prototype quests by step-membership (the reliable key) rather than by objective-id prefix, which had mis-mapped several quests and rendered internal/empty steps as bogus humanized lines. Quest nodes that share a title (a companion's ORI_COM and ORI_Avatar tracks, or one node per objective) are now merged into a single entry with de-duplicated text, and untranslated placeholder titles (`%%% EMPTY`) fall back to a readable id.

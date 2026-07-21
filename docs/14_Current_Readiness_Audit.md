@@ -40,14 +40,14 @@ The party is **mostly prepared and close to hard-fight ready**.
 
 | Area | Status | Reason |
 |---|---|---|
-| Core party | ✅ Good | TMind, Lae'zel, Kao, and Astarion are grouped in `WYR_Bridge_SUB`; the skeleton summon is also nearby. |
+| Core party | ✅ Good | TMind, Lae'zel, Kao, and Astarion are grouped in `WYR_Fortress_SUB` (Wyrm's Rock Fortress); a Flying Ghoul summon and a quasit are also nearby. |
 | Daily movement | ✅ Good | Longstrider is active on TMind, Lae'zel, Kao, and Astarion. |
-| Maximum HP | ⚠️ Minor gap | Aid level 3 is active on TMind, Kao, and Astarion, but not currently detected on Lae'zel. |
+| Maximum HP | ⚠️ Minor gap | Aid level 3 is active on TMind, Kao, and Astarion, but still not detected on Lae'zel. |
 | Death protection | ✅ Good | Death Ward is active on TMind, Lae'zel, Kao, and Astarion. |
 | Control protection | ✅ Good | Freedom of Movement is active on TMind, Lae'zel, Kao, and Astarion. |
-| Emergency recovery | ✅ Strong | Revivify scroll stock is strong, but most scrolls are not on active characters. |
-| Burst resources | ✅ Good | Potion of Speed, Elixir of Bloodlust, Globe scrolls, and Conjure Elemental scrolls are available. Bloodlust is not active yet. |
-| Healing synergy | ✅ Improved | Devotee's Mace is now with TMind; Hellrider's Pride is also with TMind. |
+| Burst resources | ✅ Good | **Elixir of Bloodlust is now active on Lae'zel** (previous gap resolved). |
+| Stealth aura | ⚠️ Changed | Pass Without Trace is no longer active on the party; re-apply before stealth approaches if wanted. |
+| Healing synergy | ✅ Good | Blood of Lathander and Shield of Devotion effects are active on TMind. |
 
 ## Active Buff Coverage
 
@@ -55,10 +55,12 @@ The party is **mostly prepared and close to hard-fight ready**.
 
 | Character | Confirmed useful buffs | Missing before hard fights |
 |---|---|---|
-| TMind | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Warding Bond, Darkvision, Shield of Devotion spell slot, Pass Without Trace | No major daily-buff gap detected |
-| Lae'zel | Longstrider, Death Ward, Freedom of Movement, Darkvision, Pass Without Trace, critical-execution ring support | Aid; choose and drink the intended elixir |
-| Kao | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Mage Armor, Warding Bond, Darkvision, Animal Speaking, Fox's Cunning, Shovel flag, Pass Without Trace | No major daily-buff gap detected |
-| Astarion | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Darkvision, Cat's Grace, Pass Without Trace aura, happy status | No major daily-buff gap detected |
+| TMind | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Warding Bond, Darkvision, Shield of Devotion spell slot, Blood of Lathander light | No major daily-buff gap detected |
+| Lae'zel | Longstrider, Death Ward, Freedom of Movement, Darkvision, **Elixir of Bloodlust (active)**, critical-execution ring, Astral Knowledge (CHA) | Aid |
+| Kao | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Mage Armor, Warding Bond, Darkvision, Absorb Elements resource, Detect Thoughts, Animal Speaking, Shovel flag | No major daily-buff gap detected |
+| Astarion | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Darkvision, Cat's Grace, Cloak of Displacement, happy status | No major daily-buff gap detected |
+
+> [!note] Pass Without Trace is no longer active on the party in this save (it covered everyone previously). Re-cast it before a stealth-sensitive approach if you want the bonus back.
 
 ## Available Camp-Buff Casters ^available-buff-casters
 
@@ -114,6 +116,8 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 **Markers:** ⭐⭐⭐ 🍷 ⚔️
 
+> [!warning] The counts below are from the previous inventory spot-check (`Wyrms Crossing`). A full item re-audit for the current save was not run in this pass — verify stock in game before relying on exact numbers.
+
 | Resource | Save count | Current holder pattern | Readiness call |
 |---|---:|---|---|
 | Scroll of Revivify | 10 | 1 with Kao, 9 elsewhere | Strong stock; distribute before hard fights |
@@ -146,14 +150,13 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 **Markers:** ⭐⭐⭐ ⏱️ ⚔️
 
-1. Use Shadowheart or TMind to cast or refresh **Aid** so Lae'zel is included.
+1. Use Shadowheart or TMind to cast or refresh **Aid** so Lae'zel is included (still the one gap).
 2. Move one Revivify scroll to TMind, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
 3. Move one or two Potion of Invisibility items to Astarion.
 4. Give Lae'zel a small healing-potion stack.
-5. Decide whether Lae'zel drinks Bloodlust now or saves it for a known serious fight.
-6. Decide whether Astarion keeps the Viciousness elixir plan or hands it to Lae'zel.
-7. Confirm Scratch and the quasit are intentionally away from the bridge group, or resummon/regroup them if wanted.
-8. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
+5. Bloodlust is already active on Lae'zel this save — no action needed unless it is consumed before the fight.
+6. Re-apply **Pass Without Trace** before a stealth approach if wanted (not active this save).
+7. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
 
 ## Before a Hard Fight ^before-hard-fight
 
@@ -175,9 +178,9 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 | Field | Current value |
 |---|---|
-| Save name | Wyrms Crossing - 98h 15m |
-| Save modified | 2026-07-13 01:25:09 +02:00 |
-| Synced into handbook | 2026-07-13 01:25:41 +02:00 |
+| Save name | Wyrms Rock Fortress - 100h 29m |
+| Save modified | 2026-07-21 01:26:37 +02:00 |
+| Synced into handbook | 2026-07-22 00:29:42 +02:00 |
 | Game version | 4.1.1.7209685 |
 | Difficulty | DifficultyMedium / RulesetLarian |
 | Source record | `tools/save-extract/source_manifest.json` |

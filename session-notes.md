@@ -51,10 +51,10 @@ Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter
 ## Act 3 — Baldur's Gate (Current)
 
 ### Current location
-**Wyrm's Crossing** — just arrived, entering Act 3.
+**Wyrm's Rock Fortress** (`WYR_Fortress_SUB`) — ~100h playtime, party level 10.
 
 ### Active party
-Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric)
+Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric). Active summons: Flying Ghoul + quasit.
 
 ---
 
