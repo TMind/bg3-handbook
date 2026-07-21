@@ -102,25 +102,32 @@ def region_label(qid: str) -> str:
 def load_quest_text():
     """Optional real in-game text cache (see tools/extract_journal_text.py).
 
-    Returns (mapping, sorted_ids) or ({}, []) when the local cache is absent —
-    e.g. in CI, where the published journal falls back to readable ids.
+    Returns the mapping, or {} when the local cache is absent — e.g. in CI,
+    where the published journal falls back to readable ids.
     """
     path = ROOT / "tools/journal-text/quest_text.json"
     if not path.exists():
-        return {}, []
-    data = json.loads(path.read_text(encoding="utf-8"))
-    return data, sorted(data.keys(), key=len, reverse=True)
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
-def resolve_quest_id(save_id, objective, known_ids):
-    """Map a save's quest id/objective to a base QuestID from the text cache."""
-    for candidate in (save_id, objective):
-        if not candidate:
-            continue
-        for qid in known_ids:
-            if candidate == qid or candidate.startswith(qid + "_"):
-                return qid
-    return None
+def resolve_by_steps(steps, objective, quest_text):
+    """Pick the prototype QuestID that owns these unlocked steps.
+
+    The save's ObjectiveID does not reliably prefix a prototype QuestID, so
+    match on step-id membership (the reliable key) and use the objective's
+    prefix only to break ties.
+    """
+    best, best_score = None, 0
+    for qid, q in quest_text.items():
+        proto_steps = q.get("steps", {})
+        score = sum(1 for s in steps if s in proto_steps)
+        if score > best_score or (
+            score == best_score and score > 0 and best and objective.startswith(qid)
+            and not objective.startswith(best)
+        ):
+            best, best_score = qid, score
+    return best if best_score > 0 else None
 
 
 def region_order(qid: str) -> int:
@@ -190,7 +197,56 @@ def build(recs):
     return list(best.values())
 
 
-def render(quests, meta, quest_text, known_ids):
+def merge(quests, quest_text):
+    """Turn raw save quest nodes into render-ready units.
+
+    Without the text cache, each node passes through as a fallback unit. With
+    it, nodes are resolved to their prototype quest and grouped by display
+    title, so a quest that appears as several save nodes (a companion's ORI_COM
+    and ORI_Avatar tracks, or one node per objective) becomes a single entry.
+    Real journal lines are collected in unlock order and de-duplicated by text.
+    A merged quest is "completed" only if every contributing node was.
+    """
+    if not quest_text:
+        return [
+            {"id": q["id"], "completed": q["completed"], "steps": q["steps"], "real": False}
+            for q in quests
+        ]
+    groups = {}
+    order = []
+    passthrough = []
+    for q in quests:
+        base = resolve_by_steps(q["steps"], q["objective"], quest_text)
+        if not base:
+            passthrough.append(
+                {"id": q["id"], "completed": q["completed"], "steps": q["steps"], "real": False}
+            )
+            continue
+        proto = quest_text[base]
+        title = (proto.get("title") or "").strip()
+        key = title if title and not title.startswith("%%%") else base
+        g = groups.get(key)
+        if g is None:
+            g = groups[key] = {
+                "id": base, "title": proto.get("title"), "completed": True,
+                "entries": [], "_seen": set(), "real": True,
+            }
+            order.append(g)
+        for s in q["steps"]:
+            txt = proto["steps"].get(s)
+            if txt and txt not in g["_seen"]:
+                g["_seen"].add(txt)
+                g["entries"].append(txt)
+        if not q["completed"]:
+            g["completed"] = False
+    for g in order:
+        g.pop("_seen", None)
+    return order + passthrough
+
+
+def render(quests, meta, quest_text):
+    real = bool(quest_text)
+    quests = merge(quests, quest_text)
     open_q = sorted(
         (q for q in quests if not q["completed"]),
         key=lambda q: (region_order(q["id"]), q["id"]),
@@ -199,7 +255,6 @@ def render(quests, meta, quest_text, known_ids):
         (q for q in quests if q["completed"]),
         key=lambda q: (region_order(q["id"]), q["id"]),
     )
-    real = bool(quest_text)
 
     lines = [
         "# Quest Journal",
@@ -228,6 +283,12 @@ def render(quests, meta, quest_text, known_ids):
     def esc(s):
         return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
+    def clean_title(raw, rid):
+        # Some prototype titles are untranslated placeholders (e.g. "%%% EMPTY").
+        if not raw or raw.strip().startswith("%%%"):
+            return humanize_quest(rid)
+        return raw
+
     def block(title, items):
         # Each quest is a collapsed <details> so the long list stays scannable;
         # raw HTML renders on the site, on GitHub, and in Obsidian alike.
@@ -239,25 +300,22 @@ def render(quests, meta, quest_text, known_ids):
                 out += [f"### {reg}", ""]
                 cur_region = reg
 
-            base = resolve_quest_id(q["id"], q["objective"], known_ids) if real else None
-            qt = quest_text.get(base) if base else None
-
-            quest_title = (qt and qt.get("title")) or humanize_quest(q["id"])
-            step_texts = (qt or {}).get("steps", {})
-
             detail = []
-            if q["steps"]:
-                if qt:
-                    # Real journal entries, in the order the player unlocked them.
-                    for s in q["steps"]:
-                        entry = step_texts.get(s) or humanize(s)
-                        detail.append(f"<li>{esc(entry)}</li>")
-                else:
+            if q["real"]:
+                for entry in q["entries"]:
+                    detail.append(f"<li>{esc(entry)}</li>")
+                shown = len(q["entries"])
+                count = f"{shown} " + ("entry" if shown == 1 else "entries")
+                quest_title = clean_title(q["title"], q["id"])
+            else:
+                if q["steps"]:
                     trail = " → ".join(esc(humanize(s)) for s in q["steps"])
                     detail.append(f'<li>Trail: <span class="q-trail">{trail}</span></li>')
+                shown = len(q["steps"])
+                count = f"{shown} " + ("step" if shown == 1 else "steps")
+                quest_title = humanize_quest(q["id"])
             detail.append(f'<li class="q-raw">ID: <code>{esc(q["id"])}</code></li>')
 
-            count = f"{len(q['steps'])} step{'s' if len(q['steps']) != 1 else ''}"
             out.append(
                 f'<details class="quest-entry"><summary><span class="q-title">{esc(quest_title)}</span>'
                 f'<span class="q-count">{count}</span></summary>'
@@ -300,15 +358,16 @@ def main() -> int:
             break
 
     quests = build(recs)
-    quest_text, known_ids = load_quest_text()
-    n_open = sum(1 for q in quests if not q["completed"])
-    n_done = sum(1 for q in quests if q["completed"])
+    quest_text = load_quest_text()
 
     # Use the real in-game journal text when the local cache is present
     # (see tools/extract_journal_text.py); otherwise fall back to readable
     # titles derived from the ids — so CI, which has no game files, still builds.
+    units = merge(quests, quest_text)
+    n_open = sum(1 for q in units if not q["completed"])
+    n_done = sum(1 for q in units if q["completed"])
     out = Path(args.out)
-    out.write_text(render(quests, meta, quest_text, known_ids), encoding="utf-8")
+    out.write_text(render(quests, meta, quest_text), encoding="utf-8")
     mode = "real in-game text" if quest_text else "readable ids (no text cache)"
     print(f"Wrote {out.relative_to(ROOT)}: {n_open} open, {n_done} completed [{mode}].")
     return 0

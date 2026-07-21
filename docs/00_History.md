@@ -17,6 +17,12 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
+## 2026-07-22
+
+### Fixed
+
+- Corrected the quest journal to show only genuine journal entries. The save's `QuestUnlockedSteps` were resolved to prototype quests by step-membership (the reliable key) rather than by objective-id prefix, which had mis-mapped several quests and rendered internal/empty steps as bogus humanized lines. Quest nodes that share a title (a companion's ORI_COM and ORI_Avatar tracks, or one node per objective) are now merged into a single entry with de-duplicated text, and untranslated placeholder titles (`%%% EMPTY`) fall back to a readable id.
+
 ## 2026-07-21
 
 ### Added
