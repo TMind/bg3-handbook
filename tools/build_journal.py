@@ -206,6 +206,13 @@ def render(quests, meta, quest_text, known_ids):
         "",
         "> ⚠️ **Spoiler:** contains this save's full story progress.",
         "> Auto-generated from the savegame; do not edit by hand (rebuild with `tools/build_journal.py`).",
+    ]
+    if real:
+        lines.append(
+            "> Quest and journal text © Larian Studios, from *Baldur's Gate 3* — "
+            "reproduced here for personal reference."
+        )
+    lines += [
         "",
         f"- **Save:** {meta.get('save','?')}",
         f"- **Game time (internal):** {meta.get('gametime','?')}",
@@ -297,17 +304,13 @@ def main() -> int:
     n_open = sum(1 for q in quests if not q["completed"])
     n_done = sum(1 for q in quests if q["completed"])
 
-    # Public output: readable titles derived from ids — always safe to publish.
+    # Use the real in-game journal text when the local cache is present
+    # (see tools/extract_journal_text.py); otherwise fall back to readable
+    # titles derived from the ids — so CI, which has no game files, still builds.
     out = Path(args.out)
-    out.write_text(render(quests, meta, {}, []), encoding="utf-8")
-    print(f"Wrote {out.relative_to(ROOT)}: {n_open} open, {n_done} completed [readable ids].")
-
-    # Local output: real in-game journal text (Larian copyright) — gitignored,
-    # only written when the text cache is present.
-    if quest_text:
-        local = ROOT / "journal.local.md"
-        local.write_text(render(quests, meta, quest_text, known_ids), encoding="utf-8")
-        print(f"Wrote {local.relative_to(ROOT)}: real in-game text (local only, gitignored).")
+    out.write_text(render(quests, meta, quest_text, known_ids), encoding="utf-8")
+    mode = "real in-game text" if quest_text else "readable ids (no text cache)"
+    print(f"Wrote {out.relative_to(ROOT)}: {n_open} open, {n_done} completed [{mode}].")
     return 0
 
 

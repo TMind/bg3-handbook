@@ -21,7 +21,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ### Added
 
-- Added `tools/extract_journal_text.py`, which reads the player's own installed game files (`Gustav.pak` → `quest_prototypes.lsx`, `English.pak` → `english.loca`) directly — no LSLib/Divine needed — to build a local `tools/journal-text/quest_text.json` cache mapping quests and steps to their real localized journal text. When that cache is present, `build_journal.py` also writes `journal.local.md` with the verbatim in-game entries. Both are gitignored (Larian-copyrighted text); the published `journal.md` keeps readable titles derived from the internal ids.
+- Added `tools/extract_journal_text.py`, which reads the player's own installed game files (`Gustav.pak` → `quest_prototypes.lsx`, `English.pak` → `english.loca`) directly — no LSLib/Divine needed — to build a `tools/journal-text/quest_text.json` cache mapping quests and steps to their real localized journal text. When that cache is present, `build_journal.py` fills `journal.md` with the verbatim in-game entries (with a Larian attribution line); without it, it falls back to readable titles derived from the ids so CI still builds. The intermediate cache is gitignored.
 
 - Added `tools/build_journal.py`, which generates a quest journal (open and completed quests with their step trails) from an indexed save, and published the generated `journal.md`. It is spoiler-heavy (full story progress). It lives at the repo root, so `check_vault.py` does not scan it — same as `session-notes.md`.
 - Added `journal.md` to the generated site (`scripts/build_site.py`) and the sidebar (Current Campaign → Quest Journal), so it is browsable and searchable alongside the handbook chapters.

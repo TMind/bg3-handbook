@@ -81,8 +81,11 @@ Pages (enable once under Settings → Pages → Source: "GitHub Actions").
 Build the quest journal from an indexed save (open + completed quests with step trails). Output `journal.md` is spoiler-heavy (full story progress) and is committed; it lives at the repo root, so `check_vault.py` does not scan it:
 
 ```sh
+python3 tools/extract_journal_text.py     # once: cache real in-game text from installed game files
 python3 tools/build_journal.py            # writes journal.md from tools/save-index/globals.jsonl
 ```
+
+`build_journal.py` uses the real localized journal text when the `tools/journal-text/` cache (built by `extract_journal_text.py` from the local BG3 install) is present, and falls back to readable ids otherwise — so CI, which has no game files, still builds a valid `journal.md`.
 
 Sync and extract a BG3 savegame (see `tools/SAVEGAME_WORKFLOW.md` for the full workflow):
 
