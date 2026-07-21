@@ -17,6 +17,12 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
+## 2026-07-21
+
+### Added
+
+- Added `tools/build_journal.py`, which generates a personal quest journal (open and completed quests with their step trails) from an indexed save. The output `journal.md` is spoiler-heavy, so it is gitignored and stays local — only the generator is tracked.
+
 ## 2026-07-19
 
 ### Added
