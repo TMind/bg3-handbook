@@ -116,21 +116,17 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 **Markers:** ⭐⭐⭐ 🍷 ⚔️
 
-> [!warning] The counts below are from the previous inventory spot-check (`Wyrms Crossing`). A full item re-audit for the current save was not run in this pass — verify stock in game before relying on exact numbers.
+Counts refreshed from the current `Wyrms Rock Fortress - 100h 29m` save (see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) for the full audit).
 
 | Resource | Save count | Current holder pattern | Readiness call |
 |---|---:|---|---|
-| Scroll of Revivify | 10 | 1 with Kao, 9 elsewhere | Strong stock; distribute before hard fights |
-| Potion of Speed | 3 | 1 with Lae'zel, 2 elsewhere | Good for one serious opener; low for repeated use |
-| Elixir of Bloodlust | 3 | 1 with Lae'zel, 2 elsewhere | Good for Lae'zel; choose before initiative matters |
-| Elixir of Viciousness | 1 | With Astarion | Crit-support option for Astarion or Lae'zel |
-| Elixir of Vigilance | 1 | Elsewhere / not in active-party inventory | Decide who needs first-turn reliability if it is found in storage |
-| Potion of Invisibility | 7 | 1 with Kao, 6 elsewhere | Move at least 1-2 to Astarion |
-| Scroll of Globe of Invulnerability | 2 | Both with Kao | Excellent boss-defense stock |
-| Scroll of Conjure Elemental | 3 | 1 with Kao, 2 elsewhere | Good summon stock |
-| Arcane Cultivation / Meditation elixirs | Several | Mostly with Kao / storage | Consolidate caster day-extension tools on Kao |
-| Remedial Potion | Not visible in the refreshed spot check | Elsewhere if still present in game | Search storage before relying on it |
-| Healing potions | 39 | TMind, Kao, Astarion, storage | Give Lae'zel a stack before leaving camp |
+| Scroll of Revivify | 10 | Kao 1, storage 9 | Strong stock; put one on at least two active characters |
+| Potion of Speed | 6 | Lae'zel 2, TMind 1, storage 3 | Enough for a decisive Haste opener or two |
+| Elixir of Bloodlust | 3 | Lae'zel 1 (active), TMind 1, storage 1 | Already active on Lae'zel |
+| Potion of Invisibility | 10 | Kao 2, storage 8 | Move a couple to Astarion |
+| Scroll of Globe of Invulnerability | 2 | Kao 2 | Excellent boss-defense stock |
+| Scroll of Conjure Elemental | 3 | Kao 1, storage 2 | Good summon stock |
+| Healing potions | 43 | Astarion 7, TMind 6, Lae'zel 4, Kao 3, storage 23 | Well distributed; nobody under-supplied |
 
 ## Gear and Synergy Checks ^gear-synergies
 

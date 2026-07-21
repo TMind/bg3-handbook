@@ -33,16 +33,11 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Scope
 
-> [!warning] Item lists below are from the `Wyrms Crossing - 98h 15m` inventory pass and were **not** re-extracted for the current `Wyrms Rock Fortress - 100h 29m` save. Party and buffs are refreshed in [Current Save Snapshot](12_Current_Save_Snapshot.md); a full item re-audit is still pending. New effects seen active in the current save (Cloak of Displacement on Astarion, Absorb Elements on Kao, Blood of Lathander light on TMind) are not yet reflected in the tables here.
-
-- Source (last full item pass): `Wyrms Crossing - 98h 15m`, modified `2026-07-13 01:25:09 +02:00`, synced into the handbook at `2026-07-13 01:25:41 +02:00`.
-- Active-party grouping uses the current extracted save state for TMind, Lae'zel, Kao, and Astarion.
-- Camp storage is summarized in a gameplay-facing way, without coordinates or internal save identifiers.
-- Exact equipped slots still need a deeper pass; this is a carried/available snapshot, not a final gear-slot audit.
-- Rarity was removed because the save does not expose a reliable full rarity field.
-- Character totals below are position-based item records from the latest extracted save. Exact category labels are approximate because the save exposes internal item stat names, not a polished inventory UI export.
-- Current holder fields are also position-based. `Elsewhere / storage` means the item is visible in the save but not at TMind, Lae'zel, Kao, or Astarion's active-party position.
-- In the character sections, the section name is the current holder unless a row explicitly says otherwise.
+- Source: `Wyrms Rock Fortress - 100h 29m`, modified `2026-07-21 01:26:37 +02:00`, synced into the handbook at `2026-07-22 00:29:42 +02:00`.
+- Item names were resolved from the game's own root templates and localization, so display names match in game.
+- Holder is position-based: an item counts for TMind, Lae'zel, Kao, or Astarion when it sits at that character's active-party position; everything else is `storage`.
+- Only build-relevant magic gear is listed per character. Generic default weapons/armour, camp clothes, books, and keys are omitted.
+- Exact equipped-vs-carried slots still need in-game confirmation; this is a carried/available snapshot.
 
 ## Rating Key
 
@@ -54,55 +49,48 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Character Summary
 
+Totals are position-based item records from the current save (approximate category labels).
+
 | Character | Total | Equipment | Potions / elixirs | Scrolls | Combat consumables | Alchemy | Utility / keys |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| TMind | 230 | 22 | 19 | 13 | 4 | 90 | 60 |
-| Lae'zel | 49 | 17 | 5 | 0 | 4 | 3 | 19 |
-| Kao | 182 | 47 | 14 | 33 | 8 | 4 | 23 |
-| Astarion | 89 | 22 | 9 | 0 | 15 | 10 | 13 |
+| TMind | 260 | 29 | 15 | 13 | 2 | 116 | 85 |
+| Lae'zel | 81 | 33 | 6 | 1 | 6 | 9 | 26 |
+| Kao | 172 | 48 | 9 | 27 | 11 | 12 | 65 |
+| Astarion | 117 | 24 | 15 | 7 | 6 | 3 | 62 |
 
 ## Current Resource Spot Check
 
 | Resource | Latest visible count | Current holder(s) | Practical note |
 |---|---:|---|---|
-| Scroll of Revivify | 10 | Kao 1; Elsewhere / storage 9 | Strong emergency stock; keep at least two holders. |
-| Potion of Speed | 3 | Lae'zel 1; Elsewhere / storage 2 | Enough for one serious opener, not for repeated casual use. |
-| Elixir of Bloodlust | 3 | TMind 1; Lae'zel 1; Elsewhere / storage 1 | Good stock for Lae'zel; choose before initiative matters. |
-| Elixir of Viciousness | 1 | Astarion 1 | Decide whether Astarion or Lae'zel wants the crit plan. |
-| Potion of Invisibility | 7 | Kao 1; Elsewhere / storage 6 | Plenty for scouting, resets, and emergency exits. |
-| Scroll of Globe of Invulnerability | 2 | Kao 2 | Keep on Kao for hard fights. |
-| Scroll of Conjure Elemental | 3 | Kao 1; Elsewhere / storage 2 | Good summon stock for action economy. |
-| Healing potions | 39 | TMind 8; Lae'zel 2; Kao 3; Astarion 3; Elsewhere / storage 23 | Split before leaving camp; Lae'zel should not be under-supplied. |
+| Scroll of Revivify | 10 | Kao 1; storage 9 | Strong emergency stock; put one on at least two active characters. |
+| Potion of Speed | 6 | Lae'zel 2; TMind 1; storage 3 | Good for a decisive Haste opener on one or two characters. |
+| Elixir of Bloodlust | 3 | Lae'zel 1 (active); TMind 1; storage 1 | Already active on Lae'zel this save. |
+| Potion of Invisibility | 10 | Kao 2; storage 8 | Plenty for scouting, resets, and escapes; move a couple to Astarion. |
+| Scroll of Globe of Invulnerability | 2 | Kao 2 | Keep on Kao for boss defense. |
+| Scroll of Conjure Elemental | 3 | Kao 1; storage 2 | Good summon stock for action economy. |
+| Healing potions | 43 | Astarion 7; TMind 6; Lae'zel 4; Kao 3; storage 23 | Well distributed; nobody is under-supplied. |
 
 ## Best Immediate Uses ^inventory-best-uses
 
 | Use | Item | Current holder | Best fit | Note |
 |---|---|---|---|---|
-| ⭐⭐⭐ | Blood of Lathander | TMind | TMind | cleric aura / safety |
-| ⭐⭐⭐ | Devotee's Mace | TMind | TMind | healing aura swap |
-| ⭐⭐⭐ | Hellrider's Pride | TMind | TMind | heal-triggered defense |
-| ⭐⭐⭐ | Mass Healing Ring | TMind | TMind | healing support |
-| ⭐⭐⭐ | Radiating Orb Gloves | TMind | TMind | Spirit Guardians synergy |
+| ⭐⭐⭐ | Devotee's Mace | TMind | TMind | healing-aura weapon |
 | ⭐⭐⭐ | Shield of Devotion | TMind | TMind | spell slot + shield |
-| ⭐⭐⭐ | Boots of Speed | Lae'zel | Lae'zel | frontline mobility |
-| ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | Lae'zel | frontline crit |
+| ⭐⭐⭐ | The Whispering Promise | TMind | TMind | Bless on heal, concentration-free |
+| ⭐⭐⭐ | Amulet of Restoration | TMind | TMind | healing support amulet |
 | ⭐⭐⭐ | Moonlight Glaive | Lae'zel | Lae'zel | martial weapon |
-| ⭐⭐⭐ | Absorb Elements Cloak | Kao | Kao | caster defense |
-| ⭐⭐⭐ | Black Tentacles Amulet | Kao | Kao | control spell |
-| ⭐⭐⭐ | Reverberation Spell Amulet | Kao | Kao | spell rider |
-| ⭐⭐⭐ | Staff of Fire | Kao | Kao | caster damage |
-| ⭐⭐⭐ | Night Walkers | Astarion | Astarion | mobility safety |
-| ⭐⭐⭐ | Ring of Pass Without Trace | Astarion | Astarion | party stealth |
-| ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | Astarion | scout invisibility |
+| ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | Lae'zel | frontline crit |
+| ⭐⭐⭐ | Boots of Speed | Lae'zel | Lae'zel | frontline mobility |
+| ⭐⭐⭐ | Incandescent Staff | Kao | Kao | caster damage staff |
+| ⭐⭐⭐ | Cloak of Elemental Absorption | Kao | Kao | caster defense |
+| ⭐⭐⭐ | Spineshudder Amulet | Kao | Kao | Reverberation rider |
+| ⭐⭐⭐ | Cloak of Displacement | Astarion | Astarion | miss-chance survival |
 | ⭐⭐⭐ | The Graceful Cloth | Astarion | Astarion | DEX / Cat's Grace |
-| ⭐⭐⭐ | Potion of Angelic Slumber | TMind | Kao / TMind | extend caster day |
-| ⭐⭐⭐ | Elixir of Bloodlust | Lae'zel | Lae'zel | kill chains |
-| ⭐⭐⭐ | Potion of Speed | Lae'zel | Lae'zel / group | decisive Haste |
-| ⭐⭐⭐ | Scroll of Chain Lightning | Kao | Kao | burst damage |
-| ⭐⭐⭐ | Scroll of Disintegrate | Kao | Kao | single-target burst |
-| ⭐⭐⭐ | Scroll of Globe Of Invulnerability x2 | Kao | Kao | boss defense |
+| ⭐⭐⭐ | The Joltshooter | Astarion | Astarion | ranged option |
 | ⭐⭐⭐ | Scroll of Revivify | Kao | Any | emergency revive |
-| ⭐⭐ | Elixir of Viciousness | Astarion | Astarion / Lae'zel | crit-support option |
+| ⭐⭐⭐ | Scroll of Globe of Invulnerability x2 | Kao | Kao | boss defense |
+| ⭐⭐⭐ | Elixir of Bloodlust | Lae'zel | Lae'zel | already active |
+| ⭐⭐⭐ | Potion of Speed | Lae'zel | Lae'zel / group | decisive Haste |
 
 ## TMind ^inventory-tmind
 
@@ -110,57 +98,35 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
-| ⭐⭐⭐ | Blood of Lathander | TMind | cleric aura / safety |
-| ⭐⭐⭐ | Devotee's Mace | TMind | healing aura swap |
-| ⭐⭐⭐ | Hellrider's Pride | TMind | heal-triggered defense |
-| ⭐⭐⭐ | Mass Healing Ring | TMind | healing support |
-| ⭐⭐⭐ | Radiating Orb Gloves | TMind | Spirit Guardians synergy |
-| ⭐⭐⭐ | Shield of Devotion | TMind | spell slot + shield |
-| ⭐⭐ | Blindness Immunity Ring | TMind | darkness/blindness |
-| ⭐⭐ | Hellfire Hand Crossbow | Astarion | ranged bonus use |
-| ⭐⭐ | Helmet of Arcane Acuity | TMind? | weapon-then-cast |
-| ⭐⭐ | Nymph Cloak | Kao / TMind | control utility |
+| ⭐⭐⭐ | Devotee's Mace | TMind | healing-aura weapon |
+| ⭐⭐⭐ | Blood of Lathander | TMind | light aura / safety (effect active) |
+| ⭐⭐⭐ | Shield of Devotion | TMind | spell slot + shield (active) |
+| ⭐⭐⭐ | The Whispering Promise | TMind | Bless-on-heal ring, concentration-free |
+| ⭐⭐⭐ | Amulet of Restoration | TMind | healing-support amulet |
+| ⭐⭐ | Cloak of Protection | TMind | general defense |
+| ⭐⭐ | Helmet of Arcane Acuity | TMind | weapon-then-cast setups |
+| ⭐⭐ | Luminous Gloves | TMind | radiant / Radiating Orb synergy |
 | ⭐⭐ | Pearl of Power Amulet | TMind / Kao | slot recovery |
-| ⭐⭐ | Spectator Eye Amulet | TMind / Kao | spell utility |
-| ⭐ | Clown Hammer | Any | review in game |
-| ⭐ | Drow Commander Amulet | Any | review in game |
-| ⭐ | Melee Debuff Scale Mail | Any | review in game |
+| ⭐⭐ | Spellcrux Amulet | TMind / Kao | slot recovery |
+| ⭐⭐ | Amulet of Misty Step | TMind | free repositioning |
+| ⭐⭐ | Nymph Cloak | Kao / TMind | control utility |
+| ⭐⭐ | The Spectator Eyes | TMind / Kao | spell utility |
+| ⭐⭐ | Circle of Bones | TMind | defensive amulet |
+| ⭐⭐ | Adamantine Scale Mail | TMind | no-crit heavy armour |
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Potion of Angelic Slumber | 1 | Kao / TMind | extend caster day |
-| ⭐ | Potion of Glorious Vaulting | 1 | Lae'zel / Astarion | mobility |
+| ⭐⭐⭐ | Potion of Speed | 1 | Lae'zel / group | decisive Haste |
+| ⭐⭐⭐ | Elixir of Bloodlust | 1 | Lae'zel | spare for Lae'zel |
+| ⭐⭐ | Elixir of Heroism | 1 | Any | temp HP + fear immunity opener |
+| ⭐⭐ | Elixir of Universal Resistance | 1 | Frontliner | strong defensive elixir |
+| ⭐ | Potion of Superior Healing | 2 | Any | situational |
 | ⭐ | Potion of Greater Healing | 1 | Any | situational |
-| ⭐ | Potion of Healing | 4 | Any | situational |
-| ⭐ | Potion of Superior Healing | 1 | Any | situational |
-| ⭐ | Unidentified Scroll | 11 | Any | situational |
+| ⭐ | Potion of Healing | 3 | Any | situational |
 
-### Alchemy Highlights
-
-| Use | Resource | Qty | Note |
-|---|---|---:|---|
-| ⭐⭐⭐ | Loot Pegasus Feather | 3 | Elixir of Heroism |
-| ⭐⭐⭐ | Loot Cloud Giant Finger | 2 | Cloud Giant Strength |
-| ⭐⭐⭐ | Part Worg Fang | 2 | Elixir of Bloodlust |
-| ⭐⭐⭐ | Loot Hill Giant Finger | 1 | Hill Giant Strength |
-| ⭐⭐⭐ | Part Hyena Ear | 1 | Potion of Speed |
-| ⭐⭐ | Loot Ki Rin Hair | 2 | High-tier healing |
-| ⭐⭐ | Extract: Divine Bone Shard | 1 | Universal Resistance path |
-| ⭐⭐ | Loot Fire Amber | 1 | fire/alchemy stock |
-| ⭐ | Extract: Shadowroot Sac | 5 | general stock |
-| ⭐ | Extract: Black Oleander | 4 | general stock |
-| ⭐ | Extract: Bonecap | 3 | general stock |
-| ⭐ | Extract: Chasm Creeper | 3 | general stock |
-| ⭐ | Extract: Intellect Devourer | 3 | general stock |
-| ⭐ | Extract: Mugwort | 3 | general stock |
-| ⭐ | Extract: Swarming Toadstool | 3 | general stock |
-| ⭐ | Extract: Sylvan Stone | 3 | general stock |
-| ⭐ | Extract: Weavemoss | 3 | general stock |
-| ⭐ | Extract: Wood Bark | 3 | general stock |
-| ⭐ | Herb: Autumncrocus | 3 | general stock |
-| ⭐ | Herb: Daggeroot | 3 | general stock |
+TMind also carries the bulk of the party's alchemy ingredients (≈116 records) for crafting between fights.
 
 ## Lae'zel ^inventory-laezel
 
@@ -168,24 +134,25 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
-| ⭐⭐⭐ | Boots of Speed | Lae'zel | frontline mobility |
-| ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | frontline crit |
 | ⭐⭐⭐ | Moonlight Glaive | Lae'zel | martial weapon |
-| ⭐⭐ | Githborn Heavy Crossbow | Lae'zel | ranged fallback |
-| ⭐⭐ | Melee Debuff Helmet | Lae'zel | melee debuff |
-| ⭐⭐ | Melee Debuff Splint Mail | Lae'zel | frontline debuff |
-| ⭐ | Caster Temp HP Cloak | Kao / TMind | caster filler |
-| ⭐ | Mental Fatigue Gloves | Lae'zel? | needs psychic plan |
-| ⭐ | Roaring Maul | Any | review in game |
-| ⭐ | Weakness Branding Amulet | Lae'zel | melee utility |
+| ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | frontline crit (active) |
+| ⭐⭐⭐ | Boots of Speed | Lae'zel | frontline mobility |
+| ⭐⭐⭐ | Adamantine Splint Armour | Lae'zel | no-crit heavy armour |
+| ⭐⭐ | Amulet of Branding | Lae'zel | melee debuff |
+| ⭐⭐ | Vivacious Cloak | Lae'zel | temp HP on initiative |
+| ⭐⭐ | Braindrain Gloves | Lae'zel | psychic-rider option |
+| ⭐⭐ | Crossbow of Arcane Force | Lae'zel | ranged fallback |
+| ⭐⭐ | Corpsegrinder | Lae'zel | martial weapon option |
+| ⭐ | Grymskull Helm | Lae'zel | situational helm |
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Elixir of Bloodlust | 1 | Lae'zel | kill chains |
-| ⭐⭐⭐ | Potion of Speed | 1 | Lae'zel / group | decisive Haste |
-| ⭐⭐ | Potion of Angelic Reprieve | 2 | Caster / martial | short recovery |
+| ⭐⭐⭐ | Potion of Speed | 2 | Lae'zel / group | decisive Haste |
+| ⭐⭐ | Elixir of Hill Giant Strength | 1 | Lae'zel | flat STR option if not using Bloodlust |
+| ⭐ | Potion of Superior Healing | 1 | Any | situational |
+| ⭐ | Potion of Greater Healing | 1 | Any | situational |
 
 ## Kao ^inventory-kao
 
@@ -193,84 +160,32 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
-| ⭐⭐⭐ | Absorb Elements Cloak | Kao | caster defense |
-| ⭐⭐⭐ | Black Tentacles Amulet | Kao | control spell |
-| ⭐⭐⭐ | Reverberation Spell Amulet | Kao | spell rider |
-| ⭐⭐⭐ | Staff of Fire | Kao | caster damage |
-| ⭐⭐ | Jumping Shoes | Kao | caster movement |
-| ⭐⭐ | Mage Hand Support Gloves | Kao | utility |
-| ⭐⭐ | Ogre Horn | Party | encounter utility |
-| ⭐ | Camp Shoes | Any | review in game |
-| ⭐ | Cantrip Booster Amulet | Kao | cantrip filler |
-| ⭐ | Hat Wizard D | Any | review in game |
-| ⭐ | Instrument Lute | Any | review in game |
-| ⭐ | Mental Overload Ring | Kao | needs psychic plan |
-| ⭐ | Regen Circlet | Kao | defensive filler |
-| ⭐ | Scale Mail Body | Any | review in game |
-| ⭐ | Shortbow | Any | review in game |
+| ⭐⭐⭐ | Incandescent Staff | Kao | caster damage staff |
+| ⭐⭐⭐ | Cloak of Elemental Absorption | Kao | caster defense (Absorb Elements, active) |
+| ⭐⭐⭐ | Spineshudder Amulet | Kao | Reverberation on spell hit |
+| ⭐⭐ | Necklace of Elemental Augmentation | Kao | elemental cantrip boost |
+| ⭐⭐ | Circlet of Mental Anguish | Kao | psychic control rider |
+| ⭐⭐ | Ring of Mental Inhibition | Kao | psychic support |
+| ⭐⭐ | Hr'a'cknir Bracers | Kao | telekinesis / utility |
+| ⭐⭐ | Strange Tendril Amulet | Kao | control amulet |
+| ⭐ | Infernal Robe | Kao | robe option |
+| ⭐ | Bonespike Boots | Kao | situational boots |
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Scroll of Chain Lightning | 1 | Kao | burst damage |
-| ⭐⭐⭐ | Scroll of Disintegrate | 1 | Kao | single-target burst |
-| ⭐⭐⭐ | Scroll of Globe Of Invulnerability | 2 | Kao | boss defense |
+| ⭐⭐⭐ | Scroll of Globe of Invulnerability | 2 | Kao | boss defense |
 | ⭐⭐⭐ | Scroll of Revivify | 1 | Any | emergency revive |
-| ⭐⭐ | Arrow of Detonation | 1 | Astarion / Lae'zel | area arrow |
-| ⭐⭐ | Basilisk Oil | 1 | Any | special case |
-| ⭐⭐ | Elixir of Arcane Cultivation | 1 | Kao | spell slots |
-| ⭐⭐ | Elixir of Greater Arcane Cultivation | 1 | Kao | spell slots |
-| ⭐⭐ | Elixir of See Invisibility | 1 | Scout / caster | specific encounters |
-| ⭐⭐ | Potion of Invisibility | 1 | Astarion | scout escape |
-| ⭐⭐ | Scroll of Black Tentacles | 1 | Kao | aura control |
-| ⭐⭐ | Scroll of Blight | 1 | Kao / TMind | necrotic burst |
-| ⭐⭐ | Scroll of Cloudkill | 1 | Kao | area denial |
-| ⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | action economy |
-| ⭐ | Acid Vial | 2 | Any | situational |
-| ⭐ | Alchemist Fire | 1 | Any | fire surface |
-| ⭐ | Antitoxin | 2 | Any | poison answer |
-| ⭐ | Arrow of Acid | 1 | Any | situational |
-| ⭐ | Arrow of Ice | 1 | Any | situational |
-| ⭐ | Arrow of Lightning | 1 | Any | situational |
-| ⭐ | Arrow of Ricochet | 1 | Any | situational |
-| ⭐ | Arrow of Wraiths Embrace | 1 | Any | situational |
-| ⭐ | Elixir of Darkvision | 1 | Any | low if buffed |
-| ⭐ | Potion of Feather Fall | 1 | Any | exploration |
-| ⭐ | Potion of Glorious Vaulting | 2 | Lae'zel / Astarion | mobility |
-| ⭐ | Potion of Greater Healing | 1 | Any | situational |
-| ⭐ | Potion of Healing | 1 | Any | situational |
-| ⭐ | Potion of Necrotic Resistance | 1 | Any | situational |
-| ⭐ | Potion of Superior Healing | 1 | Any | situational |
-| ⭐ | Scroll of Banishment | 1 | Any | situational |
-| ⭐ | Scroll of Bestow Curse | 2 | Any | situational |
-| ⭐ | Scroll of Circle Of Death | 1 | Any | situational |
-| ⭐ | Scroll of Cone Of Cold | 1 | Any | situational |
-| ⭐ | Scroll of Crown Of Madness | 1 | Any | situational |
-| ⭐ | Scroll of Darkvision | 1 | Any | situational |
-| ⭐ | Scroll of Dominate Person | 1 | Any | situational |
-| ⭐ | Scroll of Eyebite | 1 | Any | situational |
-| ⭐ | Scroll of Flesh To Stone | 1 | Any | situational |
-| ⭐ | Scroll of Freezing Sphere | 1 | Any | situational |
-| ⭐ | Scroll of Ice Storm | 1 | Any | situational |
-| ⭐ | Scroll of Phantasmal Killer | 1 | Any | situational |
-| ⭐ | Scroll of See Invisibility | 1 | Any | situational |
-| ⭐ | Scroll of Seeming | 1 | Any | situational |
-| ⭐ | Scroll of Sunbeam | 1 | Any | situational |
-| ⭐ | Scroll of Thunderwave | 1 | Any | situational |
-| ⭐ | Scroll of Wall Of Ice | 1 | Any | situational |
-| ⭐ | Unidentified Scroll | 2 | Any | situational |
+| ⭐⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | action economy |
+| ⭐⭐ | Scroll of Bestow Curse | 2 | Kao | debuff |
+| ⭐⭐ | Scroll of Crown of Madness | 1 | Kao | control |
+| ⭐⭐ | Scroll of Invisibility | 1 | Kao / Astarion | escape or setup |
+| ⭐⭐ | Potion of Invisibility | 2 | Astarion | scout / escape |
+| ⭐⭐ | Elixir of Universal Resistance | 1 | Frontliner | defensive elixir |
+| ⭐ | Potion of Superior / Greater Healing | 2 | Any | situational |
 
-### Utility
-
-| Item | Qty | Note |
-|---|---:|---|
-| Kit Disguise | 2 | infiltration utility |
-| Kit Thieves Tools | 1 | Astarion core role |
-| Kitchen Instrument Cutting Board | 1 | utility |
-| Tool Hammer | 2 | misc utility |
-| Tool Shovel | 2 | exploration |
-| Tool Tong | 1 | misc utility |
+Kao carries the largest scroll library (≈27 scrolls); the ⭐ situational scrolls are omitted here — browse them in game before a caster-heavy fight.
 
 ## Astarion ^inventory-astarion
 
@@ -278,154 +193,62 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
-| ⭐⭐⭐ | Night Walkers | Astarion | mobility safety |
-| ⭐⭐⭐ | Ring of Pass Without Trace | Astarion | party stealth |
-| ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | scout invisibility |
-| ⭐⭐⭐ | The Graceful Cloth | Astarion | DEX / Cat's Grace |
-| ⭐⭐ | Charged Lightning Longbow | Astarion | bow option |
-| ⭐⭐ | Paralyzing Dagger | Astarion | rogue dagger |
+| ⭐⭐⭐ | Cloak of Displacement | Astarion | miss-chance survival (active) |
+| ⭐⭐⭐ | The Graceful Cloth | Astarion | DEX / Cat's Grace (active) |
+| ⭐⭐⭐ | The Joltshooter | Astarion | ranged / lightning option |
+| ⭐⭐ | Gleamdance Dagger | Astarion | main-hand dagger |
+| ⭐⭐ | Stillmaker | Astarion | poison dagger option |
+| ⭐⭐ | Ring of Shadows | Astarion | stealth / shadow utility |
+| ⭐⭐ | Stalker Gloves | Astarion | on-hit sneak-attack support |
 | ⭐⭐ | Periapt of Wound Closure | Astarion | scout survival |
-| ⭐⭐ | Sussur Dagger | Astarion | caster silence |
-| ⭐ | Bone Spike Shoes | Astarion? | off-build |
-| ⭐ | Bracers Barbarian | Any | review in game |
-| ⭐ | Callarduran Trinket | Any | review in game |
-| ⭐ | Farlin Dagger | Astarion | dagger filler |
-| ⭐ | King's Knife | Astarion | weapon option |
-| ⭐ | Scout Ring | Astarion | replaceable |
-| ⭐ | Tower Light Ring | Astarion | utility light |
+| ⭐⭐ | Shifting Corpus Ring | Astarion | miss-chance defensive ring |
+| ⭐ | King's Knife | Astarion | dagger option |
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐ | Elixir of Greater Arcane Cultivation | 1 | Kao | spell slots |
-| ⭐⭐ | Grease Bottle | 1 | Any | surface control |
-| ⭐⭐ | Potion of Angelic Reprieve | 1 | Caster / martial | short recovery |
-| ⭐⭐ | Elixir of Viciousness | 1 | Astarion / Lae'zel | crit support |
-| ⭐ | Antitoxin | 1 | Any | poison answer |
-| ⭐ | Potion of Detect Thoughts | 1 | Any | situational |
-| ⭐ | Potion of Fire Resistance | 2 | Any | situational |
-| ⭐ | Potion of Healing | 3 | Any | situational |
-
-### Alchemy Highlights
-
-| Use | Resource | Qty | Note |
-|---|---|---:|---|
-| ⭐⭐⭐ | Part Hyena Ear | 1 | Potion of Speed |
-| ⭐⭐ | Loot Fire Amber | 2 | fire/alchemy stock |
-| ⭐ | Herb: Balsam | 1 | general stock |
-| ⭐ | Loot Purple Worm | 1 | general stock |
-| ⭐ | Mushroom: Swarming Toadstool | 1 | general stock |
-
-### Utility
-
-| Item | Qty | Note |
-|---|---:|---|
-| Camp Pack | 1 | camp pack |
-| Kit Thieves Tools | 2 | Astarion core role |
-| Kit Trap Disarm | 2 | Astarion core role |
-| Tool Shovel | 1 | exploration |
+| ⭐⭐ | Elixir of Cloud Giant Strength | 1 | Lae'zel / martial | strong STR elixir if wanted |
+| ⭐⭐ | Elixir of Fire / Psychic Resistance | 3 | Any | elemental prep |
+| ⭐⭐ | Scroll of Protection from Energy | 1 | Any | elemental defense |
+| ⭐ | Potion of Superior / Greater Healing | 4 | Any | situational |
+| ⭐ | Potion of Animal Speaking | 1 | Any | exploration utility |
 
 ## Camp Storage ^camp-storage
 
-This section summarizes useful resources seen in camp-storage-like inventories. It intentionally avoids technical save identifiers, coordinates, and internal object names.
-
-### Storage Scope
-
-- The save data shows multiple storage-like inventories. The exact in-game container mapping still needs confirmation at camp.
-- Story books, quest keys, generic containers, and unclear world-state objects are intentionally excluded.
-- Do not merge all storage items into active inventories blindly. Pull only what supports the next fight, the current build, or the camp-buff routine.
-
-### Storage Quick Takeaways
-
-- Storage appears to contain several emergency resources, including multiple Revivify scrolls.
-- The best pre-fight pulls are Revivify scrolls, Elixir of Vigilance, Elixir of Bloodlust, Arcane Cultivation elixirs, Remedial Potions, Potion of Invisibility, and anti-caster arrows.
-- Several gear pieces should be inspected in game because they may fit TMind, Kao, Lae'zel, Astarion, or a camp-support setup.
+Storage holds the overflow (~2,900 item records) — most of it is generic gear and crafting stock. Pull only what supports the next fight, the current build, or the camp-buff routine.
 
 ### Priority Pulls from Storage
 
 | Use | Item | Qty seen | Best fit | Why pull it |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Scroll of Revivify | 7 | Any | Emergency revive stock. |
-| ⭐⭐⭐ | Elixir of Vigilance | 1 | Any key opener | Better first-turn safety. |
-| ⭐⭐⭐ | Elixir of Bloodlust | 1 | Lae'zel | Kill chains for martial turns. |
-| ⭐⭐⭐ | Cloak of Protection | 1 | TMind / Kao / Lae'zel | Universal defensive upgrade candidate. |
-| ⭐⭐⭐ | Healing Restoration Amulet | 1 | TMind / Shadowheart | Strong support-healing candidate. |
-| ⭐⭐⭐ | Healing Temp HP Boots | 1 | TMind / Shadowheart | Adds defensive value to healing turns. |
-| ⭐⭐⭐ | Spell Slot Restoration Amulet | 1 | Kao / TMind | Improves spell-slot economy. |
-| ⭐⭐⭐ | Spoiler-named shield | 1 | TMind / shield user | Inspect as a defensive shield option. |
-| ⭐⭐ | Remedial Potion | 3 | Any | Condition cleanup without spending spell slots. |
-| ⭐⭐ | Potion of Invisibility | 4 | Astarion / scout | Scouting, escape, or setup tool. |
-| ⭐⭐ | Elixir of Arcane Cultivation | 1 | Kao | More spell-slot flexibility. |
-| ⭐⭐ | Elixir of Superior Arcane Cultivation | 1 | Kao | Higher-value spell-slot flexibility. |
-| ⭐⭐ | Elixir of Freedom of Movement | 1 | Lae'zel / frontliner | Helps prevent movement shutdown. |
-| ⭐⭐ | Elixir of Peerless Focus | 1 | TMind / Kao | Concentration protection. |
-| ⭐⭐ | Elixir of the Colossus | 3 | Lae'zel | Martial damage option. |
+| ⭐⭐⭐ | Scroll of Revivify | 9 | Any | Emergency revive stock; spread across active characters. |
+| ⭐⭐⭐ | Potion of Speed | 3 | Lae'zel / group | Extra decisive-Haste openers. |
+| ⭐⭐ | Potion of Invisibility | 8 | Astarion / scout | Scouting, resets, and escapes. |
 | ⭐⭐ | Scroll of Conjure Elemental | 2 | Kao | Extra action economy for hard fights. |
-| ⭐⭐ | Scroll of Blight | 1 | Kao / TMind | Necrotic burst option. |
-| ⭐⭐ | Bow of the Banshee | 1 | Astarion | Control bow to inspect. |
-| ⭐⭐ | Dwarven Thrower | 1 | Lae'zel / throw build | Only valuable if the build supports throwing. |
-| ⭐⭐ | Robe of Arcane Defense | 1 | Kao | Caster robe to inspect against current gear. |
-
-### Storage Consumables to Consolidate
-
-| Use | Item | Qty seen | Best holder | Why it matters |
-|---|---|---:|---|---|
-| ⭐⭐ | Arrow of Arcane Interference | 2 | Astarion | Anti-caster answer. |
-| ⭐⭐ | Arrow of Darkness | 3 | Astarion | Darkness utility and escape setup. |
-| ⭐⭐ | Arrow of Detonation | 2 | Astarion / Lae'zel | Area damage from a weapon action. |
-| ⭐⭐ | Basilisk Oil | 2 | Any | Rare special-case utility. |
-| ⭐⭐ | Grease Bottle | 9 | Astarion / Kao | Surface control without spell slots. |
-| ⭐ | Acid Vial | 5 | Any | Surface and resistance-dependent utility. |
-| ⭐ | Alchemist Fire | 12 | Any | Fire surface and low-cost finishers. |
-| ⭐ | Basic Poison / Basic Toxin | 18 | Astarion | Weapon-coating stock. |
-| ⭐ | Bomb | 4 | Any | Simple area damage stock. |
-| ⭐ | Antitoxin | 4 | Any | Poison answer. |
-| ⭐ | Potion of Feather Fall | 5 | Any | Exploration safety. |
-| ⭐ | Potion of Fire Resistance | 4 | Any | Elemental prep. |
-| ⭐ | Healing potions | 13 | Split across party | Keep each active character supplied. |
-| ⭐ | Potion of Animal Speaking | 5 | Any | Exploration and dialogue utility. |
-| ⭐ | Potion of Glorious Vaulting | 2 | Lae'zel / Astarion | Mobility utility. |
-
-### Storage Gear to Inspect
-
-| Build | Use | Item | Why inspect it |
-|---|---|---|---|
-| TMind / support cleric | ⭐⭐⭐ | Healing Restoration Amulet | May improve the healing-support package. |
-| TMind / support cleric | ⭐⭐⭐ | Healing Temp HP Boots | Pairs well with healing-triggered support. |
-| TMind / support cleric | ⭐⭐⭐ | Spell Slot Restoration Amulet | Useful when cleric spell slots are stretched. |
-| TMind / support cleric | ⭐⭐⭐ | Spoiler-named shield | Possible defensive shield upgrade. |
-| TMind / support cleric | ⭐⭐⭐ | Cloak of Protection | Strong general defense if the cloak slot is open. |
-| Kao / human mage | ⭐⭐⭐ | Spell Slot Restoration Amulet | Strong day-extension tool. |
-| Kao / human mage | ⭐⭐ | Robe of Arcane Defense | Compare against current robe. |
-| Kao / human mage | ⭐⭐ | Scroll of Conjure Elemental | Strong setup for difficult fights. |
-| Kao / human mage | ⭐⭐ | Scroll of Blight | Extra damage option if prepared spells are limited. |
-| Lae'zel / fighter | ⭐⭐⭐ | Elixir of Bloodlust | Best martial elixir for kill chains. |
-| Lae'zel / fighter | ⭐⭐ | Elixir of the Colossus | Good damage option when Bloodlust is not used. |
-| Lae'zel / fighter | ⭐⭐ | Dwarven Thrower | Only relevant if you want a throw-oriented variant. |
-| Lae'zel / fighter | ⭐⭐ | Spiritual Stand Greataxe | Compare against current weapon before selling. |
-| Astarion / rogue scout | ⭐⭐ | Bow of the Banshee | Control bow option. |
-| Astarion / rogue scout | ⭐⭐ | Frost Offhand Dagger | Offhand utility option. |
-| Astarion / rogue scout | ⭐⭐ | Potion of Invisibility | Scout opener, reset, or escape tool. |
-| Astarion / rogue scout | ⭐⭐ | Arrow of Arcane Interference | Anti-caster shot. |
+| ⭐⭐ | Elixir of Bloodlust | 1 | Lae'zel | Spare kill-chain elixir. |
+| ⭐⭐ | Potion of Supreme Healing | 2 | Any | Highest-tier emergency heal. |
+| ⭐⭐ | Scroll of Speak with Dead | 4 | Any | Investigation utility. |
+| ⭐ | Healing potions | 23 | Split across party | Top up anyone before leaving camp. |
+| ⭐ | Assorted caster scrolls | many | Kao | Blur, Mirror Image, Hold Person, Fireball, Misty Step, etc. — browse before a caster fight. |
 
 ### Storage Handling Routine
 
 1. Before a hard fight, check camp storage for the ⭐⭐⭐ priority pulls.
 2. Put Revivify scrolls on at least two different active characters.
-3. Move caster scrolls and Arcane Cultivation elixirs to Kao.
-4. Move arrows, poisons, invisibility tools, and scouting consumables to Astarion.
+3. Move caster scrolls and spell-slot elixirs to Kao.
+4. Move invisibility tools, arrows, and scouting consumables to Astarion.
 5. Move martial elixirs to Lae'zel.
-6. Keep healing-support gear together for TMind or Shadowheart, depending on who is active or handling camp support.
-7. Leave books, keys, story objects, and generic containers untouched unless a specific quest or vendor cleanup requires them.
+6. Keep healing-support gear together for TMind (or Shadowheart if she is the active support).
+7. Leave books, keys, story objects, and generic containers untouched unless a quest or vendor cleanup needs them.
 
 ### Storage Uncertainty
 
-- The extracted save can show storage-like inventories, but the exact in-game container labels should be confirmed manually at camp.
+- The save shows storage-like inventories, but exact in-game container labels should be confirmed at camp.
 - If an item cannot be found quickly in game, search camp storage by item name instead of by container.
 
 ## Hidden From This Practical List ^inventory-omissions
 
-- Quest keys, most books/notes, camp clothing, plain torches, and obvious containers are not expanded in the character sections.
-- Some generic scroll entries are listed as unidentified because the exact spell name was not visible in the extracted save.
+- Quest keys, most books/notes, camp clothing, plain torches, generic default weapons/armour, and obvious containers are not expanded in the character sections.
+- Alchemy ingredients and ⭐ situational scrolls are summarized as counts rather than listed item by item.
 - Camp storage is summarized only by practical priority, not by raw save location.

@@ -21,6 +21,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ### Changed
 
+- Rewrote the [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) as a full item re-audit of the `Wyrms Rock Fortress - 100h 29m` save. Item display names are now resolved from the game's own root templates and localization (a stat/template → DisplayName → loca join, same approach as the journal text), so names match in game; per-character gear, consumable counts, and storage highlights are refreshed (e.g. TMind now has The Whispering Promise, Astarion has Cloak of Displacement + The Joltshooter, Kao's Absorb Elements is the Cloak of Elemental Absorption). Readiness consumable counts were refreshed to match.
 - Refreshed the save-derived snapshots from the `Wyrms Rock Fortress - 100h 29m` save: rewrote the party, buff, and item-source sections of [Current Save Snapshot](12_Current_Save_Snapshot.md) (party now in `WYR_Fortress_SUB`, XP ~63.7k, Flying Ghoul summon, Elixir of Bloodlust now active on Lae'zel, Pass Without Trace no longer active, new item effects), and updated the verdict, buff coverage, and source in [Current Readiness Audit](14_Current_Readiness_Audit.md). The item snapshot (`docs/13`) got the new source reference and a note that its detailed tables still reflect the prior inventory pass pending a full item re-audit. Also updated the current location in `CLAUDE.md` and `session-notes.md`.
 
 ### Fixed
