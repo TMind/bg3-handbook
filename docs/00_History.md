@@ -22,6 +22,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 ### Added
 
 - Added `tools/build_journal.py`, which generates a quest journal (open and completed quests with their step trails) from an indexed save, and published the generated `journal.md`. It is spoiler-heavy (full story progress). It lives at the repo root, so `check_vault.py` does not scan it — same as `session-notes.md`.
+- Added `journal.md` to the generated site (`scripts/build_site.py`) and the sidebar (Current Campaign → Quest Journal), so it is browsable and searchable alongside the handbook chapters.
 
 ## 2026-07-19
 
