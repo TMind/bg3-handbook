@@ -147,7 +147,12 @@ def render(quests, meta):
         "",
     ]
 
+    def esc(s):
+        return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
     def block(title, items):
+        # Each quest is a collapsed <details> so the long list stays scannable;
+        # raw HTML renders on the site, on GitHub, and in Obsidian alike.
         out = [f"## {title}", ""]
         cur_region = None
         for q in items:
@@ -155,11 +160,23 @@ def render(quests, meta):
             if reg != cur_region:
                 out += [f"### {reg}", ""]
                 cur_region = reg
-            out.append(f"- **{q['id']}**")
+            detail = []
             if not q["completed"] and q["objective"]:
-                out.append(f"  - Aktuelles Ziel: `{q['objective']}`")
+                detail.append(f"<li>Aktuelles Ziel: <code>{esc(q['objective'])}</code></li>")
             if q["steps"]:
-                out.append("  - Verlauf: " + " → ".join(f"`{s}`" for s in q["steps"]))
+                trail = " → ".join(f"<code>{esc(s)}</code>" for s in q["steps"])
+                detail.append(f"<li>Verlauf: {trail}</li>")
+            if not detail:
+                detail.append("<li><em>Keine weiteren Details.</em></li>")
+            count = f"{len(q['steps'])} Schritt{'e' if len(q['steps']) != 1 else ''}"
+            out.append(
+                f'<details class="quest-entry"><summary><code>{esc(q["id"])}</code>'
+                f'<span class="q-count">{count}</span></summary>'
+            )
+            out.append("<ul>")
+            out += detail
+            out.append("</ul>")
+            out.append("</details>")
             out.append("")
         return out
 

@@ -408,6 +408,49 @@
     border-radius: 2px;
     padding: 0 1px;
   }
+
+  /* ---------- Quest journal (collapsible entries) ---------- */
+  details.quest-entry {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    margin: 0.35rem 0;
+  }
+  details.quest-entry > summary {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    list-style: none;
+  }
+  details.quest-entry > summary::-webkit-details-marker { display: none; }
+  details.quest-entry > summary::before {
+    content: "▸";
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    transition: transform 0.12s ease;
+  }
+  details.quest-entry[open] > summary::before { transform: rotate(90deg); }
+  details.quest-entry > summary:hover { color: var(--accent); }
+  details.quest-entry > summary code {
+    font-size: 0.82rem;
+    background: transparent;
+    padding: 0;
+  }
+  details.quest-entry > summary .q-count {
+    margin-left: auto;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  details.quest-entry[open] > summary { border-bottom: 1px solid var(--border); }
+  details.quest-entry > ul {
+    margin: 0.55rem 0.75rem 0.7rem 1.9rem;
+    font-size: 0.86rem;
+    color: var(--text-dim);
+  }
+  details.quest-entry > ul li { margin: 0.2rem 0; }
 </style>
 
 <div class="app" id="app">
@@ -639,6 +682,20 @@
         continue;
       }
 
+      // raw <details> passthrough (used by the quest journal; content is
+      // author-generated HTML). Collect through the closing </details> tag.
+      if (/^\s*<details[\s>]/i.test(line)) {
+        var detailBlock = [];
+        while (i < lines.length) {
+          detailBlock.push(lines[i]);
+          var closed = /<\/details>/i.test(lines[i]);
+          i++;
+          if (closed) break;
+        }
+        out.push(detailBlock.join("\n"));
+        continue;
+      }
+
       // heading
       var hm = line.match(/^(#{1,6})\s+(.+)$/);
       if (hm) {
@@ -805,6 +862,7 @@
   // ---------- Search ----------
   function stripMd(s) {
     return s
+      .replace(/<[^>]+>/g, " ")
       .replace(/`([^`]+)`/g, "$1")
       .replace(/\[\[([^\]]+)\]\]/g, function (_, b) {
         var p = splitWikilink(b);
