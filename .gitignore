@@ -35,3 +35,10 @@ tools/ExportTool-*.zip
 
 # Generated site (rebuild with scripts/build_site.py; published by CI)
 site/
+
+# Real in-game journal text extracted from the player's game files.
+# Copyrighted Larian content — generated locally by tools/extract_journal_text.py.
+tools/journal-text/
+# journal.local.md holds the real in-game journal prose (copyrighted); the
+# public journal.md keeps readable titles only.
+journal.local.md

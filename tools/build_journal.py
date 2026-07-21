@@ -96,7 +96,31 @@ def region_label(qid: str) -> str:
     for prefix, label in REGIONS:
         if qid.startswith(prefix):
             return label
-    return "Sonstiges"
+    return "Other"
+
+
+def load_quest_text():
+    """Optional real in-game text cache (see tools/extract_journal_text.py).
+
+    Returns (mapping, sorted_ids) or ({}, []) when the local cache is absent —
+    e.g. in CI, where the published journal falls back to readable ids.
+    """
+    path = ROOT / "tools/journal-text/quest_text.json"
+    if not path.exists():
+        return {}, []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data, sorted(data.keys(), key=len, reverse=True)
+
+
+def resolve_quest_id(save_id, objective, known_ids):
+    """Map a save's quest id/objective to a base QuestID from the text cache."""
+    for candidate in (save_id, objective):
+        if not candidate:
+            continue
+        for qid in known_ids:
+            if candidate == qid or candidate.startswith(qid + "_"):
+                return qid
+    return None
 
 
 def region_order(qid: str) -> int:
@@ -166,7 +190,7 @@ def build(recs):
     return list(best.values())
 
 
-def render(quests, meta):
+def render(quests, meta, quest_text, known_ids):
     open_q = sorted(
         (q for q in quests if not q["completed"]),
         key=lambda q: (region_order(q["id"]), q["id"]),
@@ -175,6 +199,7 @@ def render(quests, meta):
         (q for q in quests if q["completed"]),
         key=lambda q: (region_order(q["id"]), q["id"]),
     )
+    real = bool(quest_text)
 
     lines = [
         "# Quest Journal",
@@ -185,6 +210,11 @@ def render(quests, meta):
         f"- **Save:** {meta.get('save','?')}",
         f"- **Game time (internal):** {meta.get('gametime','?')}",
         f"- **Open / in progress:** {len(open_q)}  ·  **Completed:** {len(done_q)}",
+        (
+            "- **Text:** real in-game journal entries"
+            if real
+            else "- **Text:** readable titles derived from internal ids"
+        ),
         "",
     ]
 
@@ -201,18 +231,28 @@ def render(quests, meta):
             if reg != cur_region:
                 out += [f"### {reg}", ""]
                 cur_region = reg
-            title = humanize_quest(q["id"])
+
+            base = resolve_quest_id(q["id"], q["objective"], known_ids) if real else None
+            qt = quest_text.get(base) if base else None
+
+            quest_title = (qt and qt.get("title")) or humanize_quest(q["id"])
+            step_texts = (qt or {}).get("steps", {})
+
             detail = []
-            objective_title = humanize_quest(q["objective"]) if q["objective"] else ""
-            if not q["completed"] and objective_title and objective_title != title:
-                detail.append(f"<li>Current objective: {esc(objective_title)}</li>")
             if q["steps"]:
-                trail = " → ".join(esc(humanize(s)) for s in q["steps"])
-                detail.append(f'<li>Trail: <span class="q-trail">{trail}</span></li>')
+                if qt:
+                    # Real journal entries, in the order the player unlocked them.
+                    for s in q["steps"]:
+                        entry = step_texts.get(s) or humanize(s)
+                        detail.append(f"<li>{esc(entry)}</li>")
+                else:
+                    trail = " → ".join(esc(humanize(s)) for s in q["steps"])
+                    detail.append(f'<li>Trail: <span class="q-trail">{trail}</span></li>')
             detail.append(f'<li class="q-raw">ID: <code>{esc(q["id"])}</code></li>')
+
             count = f"{len(q['steps'])} step{'s' if len(q['steps']) != 1 else ''}"
             out.append(
-                f'<details class="quest-entry"><summary><span class="q-title">{esc(title)}</span>'
+                f'<details class="quest-entry"><summary><span class="q-title">{esc(quest_title)}</span>'
                 f'<span class="q-count">{count}</span></summary>'
             )
             out.append("<ul>")
@@ -253,11 +293,21 @@ def main() -> int:
             break
 
     quests = build(recs)
-    out = Path(args.out)
-    out.write_text(render(quests, meta), encoding="utf-8")
+    quest_text, known_ids = load_quest_text()
     n_open = sum(1 for q in quests if not q["completed"])
     n_done = sum(1 for q in quests if q["completed"])
-    print(f"Wrote {out.relative_to(ROOT)}: {n_open} open, {n_done} completed.")
+
+    # Public output: readable titles derived from ids — always safe to publish.
+    out = Path(args.out)
+    out.write_text(render(quests, meta, {}, []), encoding="utf-8")
+    print(f"Wrote {out.relative_to(ROOT)}: {n_open} open, {n_done} completed [readable ids].")
+
+    # Local output: real in-game journal text (Larian copyright) — gitignored,
+    # only written when the text cache is present.
+    if quest_text:
+        local = ROOT / "journal.local.md"
+        local.write_text(render(quests, meta, quest_text, known_ids), encoding="utf-8")
+        print(f"Wrote {local.relative_to(ROOT)}: real in-game text (local only, gitignored).")
     return 0
 
 

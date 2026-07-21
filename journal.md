@@ -6,6 +6,7 @@
 - **Save:** Campsite - 98h 44m
 - **Game time (internal):** 361260
 - **Open / in progress:** 40  ·  **Completed:** 72
+- **Text:** readable titles derived from internal ids
 
 ## 🟡 Open / in-progress quests
 
@@ -45,7 +46,6 @@
 
 <details class="quest-entry"><summary><span class="q-title">Nightsong</span><span class="q-count">13 steps</span></summary>
 <ul>
-<li>Current objective: Nightsong — After SCE</li>
 <li>Trail: <span class="q-trail">Search Temple → Learned Location → Heard Of → Learned Bryan Map → Solved Puzzle → Read Justiciar Book → Entered Underdark → Reached Grymforge → Found SHA → Balthazar Sent For Nightsong → Entered Shadowfell → Nightsong Is A Person Prison → Nightsong In Camp</span></li>
 <li class="q-raw">ID: <code>SHA_Nightsong</code></li>
 </ul>
@@ -122,7 +122,6 @@
 
 <details class="quest-entry"><summary><span class="q-title">Grand Duke Rescue</span><span class="q-count">9 steps</span></summary>
 <ul>
-<li>Current objective: Grand Duke Rescue — Pursue Grand Duke</li>
 <li>Trail: <span class="q-trail">Learned Moonrise → Ordered Breach Inn → Entered Inn → Found Stuck Half Elf → Freed Counsellor → Learned Duke Missing Counsellor → Counsellor Accepted Help Moonrise → Reached MT → Tadpoled</span></li>
 <li class="q-raw">ID: <code>PLA_GrandDukeRescue</code></li>
 </ul>
