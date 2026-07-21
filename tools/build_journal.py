@@ -27,27 +27,27 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Region/prefix → human label, roughly in play order.
 REGIONS = [
-    ("TUT", "Prolog — Nautiloid"),
-    ("INT", "Prolog — Zwischenspiel"),
+    ("TUT", "Prologue — Nautiloid"),
+    ("INT", "Prologue — Interlude"),
     ("SYS", "System"),
-    ("CHA", "Akt 1 — Rekrutierung & Kapelle"),
-    ("DEN", "Akt 1 — Hain & Goblins"),
-    ("HAG", "Akt 1 — Sumpf / Hexe"),
-    ("UND", "Akt 1 — Unterreich"),
-    ("FOR", "Akt 1 — Grymschmiede"),
-    ("CRE", "Akt 1 — Githyanki-Crèche"),
-    ("COL", "Akt 2 — Schattenland"),
-    ("SHA", "Akt 2 — Shar-Questreihe"),
-    ("MOO", "Akt 2 — Mondtürme"),
-    ("WYR", "Akt 3 — Rivington / Wyrm's Crossing"),
-    ("LOW", "Akt 3 — Untere Stadt"),
-    ("SCL", "Akt 3 — Obere Stadt"),
-    ("CTY", "Akt 3 — Stadt"),
-    ("PLA", "Akt 3 — Stadt (Verschiedenes)"),
-    ("WLD", "Sonstiges — Wildnis"),
-    ("GLO", "Hauptquest (übergreifend)"),
-    ("ORI", "Begleiter-Questreihen"),
-    ("HIDDEN", "Versteckte Ziele"),
+    ("CHA", "Act 1 — Recruitment & Chapel"),
+    ("DEN", "Act 1 — Grove & Goblins"),
+    ("HAG", "Act 1 — Swamp / Hag"),
+    ("UND", "Act 1 — Underdark"),
+    ("FOR", "Act 1 — Grymforge"),
+    ("CRE", "Act 1 — Githyanki Crèche"),
+    ("COL", "Act 2 — Shadow-Cursed Lands"),
+    ("SHA", "Act 2 — Shar questline"),
+    ("MOO", "Act 2 — Moonrise Towers"),
+    ("WYR", "Act 3 — Rivington / Wyrm's Crossing"),
+    ("LOW", "Act 3 — Lower City"),
+    ("SCL", "Act 3 — Upper City"),
+    ("CTY", "Act 3 — City"),
+    ("PLA", "Act 3 — City (misc)"),
+    ("WLD", "Other — Wilderness"),
+    ("GLO", "Main quest (cross-act)"),
+    ("ORI", "Companion questlines"),
+    ("HIDDEN", "Hidden objectives"),
 ]
 
 
@@ -136,14 +136,14 @@ def render(quests, meta):
     )
 
     lines = [
-        "# Quest-Tagebuch",
+        "# Quest Journal",
         "",
-        "> ⚠️ **Spoiler:** enthält den kompletten Story-Verlauf dieses Spielstands.",
-        "> Automatisch erzeugt aus dem Savegame; nicht von Hand editieren (mit `tools/build_journal.py` neu bauen).",
+        "> ⚠️ **Spoiler:** contains this save's full story progress.",
+        "> Auto-generated from the savegame; do not edit by hand (rebuild with `tools/build_journal.py`).",
         "",
         f"- **Save:** {meta.get('save','?')}",
-        f"- **Spielzeit (intern):** {meta.get('gametime','?')}",
-        f"- **Offen/in Arbeit:** {len(open_q)}  ·  **Abgeschlossen:** {len(done_q)}",
+        f"- **Game time (internal):** {meta.get('gametime','?')}",
+        f"- **Open / in progress:** {len(open_q)}  ·  **Completed:** {len(done_q)}",
         "",
     ]
 
@@ -162,13 +162,13 @@ def render(quests, meta):
                 cur_region = reg
             detail = []
             if not q["completed"] and q["objective"]:
-                detail.append(f"<li>Aktuelles Ziel: <code>{esc(q['objective'])}</code></li>")
+                detail.append(f"<li>Current objective: <code>{esc(q['objective'])}</code></li>")
             if q["steps"]:
                 trail = " → ".join(f"<code>{esc(s)}</code>" for s in q["steps"])
-                detail.append(f"<li>Verlauf: {trail}</li>")
+                detail.append(f"<li>Trail: {trail}</li>")
             if not detail:
-                detail.append("<li><em>Keine weiteren Details.</em></li>")
-            count = f"{len(q['steps'])} Schritt{'e' if len(q['steps']) != 1 else ''}"
+                detail.append("<li><em>No further details.</em></li>")
+            count = f"{len(q['steps'])} step{'s' if len(q['steps']) != 1 else ''}"
             out.append(
                 f'<details class="quest-entry"><summary><code>{esc(q["id"])}</code>'
                 f'<span class="q-count">{count}</span></summary>'
