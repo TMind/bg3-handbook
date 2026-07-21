@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -49,6 +50,46 @@ REGIONS = [
     ("ORI", "Companion questlines"),
     ("HIDDEN", "Hidden objectives"),
 ]
+
+
+# Prefixes stripped when turning an internal id into a readable title
+# (longest / compound first).
+STRIP_PREFIXES = [
+    "ORI_COM", "ORI_Avatar", "HIDDEN",
+    "TUT", "INT", "SYS", "CHA", "DEN", "HAG", "UND", "FOR", "CRE",
+    "COL", "SHA", "MOO", "WYR", "LOW", "SCL", "CTY", "PLA", "WLD", "GLO",
+]
+
+_WORD_RE = re.compile(r"[A-Z]+(?=[A-Z][a-z])|[A-Z][a-z]+|[A-Z]+|[a-z]+|\d+")
+
+
+def humanize(token: str) -> str:
+    """Split a CamelCase / snake_case token into spaced words."""
+    words = []
+    for part in token.split("_"):
+        words += _WORD_RE.findall(part)
+    return " ".join(words) or token
+
+
+def humanize_quest(qid: str) -> str:
+    """Readable English title derived from an internal quest/objective id.
+
+    Heuristic (not the verbatim in-game journal text): strips the region
+    prefix and the _COMPLETION marker, then spaces out the remaining
+    CamelCase/underscore groups.
+    """
+    s = re.sub(r"_COMPLETION$", "", qid)
+    for p in STRIP_PREFIXES:
+        if s == p:
+            s = ""
+            break
+        if s.startswith(p + "_"):
+            s = s[len(p) + 1:]
+            break
+    s = s.replace("_SUB_", "_")
+    parts = [humanize(g) for g in s.split("_") if g]
+    parts = [p for p in parts if p]
+    return " — ".join(parts) if parts else qid
 
 
 def region_label(qid: str) -> str:
@@ -160,17 +201,18 @@ def render(quests, meta):
             if reg != cur_region:
                 out += [f"### {reg}", ""]
                 cur_region = reg
+            title = humanize_quest(q["id"])
             detail = []
-            if not q["completed"] and q["objective"]:
-                detail.append(f"<li>Current objective: <code>{esc(q['objective'])}</code></li>")
+            objective_title = humanize_quest(q["objective"]) if q["objective"] else ""
+            if not q["completed"] and objective_title and objective_title != title:
+                detail.append(f"<li>Current objective: {esc(objective_title)}</li>")
             if q["steps"]:
-                trail = " → ".join(f"<code>{esc(s)}</code>" for s in q["steps"])
-                detail.append(f"<li>Trail: {trail}</li>")
-            if not detail:
-                detail.append("<li><em>No further details.</em></li>")
+                trail = " → ".join(esc(humanize(s)) for s in q["steps"])
+                detail.append(f'<li>Trail: <span class="q-trail">{trail}</span></li>')
+            detail.append(f'<li class="q-raw">ID: <code>{esc(q["id"])}</code></li>')
             count = f"{len(q['steps'])} step{'s' if len(q['steps']) != 1 else ''}"
             out.append(
-                f'<details class="quest-entry"><summary><code>{esc(q["id"])}</code>'
+                f'<details class="quest-entry"><summary><span class="q-title">{esc(title)}</span>'
                 f'<span class="q-count">{count}</span></summary>'
             )
             out.append("<ul>")

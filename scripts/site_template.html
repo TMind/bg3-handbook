@@ -433,10 +433,9 @@
   }
   details.quest-entry[open] > summary::before { transform: rotate(90deg); }
   details.quest-entry > summary:hover { color: var(--accent); }
-  details.quest-entry > summary code {
-    font-size: 0.82rem;
-    background: transparent;
-    padding: 0;
+  details.quest-entry > summary .q-title {
+    font-size: 0.9rem;
+    font-weight: 600;
   }
   details.quest-entry > summary .q-count {
     margin-left: auto;
@@ -444,6 +443,13 @@
     color: var(--text-dim);
     white-space: nowrap;
   }
+  details.quest-entry .q-trail { color: var(--text); }
+  details.quest-entry li.q-raw {
+    font-size: 0.74rem;
+    color: var(--text-dim);
+    margin-top: 0.35rem;
+  }
+  details.quest-entry li.q-raw code { font-size: 0.72rem; }
   details.quest-entry[open] > summary { border-bottom: 1px solid var(--border); }
   details.quest-entry > ul {
     margin: 0.55rem 0.75rem 0.7rem 1.9rem;
