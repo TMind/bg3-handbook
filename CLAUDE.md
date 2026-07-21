@@ -78,7 +78,7 @@ python3 scripts/build_site.py --check    # verify it is up to date (used in CI)
 triggers `.github/workflows/pages.yml`, which rebuilds and deploys it to GitHub
 Pages (enable once under Settings → Pages → Source: "GitHub Actions").
 
-Build the personal quest journal from an indexed save (open + completed quests with step trails). Output `journal.md` is spoiler-heavy and gitignored — local only, never published:
+Build the quest journal from an indexed save (open + completed quests with step trails). Output `journal.md` is spoiler-heavy (full story progress) and is committed; it lives at the repo root, so `check_vault.py` does not scan it:
 
 ```sh
 python3 tools/build_journal.py            # writes journal.md from tools/save-index/globals.jsonl

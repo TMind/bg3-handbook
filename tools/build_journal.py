@@ -3,9 +3,9 @@
 
 Reads the JSONL produced by `index_lsf.py` (default
 `tools/save-index/globals.jsonl`) and writes a readable diary of open and
-completed quests, each with its step trail. The output is spoiler-heavy by
-nature, so `journal.md` is gitignored and never published — this script is
-not; it contains no save content.
+completed quests, each with its step trail. `journal.md` is committed to the
+(public) repo by choice; it is spoiler-heavy — it holds the save's full story
+progress. Regenerate it after syncing a newer save.
 
 Prereq: sync + index a save first, e.g.
     python3 tools/sync_latest_save.py
@@ -138,7 +138,7 @@ def render(quests, meta):
     lines = [
         "# Quest-Tagebuch",
         "",
-        "> ⚠️ Lokale, spoilerhaltige Datei — bewusst **gitignored**, wird nicht veröffentlicht.",
+        "> ⚠️ **Spoiler:** enthält den kompletten Story-Verlauf dieses Spielstands.",
         "> Automatisch erzeugt aus dem Savegame; nicht von Hand editieren (mit `tools/build_journal.py` neu bauen).",
         "",
         f"- **Save:** {meta.get('save','?')}",
@@ -184,7 +184,10 @@ def main() -> int:
     manifest = ROOT / "tools/save-extract/source_manifest.json"
     if manifest.exists():
         m = json.loads(manifest.read_text())
-        meta["save"] = m.get("source_save", {}).get("folder", "?")
+        folder = m.get("source_save", {}).get("folder", "?")
+        # Save folders are "<ProfileName>-<id>__<SaveName>"; keep only the save
+        # name so the player's profile (a real name) never lands in the repo.
+        meta["save"] = folder.split("__", 1)[1] if "__" in folder else folder
     for r in recs:
         if r["name"] == "Journal":
             meta["gametime"] = val(r, "CurrentGameTime")

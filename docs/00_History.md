@@ -21,7 +21,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ### Added
 
-- Added `tools/build_journal.py`, which generates a personal quest journal (open and completed quests with their step trails) from an indexed save. The output `journal.md` is spoiler-heavy, so it is gitignored and stays local — only the generator is tracked.
+- Added `tools/build_journal.py`, which generates a quest journal (open and completed quests with their step trails) from an indexed save, and published the generated `journal.md`. It is spoiler-heavy (full story progress). It lives at the repo root, so `check_vault.py` does not scan it — same as `session-notes.md`.
 
 ## 2026-07-19
 
