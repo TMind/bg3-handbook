@@ -4,9 +4,9 @@
 > Auto-generated from the savegame; do not edit by hand (rebuild with `tools/build_journal.py`).
 > Quest and journal text © Larian Studios, from *Baldur's Gate 3* — reproduced here for personal reference.
 
-- **Save:** Campsite - 98h 44m
-- **Game time (internal):** 361260
-- **Open / in progress:** 35  ·  **Completed:** 71
+- **Save:** Wyrms Rock Fortress - 100h 29m
+- **Game time (internal):** 367494
+- **Open / in progress:** 36  ·  **Completed:** 73
 - **Text:** real in-game journal entries
 
 ## 🟡 Open / in-progress quests
@@ -109,20 +109,13 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">Find a Way Into Wyrm's Rock Fortress</span><span class="q-count">3 entries</span></summary>
-<ul>
-<li>We have an admission pass to the ordination. This should let us enter Wyrm's Rock.</li>
-<li>We found a map that details a secret entrance into Wyrm's Rock. That could be our way in.</li>
-<li>Valeria gave us an admission pass to the ordination. This should let us enter Wyrm's Rock.</li>
-<li class="q-raw">ID: <code>WYR_FindWayIntoWyrmRock</code></li>
-</ul>
-</details>
-
-<details class="quest-entry"><summary><span class="q-title">Get Gortash's Netherstone</span><span class="q-count">3 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">Get Gortash's Netherstone</span><span class="q-count">5 entries</span></summary>
 <ul>
 <li>Gortash left for Baldur's Gate. We should go after him.</li>
 <li>Baldur's Gate is near. We should find out where Gortash is.</li>
 <li>Access to Wyrm's Rock Fortress and the city beyond is being restricted. Everyone is being scanned by Steel Watchers and refugees are not allowed in.</li>
+<li>We made it to Wyrm's Rock Fortress and were invited to Gortash's inauguration upstairs.</li>
+<li>We discovered that Gortash is in Wyrm's Rock Fortress, where he will be sworn in as Archduke of Baldur's Gate. We need to make our way there.</li>
 <li class="q-raw">ID: <code>WYR_GetGortashGem</code></li>
 </ul>
 </details>
@@ -212,10 +205,11 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">Gather Your Allies</span><span class="q-count">2 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">Gather Your Allies</span><span class="q-count">3 entries</span></summary>
 <ul>
 <li>Volo has become a most loyal ally. His powerful words of encouragement are sure to be at our backs in the trials to come.</li>
 <li>Freeing ourselves of the parasite is proving more difficult than we imagined. We should be on the lookout for powerful allies - we'll likely need them in the fight to come.</li>
+<li>Florrick is immensely grateful that we freed her and helped with the threat at Moonrise. We are sure to have her and the Flaming Fist by our side when we need it most.</li>
 <li class="q-raw">ID: <code>GLO_GatherYourAllies</code></li>
 </ul>
 </details>
@@ -278,6 +272,13 @@
 <li>We found the Heart of the Absolute in the bowels of Moonrise Towers: a powerful elder brain, controlled by a Netherese crown of incredible power. Gale was not close enough to detonate the orb.</li>
 <li>I spoke with the devil Raphael, who told me that he seeks a legendary Netherese artefact - the Crown of Karsus. Could this be the crown worn by the Elder Brain?</li>
 <li class="q-raw">ID: <code>ORI_Avatar_Gale</code></li>
+</ul>
+</details>
+
+<details class="quest-entry"><summary><span class="q-title">Servant of None</span><span class="q-count">1 entry</span></summary>
+<ul>
+<li>There he is. Time to pay the piper, Gortash.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Karlach</code></li>
 </ul>
 </details>
 
@@ -393,7 +394,7 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">The Blade of Frontiers</span><span class="q-count">15 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">The Blade of Frontiers</span><span class="q-count">17 entries</span></summary>
 <ul>
 <li>Karlach is done for, and the Sword Coast is safer for it. Mizora will be pleased; I should rest in camp and await her next instructions. I am due a reward for my efforts.</li>
 <li>I met a group of paladins who know Karlach and want her dead. They provided me with her exact whereabouts.</li>
@@ -401,6 +402,7 @@
 <li>I've delved deep into Moonrise Towers. I should search the area thoroughly - the devil that Mizora asked me to rescue must be nearby.</li>
 <li>Zariel's asset turned out to be Mizora herself. In return for my help, she promised to release me from my pact, but only after six months had passed. She disappeared again, but I've clearly not seen the last of her. She is still my patron, and I am her pup - as she is so fond of reminding me.</li>
 <li>I've reached Wyrm's Crossing, on the outskirts of Baldur's Gate. I should keep an eye out for Mizora - she must be lurking about somewhere.</li>
+<li>I found Mizora at Wyrm's Rock fortress. She insisted I attend Gortash's ordination and seek her out afterwards.</li>
 <li>We recruited Wyll, a monster hunter known as the Blade of Frontiers. He is on a mission to kill Karlach, a powerful devil who is a danger to the entire Sword Coast.</li>
 <li>We located Karlach and slayed her, in spite of her claims of innocence. We should talk to Wyll about the situation.</li>
 <li>Wyll celebrated an uneasy victory after Karlach's defeat. We should continue our travels - though a good night's rest in camp might prove illuminating.</li>
@@ -410,6 +412,7 @@
 <li>We've delved deep into Moonrise Towers. We should search the area thoroughly - the devil that Mizora asked us to rescue must be nearby.</li>
 <li>Zariel's asset turned out to be Mizora herself. In return for our help, she promised to release Wyll from his pact, but only after six months had passed. She disappeared again - but not before promising she'd find us soon enough.</li>
 <li>We've reached Wyrm's Crossing, on the outskirts of Baldur's Gate. We should keep an eye out for Mizora.</li>
+<li>We found Mizora at Wyrm's Rock fortress. She insisted we attend Gortash's ordination and seek her out afterwards.</li>
 <li class="q-raw">ID: <code>ORI_Avatar_Wyll</code></li>
 </ul>
 </details>
@@ -449,6 +452,14 @@
 <li>I reached Moonrise Towers. It seems unlikely that a high-value asset like my father, a powerful duke, would be confined with other prisoners; the deeper I delve into the towers, the closer I'll be to finding him.</li>
 <li>My father was infected with an illithid tadpole. He is being transported to Baldur's Gate along with an enormous elder brain. With the Absolute bending father's ear, there's no telling what damage this cult could inflict upon the city.</li>
 <li class="q-raw">ID: <code>ORI_COM_Wyll_SUB_Duke</code></li>
+</ul>
+</details>
+
+<details class="quest-entry"><summary><span class="q-title">Wyrmway</span><span class="q-count">2 entries</span></summary>
+<ul>
+<li>We've reached the Wyrmway, where the great wyrm Ansur resides. We must make our way to him.</li>
+<li>I reached the Wyrmway, where the great wyrm Ansur resides. I must make my way to him.</li>
+<li class="q-raw">ID: <code>ORI_COM_Wyll_SUB_Wyrmway</code></li>
 </ul>
 </details>
 
@@ -900,6 +911,26 @@
 </details>
 
 ### Act 3 — Rivington / Wyrm's Crossing
+
+<details class="quest-entry"><summary><span class="q-title">Find a Way Into Wyrm's Rock Fortress</span><span class="q-count">4 entries</span></summary>
+<ul>
+<li>We have an admission pass to the ordination. This should let us enter Wyrm's Rock.</li>
+<li>We found a map that details a secret entrance into Wyrm's Rock. That could be our way in.</li>
+<li>Valeria gave us an admission pass to the ordination. This should let us enter Wyrm's Rock.</li>
+<li>We convinced the guards to let us into Wyrm's Rock for Gortash's coronation.</li>
+<li class="q-raw">ID: <code>WYR_FindWayIntoWyrmRock</code></li>
+</ul>
+</details>
+
+<details class="quest-entry"><summary><span class="q-title">Free Counsellor Florrick</span><span class="q-count">4 entries</span></summary>
+<ul>
+<li>Counsellor Florrick is being held deep within Wyrm's Rock. That's where we'll find her.</li>
+<li>Counsellor Florrick is soon to be executed - if we want her help, she needs an escape route.</li>
+<li>We promised to break Counsellor Florrick out of Wyrm's Rock to prevent her impending execution.</li>
+<li>We freed Counsellor Florrick from Wyrm's Rock and impending doom on the gallows.</li>
+<li class="q-raw">ID: <code>WYR_FreeFlorrick</code></li>
+</ul>
+</details>
 
 <details class="quest-entry"><summary><span class="q-title">Solve the Open Hand Temple Murders</span><span class="q-count">14 entries</span></summary>
 <ul>
