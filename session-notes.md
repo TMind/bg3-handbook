@@ -16,7 +16,9 @@ Kao, TMind, Lae'zel, Gale → later swapped Gale for Astarion
 
 ### Act 1 outcomes (verified from save quest flags, 2026-07-22)
 - **Halsin was never rescued and died in Act 1** (`HalsinDiedEarly`; Act 2 confirms via Art Cullagh: `HalsinAlreadyDead`). No rescue/join step exists anywhere in the save.
-- **Grove conflict ended via the goblin assault path** (`King_SentToMinthara`, `SazzaToldMinthara`, `AoD_Started`/`AoD_Ready`): **Zevlor died**, **Kagha died early**, the surviving tieflings left, and the druids were defeated (`Betrayal_DruidDead_Halsin`, `NoTieflings`).
+- **Sazza was freed from the grove cage and saved again from Minthara** (`DEN_CapturedGoblin`: `Released` → `Escaped` → `Saved`, "we convinced Minthara to spare her life") — and **Sazza then told Minthara where the grove is** (`SazzaToldMinthara`).
+- **Grove conflict ended via the goblin assault path** ("Raid the Emerald Grove": `King_SentToMinthara`, `AoD_Started`/`AoD_Ready` — Minthara's warband set out): **Zevlor died**, **Kagha died early**, the surviving tieflings left, and the druids were defeated (`Betrayal_DruidDead_Halsin`, `NoTieflings`).
+- **Minthara was never recruited** — no `ORI_*_Minthara` quest exists in the save; in Act 2 she was left imprisoned at Moonrise (`MOO_MintharaFate: MintharaLeftBehind`, "left Minthara to her grim fate").
 
 ### Lae'zel feat progression (Act 1)
 - GWM taken
