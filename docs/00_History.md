@@ -21,6 +21,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ### Added
 
+- Added `chronicle.md`, a narrative party chronicle: the characters' story so far, told from their journey through the campaign and grounded in the real quest journal and campaign notes (handles only). Added it to the site build and sidebar (Current Campaign → Party Chronicle), so it is browsable and searchable alongside the journal.
 - Added `tools/extract_item_names.py`, which builds a local `tools/item-names/item_names.json` cache mapping item stat names to their real display names (RootTemplates `_merged.lsf` with ParentTemplateId inheritance, joined to `english.loca`). It reuses the LSPK reader from `extract_journal_text.py` and the LSF parser from `index_lsf.py`, so future item re-audits are one command instead of an ad-hoc rebuild. The cache is gitignored (copyrighted names).
 
 ### Changed
