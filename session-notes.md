@@ -14,6 +14,10 @@ Kao, TMind, Lae'zel, Gale → later swapped Gale for Astarion
 - **Kept Lae'zel over Shadowheart**: Shadowheart would remove the frontline tank; Lae'zel is essential for the Spirit Guardians strategy.
 - **Sussur Bark collected** at the Sussur Tree, later crafted into the **Sussur Dagger** at the Blighted Village forge — currently held by Astarion for caster silence.
 
+### Act 1 outcomes (verified from save quest flags, 2026-07-22)
+- **Halsin was never rescued and died in Act 1** (`HalsinDiedEarly`; Act 2 confirms via Art Cullagh: `HalsinAlreadyDead`). No rescue/join step exists anywhere in the save.
+- **Grove conflict ended via the goblin assault path** (`King_SentToMinthara`, `SazzaToldMinthara`, `AoD_Started`/`AoD_Ready`): **Zevlor died**, **Kagha died early**, the surviving tieflings left, and the druids were defeated (`Betrayal_DruidDead_Halsin`, `NoTieflings`).
+
 ### Lae'zel feat progression (Act 1)
 - GWM taken
 - STR raised to 19 via ASI (+2 from 17)
@@ -27,6 +31,9 @@ Moonrise Towers cleared. Act 2 complete.
 
 #### Previously: Gauntlet of Shar (complete)
 Silent Library completed. **Nightsong freed.** **Shadowheart spared the Nightsong** — she chose to defy Shar and embrace Selûne. Major Act 2 story decision with lasting consequences for Shadowheart's character arc and abilities.
+
+#### Shadow curse: not lifted
+With Halsin dead since Act 1, waking **Art Cullagh** only confirmed that the land-spirit **Thaniel** could not be rescued (`HalsinAlreadyDead`); the party left for Baldur's Gate with the curse intact (`SCL_LiftingTheCurse: OliverNotFound`).
 
 ### Active party
 Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric)

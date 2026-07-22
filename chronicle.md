@@ -26,6 +26,8 @@ The two player characters carry the main thread. This is the spine of the run, a
 
 They reached a walled druid grove full of refugees and found their first hope there *(Emerald Grove — 9h 24m)* — and lost it fast. Every lead curdled. The grove healer **Nettie** died before she could help. The swamp "grandmother," **Auntie Ethel**, turned out to be a hag and turned violent *(Sunlit Wetlands — 17h 36m)*. Past the **Blighted Village** *(13h 27m)* and into goblin territory *(Shattered Sanctum — 21h–23h; Goblin Camp — 33h 59m)*, the priestess **Gut** offered her chapel and then drugged and caged them, hoping to watch them transform.
 
+The grove itself fared no better. The one healer everyone swore by — the Archdruid **Halsin**, lost bear-shaped in goblin hands — was never found alive: he died before he could help anyone, and the conflict around the grove ended in blood. **Kagha** fell early, **Zevlor** died, the surviving tieflings scattered, and the druids were defeated. Whatever hope Act 1 held, it did not survive it.
+
 Underground the search widened *(Underdark — 24h 18m; Ebonlake Grotto — 25h; Arcane Tower — 30h 52m)*, and the one genuinely friendly face was a mind flayer: **Omeluum** couldn't pull the parasite, but its experiments cracked something open — a strange new power in the worm — and left them a **Ring of Mind-Shielding** to keep it leashed. Through the ancient forge *(Grymforge — 40h–44h)* they kept moving, still uncured, but now certain of one thing: the **artefact** they carried mattered. The goblin king coveted it; the githyanki hunted it without pause.
 
 The trail led up a mountain to the githyanki *(Crèche Yllek — 46h–50h)*. In the **Inquisitor's Chamber** *(48h 18m)* it was finally named — the **Astral Prism** — and the lich-queen **Vlaakith** herself, appearing as a projection, ordered them to enter it and kill whoever was imprisoned inside. They stepped in. They found a being there, spoke with it, and chose *not* to kill it. It told them they were on the right track and pointed them at **Moonrise Towers**.
@@ -33,6 +35,8 @@ The trail led up a mountain to the githyanki *(Crèche Yllek — 46h–50h)*. In
 ### Act 2 — The Shadow-Cursed Lands *(≈45h–82h)*
 
 Into the dark *(Shadow-Cursed Lands — 45h 09m)*, where the sunlight itself was gone and the only safe ground was a besieged inn *(Last Light Inn — 55h 07m)*. They pushed through the horrors of a corrupted hospital *(House of Healing / Morgue — 59h–62h)* and down into the trial-vaults of the goddess of loss *(Gauntlet of Shar — 63h–68h)*, chasing the Nightsong to its cage *(Nightsong's Prison — 69h 28m)*.
+
+One door stayed closed. They woke the sleeping Flaming Fist **Art Cullagh** *(Isobel's Room — 55h 19m)*, who carried the key to the land's healing — the spirit **Thaniel**, lost in the Shadowfell. But Thaniel's rescue needed the one druid who could reach him, and Halsin was long dead. Art despaired, and the party moved on: the **shadow curse was never lifted** on this run.
 
 The road to the enemy's seat ran through a haunted town *(Reithwin Tollhouse — 70h–71h; Sharran Sanctuary — 72h)* and up into the tower itself *(Moonrise Towers — 73h–80h)*. Beneath it they found the horror the Absolute was built on — a mind flayer breeding operation *(Necrotic Laboratory — 75h 47m; Tadpoling Centre — 76h 54m; Mind Flayer Colony — 77h–78h)* — and the general commanding it all, **Ketheric Thorm**. They broke him, and took the first of the three **Netherstones**.
 
