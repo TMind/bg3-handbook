@@ -96,6 +96,18 @@ Then his old teacher came calling. **Elminster** found him with a message from *
 
 ---
 
+## Wyll — The Blade of Frontiers
+
+Wyll joined early, all flourish and heroics — the famous **Blade of Frontiers**, mid-hunt. His quarry: a "devil" named **Karlach**, and a band of paladins of Tyr on the Risen Road pointed the way *(The Risen Road — 11h–35h)*.
+
+This is the darkest line in the party's ledger. They found Karlach — and **killed her, in spite of her claims of innocence**. Her head went back to the paladin Anders for the bounty; Wyll celebrated what his own journal calls an *uneasy* victory, and his patron **Mizora** appeared personally to reward him for the kill. Karlach is gone forever.
+
+The shape of Wyll's bargain surfaced slowly. In Act 2 the cult abducted an "infernal asset" of Zariel's — which turned out to be **Mizora herself**, held in the mind flayer colony beneath Moonrise *(Mind Flayer Colony — 77h–78h)*. The party pulled her out, and in exchange she promised to release Wyll from his pact. Meanwhile his father, **Grand Duke Ravengard** of Baldur's Gate, was dragged from burning Waukeen's Rest to Moonrise, infected with a tadpole, and shipped toward the city with the cult's flotilla.
+
+Now, in Act 3, the threads knot together at Wyrm's Rock: Mizora waits at **Gortash's ordination** *(Wyrm's Rock Fortress — 99h–100h)*, and somewhere in the city Wyll's father is a prisoner with a worm behind his eye.
+
+---
+
 ## Save Waypoints — The Campaign in Saves
 
 The milestones of this run, by playtime, each a real save on disk:
@@ -103,7 +115,8 @@ The milestones of this run, by playtime, each a real save on disk:
 | Playtime | Save waypoint | Beat |
 |---:|---|---|
 | 1h 24m | Ravaged Beach | The crash; the party comes together |
-| 9h 24m | Emerald Grove | Refugees, first false hope; Lae'zel recruited |
+| 9h 24m | Emerald Grove | Refugees and the grove's first false hope |
+| 11h–35h | The Risen Road | Waukeen's Rest burns; the hunt for Karlach |
 | 13h 27m | Blighted Village | Pushing toward goblin territory |
 | 21h–23h | Shattered Sanctum | The Goblin Camp and Priestess Gut |
 | 24h–32h | Underdark / Ebonlake / Arcane Tower | Omeluum and the Ring of Mind-Shielding |

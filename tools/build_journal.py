@@ -114,20 +114,26 @@ def load_quest_text():
 def resolve_by_steps(steps, objective, quest_text):
     """Pick the prototype QuestID that owns these unlocked steps.
 
-    The save's ObjectiveID does not reliably prefix a prototype QuestID, so
-    match on step-id membership (the reliable key) and use the objective's
-    prefix only to break ties.
+    Match on step-id membership (the reliable key). Step ids are not unique
+    across quests (e.g. `GroveChanged` exists in five grove quests, and the
+    COM/Avatar companion tracks share most step ids), so on a score tie prefer
+    the prototype whose id prefixes the node's ObjectiveID — that is the quest
+    this save node actually belongs to.
     """
-    best, best_score = None, 0
+    scored = {}
     for qid, q in quest_text.items():
-        proto_steps = q.get("steps", {})
-        score = sum(1 for s in steps if s in proto_steps)
-        if score > best_score or (
-            score == best_score and score > 0 and best and objective.startswith(qid)
-            and not objective.startswith(best)
-        ):
-            best, best_score = qid, score
-    return best if best_score > 0 else None
+        score = sum(1 for s in steps if s in q.get("steps", {}))
+        if score > 0:
+            scored[qid] = score
+    if not scored:
+        return None
+    top = max(scored.values())
+    tied = [qid for qid, sc in scored.items() if sc == top]
+    if len(tied) > 1:
+        for qid in sorted(tied, key=len, reverse=True):
+            if objective and objective.startswith(qid):
+                return qid
+    return tied[0]
 
 
 def region_order(qid: str) -> int:
