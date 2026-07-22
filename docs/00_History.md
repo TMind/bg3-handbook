@@ -31,6 +31,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ### Fixed
 
+- Stopped mixing first-person and party-perspective text in companion quests. The save records each companion quest twice — the `ORI_COM_*` "we..." track and the first-person `ORI_Avatar_*` origin track — and merging them mixed "I..." and "we..." lines (and left an origin-only duplicate like *Call of the Blood* alongside *The Pale Elf*). `build_journal.py` now skips the `ORI_Avatar_*` tracks entirely, since the party-perspective track is the correct one for a custom player character.
 - Corrected the quest journal to show only genuine journal entries. The save's `QuestUnlockedSteps` were resolved to prototype quests by step-membership (the reliable key) rather than by objective-id prefix, which had mis-mapped several quests and rendered internal/empty steps as bogus humanized lines. Quest nodes that share a title (a companion's ORI_COM and ORI_Avatar tracks, or one node per objective) are now merged into a single entry with de-duplicated text, and untranslated placeholder titles (`%%% EMPTY`) fall back to a readable id.
 
 ## 2026-07-21

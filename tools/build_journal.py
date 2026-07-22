@@ -173,6 +173,11 @@ def build(recs):
         if r["name"] != "Quest":
             continue
         objective = val(r, "ObjectiveID") or ""
+        # Skip the first-person origin ("Avatar") companion tracks; for a custom
+        # player character the party-perspective ORI_COM tracks are the correct
+        # ones, and keeping both mixes "I..." and "we..." in the same quest.
+        if objective.startswith("ORI_Avatar"):
+            continue
         category, qid = match_cat(objective)
         steps = [
             val(c, "QuestUnlockedSteps")
@@ -202,9 +207,15 @@ def merge(quests, quest_text):
 
     Without the text cache, each node passes through as a fallback unit. With
     it, nodes are resolved to their prototype quest and grouped by display
-    title, so a quest that appears as several save nodes (a companion's ORI_COM
-    and ORI_Avatar tracks, or one node per objective) becomes a single entry.
-    Real journal lines are collected in unlock order and de-duplicated by text.
+    title, so a quest that appears as several save nodes becomes a single entry.
+
+    A companion quest exists twice in the save: the `ORI_COM_*` track, written
+    from the party's perspective ("we..."), and the `ORI_Avatar_*` track,
+    written first-person ("I...") for when that companion is the player's origin
+    character. For a custom player character only the `ORI_COM_*` "we" track is
+    correct, so within a title group we keep the non-Avatar contributions and
+    drop the first-person ones (falling back to Avatar only if it is the sole
+    source). Entries are collected in unlock order and de-duplicated by text.
     A merged quest is "completed" only if every contributing node was.
     """
     if not quest_text:
@@ -227,21 +238,28 @@ def merge(quests, quest_text):
         key = title if title and not title.startswith("%%%") else base
         g = groups.get(key)
         if g is None:
-            g = groups[key] = {
-                "id": base, "title": proto.get("title"), "completed": True,
-                "entries": [], "_seen": set(), "real": True,
-            }
+            g = groups[key] = {"title": proto.get("title"), "completed": True, "contribs": []}
             order.append(g)
-        for s in q["steps"]:
-            txt = proto["steps"].get(s)
-            if txt and txt not in g["_seen"]:
-                g["_seen"].add(txt)
-                g["entries"].append(txt)
+        entries = [proto["steps"][s] for s in q["steps"] if proto["steps"].get(s)]
+        g["contribs"].append({"base": base, "entries": entries})
         if not q["completed"]:
             g["completed"] = False
+
+    result = []
     for g in order:
-        g.pop("_seen", None)
-    return order + passthrough
+        preferred = [c for c in g["contribs"] if not c["base"].startswith("ORI_Avatar")]
+        use = preferred or g["contribs"]
+        entries, seen = [], set()
+        for c in use:
+            for e in c["entries"]:
+                if e not in seen:
+                    seen.add(e)
+                    entries.append(e)
+        result.append({
+            "id": use[0]["base"], "title": g["title"],
+            "completed": g["completed"], "entries": entries, "real": True,
+        })
+    return result + passthrough
 
 
 def render(quests, meta, quest_text):
