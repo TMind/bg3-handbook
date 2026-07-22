@@ -173,11 +173,6 @@ def build(recs):
         if r["name"] != "Quest":
             continue
         objective = val(r, "ObjectiveID") or ""
-        # Skip the first-person origin ("Avatar") companion tracks; for a custom
-        # player character the party-perspective ORI_COM tracks are the correct
-        # ones, and keeping both mixes "I..." and "we..." in the same quest.
-        if objective.startswith("ORI_Avatar"):
-            continue
         category, qid = match_cat(objective)
         steps = [
             val(c, "QuestUnlockedSteps")
@@ -202,21 +197,43 @@ def build(recs):
     return list(best.values())
 
 
+# Keyed by lowercased id token so ORI_COM_Shadowheart and ORI_Avatar_ShadowHeart
+# normalize to one character.
+_COMPANION_NAMES = {
+    "laezel": "Lae'zel", "shadowheart": "Shadowheart", "astarion": "Astarion",
+    "gale": "Gale", "wyll": "Wyll", "karlach": "Karlach", "halsin": "Halsin",
+    "minthara": "Minthara", "jaheira": "Jaheira", "minsc": "Minsc",
+}
+
+
+def companion_of(qid):
+    """(character, form) for an ORI companion quest, else (None, None).
+
+    form is 'party' for the ORI_COM_* track (told as "we...") and 'origin' for
+    the first-person ORI_Avatar_* track (told as "I...").
+    """
+    m = re.match(r"ORI_(COM|Avatar)_([A-Za-z]+)", qid or "")
+    if not m:
+        return None, None
+    token = m.group(2)
+    char = _COMPANION_NAMES.get(token.lower(), token)
+    return char, ("party" if m.group(1) == "COM" else "origin")
+
+
 def merge(quests, quest_text):
     """Turn raw save quest nodes into render-ready units.
 
     Without the text cache, each node passes through as a fallback unit. With
-    it, nodes are resolved to their prototype quest and grouped by display
-    title, so a quest that appears as several save nodes becomes a single entry.
+    it, nodes are resolved to their prototype quest and grouped by prototype id,
+    so several save nodes of one quest (e.g. one node per objective) become a
+    single entry, while distinct quests stay separate.
 
-    A companion quest exists twice in the save: the `ORI_COM_*` track, written
-    from the party's perspective ("we..."), and the `ORI_Avatar_*` track,
-    written first-person ("I...") for when that companion is the player's origin
-    character. For a custom player character only the `ORI_COM_*` "we" track is
-    correct, so within a title group we keep the non-Avatar contributions and
-    drop the first-person ones (falling back to Avatar only if it is the sole
-    source). Entries are collected in unlock order and de-duplicated by text.
-    A merged quest is "completed" only if every contributing node was.
+    A companion quest exists twice: the `ORI_COM_*` party-perspective track
+    ("we...") and the first-person `ORI_Avatar_*` origin track ("I..."). These
+    have different ids, so they are kept as separate units and tagged with their
+    character and form; the renderer groups them under the companion's name.
+    Entries are collected in unlock order and de-duplicated by text. A merged
+    quest is "completed" only if every contributing node was.
     """
     if not quest_text:
         return [
@@ -233,46 +250,47 @@ def merge(quests, quest_text):
                 {"id": q["id"], "completed": q["completed"], "steps": q["steps"], "real": False}
             )
             continue
-        proto = quest_text[base]
-        title = (proto.get("title") or "").strip()
-        key = title if title and not title.startswith("%%%") else base
-        g = groups.get(key)
+        g = groups.get(base)
         if g is None:
-            g = groups[key] = {"title": proto.get("title"), "completed": True, "contribs": []}
+            g = groups[base] = {
+                "id": base, "title": quest_text[base].get("title"),
+                "completed": True, "entries": [], "_seen": set(), "real": True,
+            }
             order.append(g)
-        entries = [proto["steps"][s] for s in q["steps"] if proto["steps"].get(s)]
-        g["contribs"].append({"base": base, "entries": entries})
+        for s in q["steps"]:
+            txt = quest_text[base]["steps"].get(s)
+            if txt and txt not in g["_seen"]:
+                g["_seen"].add(txt)
+                g["entries"].append(txt)
         if not q["completed"]:
             g["completed"] = False
 
-    result = []
     for g in order:
-        preferred = [c for c in g["contribs"] if not c["base"].startswith("ORI_Avatar")]
-        use = preferred or g["contribs"]
-        entries, seen = [], set()
-        for c in use:
-            for e in c["entries"]:
-                if e not in seen:
-                    seen.add(e)
-                    entries.append(e)
-        result.append({
-            "id": use[0]["base"], "title": g["title"],
-            "completed": g["completed"], "entries": entries, "real": True,
-        })
-    return result + passthrough
+        g.pop("_seen", None)
+        g["character"], g["form"] = companion_of(g["id"])
+    return order + passthrough
+
+
+COMPANION_REGION = "Companion questlines"
+FORM_LABEL = {"party": "party view", "origin": "origin view"}
 
 
 def render(quests, meta, quest_text):
     real = bool(quest_text)
     quests = merge(quests, quest_text)
-    open_q = sorted(
-        (q for q in quests if not q["completed"]),
-        key=lambda q: (region_order(q["id"]), q["id"]),
-    )
-    done_q = sorted(
-        (q for q in quests if q["completed"]),
-        key=lambda q: (region_order(q["id"]), q["id"]),
-    )
+
+    def sort_key(q):
+        # Within the companion region, cluster by character and put the
+        # party-perspective ("we") track before the first-person origin track.
+        return (
+            region_order(q["id"]),
+            q.get("character") or "",
+            0 if q.get("form") == "party" else 1,
+            q["id"],
+        )
+
+    open_q = sorted((q for q in quests if not q["completed"]), key=sort_key)
+    done_q = sorted((q for q in quests if q["completed"]), key=sort_key)
 
     lines = [
         "# Quest Journal",
@@ -312,11 +330,19 @@ def render(quests, meta, quest_text):
         # raw HTML renders on the site, on GitHub, and in Obsidian alike.
         out = [f"## {title}", ""]
         cur_region = None
+        cur_char = None
         for q in items:
             reg = region_label(q["id"])
             if reg != cur_region:
                 out += [f"### {reg}", ""]
                 cur_region = reg
+                cur_char = None
+            # Under the companion region, add a per-character sub-heading so the
+            # party ("we") and origin ("I") tracks sit together under the name.
+            char = q.get("character") if reg == COMPANION_REGION else None
+            if char and char != cur_char:
+                out += [f"#### {char}", ""]
+                cur_char = char
 
             detail = []
             if q["real"]:
@@ -334,9 +360,12 @@ def render(quests, meta, quest_text):
                 quest_title = humanize_quest(q["id"])
             detail.append(f'<li class="q-raw">ID: <code>{esc(q["id"])}</code></li>')
 
+            form_html = (
+                f'<span class="q-form">{FORM_LABEL[q["form"]]}</span>' if q.get("form") else ""
+            )
             out.append(
                 f'<details class="quest-entry"><summary><span class="q-title">{esc(quest_title)}</span>'
-                f'<span class="q-count">{count}</span></summary>'
+                f'{form_html}<span class="q-count">{count}</span></summary>'
             )
             out.append("<ul>")
             out += detail

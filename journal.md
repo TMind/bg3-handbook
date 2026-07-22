@@ -6,7 +6,7 @@
 
 - **Save:** Wyrms Rock Fortress - 100h 29m
 - **Game time (internal):** 367494
-- **Open / in progress:** 34  ·  **Completed:** 73
+- **Open / in progress:** 42  ·  **Completed:** 74
 - **Text:** real in-game journal entries
 
 ## 🟡 Open / in-progress quests
@@ -238,7 +238,9 @@
 
 ### Companion questlines
 
-<details class="quest-entry"><summary><span class="q-title">The Pale Elf</span><span class="q-count">15 entries</span></summary>
+#### Astarion
+
+<details class="quest-entry"><summary><span class="q-title">The Pale Elf</span><span class="q-form">party view</span><span class="q-count">15 entries</span></summary>
 <ul>
 <li>We met a strange elf who had also been infected with a parasite. He was hostile at first, but agreed to join us when he learned we were infected too.</li>
 <li>Astarion is a vampire! We woke up last night and saw him bent over one of us - drinking their blood. We let him drink his fill to regain his strength.</li>
@@ -259,7 +261,20 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">The Wizard of Waterdeep</span><span class="q-count">13 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">Call of the Blood</span><span class="q-form">origin view</span><span class="q-count">5 entries</span></summary>
+<ul>
+<li>I found Raphael at the entrance of a mausoleum. He agreed to tell me about my scars, if I kill the orthon - an infernal beast - living beneath the mausoleum for him.</li>
+<li>Raphael's orthon is dead, which means it's up to the devil to fulfil his part of the bargain. I just need to wait for him to contact me and tell me all about these scars gracing my back.</li>
+<li>According to Raphael, Cazador has been preparing a ritual with me and his other vampire spawn at its centre. He means to sacrifice us so he can become the Vampire Ascendant - free to walk in the sun's light and free from the hunger that consumes us. If I'm ever to be free, I have to return to Baldur's Gate and stop him.</li>
+<li>Baldur's Gate - home, sweet home! Cazador's palace is in the Lower City. And hopefully the answers I seek are in Cazador's palace.</li>
+<li>I met Ulma, the leader of a tribe of monster hunters who lost their children to Cazador. (Well, I took their children, but on Cazador's orders.) Ulma said that if I can help their children and kill Cazador, she would call off the hunt for me. I agreed to try.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Astarion</code></li>
+</ul>
+</details>
+
+#### Gale
+
+<details class="quest-entry"><summary><span class="q-title">The Wizard of Waterdeep</span><span class="q-form">party view</span><span class="q-count">13 entries</span></summary>
 <ul>
 <li>A wizard named Gale joined the party. He claims to have been on the nautiloid - which means he's infected too.</li>
 <li>Gale told us about a strange 'condition' he has, one that is treated when he absorbs the Weave contained within potent magical artefacts. If we fail to treat this condition, he warns that the consequences could be catastrophic.</li>
@@ -278,7 +293,31 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">The Githyanki Warrior</span><span class="q-count">23 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">The Wizard of Waterdeep</span><span class="q-form">origin view</span><span class="q-count">7 entries</span></summary>
+<ul>
+<li>The orb of corrupted Weave within my chest is beginning to hunger. I need to find and consume an item of sufficient magical power to satisfy it, before it destabilises any further. </li>
+<li>The item I consumed was enough to satisfy the orb's hunger. However, it will not be long before its cravings return. If I find any more magical items, I'll want to keep them close at hand.</li>
+<li>The orb hungers once more. I'll need to consume a potent magical item as soon as I can, or risk its detonation.</li>
+<li>I consumed the magic from a powerful item, but somehow the orb remains... dissatisfied. I suspect it won't be too much longer before it demands more Weave to consume. I'd better make sure I have something ready when the time comes.</li>
+<li>The orb's cravings have returned, more powerful than ever. I need to consume a powerful dose of Weave from a magic item, and soon.</li>
+<li>It seems my treatment is no longer effective - the last item I consumed was barely enough to quell the orb's tumult. For now, I'll continue my journey, and keep a close eye out for anything that promises a more permanent solution.</li>
+<li>My mentor, the great wizard Elminster, sought me out in order to deliver a message from Mystra herself. She instructs me to find the 'Heart of the Absolute', and when I find it, to blow it up by detonating the orb. Elminster granted me a powerful spell in order to do this, and has stabilised the orb to grant me enough time to find it. I need to learn more about this 'Heart', and how else it might be defeated.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Gale</code></li>
+</ul>
+</details>
+
+#### Karlach
+
+<details class="quest-entry"><summary><span class="q-title">Servant of None</span><span class="q-form">origin view</span><span class="q-count">1 entry</span></summary>
+<ul>
+<li>There he is. Time to pay the piper, Gortash.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Karlach</code></li>
+</ul>
+</details>
+
+#### Lae'zel
+
+<details class="quest-entry"><summary><span class="q-title">The Githyanki Warrior</span><span class="q-form">party view</span><span class="q-count">23 entries</span></summary>
 <ul>
 <li>The githyanki warrior Lae'zel has joined our party, and promised we could be cleansed of our parasites at a Githyanki Crèche. A tiefling named Zorru has seen other githyanki. We should find him and ask him what he knows.</li>
 <li>We found Zorru. We should take Lae'zel to see him.</li>
@@ -307,7 +346,30 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">Daughter of Darkness</span><span class="q-count">14 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">The Githyanki Warrior</span><span class="q-form">origin view</span><span class="q-count">15 entries</span></summary>
+<ul>
+<li>I interrogated Zorru. He told me he saw githyanki on the road to Baldur's Gate, near a mountain pass in the northwest. I must travel there.</li>
+<li>Kith'rak Voss revealed that a Githyanki Crèche was nestled in the mountains beyond the western bridge. My cleansing is close at hand.</li>
+<li>I found evidence that my people established a crèche in an abandoned temple. I should look for the entrance there.</li>
+<li>A pair of githyanki have escorted several cultists into the monastery. As I suspected, the entrance to their crèche must be inside.</li>
+<li>I've reached the Githyanki Crèche at last. I must seek a ghustil; their zaith'isk will cleanse me of the parasite, as protocol demands.</li>
+<li>I attacked Ch'r'ai W'wargaz. I must defeat him.</li>
+<li>Ch'r'ai W'wargaz is defeated. I should examine his chamber for more information about the artefact in my possession.</li>
+<li>Vlaakith, my venerable queen, appeared as a projection in the Inquisitor's chamber. She wants me to enter the artefact and slay a prisoner held inside it. It is my duty to heed her.</li>
+<li>I rejected Vlaakith's orders and left the Inquisitor's chamber. I will be deemed a traitor to my people - but the parasite still lives within me. I should seek the zaith'isk and cleanse this infection.</li>
+<li>I failed to fulfil Vlaakith's orders. I will be deemed a traitor to my people - but the parasite still lives within me. I should seek the zaith'isk and cleanse this infection.</li>
+<li>Kith'rak Voss appeared at my campsite and revealed that purification and ascension are mere lies born of Vlaakith's tyranny - and I believe him to be right. Voss claims the one in the artefact is the key to liberating the githyanki people. I agreed to meet him in Baldur's Gate, where he knows of someone who can break the artefact's resident free.</li>
+<li>I discovered that Gith's very own son, an ancient githyanki prince called Orpheus, was being held prisoner inside the artefact. I learned long ago that Orpheus was an illithid pawn who tried to usurp Vlaakith's throne - but this was not the story the Emperor told. The prince is surely the one Voss believes can depose Vlaakith; it is more vital than ever that I meet the kith'rak in Baldur's Gate.</li>
+<li>I found Kith'rak Voss arguing with Raphael about Orpheus. If I talk to Raphael, I might learn how to release Orpheus from his domed prison.</li>
+<li>Raphael informed us that he has the means to free Orpheus. He offered it to me in exchange for a diabolical pact, but I refused him. I should speak with Kith'rak Voss; he might know another way to release the prince.</li>
+<li>Kith'rak Voss suggested I find a way to infiltrate Raphael's House of Hope and take the Orphic Hammer. He'll be waiting for me in the sewers; I should inform him when the deed is done.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Laezel</code></li>
+</ul>
+</details>
+
+#### Shadowheart
+
+<details class="quest-entry"><summary><span class="q-title">Daughter of Darkness</span><span class="q-form">party view</span><span class="q-count">14 entries</span></summary>
 <ul>
 <li>We recruited a half-elf named Shadowheart. She was also aboard the nautiloid - and infected with a parasite.</li>
 <li>We witnessed Shadowheart become stricken by an unusual surge of pain, emanating from a tiny, unhealed wound on her hand.</li>
@@ -327,7 +389,7 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">The Chosen of Shar</span><span class="q-count">17 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">The Chosen of Shar</span><span class="q-form">party view</span><span class="q-count">17 entries</span></summary>
 <ul>
 <li>The Archdruid Halsin described how there was once an entire army of Dark Justiciars that waged war against followers of Selûne, long ago. The rites of becoming a Dark Justiciar are no mean feat - they must have had a substantial lair in order to train and anoint a force of such size.</li>
 <li>We entered the ruins of what may have been a fortress dedicated to the goddess Shar. We could be close to the Dark Justiciar's lair.</li>
@@ -350,7 +412,30 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">The Blade of Frontiers</span><span class="q-count">10 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">Daughter of Darkness</span><span class="q-form">origin view</span><span class="q-count">15 entries</span></summary>
+<ul>
+<li>Unbearable pain blossomed from the unhealed wound on my hand. A means of reprimanding me when I stray from Lady Shar's teachings, I fear. But am I not faithful?</li>
+<li>It seems that the artefact protects me from the Absolute. Could that be why the Mother Superior was so set on obtaining it?</li>
+<li>I discovered that the Cult of the Absolute seeks the artefact. I must not allow them to acquire it.</li>
+<li>The unhealed wound on my hand continues to grip me with intense pain whenever I seem to displease Lady Shar. I must do better. I must follow her teachings always.</li>
+<li>Over the course of my journey, I came by evidence that suggested there was once a Dark Justiciar presence in these parts. These legendary warriors were Lady Shar's most-favoured servants, and I long-dreamed of joining their ranks. But I already have a mission - I must stay focused on protecting the artefact.</li>
+<li>Lae'zel confronted me about the artefact, claiming it to be an heirloom of her people. Things threatened to turn ugly, but we managed to broker an unlikely peace.</li>
+<li>I discovered that the githyanki continue to hunt for the artefact. I must be cautious and see the mission through.</li>
+<li>I ventured inside the artefact, discovering it to be an astral prison of sorts. Did the Mother Superior know this when she sent me on the mission?</li>
+<li>I discovered an ancient temple dedicated to Lady Shar. I am her loyal servant - it cannot be a coincidence that I found myself here. Perhaps it is a sign that she wants me to explore this place. A short delay before I return to Baldur's Gate can be no harm, surely...</li>
+<li>My companions finally learned about my Sharran faith. They were shocked - but in truth, I am amazed they never worked it out for themselves.</li>
+<li>I defied Lady Shar's will and freed Nightsong after she alluded to something from my past. Will Lady Shar forgive me? Does my original mission even matter any longer? I fear I may have ruined everything just for a Selûnite's teasing words...</li>
+<li>Lady Shar punished me for my failure - exiling me from her church, and marking me as an enemy to all of her followers. Even if I still delivered the artefact, there would be no forgiveness. I am an outsider. I have lost everything - apart from whatever secrets Nightsong claims she can reveal to me.</li>
+<li>Nightsong - or Dame Aylin as she is known - revealed to me that I was not rescued by Shar worshippers, but kidnapped by them. Even worse, they have kept my parents as captives for all these years while I was indoctrinated into their ranks.</li>
+<li>I recalled my earliest intact memory, when the Mother Superior saved me from a pursuing wolf, back when I was a child. I owe everything to Lady Shar and her servants. I must continue to prove myself.</li>
+<li>I have reached Wyrm's Crossing. There will be a Sharran lookout somewhere nearby, awaiting my arrival. I need to confront them so I can discover how to find the Cloister and rescue my parents.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_ShadowHeart</code></li>
+</ul>
+</details>
+
+#### Wyll
+
+<details class="quest-entry"><summary><span class="q-title">The Blade of Frontiers</span><span class="q-form">party view</span><span class="q-count">10 entries</span></summary>
 <ul>
 <li>We recruited Wyll, a monster hunter known as the Blade of Frontiers. He is on a mission to kill Karlach, a powerful devil who is a danger to the entire Sword Coast.</li>
 <li>We located Karlach and slayed her, in spite of her claims of innocence. We should talk to Wyll about the situation.</li>
@@ -366,7 +451,7 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">The Grand Duke</span><span class="q-count">6 entries</span></summary>
+<details class="quest-entry"><summary><span class="q-title">The Grand Duke</span><span class="q-form">party view</span><span class="q-count">6 entries</span></summary>
 <ul>
 <li>The cult of the Absolute is based at Moonrise Towers. Perhaps that is where Grand Duke Ravengard was taken.</li>
 <li>We approached a burning in known as Waukeen's Rest. A group of Flaming Fist mercenaries believe Grand Duke Ravengard of Baldur's Gate is trapped inside, and are trying to break inside. </li>
@@ -378,10 +463,41 @@
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">Wyrmway</span><span class="q-count">1 entry</span></summary>
+<details class="quest-entry"><summary><span class="q-title">Wyrmway</span><span class="q-form">party view</span><span class="q-count">1 entry</span></summary>
 <ul>
 <li>We've reached the Wyrmway, where the great wyrm Ansur resides. We must make our way to him.</li>
 <li class="q-raw">ID: <code>ORI_COM_Wyll_SUB_Wyrmway</code></li>
+</ul>
+</details>
+
+<details class="quest-entry"><summary><span class="q-title">The Blade of Frontiers</span><span class="q-form">origin view</span><span class="q-count">7 entries</span></summary>
+<ul>
+<li>Karlach is done for, and the Sword Coast is safer for it. Mizora will be pleased; I should rest in camp and await her next instructions. I am due a reward for my efforts.</li>
+<li>I met a group of paladins who know Karlach and want her dead. They provided me with her exact whereabouts.</li>
+<li>Mizora appeared in the form of a projection to inform me that the Absolute cult abducted an infernal asset of some importance to the archdevil Zariel. I should find and release them - unless I want to be cast into the Hells for good, that is.</li>
+<li>I've delved deep into Moonrise Towers. I should search the area thoroughly - the devil that Mizora asked me to rescue must be nearby.</li>
+<li>Zariel's asset turned out to be Mizora herself. In return for my help, she promised to release me from my pact, but only after six months had passed. She disappeared again, but I've clearly not seen the last of her. She is still my patron, and I am her pup - as she is so fond of reminding me.</li>
+<li>I've reached Wyrm's Crossing, on the outskirts of Baldur's Gate. I should keep an eye out for Mizora - she must be lurking about somewhere.</li>
+<li>I found Mizora at Wyrm's Rock fortress. She insisted I attend Gortash's ordination and seek her out afterwards.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Wyll</code></li>
+</ul>
+</details>
+
+<details class="quest-entry"><summary><span class="q-title">The Grand Duke</span><span class="q-form">origin view</span><span class="q-count">5 entries</span></summary>
+<ul>
+<li>The cult of the Absolute is based at Moonrise Towers. Perhaps that is where my father was taken.</li>
+<li>I approached a burning inn known as Waukeen's Rest. A group of Flaming Fist mercenaries believe my father, Grand Duke Ravengard of Baldur's Gate, is trapped inside. I have to get him out of there!</li>
+<li>Drow abducted my father from Waukeen's Rest. I agreed to help Counsellor Florrick find and rescue him from his captors. She believes they travelled westward from the inn - possibly to the fortress called Moonrise Towers.</li>
+<li>I reached Moonrise Towers. It seems unlikely that a high-value asset like my father, a powerful duke, would be confined with other prisoners; the deeper I delve into the towers, the closer I'll be to finding him.</li>
+<li>My father was infected with an illithid tadpole. He is being transported to Baldur's Gate along with an enormous elder brain. With the Absolute bending father's ear, there's no telling what damage this cult could inflict upon the city.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Wyll_SUB_Duke</code></li>
+</ul>
+</details>
+
+<details class="quest-entry"><summary><span class="q-title">Wyrmway</span><span class="q-form">origin view</span><span class="q-count">1 entry</span></summary>
+<ul>
+<li>I reached the Wyrmway, where the great wyrm Ansur resides. I must make my way to him.</li>
+<li class="q-raw">ID: <code>ORI_Avatar_Wyll_SUB_Wyrmway</code></li>
 </ul>
 </details>
 
@@ -1215,16 +1331,36 @@
 
 ### Companion questlines
 
-<details class="quest-entry"><summary><span class="q-title">Our Fiery Friend</span><span class="q-count">1 entry</span></summary>
+#### Karlach
+
+<details class="quest-entry"><summary><span class="q-title">Our Fiery Friend</span><span class="q-form">party view</span><span class="q-count">1 entry</span></summary>
 <ul>
 <li>Karlach is gone forever.</li>
 <li class="q-raw">ID: <code>ORI_COM_Karlach</code></li>
 </ul>
 </details>
 
-<details class="quest-entry"><summary><span class="q-title">The Hellion's Heart</span><span class="q-count">1 entry</span></summary>
+<details class="quest-entry"><summary><span class="q-title">The Hellion's Heart</span><span class="q-form">party view</span><span class="q-count">1 entry</span></summary>
 <ul>
 <li>Karlach is gone forever.</li>
 <li class="q-raw">ID: <code>ORI_COM_Karlach_SUB_ForgingOfTheHeart</code></li>
+</ul>
+</details>
+
+#### Shadowheart
+
+<details class="quest-entry"><summary><span class="q-title">The Chosen of Shar</span><span class="q-form">origin view</span><span class="q-count">10 entries</span></summary>
+<ul>
+<li>Halsin spoke about an army of Dark Justiciars that once rampaged through these lands. This is not the first time I've come across signs of the Dark Lady's elite warriors in these parts. If I could seek out their place of origin, I may be able to find a way to prove myself to Lady Shar. The Mother Superior had always thwarted my ambitions to become a Dark Justiciar, but perhaps there is another way...</li>
+<li>I found the remains of Dark Justiciars - Lady Shar's elite warriors - near a mausoleum entrance. This is not the first time I've come across signs of their presence in these parts. If I could seek out their place of origin, I may be able to find a way to prove myself to Lady Shar. The Mother Superior had always thwarted my ambitions to become a Dark Justiciar, but perhaps there is another way...</li>
+<li>I have found the Gauntlet of Shar. This must be where Lady Shar's faithful were anointed as Dark Justiciars. Perhaps I can follow in their steps.</li>
+<li>I heard the voice of Lady Shar herself. This must be fate. I need to follow this path that she has unveiled to me.</li>
+<li>The Gauntlet of Shar consists of trials, where only a few initiates manage to prove themselves worthy of becoming a Dark Justiciar. I must complete the trials and show my worth to Lady Shar.</li>
+<li>I acquired the Spear of Night. Now I must complete the remaining trials so that I can access the Inner Sanctum.</li>
+<li>I have cleared the path to Lady Shar's Inner Sanctum. Now I must descend and fulfil my destiny.</li>
+<li>I have entered Lady Shar's sacred domain, the Shadowfell. But the necromancer Balthazar, Ketheric Thorm's ally, has followed in my wake. I must not allow him to interfere in Lady Shar's plan.</li>
+<li>I refused to allow Balthazar to take Nightsong away. Now I must get rid of him and do Lady Shar's bidding.</li>
+<li>I freed Nightsong, daughter of Selûne, instead of slaying her as Lady Shar demanded. Nightsong seems to know something of my past, though will it prove to be worth risking the anger of my goddess?</li>
+<li class="q-raw">ID: <code>ORI_Avatar_ShadowHeart_SUB_ChosenOfShar</code></li>
 </ul>
 </details>
