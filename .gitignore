@@ -36,6 +36,8 @@ tools/ExportTool-*.zip
 # Generated site (rebuild with scripts/build_site.py; published by CI)
 site/
 
-# Intermediate quest-text cache extracted from the player's game files
-# (tools/extract_journal_text.py). journal.md itself is published.
+# Intermediate caches extracted from the player's game files
+# (tools/extract_journal_text.py, tools/extract_item_names.py). The generated
+# journal.md and the item snapshot doc are what get published.
 tools/journal-text/
+tools/item-names/

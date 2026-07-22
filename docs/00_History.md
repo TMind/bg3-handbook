@@ -19,6 +19,10 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 ## 2026-07-22
 
+### Added
+
+- Added `tools/extract_item_names.py`, which builds a local `tools/item-names/item_names.json` cache mapping item stat names to their real display names (RootTemplates `_merged.lsf` with ParentTemplateId inheritance, joined to `english.loca`). It reuses the LSPK reader from `extract_journal_text.py` and the LSF parser from `index_lsf.py`, so future item re-audits are one command instead of an ad-hoc rebuild. The cache is gitignored (copyrighted names).
+
 ### Changed
 
 - Rewrote the [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) as a full item re-audit of the `Wyrms Rock Fortress - 100h 29m` save. Item display names are now resolved from the game's own root templates and localization (a stat/template → DisplayName → loca join, same approach as the journal text), so names match in game; per-character gear, consumable counts, and storage highlights are refreshed (e.g. TMind now has The Whispering Promise, Astarion has Cloak of Displacement + The Joltshooter, Kao's Absorb Elements is the Cloak of Elemental Absorption). Readiness consumable counts were refreshed to match.

@@ -87,6 +87,14 @@ python3 tools/build_journal.py            # writes journal.md from tools/save-in
 
 `build_journal.py` uses the real localized journal text when the `tools/journal-text/` cache (built by `extract_journal_text.py` from the local BG3 install) is present, and falls back to readable ids otherwise — so CI, which has no game files, still builds a valid `journal.md`.
 
+Resolve real item display names for an item re-audit (used when refreshing `docs/13`):
+
+```sh
+python3 tools/extract_item_names.py       # cache item stat -> display name from RootTemplates + english.loca
+```
+
+This writes `tools/item-names/item_names.json` (gitignored, Larian-copyrighted). It reads the game's `_merged.lsf` RootTemplates (with ParentTemplateId inheritance) and `english.loca` directly — no LSLib — reusing the LSPK reader from `extract_journal_text.py` and the LSF parser from `index_lsf.py`.
+
 Sync and extract a BG3 savegame (see `tools/SAVEGAME_WORKFLOW.md` for the full workflow):
 
 ```sh
