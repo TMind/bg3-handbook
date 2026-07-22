@@ -133,6 +133,8 @@ Two halves that meet at the snapshot chapters.
 
 **The audit rule:** `source_manifest.json` records which save a snapshot came from. Every save-derived chapter should cite it. When the manifest changes, rerun the party, item, buff, and readiness audits before giving advice off the old numbers.
 
+**The step-text rule:** a quest step's journal text is written for the *canonical* branch and can fire on branches it does not describe (e.g. a generic act-transition fallback step whose text implies an NPC is alive). Never assert a story outcome from a step's prose alone — check which *sibling* steps of that quest fired (and which didn't) in the save, and read step IDs (`HalsinDiedEarly`, `MintharaLeftBehind`) as the ground truth, not their display text.
+
 An optional LSF→LSX text-export step runs LSLib/Divine.exe under CrossOver's Wine; it can fail in a sandbox and may need a real Terminal. It converts only — never edit or repack a save.
 
 ## Handbook Conventions

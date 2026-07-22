@@ -18,7 +18,7 @@ Kao, TMind, Lae'zel, Gale → later swapped Gale for Astarion
 - **Halsin was never rescued and died in Act 1** (`HalsinDiedEarly`; Act 2 confirms via Art Cullagh: `HalsinAlreadyDead`). No rescue/join step exists anywhere in the save.
 - **Sazza was freed from the grove cage and saved again from Minthara** (`DEN_CapturedGoblin`: `Released` → `Escaped` → `Saved`, "we convinced Minthara to spare her life") — and **Sazza then told Minthara where the grove is** (`SazzaToldMinthara`).
 - **Grove conflict ended via the goblin assault path** ("Raid the Emerald Grove": `King_SentToMinthara`, `AoD_Started`/`AoD_Ready` — Minthara's warband set out): **Zevlor died**, **Kagha died early**, the surviving tieflings left, and the druids were defeated (`Betrayal_DruidDead_Halsin`, `NoTieflings`).
-- **Minthara was never recruited** — no `ORI_*_Minthara` quest exists in the save; in Act 2 she was left imprisoned at Moonrise (`MOO_MintharaFate: MintharaLeftBehind`, "left Minthara to her grim fate").
+- **Minthara was never recruited and never appeared at Moonrise for the party.** No `ORI_*_Minthara` quest exists in the save, and of `MOO_MintharaFate`'s eleven steps only the fallback `MintharaLeftBehind` fired at the Act-2 transition — none of the encounter steps (`KnownMintharaCondemned`, `TalkToMinthara`, `DefeatTorturers`, `MintharaIgnored`, …) are set. The step's journal text ("left Minthara to her grim fate in Moonrise Towers") is the canonical-branch wording; it also fires when she was never met — most likely she died during or after the grove raid in Act 1.
 
 ### Lae'zel feat progression (Act 1)
 - GWM taken
