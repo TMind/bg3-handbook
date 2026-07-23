@@ -13,6 +13,9 @@ tags:
 
 A spoiler-light handbook for practical **Baldur's Gate 3** decisions: prepare the current party, solve common problems, and look up the mechanics used by the guide.
 
+> [!info] 🌐 Web version
+> This handbook is also published at **https://tmind.github.io/bg3-handbook/** — with full-text search, updated automatically on every push. Handy on phones and at the game table.
+
 > [!tip] Start here
 > For the next play session, open **Current Readiness Audit** first. For general advice, use the handbook chapters. For a spell, item, or term, go directly to the **Appendix glossary**.
 
