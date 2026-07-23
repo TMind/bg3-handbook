@@ -366,12 +366,16 @@ def render(quests, meta, quest_text):
                 quest_title = humanize_quest(q["id"])
             detail.append(f'<li class="q-raw">ID: <code>{esc(q["id"])}</code></li>')
 
+            # Plain spaces between the spans and parentheses around the count:
+            # the site's flex summary ignores whitespace-only text nodes, but
+            # renderers without our CSS (Obsidian, GitHub) would otherwise glue
+            # the spans together ("Help Your Protector4 entries").
             form_html = (
-                f'<span class="q-form">{FORM_LABEL[q["form"]]}</span>' if q.get("form") else ""
+                f'<span class="q-form">{FORM_LABEL[q["form"]]}</span> ' if q.get("form") else ""
             )
             out.append(
-                f'<details class="quest-entry"><summary><span class="q-title">{esc(quest_title)}</span>'
-                f'{form_html}<span class="q-count">{count}</span></summary>'
+                f'<details class="quest-entry"><summary><span class="q-title">{esc(quest_title)}</span> '
+                f'{form_html}<span class="q-count">({count})</span></summary>'
             )
             out.append("<ul>")
             out += detail
