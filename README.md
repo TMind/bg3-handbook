@@ -26,6 +26,8 @@ These notes reflect the latest extracted save and can change whenever the save i
 | What is currently active? | [Current Save Snapshot](docs/12_Current_Save_Snapshot.md) | Active party, detected buffs, item-sourced effects |
 | What equipment and supplies do we own? | [Current Item and Storage Snapshot](docs/13_Item_Inventory_Snapshot.md) | Character equipment, storage pulls, potions, scrolls, alchemy |
 | How should the main characters develop? | [Main Character Builds](docs/11_Main_Character_Builds.md) | Party roles, level choices, camp support, target equipment |
+| What has happened in our quests so far? | [Quest Journal](journal.md) | Open and completed quests with the real in-game entries (⚠️ spoilers) |
+| What is the story of our run? | [Party Chronicle](chronicle.md) | The campaign as a narrative, anchored to real savegames (⚠️ spoilers) |
 
 > [!warning] Snapshot scope
 > Save-based notes describe the extracted game state, not every option available in the game. Refresh them after meaningful level, equipment, inventory, or party changes.
@@ -99,7 +101,7 @@ These notes reflect the latest extracted save and can change whenever the save i
 - Pin this note as the home page.
 - Keep the numbered filenames so the file explorer preserves chapter order.
 - Treat the Appendix as the final chapter; add new player-facing chapters before it.
-- The vault root also holds the live campaign state — `characters/`, `party/strategy.md`, and `session-notes.md` — alongside the handbook chapters in `docs/`.
+- The vault root also holds the live campaign state — `characters/`, `party/strategy.md`, `session-notes.md`, the generated [Quest Journal](journal.md), and the [Party Chronicle](chronicle.md) — alongside the handbook chapters in `docs/`.
 
 > [!quote] Guiding principle
 > I wish I had known this earlier.

@@ -30,6 +30,8 @@ This repo is the whole project: campaign state, handbook, and save tooling. It i
 - `characters/` — one file per character with stats, build, and notes
 - `party/strategy.md` — party synergy, combat flow, and tactics
 - `session-notes.md` — running log of decisions, discoveries, and open questions
+- `journal.md` — generated quest journal (real in-game entries; rebuild with `tools/build_journal.py`)
+- `chronicle.md` — narrative party chronicle, anchored to savegames
 - `README.md` — handbook home page and chapter index
 - `docs/` — the practical BG3 mechanics handbook (see below)
 - `scripts/check_vault.py` — validates `README.md` + `docs/*.md`; run after editing the handbook
