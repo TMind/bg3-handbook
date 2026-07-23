@@ -1,0 +1,11 @@
+{
+  "autoPullOnBoot": true,
+  "autoSaveInterval": 0,
+  "autoPushInterval": 0,
+  "autoPullInterval": 0,
+  "pullBeforePush": true,
+  "disablePush": false,
+  "showStatusBar": true,
+  "commitMessage": "vault: manual commit from Obsidian ({{date}})",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss"
+}
