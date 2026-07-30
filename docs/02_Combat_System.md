@@ -135,19 +135,26 @@ Advantage and Disadvantage change how a d20 roll works, before any modifiers are
 
 ### Common Ways to Gain Advantage on an Attack
 
+**BG3 changes several of these from tabletop D&D rules** — the ranges and triggers below are the actual in-game implementation, not the Player's Handbook version.
+
 | Source | Effect |
 |---|---|
 | Hidden / Stealth | Attacking from Stealth grants Advantage on that attack |
-| Target is Prone | Melee attacks against a Prone target have Advantage; ranged attacks against the same target instead have Disadvantage |
-| Target is Blinded, Restrained, Paralyzed, or Stunned | Attacks against the target have Advantage; Paralyzed and Unconscious targets are also automatic critical hits within 5 feet |
+| Target is Prone | Any attack (melee or ranged) against a Prone target has Advantage **if made within 3 m / 10 ft**; this is purely distance-based in BG3, unlike tabletop's melee-vs-ranged split, and there is no Disadvantage penalty for ranged attacks from farther away |
+| Target is Blinded, Restrained, or Stunned | Attacks against the target have Advantage |
+| Target is Paralyzed | Attacks have Advantage; also an automatic critical hit within 3 m / 10 ft |
+| Target is Sleeping | Attacks have Advantage; also an automatic critical hit within 1.5 m / 5 ft |
+| Target is Entangled or Enwebbed (e.g. from Web) | Attacks against the target have Advantage |
 | Faerie Fire on the target | All attacks against an outlined target have Advantage (concentration) |
 | Greater Invisibility on the attacker | The invisible attacker has Advantage on their own attacks |
 | Guiding Bolt (after it hits) | The next attack against that target before the end of its next turn has Advantage |
-| Help action (melee) | An adjacent ally can spend the Help action to grant Advantage on the next attack against a nearby target |
 
-Rogues have an alternate route to the same payoff for Sneak Attack: it also triggers without Advantage if an ally is within 5 ft of the target, so a pinned enemy can be sneak-attacked even without Stealth. See [[11_Main_Character_Builds#^astarion-build|Astarion's build]] for how this fits into a Thief Rogue's turn.
+> [!warning] Help does not grant Advantage in BG3
+> Unlike tabletop D&D, BG3's **Help** action cannot be used to distract an enemy for an ally's Advantage. In this game, Help only revives downed allies or removes conditions such as Prone, Sleeping, Burning, Entangled, or Off Balance — see [[#💚 Pick Up Downed Allies|Pick Up Downed Allies]].
 
-Source video: [Baldur's Gate 3 Guide to Combat Mechanics - Fextralife](https://www.youtube.com/watch?v=BSLGMShwD-I).
+Rogues have an alternate route to the same payoff for Sneak Attack: it also triggers without Advantage if an ally is within 5 ft of the target, so a pinned enemy can be sneak-attacked even without Stealth. Web/Entangled targets (Kao's control spells) are also an easy Advantage source for the whole party, not just Astarion. See [[11_Main_Character_Builds#^astarion-build|Astarion's build]] for how this fits into a Thief Rogue's turn.
+
+Source: [bg3.wiki: List of sources of advantage and disadvantage on attack rolls](https://bg3.wiki/wiki/List_of_sources_of_advantage_and_disadvantage_on_attack_rolls), [Baldur's Gate 3 Guide to Combat Mechanics - Fextralife](https://www.youtube.com/watch?v=BSLGMShwD-I).
 
 ## 🎲 Avoid Disadvantage Before Spending Strong Attacks
 

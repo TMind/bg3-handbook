@@ -149,6 +149,20 @@ The common optimized assassin guide path is **Assassin Rogue 4 / Gloom Stalker R
 
 Source: [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0).
 
+### Recommended Feats
+
+Feats land at Rogue levels 4, 8, and 12. These are the commonly recommended picks for a Dexterity-based Thief and why they fit Astarion specifically; effects are the actual BG3 wording, not the tabletop version.
+
+| Level | Feat | Effect | Why it fits |
+|---|---|---|---|
+| 4 | Ability Improvement (+2 Dexterity) | Increase one ability score by 2, up to 20 | Push Dexterity to 20 as early as possible — improves attack rolls, AC, initiative, and Sneak Attack reliability at once |
+| 8 | Alert | +5 bonus to Initiative; can't be Surprised | Astarion acts earlier and more consistently gets to open from Stealth before the enemy reacts |
+| 12 | Savage Attacker **or** Sharpshooter | Savage Attacker: roll melee weapon damage dice twice, use the higher result. Sharpshooter: ranged attacks ignore High Ground penalties, and Proficient ranged attacks can trade -5 to hit for +10 damage | Pick based on whether Astarion runs daggers (Savage Attacker) or a bow/hand crossbow (Sharpshooter) |
+
+Other picks worth considering: **Mobile** (+3 m/10 ft Movement Speed; ignores Difficult Terrain when Dashing; moving away from a creature you just melee-attacked does not provoke its Opportunity Attack) suits the Thief's hit-and-hide loop. **Lucky** (3 Luck Points per Long Rest to gain Advantage on an attack roll, ability check, or saving throw, or to force an enemy to reroll an attack) is a strong universal safety net if reliability matters more than raw damage.
+
+Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats), [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0).
+
 ## 🧙 Kao: Human Mage / Conjuration Control Wizard ^kao-build
 
 **Markers:** ⭐⭐⭐ ⚠️ ✨ 🎯
@@ -370,7 +384,9 @@ These sources were used as reference points, then adjusted to the local party no
 | Local party strategy notes | Aura blender flow, swaps, concentration conflicts, tactical synergies | Primary source for party-specific recommendations |
 | Local session notes | Current party, open build decisions, learned mechanics | Used to add current priorities and avoid stale generic advice |
 | [Baldur's Gate 3: 20+ Easily Missed Tips (Spoiler Free) - Proxy Gate Tactician](https://www.youtube.com/watch?v=BGRu99XLSRc) | Hireling utility, stat-stick gear, necromancer logistics, UI habits | Useful practical source; only spoiler-light, build-relevant tips were incorporated |
-| [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0) | Rogue subclass mechanics: Thief, Assassin, Arcane Trickster | Confirms Thief fits Astarion's current playstyle; Arcane Trickster does not match his Dexterity-focused stats and gear |
+| [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0) | Rogue subclass mechanics (Thief, Assassin, Arcane Trickster) and common feat picks | Confirms Thief fits Astarion's current playstyle; Arcane Trickster does not match his Dexterity-focused stats and gear. Feat effects were verified against bg3.wiki rather than assumed from tabletop D&D |
+| [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats) | Exact BG3 wording for Alert, Savage Attacker, Sharpshooter, Mobile, Lucky, Ability Improvement | Corrected assumptions carried over from tabletop D&D (e.g. Sharpshooter ignores High Ground, not cover, in BG3) |
+| [bg3.wiki: List of sources of advantage and disadvantage on attack rolls](https://bg3.wiki/wiki/List_of_sources_of_advantage_and_disadvantage_on_attack_rolls) | Which conditions/spells grant Advantage on attack rolls | Corrected two errors from an initial tabletop-based draft: Prone advantage in BG3 is range-based (3 m), not a melee/ranged split, and the Help action does not grant Advantage in BG3 at all |
 
 ## 🔗 Cross-References
 

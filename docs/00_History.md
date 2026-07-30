@@ -22,7 +22,12 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 ### Added
 
 - Added a Rogue Subclass Reference (Thief, Assassin, Arcane Trickster) to Astarion's build section in [Main Character Builds](11_Main_Character_Builds.md), citing Fextralife's Rogue class guide video. Confirms Thief still fits Astarion's current playstyle and notes why Arcane Trickster does not match his Dexterity-focused build; logged in the Build Sources Reviewed table.
-- Added a missing core-mechanics section, "Advantage and Disadvantage Explained," to [Combat System](02_Combat_System.md): how the d20-roll-twice mechanic works, and a table of common ways to gain Advantage on an attack (Stealth, Prone melee targets, Blinded/Restrained/Paralyzed/Stunned targets, Faerie Fire, Greater Invisibility, Guiding Bolt, the Help action). Cross-linked from Astarion's build (the Rogue's alternate Sneak Attack trigger) and from the Appendix glossary, which previously only had a one-line description with no real explanation.
+- Added a missing core-mechanics section, "Advantage and Disadvantage Explained," to [Combat System](02_Combat_System.md): how the d20-roll-twice mechanic works, and a table of common ways to gain Advantage on an attack. Cross-linked from Astarion's build and the Appendix glossary, which previously only had a one-line description with no real explanation.
+- Added a "Recommended Feats" table to Astarion's build in [Main Character Builds](11_Main_Character_Builds.md) (Ability Improvement, Alert, Savage Attacker/Sharpshooter, with Mobile/Lucky as alternates).
+
+### Fixed
+
+- Corrected two mechanical errors in the Advantage table added earlier the same day, caught by spot-checking against [bg3.wiki](https://bg3.wiki/wiki/List_of_sources_of_advantage_and_disadvantage_on_attack_rolls) instead of assuming tabletop D&D rules apply unchanged: (1) BG3's Prone condition grants Advantage based on **distance** (within 3 m/10 ft, any attack type), not a melee-advantage/ranged-disadvantage split like tabletop; there is no ranged disadvantage against Prone in BG3. (2) BG3's **Help action does not grant Advantage at all** — unlike tabletop, it only revives downed allies or clears conditions. Also corrected the Paralyzed auto-crit range to 3 m and added Sleeping (auto-crit at 1.5 m) and Entangled/Enwebbed (relevant to Kao's Web) as their own rows. Feat effects in Astarion's build were verified the same way (e.g. Sharpshooter ignores High Ground in BG3, not cover as in tabletop).
 
 ## 2026-07-22
 
