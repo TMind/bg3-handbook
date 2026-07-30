@@ -26,7 +26,7 @@ Fights become easier when actions are not considered in isolation. Initiative, t
 
 - **Opening decisions:** [[#⏱️ Use Initiative First|Initiative]] · [[#🎯 Target Priority|Target Priority]] · [[#🧠 Damage or Control|Damage or Control]]
 - **Recovery and resources:** [[#💚 Pick Up Downed Allies|Downed Allies]] · [[#🎒 Move Items During Combat|Move Items]] · [[#📦 Trigger Placed Items Deliberately|Placed Items]] · [[#🍷 Buff Before Combat|Pre-Combat Buffs]]
-- **Actions and positioning:** [[#🕯️ Candle and Dip|Dip]] · [[#🎲 Avoid Disadvantage Before Spending Strong Attacks|Avoid Disadvantage]] · [[#🏃 Jump, Disengage, and Opportunity Attacks|Movement Actions]] · [[#💪 Throw and Shove|Throw and Shove]]
+- **Actions and positioning:** [[#⚖️ Advantage and Disadvantage Explained|Advantage and Disadvantage]] · [[#🕯️ Candle and Dip|Dip]] · [[#🎲 Avoid Disadvantage Before Spending Strong Attacks|Avoid Disadvantage]] · [[#🏃 Jump, Disengage, and Opportunity Attacks|Movement Actions]] · [[#💪 Throw and Shove|Throw and Shove]]
 - **Environment and rules:** [[#🧱 Destroy the Environment|Destroy the Environment]] · [[#🕊️ Remember Non-Lethal Attacks|Non-Lethal Attacks]] · [[#✅ Mini-Checklist Each Round|Round Checklist]] · [[#📺 Video References|Sources]]
 
 ## ⏱️ Use Initiative First
@@ -122,6 +122,32 @@ A placed candle can be used to dip weapons. This adds fire damage and costs very
 The advantage is small but very efficient early in the game, especially for characters with multiple attacks. It also works with ranged weapons, so archers can benefit too.
 
 The extra damage is most attractive when there is no more important bonus-action or setup plan. Inspect enemies first if fire resistance may matter.
+
+## ⚖️ Advantage and Disadvantage Explained ^advantage-disadvantage
+
+**Markers:** ⭐⭐⭐ ⚔️
+
+Advantage and Disadvantage change how a d20 roll works, before any modifiers are added:
+
+- **Advantage:** roll two d20s, use the higher result.
+- **Disadvantage:** roll two d20s, use the lower result.
+- Having both at once cancels out 1-for-1; multiple sources of the same type do not stack further.
+
+### Common Ways to Gain Advantage on an Attack
+
+| Source | Effect |
+|---|---|
+| Hidden / Stealth | Attacking from Stealth grants Advantage on that attack |
+| Target is Prone | Melee attacks against a Prone target have Advantage; ranged attacks against the same target instead have Disadvantage |
+| Target is Blinded, Restrained, Paralyzed, or Stunned | Attacks against the target have Advantage; Paralyzed and Unconscious targets are also automatic critical hits within 5 feet |
+| Faerie Fire on the target | All attacks against an outlined target have Advantage (concentration) |
+| Greater Invisibility on the attacker | The invisible attacker has Advantage on their own attacks |
+| Guiding Bolt (after it hits) | The next attack against that target before the end of its next turn has Advantage |
+| Help action (melee) | An adjacent ally can spend the Help action to grant Advantage on the next attack against a nearby target |
+
+Rogues have an alternate route to the same payoff for Sneak Attack: it also triggers without Advantage if an ally is within 5 ft of the target, so a pinned enemy can be sneak-attacked even without Stealth. See [[11_Main_Character_Builds#^astarion-build|Astarion's build]] for how this fits into a Thief Rogue's turn.
+
+Source video: [Baldur's Gate 3 Guide to Combat Mechanics - Fextralife](https://www.youtube.com/watch?v=BSLGMShwD-I).
 
 ## 🎲 Avoid Disadvantage Before Spending Strong Attacks
 
@@ -223,7 +249,7 @@ Elixirs should be drunk directly instead. Thrown elixirs can last much shorter t
 |---|---|
 | Original tip source: dip weapons, throw enemies, healing, targeting, ending turns in melee | [16 Secret Tips You STILL Aren't Doing In Baldur's Gate 3 - Doms Roundtable](https://www.youtube.com/watch?v=fF28SqTbOOQ) |
 | Original tip source: potions, elixirs, ranged attacks, end turns in melee | [20 Things You STILL Aren't Doing In Baldur's Gate 3 - Doms Roundtable](https://www.youtube.com/watch?v=8PJgZ91My4o) |
-| Combat mechanics, hit chance, and fight planning | [Baldur's Gate 3 Guide to Combat Mechanics - Fextralife](https://www.youtube.com/watch?v=BSLGMShwD-I) |
+| Combat mechanics, hit chance, fight planning, and how Advantage/Disadvantage work | [Baldur's Gate 3 Guide to Combat Mechanics - Fextralife](https://www.youtube.com/watch?v=BSLGMShwD-I) |
 | Practical combat tips and action economy | [Baldur's Gate 3 - 13 Combat Tips You NEED To Know - GameSpot](https://www.youtube.com/watch?v=DmHMXxcITJI) |
 | Shove mechanics and positioning | [Baldur's Gate 3 - Shoving Mechanics Explained - The Mages Corner](https://www.youtube.com/watch?v=GwPGrevjHrI) |
 | Action-free item placement, reactions, and concentration cleanup | [Baldur's Gate 3: 20+ Easily Missed Tips (Spoiler Free) - Proxy Gate Tactician](https://www.youtube.com/watch?v=BGRu99XLSRc) |

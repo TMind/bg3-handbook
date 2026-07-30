@@ -22,6 +22,7 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 ### Added
 
 - Added a Rogue Subclass Reference (Thief, Assassin, Arcane Trickster) to Astarion's build section in [Main Character Builds](11_Main_Character_Builds.md), citing Fextralife's Rogue class guide video. Confirms Thief still fits Astarion's current playstyle and notes why Arcane Trickster does not match his Dexterity-focused build; logged in the Build Sources Reviewed table.
+- Added a missing core-mechanics section, "Advantage and Disadvantage Explained," to [Combat System](02_Combat_System.md): how the d20-roll-twice mechanic works, and a table of common ways to gain Advantage on an attack (Stealth, Prone melee targets, Blinded/Restrained/Paralyzed/Stunned targets, Faerie Fire, Greater Invisibility, Guiding Bolt, the Help action). Cross-linked from Astarion's build (the Rogue's alternate Sneak Attack trigger) and from the Appendix glossary, which previously only had a one-line description with no real explanation.
 
 ## 2026-07-22
 

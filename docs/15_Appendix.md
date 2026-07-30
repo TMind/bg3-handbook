@@ -263,7 +263,7 @@ This glossary explains terms that are referenced elsewhere in the handbook. It i
 | Term | Type | Practical meaning |
 |---|---|---|
 | Initiative | Combat order | Determines who acts first; use it to choose targets before enemies act. |
-| Advantage / Disadvantage | Roll modifier | Advantage improves reliability; disadvantage can waste strong attacks. |
+| Advantage / Disadvantage | Roll modifier | Roll two d20s, take the higher (Advantage) or lower (Disadvantage); full explanation and how to get Advantage in [[02_Combat_System#^advantage-disadvantage\|Advantage and Disadvantage Explained]]. |
 | Concentration | Spell constraint | Only one concentration effect can stay active per caster; damage can break it. |
 | Manual concentration cancel | UI action | End an active concentration spell from the character portrait when it would hurt allies, block movement, or be replaced by a better spell. |
 | Opportunity Attack | Reaction | Melee enemies may punish movement away from them. |
