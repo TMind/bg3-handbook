@@ -17,7 +17,7 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
-## 2026-07-24
+## 2026-07-30
 
 ### Added
 
