@@ -139,6 +139,16 @@ Astarion currently works as a **Thief Rogue**: stealth opener, Sneak Attack, loc
 
 The common optimized assassin guide path is **Assassin Rogue 4 / Gloom Stalker Ranger 5 / Champion Fighter 3**. It is powerful because Gloom Stalker improves the opening round and Fighter adds Action Surge. For this party, do not switch blindly: if fights usually start after dialogue or without surprise, **Thief** may be more comfortable than Assassin.
 
+### Rogue Subclass Reference
+
+| Subclass | Core feature | Fit for Astarion |
+|---|---|---|
+| Thief | Extra bonus action every turn (off-hand attack, Cunning Action, or item use); resistance to fall damage | Current build — pays off every round, not only on a surprise opener |
+| Assassin | Automatic critical hit against a surprised target on the first turn of combat | Only worth it if the party reliably opens fights from stealth; situational here |
+| Arcane Trickster | Intelligence-based Wizard spell list layered onto Rogue (Mage Hand tricks, illusion/enchantment utility) | Not a fit — Astarion's stats and gear are Dexterity-focused, not Intelligence |
+
+Source: [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0).
+
 ## 🧙 Kao: Human Mage / Conjuration Control Wizard ^kao-build
 
 **Markers:** ⭐⭐⭐ ⚠️ ✨ 🎯
@@ -360,6 +370,7 @@ These sources were used as reference points, then adjusted to the local party no
 | Local party strategy notes | Aura blender flow, swaps, concentration conflicts, tactical synergies | Primary source for party-specific recommendations |
 | Local session notes | Current party, open build decisions, learned mechanics | Used to add current priorities and avoid stale generic advice |
 | [Baldur's Gate 3: 20+ Easily Missed Tips (Spoiler Free) - Proxy Gate Tactician](https://www.youtube.com/watch?v=BGRu99XLSRc) | Hireling utility, stat-stick gear, necromancer logistics, UI habits | Useful practical source; only spoiler-light, build-relevant tips were incorporated |
+| [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0) | Rogue subclass mechanics: Thief, Assassin, Arcane Trickster | Confirms Thief fits Astarion's current playstyle; Arcane Trickster does not match his Dexterity-focused stats and gear |
 
 ## 🔗 Cross-References
 

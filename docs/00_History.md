@@ -17,6 +17,12 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
+## 2026-07-24
+
+### Added
+
+- Added a Rogue Subclass Reference (Thief, Assassin, Arcane Trickster) to Astarion's build section in [Main Character Builds](11_Main_Character_Builds.md), citing Fextralife's Rogue class guide video. Confirms Thief still fits Astarion's current playstyle and notes why Arcane Trickster does not match his Dexterity-focused build; logged in the Build Sources Reviewed table.
+
 ## 2026-07-22
 
 ### Added
