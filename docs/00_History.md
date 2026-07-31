@@ -17,6 +17,12 @@ This note records meaningful handbook changes so it is clear what was added, ref
 
 Use newest entries first. Keep entries practical: what changed, why it matters, and which notes were touched.
 
+## 2026-07-31
+
+### Fixed
+
+- Downloaded and read the actual transcripts (via `tools/download_youtube_transcript.py`, already in the repo) for all four Fextralife class-guide videos cited in [Main Character Builds](11_Main_Character_Builds.md), after realizing the YouTube transcript API failures reported the previous day were real but solvable — the repo already had a working `yt-dlp`-based tool for this. Corrected several attribution errors the transcripts surfaced: Astarion's feat table had substituted unverified picks (Alert, Savage Attacker, Mobile) for what the video actually names (Dual Wielder, Lucky, Sharpshooter) and was missing Rogue's level-10 bonus feat; Kao's table credited the Wizard video with recommending War Caster, which it never mentions (Alert, confirmed at level 8, was accurate); the Cleric video's War Caster recommendation was initially missed by a keyword search because auto-captions render it as "warcaster" (one word) — now correctly credited, and its reasoning matches TMind's build almost exactly. Also flagged that three subclasses (Death Domain, Bladesinging, Arcane Archer) postdate their respective videos and are sourced from bg3.wiki only, not the transcripts. Transcript files are committed alongside the `.vtt` sources already in `tools/video-transcripts/`.
+
 ## 2026-07-30
 
 ### Added

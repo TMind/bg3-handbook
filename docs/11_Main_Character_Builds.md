@@ -123,6 +123,8 @@ Battle Master is source-supported as a tactical Fighter subclass because its man
 | Eldritch Knight | Half-caster: Abjuration/Evocation Wizard spells, plus Weapon Bond and War Magic (cast a cantrip and still attack the same turn) | Adds magic utility but competes with Kao's caster identity; not needed here |
 | Arcane Archer | Magical arrow shots (Curving Shot, Arcane Arrows) with limited Abjuration/Evocation spellcasting | Ranged-focused; does not fit Lae'zel's frontline melee role |
 
+Battle Master, Champion, and Eldritch Knight are transcript-verified against Fextralife's guide; Arcane Archer was added to BG3 after that video (its title only lists the first three), so its entry is sourced from bg3.wiki alone.
+
 Source: [bg3.wiki: Fighter](https://bg3.wiki/wiki/Fighter), [Baldur's Gate 3 Fighter Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=Eh25B0PdwGQ).
 
 ## 🗡️ Astarion: Thief Utility or Gloom Stalker Upgrade ^astarion-build
@@ -164,17 +166,18 @@ Source: [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, 
 
 ### Recommended Feats
 
-Feats land at Rogue levels 4, 8, and 12. These are the commonly recommended picks for a Dexterity-based Thief and why they fit Astarion specifically; effects are the actual BG3 wording, not the tabletop version.
+Rogue is one of only two classes (with Fighter) that gets a **bonus feat at level 10** on top of the standard 4/8/12 — four feats in total. Per Fextralife's Rogue guide, the same short list of picks is good at every one of those levels; the table below is transcript-verified, not a generic feat list.
 
 | Level | Feat | Effect | Why it fits |
 |---|---|---|---|
-| 4 | Ability Improvement (+2 Dexterity) | Increase one ability score by 2, up to 20 | Push Dexterity to 20 as early as possible — improves attack rolls, AC, initiative, and Sneak Attack reliability at once |
-| 8 | Alert | +5 bonus to Initiative; can't be Surprised | Astarion acts earlier and more consistently gets to open from Stealth before the enemy reacts |
-| 12 | Savage Attacker **or** Sharpshooter | Savage Attacker: roll melee weapon damage dice twice, use the higher result. Sharpshooter: ranged attacks ignore High Ground penalties, and Proficient ranged attacks can trade -5 to hit for +10 damage | Pick based on whether Astarion runs daggers (Savage Attacker) or a bow/hand crossbow (Sharpshooter) |
+| 4 | Ability Improvement (+2 Dexterity) | Increase one ability score by 2, up to 20 | Push Dexterity up first — improves attack rolls, AC, initiative, and Sneak Attack reliability at once |
+| 8 | Ability Improvement (if Dexterity isn't 20 yet), or one of the picks below | Increase one ability score by 2, up to 20 | Finish maxing Dexterity before branching into situational feats |
+| 10 | Rogue's bonus feat — same options as level 8 | — | A pick no other class gets at this level besides Fighter (who gets theirs at level 6 instead) |
+| 12 | Ability Improvement if Dexterity still isn't 20, otherwise any pick below | Increase one ability score by 2, up to 20 | Last chance to lock in 20 Dexterity before committing to flavor picks |
 
-Other picks worth considering: **Mobile** (+3 m/10 ft Movement Speed; ignores Difficult Terrain when Dashing; moving away from a creature you just melee-attacked does not provoke its Opportunity Attack) suits the Thief's hit-and-hide loop. **Lucky** (3 Luck Points per Long Rest to gain Advantage on an attack roll, ability check, or saving throw, or to force an enemy to reroll an attack) is a strong universal safety net if reliability matters more than raw damage.
+Named picks the guide calls out at those levels: **Dual Wielder** (+1 AC while dual-wielding; lets you Two-Weapon Fight with non-Light weapons — matches a two-rapier Astarion), **Lucky** (3 Luck Points per Long Rest to gain Advantage on an attack roll, ability check, or saving throw, or to force an enemy to reroll an attack), **Sharpshooter** (ranged attacks ignore High Ground penalties; Proficient ranged attacks can trade -5 to hit for +10 damage — pick this over Dual Wielder if Astarion runs a bow or hand crossbow instead of daggers).
 
-Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats), [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0).
+Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats), [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0) (verified against the video's transcript).
 
 ## 🧙 Kao: Human Mage / Conjuration Control Wizard ^kao-build
 
@@ -207,7 +210,7 @@ Wizard guide sources agree on the core principle that Wizard is strongest throug
 
 ### Wizard Subclass Reference
 
-BG3 has nine Wizard schools. This table covers the ones actually weighed for Kao, plus the two most commonly recommended alternatives.
+BG3 has nine Wizard schools. This table covers the ones actually weighed for Kao, plus the two most commonly recommended alternatives. Fextralife's Wizard guide predates Bladesinging (added in a later patch), so its transcript covers eight of the nine; Bladesinging's entry is sourced from bg3.wiki alone.
 
 | Subclass | Core feature | Fit for Kao |
 |---|---|---|
@@ -222,13 +225,17 @@ Source: [bg3.wiki: Wizard](https://bg3.wiki/wiki/Wizard), [bg3.wiki: Conjuration
 
 ### Recommended Feats
 
+Wizard gets the standard three feats (levels 4, 8, 12). Per Fextralife's Wizard guide, the same short list repeats at each level — transcript-verified below, not a generic feat list.
+
 | Level | Feat | Effect | Why it fits |
 |---|---|---|---|
-| 4 | Ability Improvement (+2 Intelligence) | Increase one ability score by 2, up to 20 | Push spell save DC and attack bonus as early as possible |
-| 8 | Alert | +5 bonus to Initiative; can't be Surprised | Kao gets to control the battlefield before enemies act, not after |
-| 12 | War Caster **or** Resilient: Constitution | War Caster: Advantage on saves to maintain Concentration, plus a reaction to cast Shocking Grasp on a target leaving melee range (BG3 ties this specifically to Shocking Grasp, unlike tabletop's "any spell" version). Resilient: +1 to an ability (max 20) and proficiency in that ability's saving throws | Both protect Web/Grease Concentration from being broken by incoming damage. War Caster is the stronger safety net (Advantage on every Concentration save); Resilient: Constitution is the pick if Kao would rather have the flat +1 stat and doesn't need the Shocking Grasp reaction |
+| 4 | Ability Improvement (+2 Intelligence), or Resilient: Constitution | Ability Improvement: raise one score by 2, up to 20. Resilient: +1 to an ability (max 20) and proficiency in that ability's saving throws | Push spell save DC/attack bonus first; take Resilient: Constitution instead if Concentration is already breaking too often |
+| 8 | Ability Improvement (if Intelligence isn't 20 yet), Resilient: Constitution, or **Alert** | Alert: +5 bonus to Initiative; can't be Surprised | The guide calls Alert out specifically here — it "lets you go sooner in combat so you can fling spells before enemies can react" |
+| 12 | Ability Improvement to reach 20 Intelligence, otherwise repeat an earlier pick | Increase one ability score by 2, up to 20 | Lock in max Intelligence before settling into a flavor pick |
 
-Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
+**War Caster** (Advantage on saves to maintain Concentration, plus a reaction to cast Shocking Grasp on a target leaving melee range) isn't named in this particular video, but is a well-verified, commonly recommended pick for the same Concentration-protection problem — worth weighing against Resilient: Constitution. Kao's level 10 **Focused Conjuration** (see the Subclass Reference above) already covers this specifically for Conjuration spells like Web and Grease, which narrows how much War Caster is still needed.
+
+Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats), [Baldur's Gate 3 Wizard Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=PZEcSgUhFi8) (verified against the video's transcript).
 
 ## 💀 TMind: Drow Death Cleric / Necromancer Aura ^tmind-build
 
@@ -280,7 +287,7 @@ The online Death Cleric / Stars Druid build is attractive for Spirit Guardians b
 
 ### Cleric Subclass Reference
 
-BG3 has eight Divine Domains. This table covers Death Domain plus the alternatives most often raised for TMind.
+BG3 has eight Divine Domains. This table covers Death Domain plus the alternatives most often raised for TMind. Fextralife's Cleric guide predates Death Domain (added in a later patch — its own title only lists the other seven), so Death Domain's entry is sourced from bg3.wiki alone; the rest is transcript-verified against the video.
 
 | Subclass | Core feature | Fit for TMind |
 |---|---|---|
@@ -297,13 +304,17 @@ Source: [bg3.wiki: Cleric](https://bg3.wiki/wiki/Cleric), [bg3.wiki: Death Domai
 
 ### Recommended Feats
 
+Cleric gets the standard three feats (levels 4, 8, 12). Per Fextralife's Cleric guide, the same short list repeats at each level, and the reasoning it gives for War Caster is written almost exactly for TMind's build — transcript-verified below, not a generic feat list.
+
 | Level | Feat | Effect | Why it fits |
 |---|---|---|---|
-| 4 | Ability Improvement (+2 Wisdom) | Increase one ability score by 2, up to 20 | Raises spell save DC and Spirit Guardians/Channel Divinity reliability as early as possible |
-| 8 | War Caster **or** Resilient: Constitution | War Caster: Advantage on saves to maintain Concentration, plus a reaction to cast Shocking Grasp on a target leaving melee range (BG3 limits this to Shocking Grasp specifically, unlike tabletop). Resilient: +1 to an ability (max 20) and proficiency in that ability's saving throws | TMind holds Spirit Guardians while standing in the melee cluster — either feat protects that Concentration from breaking when he gets hit |
-| 12 | Alert **or** Tough | Alert: +5 Initiative, can't be Surprised. Tough: +2 HP per character level | Alert gets Spirit Guardians active before the enemy's first turn; Tough suits the off-tank role if TMind is dropping too often |
+| 4 | Ability Improvement (+2 Wisdom), Resilient: Constitution, or **War Caster** | Ability Improvement: raise one score by 2, up to 20. Resilient: +1 to an ability (max 20) and proficiency in its saving throws. War Caster: Advantage on saves to maintain Concentration, plus a reaction to cast Shocking Grasp on a target leaving melee range | The guide recommends War Caster or Resilient: Constitution here specifically because "clerics have a fair number of Concentration spells and they are likely to be in melee range" — this is TMind's exact off-tank Spirit Guardians situation |
+| 8 | Ability Improvement (if Wisdom isn't 20 yet), or repeat the level-4 choice | — | Keep pushing Wisdom, or double down on Concentration protection if Spirit Guardians keeps dropping |
+| 12 | Ability Improvement to reach 20 Wisdom, otherwise repeat an earlier pick | Increase one ability score by 2, up to 20 | Lock in max Wisdom before settling into a flavor pick |
 
-Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
+Alert (+5 Initiative, can't be Surprised) and Tough (+2 HP per character level) aren't named in this particular video, but both remain reasonable general picks if getting Spirit Guardians active first, or raw survivability, matters more than closing the Concentration-save gap.
+
+Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats), [Baldur's Gate 3 Cleric Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=O9TbZZ3N48w) (verified against the video's transcript).
 
 ## 🏕️ Bench and Camp Options ^camp-options
 
@@ -449,14 +460,14 @@ These sources were used as reference points, then adjusted to the local party no
 | Local party strategy notes | Aura blender flow, swaps, concentration conflicts, tactical synergies | Primary source for party-specific recommendations |
 | Local session notes | Current party, open build decisions, learned mechanics | Used to add current priorities and avoid stale generic advice |
 | [Baldur's Gate 3: 20+ Easily Missed Tips (Spoiler Free) - Proxy Gate Tactician](https://www.youtube.com/watch?v=BGRu99XLSRc) | Hireling utility, stat-stick gear, necromancer logistics, UI habits | Useful practical source; only spoiler-light, build-relevant tips were incorporated |
-| [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0) | Rogue subclass mechanics (Thief, Assassin, Arcane Trickster) and common feat picks | Confirms Thief fits Astarion's current playstyle; Arcane Trickster does not match his Dexterity-focused stats and gear. Feat effects were verified against bg3.wiki rather than assumed from tabletop D&D |
-| [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats) | Exact BG3 wording for Alert, Savage Attacker, Sharpshooter, Mobile, Lucky, Ability Improvement | Corrected assumptions carried over from tabletop D&D (e.g. Sharpshooter ignores High Ground, not cover, in BG3) |
+| [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0) (transcript: `tools/video-transcripts/2tWpAR2N6s0.en.vtt`) | Rogue subclass mechanics and feat progression, downloaded and read directly rather than assumed | Confirms Thief fits Astarion's playstyle; corrected the feat table to the actual named picks (Dual Wielder, Lucky, Sharpshooter) and the missing level-10 bonus feat, after an earlier pass had substituted unverified picks (Alert, Savage Attacker, Mobile) |
+| [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats) | Exact BG3 wording for Alert, Savage Attacker, Sharpshooter, Mobile, Lucky, Dual Wielder, War Caster, Resilient, Tough, Ability Improvement | Corrected assumptions carried over from tabletop D&D (e.g. Sharpshooter ignores High Ground, not cover, in BG3) |
 | [bg3.wiki: List of sources of advantage and disadvantage on attack rolls](https://bg3.wiki/wiki/List_of_sources_of_advantage_and_disadvantage_on_attack_rolls) | Which conditions/spells grant Advantage on attack rolls | Corrected two errors from an initial tabletop-based draft: Prone advantage in BG3 is range-based (3 m), not a melee/ranged split, and the Help action does not grant Advantage in BG3 at all |
-| [Baldur's Gate 3 Cleric Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=O9TbZZ3N48w) | The eight Divine Domains and their headline features | Confirms Death Domain fits TMind's necromantic-pressure role; used to build the Cleric Subclass Reference table |
+| [Baldur's Gate 3 Cleric Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=O9TbZZ3N48w) (transcript: `tools/video-transcripts/O9TbZZ3N48w.en.vtt`) | The Divine Domains covered by this video, and its feat guidance | Confirms Death Domain's core loop; the video predates Death Domain (its title lists only seven Domains), so that entry is bg3.wiki-only. Its War Caster reasoning ("clerics have a fair number of Concentration spells and are likely to be in melee range") matches TMind's build almost exactly |
 | [bg3.wiki: Death Domain](https://bg3.wiki/wiki/Death_Domain) | Exact Death Domain features (Reaper, Touch of Death, Inescapable Destruction, Divine Strike: Necrotic) | Verified mechanical wording instead of assuming tabletop Death Domain text |
-| [Baldur's Gate 3 Wizard Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=PZEcSgUhFi8) | The nine Wizard schools and their headline features | Confirms Conjuration fits Kao's control role; used to build the Wizard Subclass Reference table |
+| [Baldur's Gate 3 Wizard Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=PZEcSgUhFi8) (transcript: `tools/video-transcripts/PZEcSgUhFi8.en.vtt`) | The Wizard schools covered by this video, and its feat guidance | Confirms Conjuration fits Kao's control role. The video predates Bladesinging, so that entry is bg3.wiki-only. Confirmed Alert is genuinely recommended here (level 8); War Caster is not mentioned for Wizard in this video at all, despite being a common general recommendation |
 | [bg3.wiki: Conjuration School](https://bg3.wiki/wiki/Conjuration_School) | Exact Conjuration features (Conjuration Savant, Benign Transposition, Focused Conjuration) | Surfaced that Focused Conjuration protects Concentration specifically on Conjuration spells like Web/Grease — a concrete reason Conjuration fits Kao beyond genre flavor |
-| [Baldur's Gate 3 Fighter Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=Eh25B0PdwGQ) | The four Fighter subclasses and their headline features | Confirms Battle Master fits Lae'zel's control-pin role; used to build the Fighter Subclass Reference table |
+| [Baldur's Gate 3 Fighter Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=Eh25B0PdwGQ) (transcript: `tools/video-transcripts/Eh25B0PdwGQ.en.vtt`) | The Fighter subclasses covered by this video | Confirms Battle Master fits Lae'zel's control-pin role. The video predates Arcane Archer (its title lists only three subclasses), so that entry is bg3.wiki-only |
 
 ## 🔗 Cross-References
 
