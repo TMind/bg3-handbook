@@ -47,6 +47,20 @@ def markdown_files() -> list[Path]:
     return [ROOT / "README.md", *sorted(DOCS.glob("*.md"))]
 
 
+# Root-level published pages that are valid Wikilink targets (so cross-links
+# like [[chronicle#Heading]] resolve) but are intentionally NOT run through
+# check_tables/check_markers/check_visible_spoilers: they are spoiler-heavy
+# by design (full story progress) and live outside docs/, same reasoning as
+# check_vault.py skipping journal.md and session-notes.md elsewhere.
+EXTRA_LINK_TARGETS = ["journal.md", "chronicle.md"]
+
+
+def link_target_files() -> list[Path]:
+    return markdown_files() + [
+        ROOT / name for name in EXTRA_LINK_TARGETS if (ROOT / name).exists()
+    ]
+
+
 def unescaped_pipe_count(row: str) -> int:
     count = 0
     escaped = False
@@ -85,7 +99,7 @@ def split_wikilink(link_body: str) -> tuple[str, str | None]:
 def collect_targets() -> tuple[
     dict[str, Path], dict[str, set[str]], dict[str, set[str]]
 ]:
-    files = {path.stem: path for path in markdown_files()}
+    files = {path.stem: path for path in link_target_files()}
     files["README"] = ROOT / "README.md"
     blocks: dict[str, set[str]] = {}
     headings: dict[str, set[str]] = {}
