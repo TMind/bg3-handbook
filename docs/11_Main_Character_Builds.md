@@ -93,12 +93,14 @@ Keep Lae'zel as a **Battle Master Fighter** unless you deliberately want a diffe
 
 ### Feat Priority
 
-| Timing | Pick | Reason |
-|---|---|---|
-| Already taken | Great Weapon Master | Main damage engine |
-| Next if Strength is not 20 | +1 Strength / +1 Constitution or another route to Strength 20 | GWM needs accuracy before more control feats |
-| After Strength 20 | Sentinel | Locks enemies inside Web, Spirit Guardians, and chokepoints |
-| Later | Savage Attacker / Alert | More damage consistency or better opening tempo |
+| Timing | Pick | Effect (BG3 wording) | Reason |
+|---|---|---|---|
+| Already taken | Great Weapon Master | Bonus melee attack as a Bonus Action on a Critical Hit or a kill; two-handed/versatile attacks can trade -5 to hit for +10 damage | Main damage engine |
+| Next if Strength is not 20 | +1 Strength / +1 Constitution or another route to Strength 20 (Ability Improvement) | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | GWM needs accuracy before more control feats |
+| After Strength 20 | Sentinel | Reaction attack when an enemy in melee range attacks an ally; a hit from an Opportunity Attack stops the target's movement for the rest of its turn; Advantage on Opportunity Attacks | Locks enemies inside Web, Spirit Guardians, and chokepoints |
+| Later | Savage Attacker / Alert | Savage Attacker: reroll melee weapon damage dice, use the higher result. Alert: +5 Initiative, can't be Surprised | More damage consistency or better opening tempo |
+
+Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
 
 ### Party Role
 
@@ -111,6 +113,17 @@ Lae'zel should engage first or immediately after Kao's control lands. Her job is
 5. Use Action Surge to remove priority targets, not to overkill trash.
 
 Battle Master is source-supported as a tactical Fighter subclass because its maneuvers disable, hinder, or support while spending Superiority Dice that recover on rests.
+
+### Fighter Subclass Reference
+
+| Subclass | Core feature | Fit for Lae'zel |
+|---|---|---|
+| Battle Master | Superiority Dice power maneuvers (Trip Attack, Pushing Attack, Disarming Attack, Precision Attack, Riposte, and more) for tactical control | Current build — maneuvers create and exploit exactly the control windows this party's aura-blender plan needs |
+| Champion | Improved Critical Hit (wider critical-hit range) and Remarkable Athlete (bonus to Strength/Dexterity/Constitution checks) | Simpler and more consistent damage, but trades away Lae'zel's control-maneuver role |
+| Eldritch Knight | Half-caster: Abjuration/Evocation Wizard spells, plus Weapon Bond and War Magic (cast a cantrip and still attack the same turn) | Adds magic utility but competes with Kao's caster identity; not needed here |
+| Arcane Archer | Magical arrow shots (Curving Shot, Arcane Arrows) with limited Abjuration/Evocation spellcasting | Ranged-focused; does not fit Lae'zel's frontline melee role |
+
+Source: [bg3.wiki: Fighter](https://bg3.wiki/wiki/Fighter), [Baldur's Gate 3 Fighter Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=Eh25B0PdwGQ).
 
 ## 🗡️ Astarion: Thief Utility or Gloom Stalker Upgrade ^astarion-build
 
@@ -192,6 +205,31 @@ Kao makes the aura blender work. Web, Grease, Hold Person, and chokepoint contro
 
 Wizard guide sources agree on the core principle that Wizard is strongest through spell breadth, Intelligence scaling, and careful spell-slot management; the subclass does not prevent learning other Wizard spells.
 
+### Wizard Subclass Reference
+
+BG3 has nine Wizard schools. This table covers the ones actually weighed for Kao, plus the two most commonly recommended alternatives.
+
+| Subclass | Core feature | Fit for Kao |
+|---|---|---|
+| Conjuration | **Focused Conjuration** (level 10): damage no longer breaks Concentration on a Conjuration spell; Benign Transposition (level 6) teleports self or swaps with an ally | Current build — Web and Grease are Conjuration spells, so Focused Conjuration makes Kao's core control tool nearly unbreakable |
+| Evocation | Sculpt Spells shapes area spells around allies; Empowered Evocation and Potent Cantrip boost damage | Best pick for safe Fireball/blast play; trades away the control identity |
+| Divination | Portent lets you preset two d20 rolls (attack, save, or check) each long rest | Strong reliability alternative if missed control saves are the main problem |
+| Abjuration | Arcane Ward absorbs incoming damage, scales with Wizard level | Defensive, not control-focused; not a fit for the aura-blender plan |
+| Necromancy | Grim Harvest heals on kill; Undead Thralls raises stronger undead minions | Overlaps with TMind's necromancer identity rather than complementing it |
+| Enchantment / Illusion / Transmutation / Bladesinging | Mind control, deception, shapeshifting/utility, or melee-caster hybrid respectively | Each trades away spell-breadth control for a narrower niche; not this party's plan |
+
+Source: [bg3.wiki: Wizard](https://bg3.wiki/wiki/Wizard), [bg3.wiki: Conjuration School](https://bg3.wiki/wiki/Conjuration_School), [Baldur's Gate 3 Wizard Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=PZEcSgUhFi8).
+
+### Recommended Feats
+
+| Level | Feat | Effect | Why it fits |
+|---|---|---|---|
+| 4 | Ability Improvement (+2 Intelligence) | Increase one ability score by 2, up to 20 | Push spell save DC and attack bonus as early as possible |
+| 8 | Alert | +5 bonus to Initiative; can't be Surprised | Kao gets to control the battlefield before enemies act, not after |
+| 12 | War Caster **or** Resilient: Constitution | War Caster: Advantage on saves to maintain Concentration, plus a reaction to cast Shocking Grasp on a target leaving melee range (BG3 ties this specifically to Shocking Grasp, unlike tabletop's "any spell" version). Resilient: +1 to an ability (max 20) and proficiency in that ability's saving throws | Both protect Web/Grease Concentration from being broken by incoming damage. War Caster is the stronger safety net (Advantage on every Concentration save); Resilient: Constitution is the pick if Kao would rather have the flat +1 stat and doesn't need the Shocking Grasp reaction |
+
+Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
+
 ## 💀 TMind: Drow Death Cleric / Necromancer Aura ^tmind-build
 
 **Markers:** ⭐⭐⭐ ⚠️ ⚔️ ✨
@@ -239,6 +277,33 @@ Source video: [Baldur's Gate 3: 20+ Easily Missed Tips (Spoiler Free) - Proxy Ga
 5. Short Rest after serious aura fights to restore HP even when spell slots remain spent.
 
 The online Death Cleric / Stars Druid build is attractive for Spirit Guardians because Starry Form can support concentration and bonus-action value. The tradeoff is real: going Cleric 10 / Druid 2 means losing Cleric 11 spell access such as Heroes' Feast on TMind.
+
+### Cleric Subclass Reference
+
+BG3 has eight Divine Domains. This table covers Death Domain plus the alternatives most often raised for TMind.
+
+| Subclass | Core feature | Fit for TMind |
+|---|---|---|
+| Death Domain | **Reaper** (level 1): single-target Necromancy cantrips hit an extra creature. **Touch of Death** (level 2 Channel Divinity): melee hit deals bonus necrotic damage equal to 5 + 2× Cleric level. **Inescapable Destruction** (level 6): your damage ignores Necrotic resistance. **Divine Strike: Necrotic** (level 8): extra 1d8 necrotic once per turn on a melee hit | Current build — this is the necromantic-pressure identity the build is named for |
+| Life Domain | Bonus healing on all healing spells, heavy armor proficiency | The dedicated healer domain; not TMind's role in this party (he is an off-tank, not a backline healer) |
+| Light Domain | Bonus radiant cantrip damage, Warding Flare, Corona of Light | Strong offensive-support domain, but shifts identity away from the necrotic-aura plan |
+| War Domain | Channel Divinity grants a bonus weapon attack; martial weapon and heavy armor proficiency | Melee-caster hybrid; overlaps with Lae'zel's frontline role instead of complementing it |
+| Tempest Domain | Thunder/lightning damage boost, heavy armor and martial weapon proficiency | Similar martial-caster overlap as War Domain |
+| Trickery Domain | Disguise Self ritual, Invoke Duplicity illusion duplicate | Utility/support domain, not damage- or aura-focused |
+| Nature Domain | Nature spell access, bonus elemental cantrip, Charm Animals and Plants | Druid-adjacent utility; unrelated to the necromancer-aura plan |
+| Knowledge Domain | Bonus skill proficiencies and expertise, later divination utility | Skills/utility domain, not a combat-role fit |
+
+Source: [bg3.wiki: Cleric](https://bg3.wiki/wiki/Cleric), [bg3.wiki: Death Domain](https://bg3.wiki/wiki/Death_Domain), [Baldur's Gate 3 Cleric Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=O9TbZZ3N48w).
+
+### Recommended Feats
+
+| Level | Feat | Effect | Why it fits |
+|---|---|---|---|
+| 4 | Ability Improvement (+2 Wisdom) | Increase one ability score by 2, up to 20 | Raises spell save DC and Spirit Guardians/Channel Divinity reliability as early as possible |
+| 8 | War Caster **or** Resilient: Constitution | War Caster: Advantage on saves to maintain Concentration, plus a reaction to cast Shocking Grasp on a target leaving melee range (BG3 limits this to Shocking Grasp specifically, unlike tabletop). Resilient: +1 to an ability (max 20) and proficiency in that ability's saving throws | TMind holds Spirit Guardians while standing in the melee cluster — either feat protects that Concentration from breaking when he gets hit |
+| 12 | Alert **or** Tough | Alert: +5 Initiative, can't be Surprised. Tough: +2 HP per character level | Alert gets Spirit Guardians active before the enemy's first turn; Tough suits the off-tank role if TMind is dropping too often |
+
+Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
 
 ## 🏕️ Bench and Camp Options ^camp-options
 
@@ -387,6 +452,11 @@ These sources were used as reference points, then adjusted to the local party no
 | [Baldur's Gate 3 Rogue Guide - All Subclasses (Thief, Arcane Trickster, Assassin) - Fextralife](https://www.youtube.com/watch?v=2tWpAR2N6s0) | Rogue subclass mechanics (Thief, Assassin, Arcane Trickster) and common feat picks | Confirms Thief fits Astarion's current playstyle; Arcane Trickster does not match his Dexterity-focused stats and gear. Feat effects were verified against bg3.wiki rather than assumed from tabletop D&D |
 | [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats) | Exact BG3 wording for Alert, Savage Attacker, Sharpshooter, Mobile, Lucky, Ability Improvement | Corrected assumptions carried over from tabletop D&D (e.g. Sharpshooter ignores High Ground, not cover, in BG3) |
 | [bg3.wiki: List of sources of advantage and disadvantage on attack rolls](https://bg3.wiki/wiki/List_of_sources_of_advantage_and_disadvantage_on_attack_rolls) | Which conditions/spells grant Advantage on attack rolls | Corrected two errors from an initial tabletop-based draft: Prone advantage in BG3 is range-based (3 m), not a melee/ranged split, and the Help action does not grant Advantage in BG3 at all |
+| [Baldur's Gate 3 Cleric Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=O9TbZZ3N48w) | The eight Divine Domains and their headline features | Confirms Death Domain fits TMind's necromantic-pressure role; used to build the Cleric Subclass Reference table |
+| [bg3.wiki: Death Domain](https://bg3.wiki/wiki/Death_Domain) | Exact Death Domain features (Reaper, Touch of Death, Inescapable Destruction, Divine Strike: Necrotic) | Verified mechanical wording instead of assuming tabletop Death Domain text |
+| [Baldur's Gate 3 Wizard Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=PZEcSgUhFi8) | The nine Wizard schools and their headline features | Confirms Conjuration fits Kao's control role; used to build the Wizard Subclass Reference table |
+| [bg3.wiki: Conjuration School](https://bg3.wiki/wiki/Conjuration_School) | Exact Conjuration features (Conjuration Savant, Benign Transposition, Focused Conjuration) | Surfaced that Focused Conjuration protects Concentration specifically on Conjuration spells like Web/Grease — a concrete reason Conjuration fits Kao beyond genre flavor |
+| [Baldur's Gate 3 Fighter Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=Eh25B0PdwGQ) | The four Fighter subclasses and their headline features | Confirms Battle Master fits Lae'zel's control-pin role; used to build the Fighter Subclass Reference table |
 
 ## 🔗 Cross-References
 
