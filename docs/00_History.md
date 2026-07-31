@@ -39,6 +39,18 @@ Where the change lives in a specific section, link the exact heading (`[[11_Main
 
 - Corrected two mechanical errors in the [[02_Combat_System#^advantage-disadvantage|Advantage table]] added earlier the same day, caught by spot-checking against [bg3.wiki](https://bg3.wiki/wiki/List_of_sources_of_advantage_and_disadvantage_on_attack_rolls) instead of assuming tabletop D&D rules apply unchanged: (1) BG3's Prone condition grants Advantage based on **distance** (within 3 m/10 ft, any attack type), not a melee-advantage/ranged-disadvantage split like tabletop; there is no ranged disadvantage against Prone in BG3. (2) BG3's **Help action does not grant Advantage at all** — unlike tabletop, it only revives downed allies or clears conditions. Also corrected the Paralyzed auto-crit range to 3 m and added Sleeping (auto-crit at 1.5 m) and Entangled/Enwebbed (relevant to Kao's Web) as their own rows. Feat effects in [[11_Main_Character_Builds#^astarion-build|Astarion's build]] were verified the same way (e.g. Sharpshooter ignores High Ground in BG3, not cover as in tabletop).
 
+## 2026-07-23
+
+### Added
+
+- Linked the generated `journal.md` and `chronicle.md` from the vault home page: added both to the `README.md` navigation table and root-content list (with a spoiler warning on each), and documented them in `CLAUDE.md`'s repo-layout list.
+- Installed and enabled the Obsidian Git plugin (`obsidian-git` 2.38.6), configured conservatively — auto-pull on vault open, no auto-commit/push — and committed so other clones of the vault get it too.
+- Added a "🌐 Web version" callout to the `README.md` home page linking to the live GitHub Pages site (`https://tmind.github.io/bg3-handbook/`).
+
+### Fixed
+
+- Fixed quest summary spacing in `journal.md` for renderers without the site's CSS (Obsidian, GitHub), where the title and entry count ran together (e.g. "Help Your Protector4 entries"). `tools/build_journal.py` now separates them with a plain space and parenthesizes the count.
+
 ## 2026-07-22
 
 ### Added
