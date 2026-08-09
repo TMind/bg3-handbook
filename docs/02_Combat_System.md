@@ -137,17 +137,17 @@ Advantage and Disadvantage change how a d20 roll works, before any modifiers are
 
 **BG3 changes several of these from tabletop D&D rules** — the ranges and triggers below are the actual in-game implementation, not the Player's Handbook version.
 
-| Source | Effect |
-|---|---|
-| Hidden / Stealth | Attacking from Stealth grants Advantage on that attack |
-| Target is Prone | Any attack (melee or ranged) against a Prone target has Advantage **if made within 3 m / 10 ft**; this is purely distance-based in BG3, unlike tabletop's melee-vs-ranged split, and there is no Disadvantage penalty for ranged attacks from farther away |
-| Target is Blinded, Restrained, or Stunned | Attacks against the target have Advantage |
-| Target is Paralyzed | Attacks have Advantage; also an automatic critical hit within 3 m / 10 ft |
-| Target is Sleeping | Attacks have Advantage; also an automatic critical hit within 1.5 m / 5 ft |
-| Target is Entangled or Enwebbed (e.g. from Web) | Attacks against the target have Advantage |
-| Faerie Fire on the target | All attacks against an outlined target have Advantage (concentration) |
-| Greater Invisibility on the attacker | The invisible attacker has Advantage on their own attacks |
-| Guiding Bolt (after it hits) | The next attack against that target before the end of its next turn has Advantage |
+| Source                                          | Effect                                                                                                                                                                                                                                                     |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hidden / Stealth                                | Attacking from Stealth grants Advantage on that attack                                                                                                                                                                                                     |
+| Target is Prone                                 | Any attack (melee or ranged) against a Prone target has Advantage **if made within 3 m / 10 ft**; this is purely distance-based in BG3, unlike tabletop's melee-vs-ranged split, and there is no Disadvantage penalty for ranged attacks from farther away |
+| Target is Blinded, Restrained, or Stunned       | Attacks against the target have Advantage                                                                                                                                                                                                                  |
+| Target is Paralyzed                             | Attacks have Advantage; also an automatic critical hit within 3 m / 10 ft                                                                                                                                                                                  |
+| Target is Sleeping                              | Attacks have Advantage; also an automatic critical hit within 1.5 m / 5 ft                                                                                                                                                                                 |
+| Target is Entangled or Enwebbed (e.g. from Web) | Attacks against the target have Advantage                                                                                                                                                                                                                  |
+| Faerie Fire on the target                       | All attacks against an outlined target have Advantage (concentration)                                                                                                                                                                                      |
+| Greater Invisibility on the attacker            | The invisible attacker has Advantage on their own attacks                                                                                                                                                                                                  |
+| Guiding Bolt (after it hits)                    | The next attack against that target before the end of its next turn has Advantage                                                                                                                                                                          |
 
 > [!warning] Help does not grant Advantage in BG3
 > Unlike tabletop D&D, BG3's **Help** action cannot be used to distract an enemy for an ally's Advantage. In this game, Help only revives downed allies or removes conditions such as Prone, Sleeping, Burning, Entangled, or Off Balance — see [[#💚 Pick Up Downed Allies|Pick Up Downed Allies]].

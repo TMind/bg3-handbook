@@ -19,6 +19,14 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 Where the change lives in a specific section, link the exact heading (`[[11_Main_Character_Builds#^astarion-build|Astarion's build]]`) instead of just the file — in Obsidian and on the site, that click jumps straight to the change instead of the top of the file. Use a `^block-id` anchor where one already exists on the heading; a plain heading-text anchor (`[[chronicle#Wyll — The Blade of Frontiers]]`) also resolves if no block-id is set. Link the whole file only when the change isn't tied to one section (e.g. a new tool, a site-wide feature).
 
+## 2026-08-10
+
+### Changed
+
+- Refreshed the save-derived snapshots from a new sync — the party has moved from Wyrm's Rock Fortress (100h 29m) all the way to the **Lower City sewers** (102h 46m, Act 3), and the game itself patched (`4.1.1.7209685` → `4.1.1.7398727`). Updated [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and the [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit verdict]].
+- The refresh surfaced that **Kao was resurrected** since the last sync (`IsResurrected` flag on his character node) and lost Death Ward, Freedom of Movement, and Mage Armor as a result; TMind is separately missing Freedom of Movement too. Both are flagged as the top priority in [[14_Current_Readiness_Audit#^before-leaving-camp|Before Leaving Camp]]. Aid's previous Lae'zel gap is resolved — it's now active on all four.
+- Logged several new named items picked up since the last item audit (most notably a unique longsword for Lae'zel) without inventing ratings for them — see [[13_Item_Inventory_Snapshot#^inventory-new-finds|Notable New Finds]]. Also caught that Lae'zel's Boots of Speed had drifted onto TMind's inventory doing nothing, while she's now carrying Boots of Psionic Movement instead.
+
 ## 2026-07-31
 
 ### Fixed

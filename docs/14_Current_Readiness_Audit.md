@@ -36,18 +36,19 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 
 **Markers:** ⭐⭐⭐ ⚠️ ⚔️
 
-The party is **mostly prepared and close to hard-fight ready**.
+The party is **mostly prepared but has two real gaps introduced by Kao's recent death and resurrection** — Death Ward and Freedom of Movement need re-casting on him, and Freedom of Movement is also missing on TMind.
 
 | Area | Status | Reason |
 |---|---|---|
-| Core party | ✅ Good | TMind, Lae'zel, Kao, and Astarion are grouped in `WYR_Fortress_SUB` (Wyrm's Rock Fortress); a Flying Ghoul summon and a quasit are also nearby. |
+| Core party | ✅ Good | TMind, Lae'zel, Kao, and Astarion are grouped in `LOW_Sewers_SUB` (Lower City sewers); a Conjure Elemental (Air) summon is also nearby. |
 | Daily movement | ✅ Good | Longstrider is active on TMind, Lae'zel, Kao, and Astarion. |
-| Maximum HP | ⚠️ Minor gap | Aid level 3 is active on TMind, Kao, and Astarion, but still not detected on Lae'zel. |
-| Death protection | ✅ Good | Death Ward is active on TMind, Lae'zel, Kao, and Astarion. |
-| Control protection | ✅ Good | Freedom of Movement is active on TMind, Lae'zel, Kao, and Astarion. |
-| Burst resources | ✅ Good | **Elixir of Bloodlust is now active on Lae'zel** (previous gap resolved). |
-| Stealth aura | ⚠️ Changed | Pass Without Trace is no longer active on the party; re-apply before stealth approaches if wanted. |
+| Maximum HP | ✅ Good | **Aid is now active on all four** — the Lae'zel gap from the previous snapshot is resolved. |
+| Death protection | ⚠️ New gap | Death Ward is active on TMind, Lae'zel, and Astarion, but **not on Kao** — almost certainly because he was recently resurrected (status effects clear on death) and it hasn't been recast. |
+| Control protection | ⚠️ New gap | Freedom of Movement is only active on Lae'zel and Astarion — **TMind and Kao are both missing it**. Recast before anything that grapples, paralyzes, or webs. |
+| Burst resources | ✅ Good | Elixir of Bloodlust is still active on Lae'zel, with a spare bottle in her inventory. |
+| Stealth aura | ⚠️ Unchanged gap | Pass Without Trace is still not active on the party; re-apply before stealth approaches if wanted. |
 | Healing synergy | ✅ Good | Blood of Lathander and Shield of Devotion effects are active on TMind. |
+| Mage Armor (Kao) | ⚠️ New gap | Not active — another casualty of the resurrection. Recast before relying on his AC. |
 
 ## Active Buff Coverage
 
@@ -55,10 +56,10 @@ The party is **mostly prepared and close to hard-fight ready**.
 
 | Character | Confirmed useful buffs | Missing before hard fights |
 |---|---|---|
-| TMind | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Warding Bond, Darkvision, Shield of Devotion spell slot, Blood of Lathander light | No major daily-buff gap detected |
-| Lae'zel | Longstrider, Death Ward, Freedom of Movement, Darkvision, **Elixir of Bloodlust (active)**, critical-execution ring, Astral Knowledge (CHA) | Aid |
-| Kao | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Mage Armor, Warding Bond, Darkvision, Absorb Elements resource, Detect Thoughts, Animal Speaking, Shovel flag | No major daily-buff gap detected |
-| Astarion | Longstrider, Aid level 3, Death Ward, Freedom of Movement, Darkvision, Cat's Grace, Cloak of Displacement, happy status | No major daily-buff gap detected |
+| TMind | Longstrider, Aid, Death Ward, Darkvision, Shield of Devotion spell slot, Blood of Lathander light, Speak with Dead (recast available) | **Freedom of Movement** (no longer detected) |
+| Lae'zel | Longstrider, Aid, Death Ward, Freedom of Movement, Darkvision, **Elixir of Bloodlust (active)**, critical-execution ring | No major daily-buff gap detected |
+| Kao | Longstrider, Aid, Warding Bond, Darkvision, Absorb Elements resource, Shovel flag | **Death Ward, Freedom of Movement, and Mage Armor** — all missing since his recent resurrection |
+| Astarion | Longstrider, Aid, Death Ward, Freedom of Movement, Darkvision, Cat's Grace, Cloak of Displacement, Detect Thoughts, happy status | No major daily-buff gap detected |
 
 > [!note] Pass Without Trace is no longer active on the party in this save (it covered everyone previously). Re-cast it before a stealth-sensitive approach if you want the bonus back.
 
@@ -116,17 +117,17 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 **Markers:** ⭐⭐⭐ 🍷 ⚔️
 
-Counts refreshed from the current `Wyrms Rock Fortress - 100h 29m` save (see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) for the full audit).
+Counts refreshed from the current `QuickSave_186` save, Lower City sewers (see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) for the full audit).
 
 | Resource | Save count | Current holder pattern | Readiness call |
 |---|---:|---|---|
-| Scroll of Revivify | 10 | Kao 1, storage 9 | Strong stock; put one on at least two active characters |
-| Potion of Speed | 6 | Lae'zel 2, TMind 1, storage 3 | Enough for a decisive Haste opener or two |
-| Elixir of Bloodlust | 3 | Lae'zel 1 (active), TMind 1, storage 1 | Already active on Lae'zel |
-| Potion of Invisibility | 10 | Kao 2, storage 8 | Move a couple to Astarion |
-| Scroll of Globe of Invulnerability | 2 | Kao 2 | Excellent boss-defense stock |
-| Scroll of Conjure Elemental | 3 | Kao 1, storage 2 | Good summon stock |
-| Healing potions | 43 | Astarion 7, TMind 6, Lae'zel 4, Kao 3, storage 23 | Well distributed; nobody under-supplied |
+| Scroll of Revivify | 10 | Kao 1, storage 9 | Unchanged; strong stock, put one on at least two active characters |
+| Potion of Speed | 4 | TMind 1, Lae'zel 1, storage 2 | Down from 6; still enough for one decisive Haste opener |
+| Elixir of Bloodlust | 1 | Lae'zel 1 | Down from 3; only Lae'zel's spare bottle is left, on top of the active dose |
+| Potion of Invisibility | 5 | Kao 1, storage 4 | Down from 10 (half used); still workable but don't over-rely on it |
+| Scroll of Globe of Invulnerability | 2 | Kao 2 | Unchanged; excellent boss-defense stock |
+| Scroll of Conjure Elemental | 2 | Kao 1, storage 1 | Down from 3; one more summon available |
+| Healing potions | 39 | Astarion 7, TMind 6, Lae'zel 4, Kao 4, storage 18 | Down slightly from 43; still well distributed, nobody under-supplied |
 
 ## Gear and Synergy Checks ^gear-synergies
 
@@ -134,25 +135,27 @@ Counts refreshed from the current `Wyrms Rock Fortress - 100h 29m` save (see [It
 
 | Check | Status | Note |
 |---|---|---|
-| Shadowheart weapon trick | ✅ Done | Devotee's Mace is now with TMind. |
+| Shadowheart weapon trick | ✅ Done | Devotee's Mace is still with TMind, unchanged. |
 | Blood of Lathander | ✅ With TMind | Keep as the default cleric weapon unless the healing-aura plan is needed. |
 | Devotee's Mace | ✅ With TMind | Use as a swap for Healing Incense Aura and on-heal item synergies. |
 | Hellrider's Pride | ✅ With TMind | Works well with multi-target healing and rescue turns. |
 | Cloak of Protection | ✅ With TMind | Good defensive pickup already consolidated. |
-| Spell Slot Restoration Amulet | ✅ With TMind | Strong day-extension tool; consider whether Kao needs it more before a caster-heavy fight. |
-| Whispering Promise style ring | ⚠️ Not confirmed in this pass | If available in game, pair it with Devotee's Mace aura for concentration-free Bless-style value. |
+| Spell Slot Restoration Amulet (Spellcrux Amulet) | ✅ With TMind | Strong day-extension tool; consider whether Kao needs it more before a caster-heavy fight. |
+| The Whispering Promise | ✅ With TMind | Confirmed present — pairs with Devotee's Mace aura for concentration-free Bless-style value. |
+| New gear picked up since the last audit | ⚠️ Not evaluated | Sword of the Emperor (Lae'zel), a Cerebral Citadel armour/gloves set (Lae'zel), Boots of Psionic Movement (Lae'zel, replacing Boots of Speed), and several other named items landed on TMind, Kao, and Astarion — see [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Item and Storage Snapshot § Notable New Finds]] for the full list. None of these have confirmed effects or ratings yet. |
 
 ## Before Leaving Camp ^before-leaving-camp
 
 **Markers:** ⭐⭐⭐ ⏱️ ⚔️
 
-1. Use Shadowheart or TMind to cast or refresh **Aid** so Lae'zel is included (still the one gap).
-2. Move one Revivify scroll to TMind, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
-3. Move one or two Potion of Invisibility items to Astarion.
-4. Give Lae'zel a small healing-potion stack.
-5. Bloodlust is already active on Lae'zel this save — no action needed unless it is consumed before the fight.
-6. Re-apply **Pass Without Trace** before a stealth approach if wanted (not active this save).
-7. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
+1. **Recast Death Ward and Freedom of Movement on Kao** — both dropped when he was resurrected and haven't come back yet. This is the top priority this snapshot.
+2. **Recast Freedom of Movement on TMind** — also missing, unrelated to Kao's resurrection.
+3. Recast **Mage Armor on Kao** before relying on his AC.
+4. Aid is now active on all four — no action needed (previous Lae'zel gap is resolved).
+5. Move one Revivify scroll to TMind, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
+6. Move the Boots of Speed sitting uselessly on TMind's position to whoever needs the mobility — Lae'zel currently has Boots of Psionic Movement instead; confirm that swap was intentional.
+7. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
+8. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
 
 ## Before a Hard Fight ^before-hard-fight
 
@@ -174,10 +177,10 @@ Counts refreshed from the current `Wyrms Rock Fortress - 100h 29m` save (see [It
 
 | Field | Current value |
 |---|---|
-| Save name | Wyrms Rock Fortress - 100h 29m |
-| Save modified | 2026-07-21 01:26:37 +02:00 |
-| Synced into handbook | 2026-07-22 00:29:42 +02:00 |
-| Game version | 4.1.1.7209685 |
+| Save name | QuickSave_186 |
+| Save modified | 2026-08-09 23:18:49 +02:00 |
+| Synced into handbook | 2026-08-10 00:12:00 +02:00 |
+| Game version | 4.1.1.7398727 |
 | Difficulty | DifficultyMedium / RulesetLarian |
 | Source record | `tools/save-extract/source_manifest.json` |
 
@@ -187,6 +190,8 @@ Counts refreshed from the current `Wyrms Rock Fortress - 100h 29m` save (see [It
 
 - This audit used the current `.lsf` index, not a refreshed `Globals.lsx` text export.
 - Active buff detection is reliable for the four named party members because it reads their current status managers.
+- Character identity was confirmed by matching each `Character` node's exact `Translate` position against the position reported for that character in `SaveInfo.json`; a decoy/duplicate node can share the same coordinates (seen for Kao this pass), so the match was cross-checked against the `Level` field and `IsResurrected`/other distinguishing attributes before trusting it.
+- Kao's `IsResurrected` flag is set on his character node — likely the source of the missing Death Ward, Freedom of Movement, and Mage Armor this pass, since status effects clear on death.
 - The broader save contains many `DYING` statuses on old or non-active entities; the active-party status managers for the four named characters do not show `DYING` in this save.
 - Item counts are reliable for practical stock checks, but exact equipped slots still need in-game confirmation.
 - Camp storage and world/storage-like inventories are summarized as “elsewhere” rather than by raw container or position.
