@@ -93,35 +93,36 @@ Kao handed off a chunk of his scroll library this pass — his Scrolls dropped f
 | ⭐⭐⭐ | Scroll of Globe of Invulnerability x2 | Astarion | Kao | boss defense — moved off Kao this pass, see the resource spot check above |
 | ⭐⭐⭐ | Elixir of Bloodlust | Lae'zel | Lae'zel | already active |
 | ⭐⭐⭐ | Potion of Speed | Lae'zel | Lae'zel / group | decisive Haste |
+| ⭐⭐⭐ | Ring of Salving | TMind | TMind | +2 HP on every heal cast — direct upgrade to his core job |
+| ⭐⭐⭐ | Sword of the Emperor | Lae'zel | Lae'zel | +2 longsword, +2 to all saves vs spells — strong vs Act 3's caster-heavy fights |
+| ⭐⭐⭐ | Chancer's Carcanet | Lae'zel | Lae'zel | reaction Advantage on an attack or save, 1/long rest |
+| ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | Astarion | on-demand Invisibility — ideal for a Hide → Sneak Attack loop |
+| ⭐⭐⭐ | Disintegrating Night Walkers | Astarion | Astarion | terrain immunity + free Misty Step every short rest |
 
-### Notable New Finds (needs in-game review) ^inventory-new-finds
+## Item Ratings and Redistribution — this pass's new finds ^inventory-new-finds
 
-Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up several named magic items not seen in the previous snapshot. Names and current holder are confirmed from the save; effects and ⭐ ratings are **not** assigned yet — check them in game (or via bg3.wiki) before relying on this list, rather than trusting an unverified guess here.
+Every named item picked up since the last full item audit is now verified against bg3.wiki and rated below, replacing the earlier "not yet rated" placeholders. Effects are summarized in the table; **current holder** is where the save shows it right now, **recommended** is where it should actually go.
 
-| Character | New item | Note |
-|---|---|---|
-| TMind | Hellfire Hand Crossbow | Ranged weapon; not yet compared against his current mace-and-shield setup. |
-| TMind | Ring of Salving | Effect not yet checked. |
-| TMind | Keepsake Ring | Effect not yet checked. |
-| TMind | Bloodguzzler Garb | New this pass, clothing/robe; effect not yet checked. |
-| TMind | Shade-Slayer Cloak | New this pass; effect not yet checked. |
-| Lae'zel | **Sword of the Emperor** | Named unique longsword; worth checking first, this reads like a build-defining Act 3 weapon. |
-| Lae'zel | Cerebral Citadel Armour + Gloves | A matched Githyanki/illithid-themed set; possibly a straight upgrade over her current gear. |
-| Lae'zel | Boots of Psionic Movement | Sits at her position in place of Boots of Speed (see below). |
-| Lae'zel | Cindermoth Cloak | Sitting in her cloak slot in place of the Vivacious Cloak (see below). |
-| Lae'zel | Chancer's Carcanet | Moved to her from Astarion this pass; effect not yet checked. |
-| Kao | True Love's Caress | Effect not yet checked. |
-| Kao | Swiresy Shoes | Effect not yet checked. |
-| Astarion | Shadow of Menzoberranzan | Effect not yet checked. |
-| Astarion | Disintegrating Night Walkers (boots) | Effect not yet checked. |
-| Astarion | A radiant-themed ring | Name withheld — it matches a flagged spoiler-sensitive term; check its effect in game. |
-| Astarion | Murderous Cut | New dagger; not yet compared against Gleamdance Dagger/Stillmaker. |
+| Character | Item | Rating | Effect | Current holder | Recommended |
+|---|---|---|---|---|---|
+| TMind | Ring of Salving | ⭐⭐⭐ | +2 HP restored whenever you heal another creature | TMind | **Keep on TMind** |
+| TMind | Keepsake Ring | ⭐⭐ | Cast Dominate Beast, 1/long rest | TMind | Keep as a flex control option |
+| TMind | Boots of Speed | ⭐⭐ | Movement-speed boost | TMind (idle) | **Keep on TMind** — he has no dedicated boots, no reason to move these |
+| TMind | Hellfire Hand Crossbow | ⭐ (wrong owner) | Chance to set target Burning when attacking from Hide/Invisible | TMind (idle) | **→ Astarion** — TMind isn't a stealth attacker |
+| TMind | Shade-Slayer Cloak | ⭐ (wrong owner) | Lower crit threshold while Hiding, stacking | TMind (idle) | **→ Astarion** — wasted on a melee cleric |
+| TMind | Bloodguzzler Garb | ⭐ (fits nobody) | Grants Wrath (bonus **unarmed** strikes) when hit | TMind (idle) | Nobody in this party fights unarmed — bench or sell |
+| Lae'zel | Sword of the Emperor | ⭐⭐⭐ | +2 Longsword, +1d4 vs shapeshifters/polymorphed, +2 to all saves vs spells | Lae'zel | **Keep** |
+| Lae'zel | Boots of Psionic Movement | ⭐⭐⭐ | Githyanki-only: free Fly 1/long rest, +1 DEX save, bonus psychic damage on the melee hit after flying | Lae'zel | **Keep** — she's the party's only Githyanki, this is built for her |
+| Lae'zel | Chancer's Carcanet | ⭐⭐⭐ | Reaction: Advantage on an attack roll or save, 1/long rest | Lae'zel | **Keep** |
+| Lae'zel | Cerebral Citadel Gloves | ⭐⭐ (conditional) | +1d4 to attack rolls/saves after Charming or Frightening a creature | Lae'zel | Keep only if she has a Frighten-causing Battle Master maneuver (e.g. Menacing Attack) — check in game |
+| Lae'zel | Cerebral Citadel Armour | ⭐⭐ (unverified) | Matching illithid-themed set piece, exact AC not confirmed | Lae'zel | Compare its AC in game before swapping off Adamantine Splint Armour — that armour's no-crit protection is hard to beat |
+| Lae'zel | Cindermoth Cloak | ⭐⭐ (bench) | Retaliation Burning on nearby melee attackers, but the save is rolled by the *wearer*, not the attacker — unreliable at her level | Lae'zel | Swap for the incoming Vivacious Cloak (see below) |
+| Kao | True Love's Caress | ⭐ (situational) | Receive Warding Bond from whoever wears the matching True Love's Embrace ring, 1/long rest | Kao | Only useful if the matching ring turns up (check storage) — otherwise dead weight |
+| Kao | Swiresy Shoes | ⭐ | +5ft jump distance, +1 Acrobatics | Kao | Minor exploration convenience only |
+| Astarion | Murderous Cut | ⭐⭐ | +1 Dagger, +1d4 piercing vs targets at ≤50% HP | Astarion | **Keep** — good off-hand execute option |
+| Astarion | *(radiant-themed ring, name withheld — spoiler-flagged term)* | ⭐ | Casts the Light cantrip on demand; can be unequipped afterward and the light persists | Astarion | Pure utility, no combat value |
 
-**Boots of Speed relocated**: it's no longer at Lae'zel's position — it's still sitting with TMind (not storage), doing nothing there, unchanged across two snapshots now. Move it back to Lae'zel, hand it to whoever needs the mobility more now that she may be using Boots of Psionic Movement instead, or confirm in game whether she already swapped it deliberately.
-
-**Vivacious Cloak still on TMind**: it moved from Lae'zel to TMind two snapshots ago and hasn't moved since; still doing nothing there since he isn't wearing it. Lae'zel is still on the untested Cindermoth Cloak.
-
-**Chancer's Carcanet relocated again**: it landed on Astarion last pass and has now moved to Lae'zel — still untested either way.
+**Redistribution to make**: TMind → Astarion (Hellfire Hand Crossbow, Shade-Slayer Cloak); TMind → Lae'zel (Vivacious Cloak, replacing Cindermoth Cloak); Astarion → Kao (Scroll of Globe of Invulnerability ×2, Scroll of Conjure Elemental — already flagged above). Bloodguzzler Garb doesn't fit anyone's current build.
 
 ## TMind ^inventory-tmind
 
@@ -144,10 +145,13 @@ Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up
 | ⭐⭐ | The Spectator Eyes | TMind / Kao | spell utility |
 | ⭐⭐ | Circle of Bones | TMind | defensive amulet |
 | ⭐⭐ | Adamantine Scale Mail | TMind | no-crit heavy armour |
-| ⭐ | Vivacious Cloak | Lae'zel | temp HP on initiative — moved here from Lae'zel two snapshots ago, still unused here; likely better used on her, see Notable New Finds |
-| ⭐ | Boots of Speed | Lae'zel | frontline mobility — moved here from Lae'zel two snapshots ago, still unused here; see Notable New Finds |
-| — | Bloodguzzler Garb | TMind | not yet rated, see Notable New Finds |
-| — | Shade-Slayer Cloak | TMind | not yet rated, see Notable New Finds |
+| ⭐⭐⭐ | Ring of Salving | TMind | +2 HP on every heal cast — see Item Ratings above |
+| ⭐⭐ | Keepsake Ring | TMind | Dominate Beast 1/long rest, flex control |
+| ⭐⭐ | Boots of Speed | TMind | frontline mobility — he has no other boots, keep these rather than pass them along |
+| ⭐ (wrong owner) | Vivacious Cloak | Lae'zel | temp HP on initiative — recommend moving to Lae'zel, see Item Ratings above |
+| ⭐ (wrong owner) | Hellfire Hand Crossbow | Astarion | Hide/Invisible burn proc — recommend moving to Astarion |
+| ⭐ (wrong owner) | Shade-Slayer Cloak | Astarion | crit-while-Hiding — recommend moving to Astarion |
+| ⭐ (fits nobody) | Bloodguzzler Garb | — | Wrath on unarmed strikes — nobody in this party fights unarmed; bench or sell |
 
 ### Consumables and Scrolls
 
@@ -177,11 +181,12 @@ TMind's alchemy stock is back down to ≈30 records, still well below the ≈116
 | ⭐⭐ | Crossbow of Arcane Force | Lae'zel | ranged fallback |
 | ⭐⭐ | Corpsegrinder | Lae'zel | martial weapon option |
 | ⭐ | Grymskull Helm | Lae'zel | situational helm |
-| — | Sword of the Emperor | Lae'zel | not yet rated, see Notable New Finds |
-| — | Cerebral Citadel Armour + Gloves | Lae'zel | not yet rated, see Notable New Finds |
-| — | Boots of Psionic Movement | Lae'zel | not yet rated, replaced Boots of Speed — see Notable New Finds |
-| — | Cindermoth Cloak | Lae'zel | not yet rated, replaced Vivacious Cloak — see Notable New Finds |
-| — | Chancer's Carcanet | Lae'zel | not yet rated, moved to her from Astarion this pass — see Notable New Finds |
+| ⭐⭐⭐ | Sword of the Emperor | Lae'zel | +2 longsword, +2 saves vs spells — see Item Ratings above |
+| ⭐⭐⭐ | Boots of Psionic Movement | Lae'zel | Githyanki-only Fly + psychic damage — correctly replaced Boots of Speed |
+| ⭐⭐⭐ | Chancer's Carcanet | Lae'zel | guaranteed Advantage on a save or attack, 1/long rest |
+| ⭐⭐ | Cerebral Citadel Gloves | Lae'zel | conditional on a Frighten-causing maneuver — see Item Ratings above |
+| ⭐⭐ | Cerebral Citadel Armour | Lae'zel | compare its AC to Adamantine Splint Armour before swapping |
+| ⭐⭐ (bench) | Cindermoth Cloak | Lae'zel | unreliable retaliation burn — swap for the incoming Vivacious Cloak from TMind |
 
 ### Consumables and Scrolls
 
@@ -210,6 +215,8 @@ No longer carried: her Elixir of Hill Giant Strength is gone (not found anywhere
 | ⭐⭐ | Strange Tendril Amulet | Kao | control amulet |
 | ⭐ | Infernal Robe | Kao | robe option |
 | ⭐ | Bonespike Boots | Kao | situational boots |
+| ⭐ | True Love's Caress | Kao | needs the matching True Love's Embrace ring elsewhere — check storage, otherwise dead weight |
+| ⭐ | Swiresy Shoes | Kao | +5ft jump, +1 Acrobatics — exploration convenience only |
 
 ### Consumables and Scrolls
 
@@ -239,6 +246,12 @@ No longer carried: his Elixir of Universal Resistance is gone (not found anywher
 | ⭐⭐ | Periapt of Wound Closure | Astarion | scout survival |
 | ⭐⭐ | Shifting Corpus Ring | Astarion | miss-chance defensive ring |
 | ⭐ | King's Knife | Astarion | dagger option |
+| ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | on-demand Invisibility — ideal for a Hide → Sneak Attack loop |
+| ⭐⭐⭐ | Disintegrating Night Walkers | Astarion | terrain immunity + free Misty Step every short rest |
+| ⭐⭐ | Murderous Cut | Astarion | +1d4 piercing vs targets at ≤50% HP — good off-hand execute option |
+| ⭐ | *(radiant-themed ring, name withheld)* | Astarion | Light cantrip on demand — utility only, matches a flagged spoiler-sensitive term so the name is omitted here |
+| ⭐⭐ (incoming) | Hellfire Hand Crossbow | TMind → here | burn chance while Hiding/Invisible — recommended move from TMind |
+| ⭐⭐⭐ (incoming) | Shade-Slayer Cloak | TMind → here | lower crit threshold while Hiding — recommended move from TMind |
 
 ### Consumables and Scrolls
 

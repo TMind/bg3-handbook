@@ -31,6 +31,10 @@ Where the change lives in a specific section, link the exact heading (`[[11_Main
 - Death Ward coverage got worse, not better: it's dropped off **Astarion** (who had it earlier that day) on top of the standing gap on Kao, who is still missing it — along with Freedom of Movement and Mage Armor — three snapshots running since his resurrection.
 - Caught a scroll hand-off from Kao to Astarion (Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, Invisibility) that's probably worth reversing since Kao is the one who casts most of them, and confirmed the Boots of Speed / Vivacious Cloak that drifted onto TMind earlier are still sitting there unused.
 
+### Added
+
+- Rated every named item picked up over the last three snapshots against bg3.wiki (not guessed) and replaced the "not yet rated" placeholders across [[13_Item_Inventory_Snapshot#^inventory-new-finds|Item and Storage Snapshot]] and [[14_Current_Readiness_Audit#^gear-synergies|Readiness Audit § Gear and Synergy Checks]] with real ⭐ ratings and a concrete redistribution plan: Hellfire Hand Crossbow and Shade-Slayer Cloak move from TMind to Astarion (both are Hide/stealth-triggered, wasted on a melee cleric), the Vivacious Cloak moves from TMind to Lae'zel in place of the less reliable Cindermoth Cloak, and Kao's scroll library moves back from Astarion. Ring of Salving, Sword of the Emperor, Boots of Psionic Movement, Chancer's Carcanet, Shadow of Menzoberranzan, and Disintegrating Night Walkers all rate ⭐⭐⭐; Bloodguzzler Garb fits nobody in the current build (buffs unarmed strikes) and was left unassigned rather than forced onto a character.
+
 ## 2026-08-10
 
 ### Changed

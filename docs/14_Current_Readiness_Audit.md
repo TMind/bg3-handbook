@@ -142,9 +142,19 @@ Counts refreshed from the current `Campsite - 106h 12m` save (see [Item and Stor
 | Cloak of Protection | ✅ With TMind | Good defensive pickup already consolidated. |
 | Spell Slot Restoration Amulet (Spellcrux Amulet) | ✅ With TMind | Strong day-extension tool; consider whether Kao needs it more before a caster-heavy fight. |
 | The Whispering Promise | ✅ With TMind | Confirmed present — pairs with Devotee's Mace aura for concentration-free Bless-style value. |
-| New gear, still unevaluated | ⚠️ Not evaluated | Sword of the Emperor, Cerebral Citadel armour/gloves, Boots of Psionic Movement, and Cindermoth Cloak (all Lae'zel); Bloodguzzler Garb and Shade-Slayer Cloak (TMind); Chancer's Carcanet (now on Lae'zel, moved from Astarion). None of these have confirmed effects or ratings yet — see [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Item and Storage Snapshot § Notable New Finds]] for the full, current list. |
-| Boots of Speed / Vivacious Cloak stuck on TMind | ⚠️ Unresolved | Both drifted from Lae'zel to TMind two snapshots ago and are still sitting unused there, three snapshots later. Worth deliberately deciding whether to move them back or leave them. |
-| Kao's scroll library handed to Astarion | ⚠️ Not evaluated | Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, and Invisibility scrolls all moved from Kao to Astarion this pass — see the Consumable Readiness table above. |
+| Sword of the Emperor (Lae'zel) | ✅ Rated ⭐⭐⭐ | +2 longsword, +2 to all saves vs spells — keep, strong vs Act 3's caster-heavy fights. |
+| Boots of Psionic Movement (Lae'zel) | ✅ Rated ⭐⭐⭐ | Githyanki-only Fly + psychic damage rider — correctly replaced Boots of Speed on her. |
+| Chancer's Carcanet (Lae'zel) | ✅ Rated ⭐⭐⭐ | Guaranteed Advantage on a save or attack, 1/long rest — keep. |
+| Ring of Salving (TMind) | ✅ Rated ⭐⭐⭐ | +2 HP on every heal he casts — direct upgrade, keep. |
+| Shadow of Menzoberranzan / Disintegrating Night Walkers (Astarion) | ✅ Rated ⭐⭐⭐ | On-demand Invisibility and free Misty Step + terrain immunity respectively — both strong, keep equipped. |
+| Cerebral Citadel Gloves/Armour (Lae'zel) | ⚠️ Conditional | Gloves need a Frighten-causing maneuver (e.g. Menacing Attack) to matter; Armour's AC vs Adamantine Splint Armour is unconfirmed — verify both in game. |
+| Bloodguzzler Garb (TMind) | ❌ Fits nobody | Buffs unarmed strikes; nobody in this party fights unarmed — bench or sell rather than assign. |
+| Hellfire Hand Crossbow / Shade-Slayer Cloak | ⚠️ Wrong owner | Currently idle on TMind (Hide/stealth-triggered effects don't fit a melee cleric) — move both to Astarion, who they're built for. |
+| Vivacious Cloak (on TMind, recommend Lae'zel) | ⚠️ Misplaced | Guaranteed temp HP on initiative, sitting unused on TMind for three snapshots now — move to Lae'zel, replacing the less reliable Cindermoth Cloak. |
+| Boots of Speed (TMind) | ✅ Resolved | Kept on TMind — he has no other boots, no reason to move them further. |
+| Kao's scroll library on Astarion | ⚠️ Unresolved | Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, and Invisibility scrolls all moved from Kao to Astarion two snapshots ago and still haven't moved back — see the Consumable Readiness table above. |
+
+Full effect text and sourcing for every item above is in [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Item and Storage Snapshot § Item Ratings and Redistribution]].
 
 ## Before Leaving Camp ^before-leaving-camp
 
@@ -158,7 +168,7 @@ You're at camp right now in this save — this is exactly the right moment to ru
 4. Aid is active on all four — no action needed.
 5. Move the Scroll of Globe of Invulnerability and Scroll of Conjure Elemental back to Kao (currently on Astarion) unless the handoff was deliberate.
 6. Move one Revivify scroll to TMind, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
-7. Sort out the Vivacious Cloak and Boots of Speed sitting unused on TMind — see [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Notable New Finds]] for the full picture.
+7. Move Hellfire Hand Crossbow and Shade-Slayer Cloak from TMind to Astarion, and the Vivacious Cloak from TMind to Lae'zel (replacing her Cindermoth Cloak) — full ratings in [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Item and Storage Snapshot § Item Ratings and Redistribution]]. Boots of Speed stay on TMind, he has no other boots.
 8. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
 9. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
 
