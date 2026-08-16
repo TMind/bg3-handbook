@@ -19,6 +19,15 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 Where the change lives in a specific section, link the exact heading (`[[11_Main_Character_Builds#^astarion-build|Astarion's build]]`) instead of just the file — in Obsidian and on the site, that click jumps straight to the change instead of the top of the file. Use a `^block-id` anchor where one already exists on the heading; a plain heading-text anchor (`[[chronicle#Wyll — The Blade of Frontiers]]`) also resolves if no block-id is set. Link the whole file only when the change isn't tied to one section (e.g. a new tool, a site-wide feature).
 
+## 2026-08-16
+
+### Changed
+
+- Refreshed the save-derived snapshots from a big jump — `Campsite - 106h 12m`, about six hours of play past the previous sync. The whole party leveled up to 11, is back at **camp**, and picked up a new Cambion (Planar Ally) summon; the earlier Conjure Elemental (Air) summon is gone. Updated [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and the [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit verdict]].
+- **Heroes' Feast is now available** party-wide (TMind reached Cleric 11) — this resolves a gap the previous audit had flagged as "the next major daily-buff upgrade," so the recommendation now points at actually casting it before the next hard fight instead.
+- Death Ward coverage got worse, not better: it's dropped off **Astarion** (who had it last snapshot) on top of the standing gap on Kao, who is still missing it — along with Freedom of Movement and Mage Armor — three snapshots running since his resurrection.
+- Caught a scroll hand-off from Kao to Astarion (Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, Invisibility) that's probably worth reversing since Kao is the one who casts most of them, and confirmed the Boots of Speed / Vivacious Cloak that drifted onto TMind two snapshots ago are still sitting there unused.
+
 ## 2026-08-13
 
 ### Changed

@@ -33,7 +33,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Scope
 
-- Source: `AutoSave_127`, modified `2026-08-10 00:27:55 +02:00`, synced into the handbook at `2026-08-13 12:36:47 +02:00`. The party has moved on from the Lower City sewers into the Undercity Ruins (Act 3), about an hour of play after the previous pass.
+- Source: `Campsite - 106h 12m`, modified `2026-08-16 02:02:22 +02:00`, synced into the handbook at `2026-08-16 11:29:07 +02:00`. The whole party leveled up to 11 and is back at camp, about six hours of play after the previous pass.
 - Item names were resolved from the game's own root templates and localization, so display names match in game.
 - Holder is position-based: an item counts for TMind, Lae'zel, Kao, or Astarion when it sits at that character's active-party position; everything else is `storage`.
 - Only build-relevant magic gear is listed per character. Generic default weapons/armour, camp clothes, books, and keys are omitted.
@@ -53,24 +53,24 @@ Totals are position-based item records from the current save (approximate catego
 
 | Character | Total | Equipment | Potions / elixirs | Scrolls | Combat consumables | Alchemy | Utility / keys |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| TMind | 276 | 29 | 12 | 18 | 3 | 35 | 179 |
-| Lae'zel | 63 | 17 | 7 | 1 | 5 | 1 | 32 |
-| Kao | 179 | 38 | 10 | 33 | 11 | 0 | 87 |
-| Astarion | 110 | 30 | 10 | 6 | 21 | 0 | 43 |
+| TMind | 270 | 32 | 11 | 22 | 3 | 30 | 172 |
+| Lae'zel | 79 | 23 | 7 | 1 | 6 | 1 | 41 |
+| Kao | 150 | 38 | 9 | 6 | 11 | 0 | 86 |
+| Astarion | 140 | 30 | 12 | 26 | 23 | 0 | 49 |
 
-TMind picked up roughly what Kao set down this pass (TMind's totals rose by ~22 records, Kao's fell by a similar amount) — mostly generic gear and utility items, not the named/unique pieces tracked below. Nothing else in this table moved by more than a few records.
+Kao handed off a chunk of his scroll library this pass — his Scrolls dropped from 33 to 6, while Astarion's rose from 6 to 26. That includes the Scroll of Globe of Invulnerability and Scroll of Conjure Elemental — see the resource spot check below, this is worth reversing since Kao is the one who casts them.
 
 ## Current Resource Spot Check
 
 | Resource | Latest visible count | Current holder(s) | Practical note |
 |---|---:|---|---|
-| Scroll of Revivify | 10 | Kao 1; storage 9 | Unchanged from the last snapshot — still strong emergency stock; put one on at least two active characters. |
-| Potion of Speed | 4 | TMind 1; Lae'zel 1; storage 2 | Down from 6 (2 used). Still enough for a Haste opener; throw immediately before combat. |
-| Elixir of Bloodlust | 1 | Lae'zel 1 | Down from 3 (2 consumed). The buff is still active on Lae'zel from an earlier dose; only one spare bottle left — don't drink it casually. |
-| Potion of Invisibility | 5 | Kao 1; storage 4 | Down from 10 (half used). Still workable for scouting/escapes, but restock before relying on it for a hard fight. |
-| Scroll of Globe of Invulnerability | 2 | Kao 2 | Unchanged. Keep on Kao for boss defense. |
-| Scroll of Conjure Elemental | 2 | Kao 1; storage 1 | Down from 3 (1 used). Still good for one more action-economy summon. |
-| Healing potions | 38 | Astarion 6; TMind 6; Lae'zel 4; Kao 4; storage 18 | Down by one (Astarion used a basic potion); still well distributed and nobody is under-supplied. |
+| Scroll of Revivify | 10 | Kao 1; storage 9 | Unchanged across three snapshots — still strong emergency stock; put one on at least two active characters. |
+| Potion of Speed | 4 | TMind 1; Lae'zel 1; storage 2 | Unchanged. Still enough for a Haste opener; throw immediately before combat. |
+| Elixir of Bloodlust | 1 | Lae'zel 1 | Unchanged. The buff is still active on Lae'zel from an earlier dose; only one spare bottle left — don't drink it casually. |
+| Potion of Invisibility | 5 | Kao 1; storage 4 | Unchanged. Still workable for scouting/escapes, but restock before relying on it for a hard fight. |
+| Scroll of Globe of Invulnerability | 2 | Astarion 2 | **Moved from Kao to Astarion this pass.** Kao is the one who casts it — worth moving back unless this was deliberate. |
+| Scroll of Conjure Elemental | 2 | Astarion 1; storage 1 | **Moved from Kao to Astarion this pass**, same as above. |
+| Healing potions | 39 | Astarion 8; TMind 5; Lae'zel 4; Kao 4; storage 18 | Up slightly. Astarion is now carrying noticeably more than everyone else — still fine, just uneven. |
 
 ## Best Immediate Uses ^inventory-best-uses
 
@@ -90,7 +90,7 @@ TMind picked up roughly what Kao set down this pass (TMind's totals rose by ~22 
 | ⭐⭐⭐ | The Graceful Cloth | Astarion | Astarion | DEX / Cat's Grace |
 | ⭐⭐⭐ | The Joltshooter | Astarion | Astarion | ranged option |
 | ⭐⭐⭐ | Scroll of Revivify | Kao | Any | emergency revive |
-| ⭐⭐⭐ | Scroll of Globe of Invulnerability x2 | Kao | Kao | boss defense |
+| ⭐⭐⭐ | Scroll of Globe of Invulnerability x2 | Astarion | Kao | boss defense — moved off Kao this pass, see the resource spot check above |
 | ⭐⭐⭐ | Elixir of Bloodlust | Lae'zel | Lae'zel | already active |
 | ⭐⭐⭐ | Potion of Speed | Lae'zel | Lae'zel / group | decisive Haste |
 
@@ -103,21 +103,25 @@ Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up
 | TMind | Hellfire Hand Crossbow | Ranged weapon; not yet compared against his current mace-and-shield setup. |
 | TMind | Ring of Salving | Effect not yet checked. |
 | TMind | Keepsake Ring | Effect not yet checked. |
+| TMind | Bloodguzzler Garb | New this pass, clothing/robe; effect not yet checked. |
+| TMind | Shade-Slayer Cloak | New this pass; effect not yet checked. |
 | Lae'zel | **Sword of the Emperor** | Named unique longsword; worth checking first, this reads like a build-defining Act 3 weapon. |
 | Lae'zel | Cerebral Citadel Armour + Gloves | A matched Githyanki/illithid-themed set; possibly a straight upgrade over her current gear. |
-| Lae'zel | Boots of Psionic Movement | Now sits at her position in place of Boots of Speed (see below). |
-| Lae'zel | Cindermoth Cloak | New this pass, sitting in her cloak slot in place of the Vivacious Cloak (see below). |
+| Lae'zel | Boots of Psionic Movement | Sits at her position in place of Boots of Speed (see below). |
+| Lae'zel | Cindermoth Cloak | Sitting in her cloak slot in place of the Vivacious Cloak (see below). |
+| Lae'zel | Chancer's Carcanet | Moved to her from Astarion this pass; effect not yet checked. |
 | Kao | True Love's Caress | Effect not yet checked. |
 | Kao | Swiresy Shoes | Effect not yet checked. |
 | Astarion | Shadow of Menzoberranzan | Effect not yet checked. |
 | Astarion | Disintegrating Night Walkers (boots) | Effect not yet checked. |
 | Astarion | A radiant-themed ring | Name withheld — it matches a flagged spoiler-sensitive term; check its effect in game. |
 | Astarion | Murderous Cut | New dagger; not yet compared against Gleamdance Dagger/Stillmaker. |
-| Astarion | Chancer's Carcanet | New this pass, an amulet; effect not yet checked. |
 
-**Boots of Speed relocated**: it's no longer at Lae'zel's position — it's now sitting with TMind (not storage), doing nothing there. Move it back to Lae'zel, hand it to whoever needs the mobility more now that she may be using Boots of Psionic Movement instead, or confirm in game whether she already swapped it deliberately.
+**Boots of Speed relocated**: it's no longer at Lae'zel's position — it's still sitting with TMind (not storage), doing nothing there, unchanged across two snapshots now. Move it back to Lae'zel, hand it to whoever needs the mobility more now that she may be using Boots of Psionic Movement instead, or confirm in game whether she already swapped it deliberately.
 
-**Vivacious Cloak relocated**: it moved from Lae'zel's position to TMind's since the last snapshot, and Lae'zel picked up the untested Cindermoth Cloak in its place. If that swap wasn't deliberate, the Vivacious Cloak's temp-HP-on-initiative effect is arguably more useful on her than sitting unused on TMind.
+**Vivacious Cloak still on TMind**: it moved from Lae'zel to TMind two snapshots ago and hasn't moved since; still doing nothing there since he isn't wearing it. Lae'zel is still on the untested Cindermoth Cloak.
+
+**Chancer's Carcanet relocated again**: it landed on Astarion last pass and has now moved to Lae'zel — still untested either way.
 
 ## TMind ^inventory-tmind
 
@@ -140,7 +144,10 @@ Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up
 | ⭐⭐ | The Spectator Eyes | TMind / Kao | spell utility |
 | ⭐⭐ | Circle of Bones | TMind | defensive amulet |
 | ⭐⭐ | Adamantine Scale Mail | TMind | no-crit heavy armour |
-| ⭐ | Vivacious Cloak | Lae'zel | temp HP on initiative — moved here from Lae'zel this pass; likely better used on her, see Notable New Finds |
+| ⭐ | Vivacious Cloak | Lae'zel | temp HP on initiative — moved here from Lae'zel two snapshots ago, still unused here; likely better used on her, see Notable New Finds |
+| ⭐ | Boots of Speed | Lae'zel | frontline mobility — moved here from Lae'zel two snapshots ago, still unused here; see Notable New Finds |
+| — | Bloodguzzler Garb | TMind | not yet rated, see Notable New Finds |
+| — | Shade-Slayer Cloak | TMind | not yet rated, see Notable New Finds |
 
 ### Consumables and Scrolls
 
@@ -154,7 +161,7 @@ Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up
 
 No longer carried: Elixir of Bloodlust and Elixir of Universal Resistance are both gone from TMind's inventory (and not found anywhere else in the save) — used up since the last snapshot.
 
-TMind's alchemy stock is at ≈35 records, up slightly from ≈30 last pass but still well below the ≈116 it was two snapshots ago.
+TMind's alchemy stock is back down to ≈30 records, still well below the ≈116 it was three snapshots ago.
 
 ## Lae'zel ^inventory-laezel
 
@@ -164,13 +171,17 @@ TMind's alchemy stock is at ≈35 records, up slightly from ≈30 last pass but 
 |---|---|---|---|
 | ⭐⭐⭐ | Moonlight Glaive | Lae'zel | martial weapon |
 | ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | frontline crit (active) |
-| ⭐⭐⭐ | Boots of Speed | Lae'zel | frontline mobility |
 | ⭐⭐⭐ | Adamantine Splint Armour | Lae'zel | no-crit heavy armour |
 | ⭐⭐ | Amulet of Branding | Lae'zel | melee debuff |
 | ⭐⭐ | Braindrain Gloves | Lae'zel | psychic-rider option |
 | ⭐⭐ | Crossbow of Arcane Force | Lae'zel | ranged fallback |
 | ⭐⭐ | Corpsegrinder | Lae'zel | martial weapon option |
 | ⭐ | Grymskull Helm | Lae'zel | situational helm |
+| — | Sword of the Emperor | Lae'zel | not yet rated, see Notable New Finds |
+| — | Cerebral Citadel Armour + Gloves | Lae'zel | not yet rated, see Notable New Finds |
+| — | Boots of Psionic Movement | Lae'zel | not yet rated, replaced Boots of Speed — see Notable New Finds |
+| — | Cindermoth Cloak | Lae'zel | not yet rated, replaced Vivacious Cloak — see Notable New Finds |
+| — | Chancer's Carcanet | Lae'zel | not yet rated, moved to her from Astarion this pass — see Notable New Finds |
 
 ### Consumables and Scrolls
 
@@ -204,18 +215,13 @@ No longer carried: her Elixir of Hill Giant Strength is gone (not found anywhere
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Scroll of Globe of Invulnerability | 2 | Kao | boss defense — unchanged |
 | ⭐⭐⭐ | Scroll of Revivify | 1 | Any | emergency revive — unchanged |
-| ⭐⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | action economy — unchanged |
-| ⭐⭐ | Scroll of Bestow Curse | 2 | Kao | debuff — unchanged |
-| ⭐⭐ | Scroll of Crown of Madness | 1 | Kao | control — unchanged |
-| ⭐⭐ | Scroll of Invisibility | 1 | Kao / Astarion | escape or setup — unchanged |
-| ⭐⭐ | Potion of Invisibility | 1 | Astarion | down from 2 — one used |
+| ⭐ | Antitoxin | 2 | Any | new this pass |
 | ⭐ | Potion of Superior / Greater Healing | 2 | Any | situational — unchanged |
 
-No longer carried: his Elixir of Universal Resistance is gone (not found anywhere in the save, along with TMind's copy) — used up.
+**Handed off since the last snapshot**: Kao's Scroll of Globe of Invulnerability (×2), Scroll of Conjure Elemental, Scroll of Bestow Curse (×2), Scroll of Crown of Madness, and Scroll of Invisibility are all now with Astarion instead — see his Consumables and Scrolls below. Kao's scroll library dropped from ≈31 to just 6 as a result. If that wasn't a deliberate strategy shift (e.g. loading Astarion up before he goes off to scout or sell), it's worth moving the boss-defense and summon scrolls back to Kao, who is the one who casts them.
 
-Kao carries the largest scroll library (≈31 scrolls); the ⭐ situational scrolls are omitted here — browse them in game before a caster-heavy fight.
+No longer carried: his Elixir of Universal Resistance is gone (not found anywhere in the save, along with TMind's copy) — used up.
 
 ## Astarion ^inventory-astarion
 
@@ -238,13 +244,18 @@ Kao carries the largest scroll library (≈31 scrolls); the ⭐ situational scro
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐ | Elixir of Fire / Psychic Resistance | 3 | Any | elemental prep — unchanged (2 Fire, 1 Psychic) |
+| ⭐⭐⭐ | Scroll of Globe of Invulnerability | 2 | Kao | boss defense — **moved from Kao this pass, recommend moving back** |
+| ⭐⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | action economy — **moved from Kao this pass, recommend moving back** |
+| ⭐⭐ | Scroll of Bestow Curse | 2 | Kao | debuff — moved from Kao this pass |
+| ⭐⭐ | Scroll of Crown of Madness | 1 | Kao | control — moved from Kao this pass |
+| ⭐⭐ | Scroll of Invisibility | 1 | Kao / Astarion | escape or setup — moved from Kao this pass |
+| ⭐⭐ | Elixir of Fire / Psychic Resistance | 2 | Any | elemental prep — unchanged (1 Fire, 1 Psychic) |
 | ⭐⭐ | Scroll of Protection from Energy | 1 | Any | elemental defense — unchanged |
-| ⭐⭐ | Full elemental arrow set | 9 (1 each) | Astarion | fire, ice, acid, darkness, detonation, teleportation, antimagic, smokepowder, construct- and monstrosity-slaying — new since last snapshot |
-| ⭐ | Potion of Superior / Greater Healing | 4 | Any | situational — unchanged |
-| ⭐ | Antitoxin | 1 | Any | new since last snapshot |
+| ⭐⭐ | Full elemental arrow set | 9 (1 each) | Astarion | fire, ice, acid, darkness, detonation, teleportation, antimagic, smokepowder, construct- and monstrosity-slaying — unchanged |
+| ⭐ | Potion of Superior / Greater Healing | 6 | Any | up from 4 |
+| ⭐ | Antitoxin | 1 | Any | unchanged |
 
-No longer carried: his Elixir of Cloud Giant Strength is gone (used up). His Potion of Animal Speaking is also gone from inventory — matches the still-active Animal Speaking buff on him (he drank it); 3 more copies are sitting in camp storage if he wants it again.
+Astarion is now carrying most of Kao's old scroll library — see the note in Kao's section above about whether that was intentional. No longer carried: his Elixir of Cloud Giant Strength is gone (used up). His Potion of Animal Speaking is also gone from inventory — matches the still-active Animal Speaking buff on him (he drank it); 3 more copies are sitting in camp storage if he wants it again.
 
 ## Camp Storage ^camp-storage
 

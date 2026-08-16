@@ -66,6 +66,9 @@ Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter
 ### Active party
 Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric). Active summons: Flying Ghoul + quasit.
 
+### Mechanics learned this session
+- **Impenetrable Slumber cannot be dispelled.** The sleeping tiefling in the Lower City Sewers (Dairow Vin) carries a scripted condition that ignores damage, healing, Shove, and polymorph. The only known way to rouse him is Death Ward → kill him → he stands up at 1 HP on the revive. He has no dialogue afterwards, so it's a curiosity, not a quest step. Speak with Dead works on him normally if left dead.
+
 ---
 
 ## Open Questions
