@@ -19,6 +19,14 @@ Use newest entries first. Keep entries practical: what changed, why it matters, 
 
 Where the change lives in a specific section, link the exact heading (`[[11_Main_Character_Builds#^astarion-build|Astarion's build]]`) instead of just the file — in Obsidian and on the site, that click jumps straight to the change instead of the top of the file. Use a `^block-id` anchor where one already exists on the heading; a plain heading-text anchor (`[[chronicle#Wyll — The Blade of Frontiers]]`) also resolves if no block-id is set. Link the whole file only when the change isn't tied to one section (e.g. a new tool, a site-wide feature).
 
+## 2026-08-13
+
+### Changed
+
+- Refreshed the save-derived snapshots again, one save-state further (`AutoSave_127`, an hour of play past the previous sync) — the party moved from the Lower City sewers into the **Undercity Ruins**. Updated [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and the [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit verdict]].
+- Confirmed Kao's Death Ward, Freedom of Movement, and Mage Armor gaps (and TMind's missing Freedom of Movement) are still unresolved a full snapshot later — reworded the verdict from "new gap" to "persistent gap" so it reads as the standing priority it is, not a one-off reading.
+- Caught two more gear moves: Lae'zel's Vivacious Cloak drifted onto TMind (unused there) while she picked up an untested Cindermoth Cloak in its place; Astarion picked up an untested amulet, Chancer's Carcanet. Logged both in [[13_Item_Inventory_Snapshot#^inventory-new-finds|Notable New Finds]] without inventing ratings for the new pieces.
+
 ## 2026-08-10
 
 ### Changed

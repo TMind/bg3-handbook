@@ -24,10 +24,10 @@ This note summarizes the current save state extracted from the local save file. 
 
 ## Save
 
-- Save name: `QuickSave_186`
-- Save modified: `2026-08-09 23:18:49 +02:00`
-- Synced into handbook: `2026-08-10 00:12:00 +02:00`
-- Game version: `4.1.1.7398727` (patched since the last sync, was `4.1.1.7209685`)
+- Save name: `AutoSave_127`
+- Save modified: `2026-08-10 00:27:55 +02:00`
+- Synced into handbook: `2026-08-13 12:36:47 +02:00`
+- Game version: `4.1.1.7398727` (unchanged since the last sync)
 - Difficulty: `DifficultyMedium / RulesetLarian`
 - Current region: `CTY_Main_A`
 
@@ -35,12 +35,12 @@ This note summarizes the current save state extracted from the local save file. 
 
 | Character | Level / build | XP | Current subregion | Practical note |
 |---|---|---:|---|---|
-| TMind | Level 10 Cleric / Death Domain | 73,798 total; 17,798 into level | `LOW_Sewers_SUB` | Grouped with the main party; Blood of Lathander and Shield of Devotion effects active, Speak with Dead recast available. |
-| Lae'zel | Level 10 Fighter / Battle Master | 73,628 total; 17,628 into level | `LOW_Sewers_SUB` | Grouped with the main party; **Elixir of Bloodlust active** (with temp-HP rider). Partial ceremorphosis ongoing. |
-| Kao | Level 10 Wizard / Conjuration School | 73,398 total; 17,398 into level | `LOW_Sewers_SUB` | Grouped with the main party; **recently resurrected** — Mage Armor has lapsed and needs recasting before the next fight. Now holding Warding Bond instead of TMind. |
-| Astarion | Level 10 Rogue / Thief | 73,228 total; 17,228 into level | `LOW_Sewers_SUB` | Grouped with the main party; Cloak of Displacement and Cat's Grace active, Detect Thoughts up. |
+| TMind | Level 10 Cleric / Death Domain | 74,808 total; 18,808 into level | `LOW_UndercityRuins_SUB` | Grouped with the main party; Blood of Lathander and Shield of Devotion effects active, Speak with Dead recast available. |
+| Lae'zel | Level 10 Fighter / Battle Master | 74,638 total; 18,638 into level | `LOW_UndercityRuins_SUB` | Grouped with the main party; **Elixir of Bloodlust active** (temp-HP rider has worn off, base buff remains). Partial ceremorphosis ongoing. |
+| Kao | Level 10 Wizard / Conjuration School | 74,408 total; 18,408 into level | `LOW_UndercityRuins_SUB` | Grouped with the main party; drank an **Elixir of Arcane Acuity**. Still missing Death Ward, Freedom of Movement, and Mage Armor since his resurrection — none of the three have been recast yet. |
+| Astarion | Level 10 Rogue / Thief | 74,238 total; 18,238 into level | `LOW_UndercityRuins_SUB` | Grouped with the main party; Cloak of Displacement and Cat's Grace active, drank a Potion of Fire Resistance. |
 
-The party has moved on from Wyrm's Rock Fortress and is now in the **Lower City sewers** (Act 3). Current save also has a **Conjure Elemental (Air)** summon (level 9) grouped with the party — the earlier Flying Ghoul and quasit summons are gone.
+The party has moved a short distance on from the Lower City sewers into the **Undercity Ruins** (Act 3), about an hour of play after the previous snapshot. Current save still has the **Conjure Elemental (Air)** summon (level 9) grouped with the party.
 
 ## Active Practical Buffs
 
@@ -55,12 +55,12 @@ The party has moved on from Wyrm's Rock Fortress and is now in the **Lower City 
 - Shield of Devotion extra spell slot (item)
 - Undead-presence effect (item)
 - Speak with Dead (recast available)
-- Fox's Cunning elixir effect
 - No longer has Warding Bond — see Kao
+- No longer has the Fox's Cunning elixir effect (worn off)
 
 ### Lae'zel
 
-- **Elixir of Bloodlust** (with temp-HP rider)
+- **Elixir of Bloodlust** (temp-HP rider has worn off; base buff remains)
 - Death Ward
 - Freedom of Movement
 - Longstrider
@@ -72,12 +72,13 @@ The party has moved on from Wyrm's Rock Fortress and is now in the **Lower City 
 ### Kao
 
 - Aid
-- Warding Bond (received — moved over from TMind since the last snapshot)
+- Warding Bond (received — moved over from TMind since the previous snapshot)
 - Longstrider
 - Darkvision
 - Absorb Elements cloak resource
 - Can summon Shovel / familiar flag
-- **Recently resurrected** (`IsResurrected` flag set) — Mage Armor is not currently active; recast it before the next hard fight
+- **Elixir of Arcane Acuity** (new this snapshot)
+- **Still missing Death Ward, Freedom of Movement, and Mage Armor** since his resurrection — unchanged from the previous snapshot, none have been recast yet
 
 ### Astarion
 
@@ -91,6 +92,7 @@ The party has moved on from Wyrm's Rock Fortress and is now in the **Lower City 
 - Detect Thoughts
 - Potion of Animal Speaking
 - Astarion happy status
+- **Potion of Fire Resistance** (new this snapshot)
 
 ## Confirmed Item-Sourced Buffs
 
@@ -103,7 +105,7 @@ The party has moved on from Wyrm's Rock Fortress and is now in the **Lower City 
 
 - The source save for generated snapshots is recorded in `tools/save-extract/source_manifest.json`.
 - Active buff extraction is reliable because it reads the active character status managers directly.
-- **Kao was resurrected since the last snapshot** (`IsResurrected` flag on the character node) — this likely explains the missing Mage Armor and the Warding Bond having moved from TMind to Kao.
+- **Kao's Death Ward, Freedom of Movement, and Mage Armor gaps persist from the previous snapshot** (he was resurrected shortly before that pass, `IsResurrected` flag on the character node) — none have been recast across an hour of further play, so this is worth doing proactively rather than waiting for it to matter mid-fight.
 - An Act 3 story-state status flag (`TAD_PEACE_BREAKER`) is present on the whole party; omitted here as spoiler-sensitive story state rather than a practical buff.
 - Inventory extraction works, but exact equipped-slot mapping still needs a separate pass; many carried items share the character position.
-- Current hard-fight readiness is summarized in [Current Readiness Audit](14_Current_Readiness_Audit.md) — not yet refreshed for this snapshot.
+- Current hard-fight readiness is summarized in [Current Readiness Audit](14_Current_Readiness_Audit.md).

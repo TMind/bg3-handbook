@@ -33,7 +33,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Scope
 
-- Source: `QuickSave_186`, modified `2026-08-09 23:18:49 +02:00`, synced into the handbook at `2026-08-10 00:12:00 +02:00`. The party is now in the Lower City sewers (Act 3), up from Wyrm's Rock Fortress in the previous pass.
+- Source: `AutoSave_127`, modified `2026-08-10 00:27:55 +02:00`, synced into the handbook at `2026-08-13 12:36:47 +02:00`. The party has moved on from the Lower City sewers into the Undercity Ruins (Act 3), about an hour of play after the previous pass.
 - Item names were resolved from the game's own root templates and localization, so display names match in game.
 - Holder is position-based: an item counts for TMind, Lae'zel, Kao, or Astarion when it sits at that character's active-party position; everything else is `storage`.
 - Only build-relevant magic gear is listed per character. Generic default weapons/armour, camp clothes, books, and keys are omitted.
@@ -53,12 +53,12 @@ Totals are position-based item records from the current save (approximate catego
 
 | Character | Total | Equipment | Potions / elixirs | Scrolls | Combat consumables | Alchemy | Utility / keys |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| TMind | 254 | 28 | 12 | 16 | 3 | 30 | 165 |
-| Lae'zel | 67 | 19 | 7 | 1 | 6 | 1 | 33 |
-| Kao | 201 | 52 | 11 | 31 | 11 | 0 | 96 |
-| Astarion | 117 | 30 | 13 | 7 | 23 | 0 | 44 |
+| TMind | 276 | 29 | 12 | 18 | 3 | 35 | 179 |
+| Lae'zel | 63 | 17 | 7 | 1 | 5 | 1 | 32 |
+| Kao | 179 | 38 | 10 | 33 | 11 | 0 | 87 |
+| Astarion | 110 | 30 | 10 | 6 | 21 | 0 | 43 |
 
-TMind's alchemy stock dropped sharply (116 → 30) and Kao's alchemy dropped to 0 — most of it looks like it was used, crafted into potions, or moved to camp storage since the last snapshot rather than lost. Astarion's "combat consumables" count (6 → 23) is mostly a stack of 11 firework rockets (novelty, not tactical); the real gain is a near-complete set of one-of-each elemental arrows (fire, ice, acid, darkness, detonation, teleportation, antimagic, smokepowder, construct- and monstrosity-slaying) plus a Grease Bottle and an Antitoxin.
+TMind picked up roughly what Kao set down this pass (TMind's totals rose by ~22 records, Kao's fell by a similar amount) — mostly generic gear and utility items, not the named/unique pieces tracked below. Nothing else in this table moved by more than a few records.
 
 ## Current Resource Spot Check
 
@@ -70,7 +70,7 @@ TMind's alchemy stock dropped sharply (116 → 30) and Kao's alchemy dropped to 
 | Potion of Invisibility | 5 | Kao 1; storage 4 | Down from 10 (half used). Still workable for scouting/escapes, but restock before relying on it for a hard fight. |
 | Scroll of Globe of Invulnerability | 2 | Kao 2 | Unchanged. Keep on Kao for boss defense. |
 | Scroll of Conjure Elemental | 2 | Kao 1; storage 1 | Down from 3 (1 used). Still good for one more action-economy summon. |
-| Healing potions | 39 | Astarion 7; TMind 6; Lae'zel 4; Kao 4; storage 18 | Down slightly from 43; still well distributed and nobody is under-supplied. |
+| Healing potions | 38 | Astarion 6; TMind 6; Lae'zel 4; Kao 4; storage 18 | Down by one (Astarion used a basic potion); still well distributed and nobody is under-supplied. |
 
 ## Best Immediate Uses ^inventory-best-uses
 
@@ -106,14 +106,18 @@ Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up
 | Lae'zel | **Sword of the Emperor** | Named unique longsword; worth checking first, this reads like a build-defining Act 3 weapon. |
 | Lae'zel | Cerebral Citadel Armour + Gloves | A matched Githyanki/illithid-themed set; possibly a straight upgrade over her current gear. |
 | Lae'zel | Boots of Psionic Movement | Now sits at her position in place of Boots of Speed (see below). |
+| Lae'zel | Cindermoth Cloak | New this pass, sitting in her cloak slot in place of the Vivacious Cloak (see below). |
 | Kao | True Love's Caress | Effect not yet checked. |
 | Kao | Swiresy Shoes | Effect not yet checked. |
 | Astarion | Shadow of Menzoberranzan | Effect not yet checked. |
 | Astarion | Disintegrating Night Walkers (boots) | Effect not yet checked. |
 | Astarion | A radiant-themed ring | Name withheld — it matches a flagged spoiler-sensitive term; check its effect in game. |
 | Astarion | Murderous Cut | New dagger; not yet compared against Gleamdance Dagger/Stillmaker. |
+| Astarion | Chancer's Carcanet | New this pass, an amulet; effect not yet checked. |
 
 **Boots of Speed relocated**: it's no longer at Lae'zel's position — it's now sitting with TMind (not storage), doing nothing there. Move it back to Lae'zel, hand it to whoever needs the mobility more now that she may be using Boots of Psionic Movement instead, or confirm in game whether she already swapped it deliberately.
+
+**Vivacious Cloak relocated**: it moved from Lae'zel's position to TMind's since the last snapshot, and Lae'zel picked up the untested Cindermoth Cloak in its place. If that swap wasn't deliberate, the Vivacious Cloak's temp-HP-on-initiative effect is arguably more useful on her than sitting unused on TMind.
 
 ## TMind ^inventory-tmind
 
@@ -136,6 +140,7 @@ Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up
 | ⭐⭐ | The Spectator Eyes | TMind / Kao | spell utility |
 | ⭐⭐ | Circle of Bones | TMind | defensive amulet |
 | ⭐⭐ | Adamantine Scale Mail | TMind | no-crit heavy armour |
+| ⭐ | Vivacious Cloak | Lae'zel | temp HP on initiative — moved here from Lae'zel this pass; likely better used on her, see Notable New Finds |
 
 ### Consumables and Scrolls
 
@@ -149,7 +154,7 @@ Between Wyrm's Rock Fortress and the Lower City sewers, each character picked up
 
 No longer carried: Elixir of Bloodlust and Elixir of Universal Resistance are both gone from TMind's inventory (and not found anywhere else in the save) — used up since the last snapshot.
 
-TMind's alchemy stock is down to ≈30 records (was ≈116) — most of it looks used or crafted rather than lost, but worth double-checking his crafting log if that stock matters for an upcoming fight.
+TMind's alchemy stock is at ≈35 records, up slightly from ≈30 last pass but still well below the ≈116 it was two snapshots ago.
 
 ## Lae'zel ^inventory-laezel
 
@@ -162,7 +167,6 @@ TMind's alchemy stock is down to ≈30 records (was ≈116) — most of it looks
 | ⭐⭐⭐ | Boots of Speed | Lae'zel | frontline mobility |
 | ⭐⭐⭐ | Adamantine Splint Armour | Lae'zel | no-crit heavy armour |
 | ⭐⭐ | Amulet of Branding | Lae'zel | melee debuff |
-| ⭐⭐ | Vivacious Cloak | Lae'zel | temp HP on initiative |
 | ⭐⭐ | Braindrain Gloves | Lae'zel | psychic-rider option |
 | ⭐⭐ | Crossbow of Arcane Force | Lae'zel | ranged fallback |
 | ⭐⭐ | Corpsegrinder | Lae'zel | martial weapon option |
@@ -244,7 +248,7 @@ No longer carried: his Elixir of Cloud Giant Strength is gone (used up). His Pot
 
 ## Camp Storage ^camp-storage
 
-Storage holds the overflow (~2,900 item records) — most of it is generic gear and crafting stock. Pull only what supports the next fight, the current build, or the camp-buff routine.
+Storage holds the overflow (~2,650 item records) — most of it is generic gear and crafting stock. Pull only what supports the next fight, the current build, or the camp-buff routine.
 
 ### Priority Pulls from Storage
 
