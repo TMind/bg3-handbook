@@ -28,7 +28,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 | Understand scope and ratings | [[#Scope\|Scope]] · [[#Rating Key\|Rating Key]] · [[#Character Summary\|Character Summary]] |
 | Highest-value actions | [[13_Item_Inventory_Snapshot#^inventory-best-uses\|Best Immediate Uses]] |
 | Review a character | [[13_Item_Inventory_Snapshot#^inventory-tmind\|TMind]] · [[13_Item_Inventory_Snapshot#^inventory-laezel\|Lae'zel]] · [[13_Item_Inventory_Snapshot#^inventory-kao\|Kao]] · [[13_Item_Inventory_Snapshot#^inventory-astarion\|Astarion]] |
-| Pull or consolidate stored items | [[13_Item_Inventory_Snapshot#^camp-storage\|Camp Storage]] |
+| Pull or consolidate stored items | [[13_Item_Inventory_Snapshot#^camp-storage\|Camp Storage]] · [[13_Item_Inventory_Snapshot#^storage-notable-gear\|Notable Gear in Storage]] |
 | Understand omissions | [[13_Item_Inventory_Snapshot#^inventory-omissions\|Hidden From This Practical List]] |
 
 ## Scope
@@ -288,6 +288,27 @@ Storage holds the overflow (~2,650 item records) — most of it is generic gear 
 | ⭐ | Assorted caster scrolls | many | Kao | Blur, Mirror Image, Hold Person, Fireball, Misty Step, etc. — browse before a caster fight. |
 
 No longer in storage: the spare Elixir of Bloodlust that was here is gone — the only remaining bottle is the one Lae'zel is now carrying herself (see her Consumables and Scrolls above).
+
+### Notable Gear Sitting in Storage ^storage-notable-gear
+
+Storage holds 195 other named magic items besides the tracked consumables above — the full list was checked against bg3.wiki. Most are outclassed by what the party already has equipped, cosmetic-only, companion-locked starter gear (Karlach, Jaheira, Halsin, etc.), or story/key items. The genuine standouts — Legendary or Very Rare items that could plausibly upgrade one of the four active characters — are below; none of these have been equipped or compared against current gear in game yet.
+
+**Confirmed useful right now**: **True Love's Embrace** (a rare ring) is sitting in storage — this is the matching pair for TMind's **True Love's Caress** (flagged as likely-dead-weight two passes ago). Whoever wears the Embrace can cast Warding Bond on TMind (the Caress-wearer) once per long rest, for free — this resolves that earlier uncertainty. Best fit is probably Kao or Lae'zel as the Embrace-wearer.
+
+| Character | Item | Rarity | Effect | Note |
+|---|---|---|---|---|
+| TMind | Ring of Evasion | Very Rare | Reaction: turn a failed DEX save into a success | Strong defensive insurance for a melee cleric |
+| TMind | Staff of Cherished Necromancy | Very Rare | +2 Quarterstaff, greatly enhances Necromancy spells, free-cast a Necromancy spell using a corpse | Thematic fit for a Death Domain cleric, if he has Necromancy spells prepared |
+| TMind | The Tharchiate Codex | Legendary (book) | Unlocks Necromancy of Thay features: a Constitution-penalty debuff, 20 temp HP after long rest, and summon 4 ghouls 1/long rest | Strong thematic and mechanical fit for Death Domain |
+| Lae'zel | Voss' Silver Sword | Very Rare | +2 Longsword, +1d4 dmg/attack vs githyanki/aberrations/fiends/elementals, bonus psychic damage, grants Wrathful Smite | Direct alternative to Sword of the Emperor — worth comparing head to head |
+| Lae'zel | Reaper's Embrace | Very Rare | Heavy armor: immunity to forced movement, fear aura that numbs nearby enemies, flat damage reduction | Strong alternative to Adamantine Splint Armour's no-crit protection — different defensive profile, not strictly better |
+| Lae'zel | Silver Sword of the Astral Plane | Legendary | +3 Greatsword, Soulbreaker action deals bonus psychic damage and can stun | Huge raw power, but requires switching from longsword/glaive to greatsword proficiency focus |
+| Kao | Robe of Supreme Defences | Very Rare | Adds spellcasting modifier to all saving throws, +1 AC while concentrating | Excellent for a control wizard who concentrates on Web/Grease |
+| Kao | Woe | Very Rare | Quarterstaff, +1 spell save DC/attack, grants Blight, heals the wielder when a target fails a save against their spell | Strong alternative to the Incandescent Staff |
+| Kao | Ring of Evasion | Very Rare | Reaction: turn a failed DEX save into a success | Big defensive upgrade for a squishy backline wizard |
+| Astarion | Blade of the First Blood ("Bloodthirst") | **Legendary** | +2 Dagger, improved crit chance, different bonuses depending on main-hand or off-hand | Top-tier dagger, worth checking immediately against Gleamdance Dagger/Stillmaker |
+| Astarion | Crimson Mischief | **Legendary** | +2 Shortsword, bonus piercing damage vs wounded targets in main hand; adds ability modifier to off-hand damage when off-hand | Very strong off-hand option (finesse-qualifying, not just daggers) |
+| Astarion | Penumbral Armour | Rare | +3 Stealth checks while obscured | Clean fit for a Thief who lives in Hide |
 
 ### Storage Handling Routine
 
