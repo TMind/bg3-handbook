@@ -36,20 +36,20 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 
 **Markers:** ⭐⭐⭐ ⚠️ ⚔️
 
-Still at camp, only 9 minutes of in-game time later — **the buff situation is completely unchanged** (byte-for-byte identical status managers to the last snapshot), but the party did act on part of the gear checklist: the Hellfire Hand Crossbow, Shade-Slayer Cloak, and Vivacious Cloak moves all happened. The standing buff gaps are now **four snapshots** running: Death Ward and Freedom of Movement still need re-casting on Kao, Freedom of Movement is still missing on TMind, and Death Ward is still missing on Astarion.
+**A real fight happened** (~3,500+ XP each) and buff coverage flipped in an unusual way: Kao's Death Ward, Freedom of Movement, and Mage Armor are **all active for the first time in four snapshots**, and Astarion's Death Ward is back — but **TMind picked up both of those same gaps himself**, newly missing Death Ward and Freedom of Movement. Net effect: TMind is now the only party member with any gap. The location changed to The Blushing Mermaid (Lower City), and the summon roster changed (Djinni Planar Ally, a new Flying Ghoul, and an upgraded level-11 air Myrmidon). One more item to flag: TMind now shows a partial-ceremorphosis status, the same one Lae'zel has carried since early on — noted factually, not narratively.
 
 | Area | Status | Reason |
 |---|---|---|
-| Core party | ✅ Good | TMind, Lae'zel, Kao, and Astarion are grouped at `CAMP_SUB`; the Cambion (Planar Ally) summon is still with the party. |
+| Core party | ✅ Good | TMind, Lae'zel, Kao, and Astarion are grouped at `LOW_BlushingMermaid_SUB`; summons are a Djinni (Planar Ally), a Flying Ghoul, and a level-11 air Myrmidon. |
 | Daily movement | ✅ Good | Longstrider is active on TMind, Lae'zel, Kao, and Astarion. |
 | Maximum HP | ✅ Good | Aid and Heroes' Feast are active on all four, unchanged. |
-| Death protection | ⚠️ Persistent gap | Death Ward is only active on TMind and Lae'zel — Astarion and Kao are both still missing it, unchanged from last snapshot. |
-| Control protection | ⚠️ Persistent gap | Freedom of Movement is only active on Lae'zel and Astarion — **TMind and Kao are both still missing it**. Recast before anything that grapples, paralyzes, or webs. |
-| Burst resources | ✅ Good | Elixir of Bloodlust is still active on Lae'zel, with a spare bottle in her inventory. |
+| Death protection | ⚠️ Shifted, not resolved | Death Ward is now active on Lae'zel, Kao, **and Astarion** (all three gaps from last time are gone) — but it's newly missing on **TMind**, who had it every prior snapshot. |
+| Control protection | ⚠️ Shifted, not resolved | Freedom of Movement is now active on Lae'zel, Kao, **and Astarion** — same pattern, newly missing only on **TMind**. |
+| Burst resources | ✅ Good | Elixir of Bloodlust is still active on Lae'zel, plus a fresh temp-HP buff from the fight. |
 | Stealth aura | ⚠️ Unchanged gap | Pass Without Trace is still not active on the party; re-apply before stealth approaches if wanted. |
 | Healing synergy | ✅ Good | Blood of Lathander and Shield of Devotion effects are active on TMind. |
-| Mage Armor (Kao) | ⚠️ Persistent gap | Still not active — unresolved across **four snapshots** since his resurrection. Recast before relying on his AC. |
-| Gear redistribution | ✅ Partially done | Hellfire Hand Crossbow + Shade-Slayer Cloak → Astarion, and Vivacious Cloak → Lae'zel are all confirmed done. Kao's scroll hand-back is still outstanding. |
+| Mage Armor (Kao) | ✅ Resolved | Active for the first time in four snapshots. |
+| Gear redistribution | ⚠️ Mixed | The three moves from last time (crossbow/cloak/cloak) are confirmed done. But five *more* TMind items (Ring of Salving, Keepsake Ring, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb) relocated to an unidentified companion near camp this pass, and Murderous Cut drifted from Astarion to TMind — see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
 
 ## Active Buff Coverage
 
@@ -57,10 +57,10 @@ Still at camp, only 9 minutes of in-game time later — **the buff situation is 
 
 | Character | Confirmed useful buffs | Missing before hard fights |
 |---|---|---|
-| TMind | Heroes' Feast, Longstrider, Aid, Death Ward, Darkvision, Shield of Devotion spell slot, Blood of Lathander light, Speak with Dead (recast available) | **Freedom of Movement** (still not detected) |
-| Lae'zel | Heroes' Feast, Longstrider, Aid, Death Ward, Freedom of Movement, Darkvision, **Elixir of Bloodlust (active)**, critical-execution ring | No major daily-buff gap detected |
-| Kao | Heroes' Feast, Longstrider, Aid, Warding Bond, Darkvision, Absorb Elements resource, Shovel flag, Elixir of See Invisibility | **Death Ward, Freedom of Movement, and Mage Armor** — still missing since his resurrection, four snapshots running |
-| Astarion | Heroes' Feast, See Invisibility, Longstrider, Aid, Freedom of Movement, Darkvision, Cat's Grace, Cloak of Displacement, Detect Thoughts, happy status, Poison Resistance (potion) | **Death Ward** (still missing, unchanged from last snapshot) |
+| TMind | Heroes' Feast, Longstrider, Aid, Darkvision, Shield of Devotion spell slot, Blood of Lathander light | **Death Ward and Freedom of Movement** — both newly missing this pass; he's now the only party member with any daily-buff gap |
+| Lae'zel | Heroes' Feast, Longstrider, Aid, Death Ward, Freedom of Movement, Darkvision, **Elixir of Bloodlust (active)**, fresh temp-HP buff, critical-execution ring | No major daily-buff gap detected |
+| Kao | Heroes' Feast, Longstrider, Aid, **Death Ward (new)**, **Freedom of Movement (new)**, **Mage Armor (new)**, Darkvision, Absorb Elements resource | No major daily-buff gap detected — all three standing gaps resolved this pass |
+| Astarion | Heroes' Feast, Longstrider, Aid, **Death Ward (back)**, Freedom of Movement, Darkvision, Cat's Grace, Cloak of Displacement | No major daily-buff gap detected |
 
 > [!note] Pass Without Trace is no longer active on the party in this save (it covered everyone previously). Re-cast it before a stealth-sensitive approach if you want the bonus back.
 
@@ -118,17 +118,17 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 **Markers:** ⭐⭐⭐ 🍷 ⚔️
 
-Counts refreshed from the current `Campsite - 106h 21m` save (see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) for the full audit). Everything below is unchanged from the previous snapshot.
+Counts refreshed from the current `The Blushing Mermaid - 109h 15m` save (see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) for the full audit).
 
 | Resource | Save count | Current holder pattern | Readiness call |
 |---|---:|---|---|
-| Scroll of Revivify | 10 | Kao 1, storage 9 | Unchanged across four snapshots; strong stock, put one on at least two active characters |
-| Potion of Speed | 4 | TMind 1, Lae'zel 1, storage 2 | Unchanged; still enough for one decisive Haste opener |
+| Scroll of Revivify | 10 | Kao 1, storage 9 | Unchanged across five snapshots; strong stock, put one on at least two active characters |
+| Potion of Speed | 4 | Lae'zel 1, storage 3 | TMind's copy is no longer with him; still enough for one decisive Haste opener |
 | Elixir of Bloodlust | 1 | Lae'zel 1 | Unchanged; only Lae'zel's spare bottle is left, on top of the active dose |
 | Potion of Invisibility | 5 | Kao 1, storage 4 | Unchanged; still workable but don't over-rely on it |
 | Scroll of Globe of Invulnerability | 2 | **Astarion 2** | Still on Astarion — he's the one who casts it, this hand-back still hasn't happened |
 | Scroll of Conjure Elemental | 2 | **Astarion 1, storage 1** | Still on Astarion, same concern |
-| Healing potions | 39 | Astarion 8, TMind 5, Lae'zel 4, Kao 4, storage 18 | Unchanged; Astarion is still carrying noticeably more than everyone else, still fine overall |
+| Healing potions | 39 | TMind 6, Astarion 8, Lae'zel 4, Kao 4, storage 17 | Roughly steady through a real fight; nobody under-supplied |
 
 ## Gear and Synergy Checks ^gear-synergies
 
@@ -140,20 +140,20 @@ Counts refreshed from the current `Campsite - 106h 21m` save (see [Item and Stor
 | Blood of Lathander | ✅ With TMind | Keep as the default cleric weapon unless the healing-aura plan is needed. |
 | Devotee's Mace | ✅ With TMind | Use as a swap for Healing Incense Aura and on-heal item synergies. |
 | Hellrider's Pride | ✅ With TMind | Works well with multi-target healing and rescue turns. |
-| Cloak of Protection | ✅ With TMind | Good defensive pickup already consolidated. |
 | Spell Slot Restoration Amulet (Spellcrux Amulet) | ✅ With TMind | Strong day-extension tool; consider whether Kao needs it more before a caster-heavy fight. |
 | The Whispering Promise | ✅ With TMind | Confirmed present — pairs with Devotee's Mace aura for concentration-free Bless-style value. |
 | Sword of the Emperor (Lae'zel) | ✅ Rated ⭐⭐⭐ | +2 longsword, +2 to all saves vs spells — keep, strong vs Act 3's caster-heavy fights. |
 | Boots of Psionic Movement (Lae'zel) | ✅ Rated ⭐⭐⭐ | Githyanki-only Fly + psychic damage rider — correctly replaced Boots of Speed on her. |
 | Chancer's Carcanet (Lae'zel) | ✅ Rated ⭐⭐⭐ | Guaranteed Advantage on a save or attack, 1/long rest — keep. |
-| Ring of Salving (TMind) | ✅ Rated ⭐⭐⭐ | +2 HP on every heal he casts — direct upgrade, keep. |
 | Shadow of Menzoberranzan / Disintegrating Night Walkers (Astarion) | ✅ Rated ⭐⭐⭐ | On-demand Invisibility and free Misty Step + terrain immunity respectively — both strong, keep equipped. |
 | Cerebral Citadel Gloves/Armour (Lae'zel) | ⚠️ Conditional | Gloves need a Frighten-causing maneuver (e.g. Menacing Attack) to matter; Armour's AC vs Adamantine Splint Armour is unconfirmed — verify both in game. |
-| Bloodguzzler Garb (TMind) | ❌ Fits nobody | Buffs unarmed strikes; nobody in this party fights unarmed — bench or sell rather than assign. |
 | Hellfire Hand Crossbow / Shade-Slayer Cloak | ✅ Resolved | Moved to Astarion, as recommended — Hide/stealth-triggered effects fit him, not a melee cleric. |
 | Vivacious Cloak | ✅ Resolved | Moved to Lae'zel, as recommended — guaranteed temp HP on initiative, better default than her Cindermoth Cloak. |
 | Boots of Speed (TMind) | ✅ Resolved | Kept on TMind — he has no other boots, no reason to move them further. |
-| Kao's scroll library on Astarion | ⚠️ Unresolved | Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, and Invisibility scrolls are still on Astarion, three snapshots after moving off Kao — see the Consumable Readiness table above. This has now survived a camp stop where other checklist items got done, so it may be deliberate rather than an oversight. |
+| Ring of Salving, Keepsake Ring, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb | ⚠️ New — location uncertain | All five moved off TMind this pass to an unidentified companion-type character near camp — not confirmed as simple camp storage. Ring of Salving especially is worth recovering (direct upgrade to his healing). See [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
+| Murderous Cut | ⚠️ New — wrong owner | Drifted from Astarion (a good fit) to TMind (no fit) this pass. Move back if easy. |
+| Whispering Mask ×3 | ⚠️ New — unrated | New find, three identical copies on TMind. Not yet checked against bg3.wiki; carrying three is likely unintentional. |
+| Kao's scroll library on Astarion | ⚠️ Unresolved | Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, and Invisibility scrolls are still on Astarion, four snapshots after moving off Kao — see the Consumable Readiness table above. This has now survived multiple passes where other checklist items got done, so it may be deliberate rather than an oversight. |
 
 Full effect text and sourcing for every item above is in [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Item and Storage Snapshot § Item Ratings and Redistribution]].
 
@@ -161,17 +161,18 @@ Full effect text and sourcing for every item above is in [[13_Item_Inventory_Sna
 
 **Markers:** ⭐⭐⭐ ⏱️ ⚔️
 
-Still at camp right now — this is still exactly the right moment to run this list. The gear-move items from last time are done (✅ below); the buff recasts are the only ones still outstanding.
+The party is out of camp now (mid-fight-cycle, currently at The Blushing Mermaid) — good news is Kao and Astarion's buff gaps are resolved, so the list is much shorter. The bad news: TMind picked up two new gaps of his own.
 
-1. **Recast Death Ward on Kao and Astarion**, and **Freedom of Movement on Kao and TMind** — the standing gaps, unresolved across four snapshots now. Top priority.
-2. Recast **Mage Armor on Kao** before relying on his AC — still outstanding across four snapshots.
-3. Consider casting **Heroes' Feast** before the next hard fight — available since TMind reached Cleric 11.
-4. Aid is active on all four — no action needed.
-5. Move the Scroll of Globe of Invulnerability and Scroll of Conjure Elemental back to Kao (currently on Astarion) unless the handoff was deliberate — still not done, three snapshots running.
+1. **Recast Death Ward and Freedom of Movement on TMind** — both newly missing this pass, and he's now the only party member with any gap. Top priority.
+2. ✅ Resolved: Kao's Death Ward, Freedom of Movement, and Mage Armor are all active — no action needed.
+3. ✅ Resolved: Astarion's Death Ward is back — no action needed.
+4. Consider casting **Heroes' Feast** before the next hard fight if it hasn't been used yet.
+5. Move the Scroll of Globe of Invulnerability and Scroll of Conjure Elemental back to Kao (currently on Astarion) unless the handoff was deliberate — still not done, four snapshots running.
 6. Move one Revivify scroll to TMind, Lae'zel, and Astarion; do not leave all emergency recovery on Kao.
-7. ✅ Done: Hellfire Hand Crossbow and Shade-Slayer Cloak moved from TMind to Astarion, and the Vivacious Cloak moved from TMind to Lae'zel. Boots of Speed correctly stayed on TMind.
-8. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
-9. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
+7. ✅ Done: Hellfire Hand Crossbow, Shade-Slayer Cloak, and Vivacious Cloak moves from two snapshots ago are all confirmed.
+8. Check on the five TMind items (Ring of Salving, Keepsake Ring, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb) that moved to an unidentified companion this pass — Ring of Salving in particular is worth recovering. Also move Murderous Cut back to Astarion.
+9. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
+10. Decide whether TMind starts with Blood of Lathander or swaps to Devotee's Mace for the healing-aura plan.
 
 ## Before a Hard Fight ^before-hard-fight
 
@@ -193,9 +194,9 @@ Still at camp right now — this is still exactly the right moment to run this l
 
 | Field | Current value |
 |---|---|
-| Save name | Campsite - 106h 21m |
-| Save modified | 2026-08-16 12:55:09 +02:00 |
-| Synced into handbook | 2026-08-16 17:26:26 +02:00 |
+| Save name | The Blushing Mermaid - 109h 15m |
+| Save modified | 2026-08-16 22:29:04 +02:00 |
+| Synced into handbook | 2026-08-16 22:34:51 +02:00 |
 | Game version | 4.1.1.7398727 |
 | Difficulty | DifficultyMedium / RulesetLarian |
 | Source record | `tools/save-extract/source_manifest.json` |
@@ -207,8 +208,9 @@ Still at camp right now — this is still exactly the right moment to run this l
 - This audit used the current `.lsf` index, not a refreshed `Globals.lsx` text export.
 - Active buff detection is reliable for the four named party members because it reads their current status managers.
 - Character identity was confirmed by matching each `Character` node's exact `Translate` position against the position reported for that character in `SaveInfo.json`; a decoy/duplicate node can share the same coordinates (seen for Kao this pass), so the match was cross-checked against the `Level` field and `IsResurrected`/other distinguishing attributes before trusting it.
-- Kao's `IsResurrected` flag is still set on his character node this pass — the missing Death Ward, Freedom of Movement, and Mage Armor have now persisted across four snapshots, so this is a standing gap, not a one-off reading.
-- This snapshot's status managers are byte-for-byte identical to the previous one — confirms the buff gaps are genuinely unaddressed, not an extraction inconsistency. The gear-position data did change (three items moved), so the extraction pipeline is picking up real changes where they exist.
+- Kao's `IsResurrected` flag is still set on his character node, but his Death Ward, Freedom of Movement, and Mage Armor are all now confirmed active — the flag staying set doesn't mean the gaps persist forever, just that the resurrection happened at some point.
+- TMind's missing Death Ward and Freedom of Movement were double-checked directly against his raw status list (not inferred) — confirmed genuinely absent, not an extraction artifact.
+- A distinct `Character` node was found near TMind's items this pass, with `PlayerData` (a companion-roster marker) and its own `IsResurrected` flag — likely a bench companion holding some of TMind's old gear, but not conclusively identified. Treated as "location uncertain" in the item snapshot rather than asserted as camp storage, per the lesson from the earlier storage mislabeling.
 - The broader save contains many `DYING` statuses on old or non-active entities; the active-party status managers for the four named characters do not show `DYING` in this save.
 - Item counts are reliable for practical stock checks, but exact equipped slots still need in-game confirmation.
 - Camp storage and world/storage-like inventories are summarized as “elsewhere” rather than by raw container or position.
