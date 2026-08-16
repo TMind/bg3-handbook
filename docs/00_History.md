@@ -23,18 +23,13 @@ Where the change lives in a specific section, link the exact heading (`[[11_Main
 
 ### Changed
 
-- Refreshed the save-derived snapshots from a big jump — `Campsite - 106h 12m`, about six hours of play past the previous sync. The whole party leveled up to 11, is back at **camp**, and picked up a new Cambion (Planar Ally) summon; the earlier Conjure Elemental (Air) summon is gone. Updated [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and the [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit verdict]].
-- **Heroes' Feast is now available** party-wide (TMind reached Cleric 11) — this resolves a gap the previous audit had flagged as "the next major daily-buff upgrade," so the recommendation now points at actually casting it before the next hard fight instead.
-- Death Ward coverage got worse, not better: it's dropped off **Astarion** (who had it last snapshot) on top of the standing gap on Kao, who is still missing it — along with Freedom of Movement and Mage Armor — three snapshots running since his resurrection.
-- Caught a scroll hand-off from Kao to Astarion (Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, Invisibility) that's probably worth reversing since Kao is the one who casts most of them, and confirmed the Boots of Speed / Vivacious Cloak that drifted onto TMind two snapshots ago are still sitting there unused.
-
-## 2026-08-13
-
-### Changed
-
-- Refreshed the save-derived snapshots again, one save-state further (`AutoSave_127`, an hour of play past the previous sync) — the party moved from the Lower City sewers into the **Undercity Ruins**. Updated [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and the [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit verdict]].
+- Refreshed the save-derived snapshots one save-state further (`AutoSave_127`, an hour of play past the previous sync) — the party moved from the Lower City sewers into the **Undercity Ruins**. Updated [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and the [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit verdict]].
 - Confirmed Kao's Death Ward, Freedom of Movement, and Mage Armor gaps (and TMind's missing Freedom of Movement) are still unresolved a full snapshot later — reworded the verdict from "new gap" to "persistent gap" so it reads as the standing priority it is, not a one-off reading.
 - Caught two more gear moves: Lae'zel's Vivacious Cloak drifted onto TMind (unused there) while she picked up an untested Cindermoth Cloak in its place; Astarion picked up an untested amulet, Chancer's Carcanet. Logged both in [[13_Item_Inventory_Snapshot#^inventory-new-finds|Notable New Finds]] without inventing ratings for the new pieces.
+- Refreshed the save-derived snapshots again from a much bigger jump — `Campsite - 106h 12m`, about six hours of play past that pass. The whole party leveled up to 11, is back at **camp**, and picked up a new Cambion (Planar Ally) summon; the earlier Conjure Elemental (Air) summon is gone.
+- **Heroes' Feast is now available** party-wide (TMind reached Cleric 11) — this resolves a gap the previous audit had flagged as "the next major daily-buff upgrade," so the recommendation now points at actually casting it before the next hard fight instead.
+- Death Ward coverage got worse, not better: it's dropped off **Astarion** (who had it earlier that day) on top of the standing gap on Kao, who is still missing it — along with Freedom of Movement and Mage Armor — three snapshots running since his resurrection.
+- Caught a scroll hand-off from Kao to Astarion (Globe of Invulnerability, Conjure Elemental, Bestow Curse, Crown of Madness, Invisibility) that's probably worth reversing since Kao is the one who casts most of them, and confirmed the Boots of Speed / Vivacious Cloak that drifted onto TMind earlier are still sitting there unused.
 
 ## 2026-08-10
 
