@@ -35,7 +35,7 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 - Source: `Campsite - 106h 12m`, modified `2026-08-16 02:02:22 +02:00`, synced into the handbook at `2026-08-16 11:29:07 +02:00`. The whole party leveled up to 11 and is back at camp, about six hours of play after the previous pass.
 - Item names were resolved from the game's own root templates and localization, so display names match in game.
-- Holder is position-based: an item counts for TMind, Lae'zel, Kao, or Astarion when it sits at that character's active-party position; everything else is `storage`.
+- Holder is position-based: an item counts for TMind, Lae'zel, Kao, or Astarion when it sits at that character's active-party position; everything else is bucketed as `storage`. **`storage` is not the same as "in camp storage"** — it also includes items still lying uncollected in the world and items held by NPCs (companions, vendors, enemies) who aren't one of the four tracked characters. The bulk counts in Character Summary, the resource spot check, and Camp Storage below inherit this imprecision; only individually-verified items (like [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]]) have been checked against the save's `Level` field and nearby `Character` nodes to confirm they're actually sitting in the party's own storage.
 - Only build-relevant magic gear is listed per character. Generic default weapons/armour, camp clothes, books, and keys are omitted.
 - Exact equipped-vs-carried slots still need in-game confirmation; this is a carried/available snapshot.
 
@@ -291,24 +291,34 @@ No longer in storage: the spare Elixir of Bloodlust that was here is gone — th
 
 ### Notable Gear Sitting in Storage ^storage-notable-gear
 
-Storage holds 195 other named magic items besides the tracked consumables above — the full list was checked against bg3.wiki. Most are outclassed by what the party already has equipped, cosmetic-only, companion-locked starter gear (Karlach, Jaheira, Halsin, etc.), or story/key items. The genuine standouts — Legendary or Very Rare items that could plausibly upgrade one of the four active characters — are below; none of these have been equipped or compared against current gear in game yet.
+**Correction (this pass)**: an earlier version of this section wrongly claimed 11 of these 12 items were freely available in camp storage. Position-matching alone can't tell storage apart from an NPC's inventory or an item still lying uncollected in the world — the save's `Level` field is the actual signal (empty = genuinely in *some* inventory; set to a map id = still lying in that level, uncollected) and a matching `Character` node at the same position means it's in *that* NPC's inventory, not the party's. Only one of the original twelve holds up under that check.
 
-**Confirmed useful right now**: **True Love's Embrace** (a rare ring) is sitting in storage — this is the matching pair for TMind's **True Love's Caress** (flagged as likely-dead-weight two passes ago). Whoever wears the Embrace can cast Warding Bond on TMind (the Caress-wearer) once per long rest, for free — this resolves that earlier uncertainty. Best fit is probably Kao or Lae'zel as the Embrace-wearer.
+**Genuinely in storage** — no NPC nearby, position matches camp, previously picked up from the Shadow-Cursed Lands:
 
 | Character | Item | Rarity | Effect | Note |
 |---|---|---|---|---|
-| TMind | Ring of Evasion | Very Rare | Reaction: turn a failed DEX save into a success | Strong defensive insurance for a melee cleric |
-| TMind | Staff of Cherished Necromancy | Very Rare | +2 Quarterstaff, greatly enhances Necromancy spells, free-cast a Necromancy spell using a corpse | Thematic fit for a Death Domain cleric, if he has Necromancy spells prepared |
-| TMind | The Tharchiate Codex | Legendary (book) | Unlocks Necromancy of Thay features: a Constitution-penalty debuff, 20 temp HP after long rest, and summon 4 ghouls 1/long rest | Strong thematic and mechanical fit for Death Domain |
-| Lae'zel | Voss' Silver Sword | Very Rare | +2 Longsword, +1d4 dmg/attack vs githyanki/aberrations/fiends/elementals, bonus psychic damage, grants Wrathful Smite | Direct alternative to Sword of the Emperor — worth comparing head to head |
-| Lae'zel | Reaper's Embrace | Very Rare | Heavy armor: immunity to forced movement, fear aura that numbs nearby enemies, flat damage reduction | Strong alternative to Adamantine Splint Armour's no-crit protection — different defensive profile, not strictly better |
-| Lae'zel | Silver Sword of the Astral Plane | Legendary | +3 Greatsword, Soulbreaker action deals bonus psychic damage and can stun | Huge raw power, but requires switching from longsword/glaive to greatsword proficiency focus |
-| Kao | Robe of Supreme Defences | Very Rare | Adds spellcasting modifier to all saving throws, +1 AC while concentrating | Excellent for a control wizard who concentrates on Web/Grease |
-| Kao | Woe | Very Rare | Quarterstaff, +1 spell save DC/attack, grants Blight, heals the wielder when a target fails a save against their spell | Strong alternative to the Incandescent Staff |
-| Kao | Ring of Evasion | Very Rare | Reaction: turn a failed DEX save into a success | Big defensive upgrade for a squishy backline wizard |
-| Astarion | Blade of the First Blood ("Bloodthirst") | **Legendary** | +2 Dagger, improved crit chance, different bonuses depending on main-hand or off-hand | Top-tier dagger, worth checking immediately against Gleamdance Dagger/Stillmaker |
-| Astarion | Crimson Mischief | **Legendary** | +2 Shortsword, bonus piercing damage vs wounded targets in main hand; adds ability modifier to off-hand damage when off-hand | Very strong off-hand option (finesse-qualifying, not just daggers) |
-| Astarion | Penumbral Armour | Rare | +3 Stealth checks while obscured | Clean fit for a Thief who lives in Hide |
+| Lae'zel | Reaper's Embrace | Very Rare | Heavy armor: immunity to forced movement, fear aura that numbs nearby enemies, flat damage reduction | Alternative to Adamantine Splint Armour's no-crit protection — different defensive profile, not strictly better |
+
+**Still lying uncollected in the world** (never picked up — not accessible from storage or any character):
+
+| Item | Rarity | Where |
+|---|---|---|
+| Ring of Evasion | Very Rare | Somewhere in `WLD_Main_A` (Act 1 world map) |
+| The Tharchiate Codex | Legendary (book) | Somewhere in `CTY_Main_A` (Baldur's Gate) |
+| Blade of the First Blood ("Bloodthirst") | Legendary | Somewhere in `CTY_Main_A`, two copies |
+| Crimson Mischief | Legendary | Somewhere in `CTY_Main_A` |
+
+**Held by an NPC, not the party** — would need to be looted, pickpocketed, or traded for, not just moved from storage:
+
+| Item | Rarity | Held by |
+|---|---|---|
+| Voss' Silver Sword | Very Rare | **Voss**, a live Githyanki NPC (also carrying a Githyanki Crossbow and Leather Half-Plate) |
+| Silver Sword of the Astral Plane | Legendary | Also on Voss |
+| Staff of Cherished Necromancy | Very Rare | An unidentified NPC |
+| Robe of Supreme Defences | Very Rare | An unidentified NPC |
+| Woe | Very Rare | An unidentified NPC — its internal save-data name references a late-game vampire-lord boss |
+| Penumbral Armour | Rare | An unidentified NPC |
+| True Love's Embrace | Rare | Two separate copies exist, each on a different unidentified NPC — **not** freely available for pairing with TMind's True Love's Caress as previously claimed |
 
 ### Storage Handling Routine
 
