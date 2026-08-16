@@ -66,7 +66,12 @@ Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter
 ### Active party
 Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric). Active summons: Flying Ghoul + quasit.
 
+### Quest outcomes
+- **Save Vanra — failed.** Auntie Ethel was killed with Vanra still inside her, so Vanra is permanently dead (no revive, no recovery from the corpse). The two ways to have saved her both had to happen *before* Ethel dropped: (a) craft **Hag's Bane** (Alchemy → Grenades; Ashes of Dried Fey Flower from the safe in Old Garlow's Place + any Essence, recipe book in Ethel's lair) and throw it at her — she goes Nauseous and vomits Vanra out; or (b) toggle **Non-Lethal Attacks** and knock her out in melee, then cut Vanra free. Hag's Bane also works thrown at "Captain Grisly" while she's still in the Blushing Mermaid. Declining her bargain avoids the fight entirely but leaves Vanra inside her.
+
 ### Mechanics learned this session
+- **Kill-the-boss can kill the hostage.** Some Act 3 rescues are gated on doing something to the enemy *before* the HP bar empties (Hag's Bane / Non-Lethal for Vanra). When a quest says someone is being held *inside* or *by* a boss, check for a non-lethal or item-based route before opening the fight.
+- **Pearlspore Bells** (Ethel's Act 3 lair): three fungal bells, 55 HP (Balanced) / 97 HP (Tactician), fungal resistance. All three must be destroyed or Ethel resurrects after death.
 - **Impenetrable Slumber cannot be dispelled.** The sleeping tiefling in the Lower City Sewers (Dairow Vin) carries a scripted condition that ignores damage, healing, Shove, and polymorph. The only known way to rouse him is Death Ward → kill him → he stands up at 1 HP on the revive. He has no dialogue afterwards, so it's a curiosity, not a quest step. Speak with Dead works on him normally if left dead.
 
 ---
