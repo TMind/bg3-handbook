@@ -61,7 +61,10 @@ Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter
 ## Act 3 — Baldur's Gate (Current)
 
 ### Current location
-**Wyrm's Rock Fortress** (`WYR_Fortress_SUB`) — ~100h playtime, party level 10.
+**Sorcerous Sundries**, Lower City — party level 10. (Previously Wyrm's Rock Fortress, `WYR_Fortress_SUB`, ~100h playtime.)
+
+### In progress
+- **Search Tolna's office** (Sorcerous Sundries). Office is on the **second floor, left of the top of the stairs** (~X:12, Y:-79). Door is **DC 15** to pick, and the floor is patrolled by **Animated Armour** that turn hostile on a caught break-in. Plan: Invisibility on the lockpicker (Astarion) and split the party so a failed sneak doesn't pull everyone in; turn-based mode to time the patrol. The objective inside is triggered from the **bookshelf on the immediate right**, not from a desk.
 
 ### Active party
 Kao (Conjuration Wizard), Astarion (Thief Rogue), Lae'zel (Battle Master Fighter), TMind (Death Domain Cleric). Active summons: Flying Ghoul + quasit.

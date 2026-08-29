@@ -19,7 +19,7 @@ You are an expert on Baldur's Gate 3, acting as a tactical advisor and knowledge
 
 ## Current Game State
 - **Act**: Act 3 — Baldur's Gate
-- **Last known location**: Wyrm's Rock Fortress (`WYR_Fortress_SUB`), ~100h playtime, party level 10
+- **Last known location**: Sorcerous Sundries, Lower City — party level 10 (previously Wyrm's Rock Fortress, `WYR_Fortress_SUB`, ~100h playtime)
 - **Act 2 complete**: Moonrise Towers cleared, Gauntlet of Shar complete, Nightsong freed, Shadowheart chose Selûne
 
 See `characters/` for full character details and `party/strategy.md` for party synergy notes.
