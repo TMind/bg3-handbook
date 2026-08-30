@@ -191,6 +191,7 @@ The party is split between camp and Ramazith's Tower. Regroup first — everythi
 | 6 | Line up a Bloodlust/Colossus elixir alternative for Lae'zel before initiative matters — Bloodlust is out of stock. |
 | 7 | Keep TMind's Divine Intervention unused unless the fight collapses. |
 | 8 | Cast Heroes' Feast at camp before committing to the fight, if it hasn't been used yet this rest cycle. |
+| 9 | With Astarion on Duellist's Prerogative (two reactions/turn), have Lae'zel spend Commander's Strike on him deliberately — see [[11_Main_Character_Builds#^laezel-build\|Lae'zel's build § Commander's Strike → Astarion Reaction Combo]] for the full sequence. |
 
 ## Source ^readiness-source
 

@@ -88,7 +88,7 @@ Keep Lae'zel as a **Battle Master Fighter** unless you deliberately want a diffe
 | Fighting style | Great Weapon Fighting or Defence |
 | Key feats | Great Weapon Master, Strength ASI to 20, Sentinel, Savage Attacker / Alert |
 | Core maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
-| Later maneuvers | Precision Attack for GWM accuracy, Menacing Attack or Riposte by taste |
+| Later maneuvers | Precision Attack for GWM accuracy, Menacing Attack or Riposte by taste, **Commander's Strike** — now confirmed picked up at Fighter 11 |
 | Buffs | Longstrider, Aid, Warding Bond if TMind can absorb the shared damage, Potion of Speed for serious fights |
 
 ### Feat Priority
@@ -113,6 +113,20 @@ Lae'zel should engage first or immediately after Kao's control lands. Her job is
 5. Use Action Surge to remove priority targets, not to overkill trash.
 
 Battle Master is source-supported as a tactical Fighter subclass because its maneuvers disable, hinder, or support while spending Superiority Dice that recover on rests.
+
+### Commander's Strike → Astarion Reaction Combo
+
+**Markers:** ⭐⭐⭐ 🎯
+
+Lae'zel's **Commander's Strike** maneuver (action + bonus action + Superiority Die) grants an ally a reaction to make a melee weapon attack — confirmed on bg3.wiki. Normally that costs the ally their one reaction for the round, competing with an opportunity attack or another reaction-based effect.
+
+**With Astarion holding Duellist's Prerogative** (empty off-hand, see [[11_Main_Character_Builds#^astarion-build|Astarion's build]]), he has **two reactions per turn** instead of one. That means:
+
+1. Lae'zel uses Commander's Strike, targeting Astarion.
+2. Astarion spends his **first** reaction on the granted attack — a free Sneak Attack opportunity if conditions are met (advantage, or an ally adjacent to the target).
+3. If that attack hits, Astarion still has his **second** reaction free for **Withering Cut** (extra necrotic damage, proficiency bonus) on the same hit, or held for a genuine opportunity attack later in the round.
+
+Net effect: Lae'zel's action economy buys Astarion an extra Sneak Attack without costing him his own reaction economy. Worth setting up deliberately in a hard fight rather than spending Commander's Strike on whoever is most convenient.
 
 ### Fighter Subclass Reference
 
@@ -164,6 +178,8 @@ Astarion picked up **Duellist's Prerogative**, a Legendary +3 Rapier. Checked it
 | Challenge to Duel (bonus action) | Force an enemy to attack only you; inflicts Bleeding | None |
 
 **This is a smaller decision than it first looks, not a subclass or feat change.** Thief's bonus-action-per-turn economy is preserved — Dueller's Enthusiasm replaces the usual off-hand attack one-for-one — and Sneak Attack (once per turn) is unaffected either way. The actual trade is narrower: whatever his current off-hand dagger provides gets given up for the crit-on-19, extra reaction, Withering Cut, and Challenge to Duel above. If that off-hand piece is Stillmaker, the real cost is losing easy access to its 1/long-rest Hold Person cast — otherwise there's little to give up. No feat or subclass changes needed either way; this is a loadout choice, not a build fork.
+
+The extra reaction it grants also sets up a direct combo with **Lae'zel's Commander's Strike** — see [[11_Main_Character_Builds#^laezel-build|Lae'zel's build § Commander's Strike → Astarion Reaction Combo]].
 
 ### Careful Review Note
 
