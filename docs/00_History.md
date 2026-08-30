@@ -21,6 +21,26 @@ Where the change lives in a specific section, link the exact heading (`[[11_Main
 
 Group each date's entries into collapsible topic nodes using a callout, not `### Added`/`### Changed`/`### Fixed` headings: `> [!note]- 🎒 Topic Name` followed by `> `-prefixed bullets. **Don't use raw `<details>` HTML** — the site's renderer passes that through untouched and never resolves the wikilinks/markdown links inside it; only the `> [!note]-` callout form runs the bullets through the real parser. Reuse a topic across dates rather than inventing new ones — the recurring set so far: 🎒 Save Snapshots & Readiness, 🗡️ Gear Ratings & Redistribution, 📖 Handbook Content & Builds, 🛠️ Tooling & Site Infrastructure, 🔒 Corrections & Maintenance.
 
+## 2026-08-30
+
+> [!note]- 🎒 Save Snapshots & Readiness (Campsite - 115h 34m, split party, all buff gaps resolved)
+> - Synced a large jump forward — `Campsite - 115h 34m`, ~10,500 XP each — and rewrote [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit]] against it.
+> - The whole party is now **Level 11**, but split across two locations: TMind and Lae'zel are back at **camp**, Kao and Astarion are at **Ramazith's Tower** (Sorcerous Sundries, Lower City). Regrouping is now the top readiness item.
+> - **Every previous buff gap is resolved**: Death Ward, Freedom of Movement, and Mage Armor are active on all four party members for the first time this campaign. A new gap appeared in their place — **Aid has dropped off everyone** — and **Elixir of Bloodlust is completely out of stock**, not just low.
+> - Summons changed: the Cambion/Djinni Planar Ally was replaced by a **Deva (Planar Ally)** at camp; Kao's Conjure Elemental (Air) summon is still with him at the tower.
+> - Astarion picked up a real **cursed status from The Tharchiate Codex** after reading a copy — the same Legendary book flagged as "lying uncollected" two audits ago. TMind now holds two more unread copies; whether to read them is a build decision, not a bug.
+
+> [!note]- 🗡️ Gear Ratings & Redistribution (three Legendary/Very Rare finds, a storage correction)
+> - Kao picked up **Markoheshkir** (Legendary staff) and **Robe of the Weave** (Very Rare) at the tower — both rated ⭐⭐⭐ and confirmed against bg3.wiki, not guessed.
+> - Astarion picked up **Duellist's Prerogative** (Legendary rapier) — flagged as a genuine build fork (dual-dagger Thief vs. one-handed duelist) rather than a drop-in upgrade, since it needs a deliberate decision, not an automatic redistribution.
+> - Also new this pass: Staff of Interruption, Fey Semblance Amulet, and a boss-dropped shield for Kao (name withheld, spoiler-flagged); Salty Scimitar(rrr) (confirmed looted from Captain Grisly at The Blushing Mermaid), Ring Of Blink, Winter's Clutches, Coldbrim Hat, and Gold Wyrmling Staff (off-build, sell) for Astarion; Amulet of Windrider and Keepsake Ring for Lae'zel; Scroll of Dethrone for TMind (exact effect not fully confirmed — flagged as such rather than asserted).
+> - **Storage correction**: re-checked the "Notable Gear Sitting in Storage" list with the same `Level`-field-plus-`Character`-node method that caught last audit's mistake, and found Reaper's Embrace no longer qualifies — it now sits with a different resurrected, unidentified companion-type character at camp, not shared storage. The Tharchiate Codex also moved out of "still uncollected" now that copies are confirmed in TMind's and Astarion's inventories.
+> - Noticed but not explained: **The Joltshooter and Gleamdance Dagger are both gone** from Astarion's inventory this pass, with no clear cause — flagged in the Readiness Audit for an in-game check rather than assumed lost.
+> - Confirmed the last pass's three gear moves (Hellfire Hand Crossbow, Shade-Slayer Cloak, Vivacious Cloak) all landed, and that Murderous Cut and all three Whispering Mask copies are now fully resolved (storage-only, no longer misplaced on a character).
+
+> [!note]- 🔒 Corrections & Maintenance (CLAUDE.md game-state refresh)
+> - Updated the root `CLAUDE.md`'s "Current Game State" summary, which still said party level 10 at Sorcerous Sundries — it now reflects level 11 and the party's current split between camp and Ramazith's Tower.
+
 ## 2026-08-16
 
 > [!note]- 🎒 Save Snapshots & Readiness (2 syncs, verdict reworded)
