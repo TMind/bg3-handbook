@@ -120,7 +120,7 @@ Every named item picked up since the last full item audit is now verified agains
 | Lae'zel | Keepsake Ring | ⭐⭐ | Cast Dominate Beast, 1/long rest | Moved to her from TMind — decent flex control option for a frontliner |
 | Kao / TMind | The Tharchiate Codex (×4 copies total: 2 with TMind, 1 with Astarion, plus its curse status) | Legendary book | Necromancy of Thay: a Constitution penalty, 20 temp HP after long rest, and Danse Macabre (summon 4 ghouls 1/long rest) once read | **Astarion has already read a copy and carries the curse.** TMind's two copies are unread — reading one applies the same trade-off to him too. Not permanent: **Remove Curse or Greater Restoration cures it** (bg3.wiki-confirmed) — TMind can likely self-cast Remove Curse as a Cleric. Decide who (if anyone else) should read it. |
 
-**Confirmed done from last time**: the Hellfire Hand Crossbow, Shade-Slayer Cloak, and Vivacious Cloak moves all happened as recommended. The Ring of Salving / Cloak of Protection / Helmet of Arcane Acuity / Bloodguzzler Garb situation is unchanged — still with the same unidentified companion-type character near camp (same exact position both times checked now), not lost, not recoverable through this audit method. Murderous Cut is no longer carried by anyone (now only in storage) — the wrong-owner issue resolved itself.
+**Confirmed done from last time**: the Hellfire Hand Crossbow, Shade-Slayer Cloak, and Vivacious Cloak moves all happened as recommended. The Ring of Salving / Cloak of Protection / Helmet of Arcane Acuity / Bloodguzzler Garb situation is unchanged — still with the same unidentified companion-type character near camp (same exact position across three syncs now) — and this pass confirmed that companion also holds Reaper's Embrace and Lae'zel's missing Cerebral Citadel Gloves, seven items total. Not lost, not recoverable through this audit method. Murderous Cut is no longer carried by anyone (now only in storage) — the wrong-owner issue resolved itself.
 
 **Redistribution to make**: Astarion still holds part of Kao's old scroll library, though some has come back — see the resource spot check above; Kao should still end up with the rest.
 
@@ -146,7 +146,7 @@ Every named item picked up since the last full item audit is now verified agains
 | ⭐⭐ | Boots of Speed | TMind | frontline mobility — he has no other boots, keep these rather than pass them along |
 | — (×2, unread) | The Tharchiate Codex | TMind | Legendary necromancy book — see Item Ratings above; reading it applies the same curse Astarion now carries, curable with Remove Curse/Greater Restoration |
 
-No longer carried: Murderous Cut and all 3 copies of the Whispering Mask are gone from TMind (now only in storage) — both resolved without needing manual intervention. Ring of Salving, Keepsake Ring (now with Lae'zel), Cloak of Protection, Helmet of Arcane Acuity, and Bloodguzzler Garb remain with the same unidentified companion-type character near camp, unchanged from last pass.
+No longer carried: Murderous Cut and all 3 copies of the Whispering Mask are gone from TMind (now only in storage) — both resolved without needing manual intervention. Ring of Salving, Keepsake Ring (now with Lae'zel), Cloak of Protection, and Helmet of Arcane Acuity remain with the same unidentified companion-type character near camp — see [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]] for the full seven-item consolidated list.
 
 ### Consumables and Scrolls
 
@@ -187,7 +187,7 @@ TMind's alchemy stock is holding at ≈30 records, still well below the ≈116 i
 | ⭐⭐ | Amulet of Windrider | Lae'zel | new this pass — Ride the Winds + Gust of Wind, see Item Ratings above |
 | ⭐⭐ | Keepsake Ring | Lae'zel | new this pass, moved from TMind — Dominate Beast 1/long rest |
 
-No longer carried: Cerebral Citadel Gloves is gone from her position (not found elsewhere either) — possibly sold or otherwise removed.
+**Two corrections from re-checking her position this pass**: Corpsegrinder is no longer with her — checked its `Level` field (empty) and confirmed no NPC nearby, so it's genuinely in **camp storage**, not lost. And the earlier claim that Cerebral Citadel Gloves was "gone, not found elsewhere" was wrong in a different way than expected: it's not in storage either — it's sitting with the **same unidentified resurrected companion** who also holds Reaper's Embrace (see [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]]), not freely recoverable from a container.
 
 ### Consumables and Scrolls
 
@@ -295,14 +295,14 @@ Storage holds the overflow (2,860 item records, up from ~2,650) — most of it i
 | ⭐ | Healing potions (basic/greater/superior) | 15 | Split across party | Top up anyone before leaving camp. |
 | ⭐ | Assorted caster scrolls | many | Kao | Blur, Mirror Image, Hold Person, Fireball, Misty Step, etc. — browse before a caster fight. |
 
-No longer in storage: the spare Elixir of Bloodlust that was here is gone — the only remaining bottle is the one Lae'zel is now carrying herself (see her Consumables and Scrolls above).
+No longer in storage: the spare Elixir of Bloodlust that was here is gone — the only remaining bottle is the one Lae'zel is now carrying herself (see her Consumables and Scrolls above). Newly arrived in storage this pass: **Corpsegrinder** (⭐⭐ martial weapon option), which drifted off Lae'zel — genuinely in the shared container, confirmed by `Level`/`Character`-node check, not with an NPC.
 
 ### Notable Gear Sitting in Storage ^storage-notable-gear
 
 **Re-checked this pass** against the new save with the same `Level`-field-plus-`Character`-node method used to catch the earlier mistake. Two changes since last audit:
 
 - **The Tharchiate Codex is resolved** — it's no longer sitting uncollected. Two copies are now confirmed in inventory: one with TMind (unread), one that Astarion picked up and read (source of his new curse — see his Equipment section above).
-- **Reaper's Embrace is no longer genuinely free storage.** It now sits at a camp position with a co-located, resurrected `Character` node that is none of the four tracked party members — most likely a benched companion. That means it's probably sitting in *that companion's* personal inventory, not shared camp storage, and needs checking at their portrait in game before assuming it can just be pulled.
+- **Reaper's Embrace is no longer genuinely free storage** — and it turns out to be the same companion already flagged for the Ring of Salving cluster. It shares the *exact* position of a `Character` node that is none of the four tracked party members (resurrected, unidentified) — the same node holding Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, and both Bloodguzzler Garb copies. Re-checking Lae'zel's position this pass also turned up a seventh item on that same companion: **Cerebral Citadel Gloves**, previously assumed sold when it disappeared from her inventory. All seven are consolidated into one row below instead of being tracked separately.
 
 **Genuinely in storage**: none confirmed this pass — the one item that qualified last time (Reaper's Embrace) no longer does, per above.
 
@@ -325,7 +325,7 @@ No longer in storage: the spare Elixir of Bloodlust that was here is gone — th
 | Woe | Very Rare | An unidentified NPC — its internal save-data name references a late-game vampire-lord boss |
 | Penumbral Armour | Rare | An unidentified NPC |
 | True Love's Embrace | Rare | Two separate copies exist, each on a different unidentified NPC — **not** freely available for pairing with TMind's True Love's Caress as previously claimed |
-| Reaper's Embrace | Very Rare | **New this pass**: moved from "storage" to sitting with a resurrected, unidentified companion-type character at camp — check that companion's own inventory in game rather than the shared storage container |
+| Reaper's Embrace, Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Cerebral Citadel Gloves | Mixed | **One consolidated companion, seven items**: all seven sit at the identical camp position of a single resurrected, unidentified `Character` node — confirmed by exact coordinate match, not a guess. Ring of Salving especially is worth recovering (direct healing upgrade for TMind). Check that companion's own inventory in game rather than the shared storage container. |
 
 ### Storage Handling Routine
 

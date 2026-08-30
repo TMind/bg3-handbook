@@ -88,7 +88,7 @@ Keep Lae'zel as a **Battle Master Fighter** unless you deliberately want a diffe
 | Fighting style | Great Weapon Fighting or Defence |
 | Key feats | Great Weapon Master, Strength ASI to 20, Sentinel, Savage Attacker / Alert |
 | Core maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
-| Later maneuvers | Precision Attack for GWM accuracy, Menacing Attack or Riposte by taste, **Commander's Strike** — now confirmed picked up at Fighter 11 |
+| Later maneuvers | Precision Attack for GWM accuracy, Menacing Attack or Riposte by taste, **Commander's Strike** — player-reported at Fighter 11, not save-verifiable (see note below) |
 | Buffs | Longstrider, Aid, Warding Bond if TMind can absorb the shared damage, Potion of Speed for serious fights |
 
 ### Feat Priority
@@ -118,7 +118,7 @@ Battle Master is source-supported as a tactical Fighter subclass because its man
 
 **Markers:** ⭐⭐⭐ 🎯
 
-Lae'zel's **Commander's Strike** maneuver (action + bonus action + Superiority Die) grants an ally a reaction to make a melee weapon attack — confirmed on bg3.wiki. Normally that costs the ally their one reaction for the round, competing with an opportunity attack or another reaction-based effect.
+Lae'zel's **Commander's Strike** maneuver (action + bonus action + Superiority Die) grants an ally a reaction to make a melee weapon attack — the maneuver's mechanics are confirmed on bg3.wiki, but whether she actually knows it is player-reported, not something this save index can verify (checked directly: known spells/maneuvers for player characters aren't captured in the `Globals.lsf` extraction this handbook uses — only items, positions, and active statuses are). Normally the granted reaction costs the ally their one reaction for the round, competing with an opportunity attack or another reaction-based effect.
 
 **With Astarion holding Duellist's Prerogative** (empty off-hand, see [[11_Main_Character_Builds#^astarion-build|Astarion's build]]), he has **two reactions per turn** instead of one. That means:
 

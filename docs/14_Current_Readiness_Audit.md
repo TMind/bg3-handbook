@@ -152,7 +152,7 @@ Counts refreshed from the current `Campsite - 115h 34m` save (see [Item and Stor
 | Shadow of Menzoberranzan / Disintegrating Night Walkers (Astarion) | ✅ Rated ⭐⭐⭐ | On-demand Invisibility and free Misty Step + terrain immunity respectively — both strong, keep equipped. |
 | The Joltshooter / Gleamdance Dagger (Astarion) | ⚠️ Missing | Both are no longer found anywhere in the save — worth checking in game whether they were sold or given away. |
 | *(boss-dropped shield, name withheld)* (Kao) | ⭐ Off-build | A shield doesn't fit a two-handed staff caster — carry for sale, don't equip. |
-| Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb | ⚠️ Unchanged — location uncertain | Still with the same unidentified companion-type character near camp, confirmed at the exact same position across two syncs now. Not recoverable through this audit method; check in game. |
+| Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Reaper's Embrace, Cerebral Citadel Gloves | ⚠️ Unchanged — location uncertain | **Consolidated this pass**: all seven items sit at the identical position of one unidentified, resurrected companion-type character near camp (confirmed by exact coordinate match, not separate guesses). Not recoverable through this audit method; check that companion's inventory in game. |
 | Murderous Cut | ✅ Resolved | No longer carried by anyone — only in storage now. |
 | Whispering Mask ×3 | ✅ Resolved | No longer carried — moved to storage-only. |
 | Reaper's Embrace | ⚠️ New — not free storage | Previously logged as free camp storage; now confirmed sitting with a different resurrected companion-type character, not the shared container. Check that companion's own inventory. |
@@ -173,7 +173,7 @@ The party is split between camp and Ramazith's Tower. Regroup first — everythi
 5. Equip **Markoheshkir** and **Robe of the Weave** on Kao if not already active.
 6. Replace the **Elixir of Bloodlust** supply — the save has zero spares left; Lae'zel's active dose has nothing behind it.
 7. The Tharchiate Codex curse on Astarion is reversible (Remove Curse/Greater Restoration, TMind can likely self-cast it) — cure it if the trade-off isn't wanted, and decide whether TMind should read either of his two copies.
-8. Check on **Ring of Salving / Cloak of Protection / Helmet of Arcane Acuity / Bloodguzzler Garb** and **Reaper's Embrace**, both still sitting with unidentified companion-type characters rather than in shared storage.
+8. Check on the **seven-item cluster** (Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Reaper's Embrace, Cerebral Citadel Gloves) — all confirmed on one unidentified companion this pass, not in shared storage.
 9. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
 10. Investigate **The Joltshooter and Gleamdance Dagger** — both gone from Astarion's inventory with no clear cause.
 
