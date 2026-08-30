@@ -48,7 +48,7 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 | Maximum HP | ⚠️ New gap | **Aid has dropped off all four characters** — previously always covered, now needs recasting before a hard fight. |
 | Stealth aura | ⚠️ Unchanged gap | Pass Without Trace is still not active on the party. |
 | Burst resources | 🚨 Depleted | **Elixir of Bloodlust is completely gone from the save** — Lae'zel's active dose has nothing left to refill it with. |
-| New status | ⚠️ Needs a decision | Astarion carries a curse from reading a copy of The Tharchiate Codex (Constitution penalty for temp HP + a ghoul-summon feature) — confirm this was intentional; TMind holds two more unread copies. |
+| New status | ℹ️ Low pressure | Astarion carries a curse from reading a copy of The Tharchiate Codex (Constitution penalty for temp HP + a ghoul-summon feature) — **not permanent**, Remove Curse or Greater Restoration cures it (bg3.wiki-confirmed), and TMind can likely self-cast Remove Curse as a Cleric. TMind holds two more unread copies. |
 | Summons | ℹ️ Changed | The Cambion/Djinni Planar Ally was replaced by a **Deva (Planar Ally)** at camp; Kao's Conjure Elemental (Air) summon is still with him at the tower. |
 | New gear | ✅ Big upgrade | Kao: Markoheshkir (Legendary staff) + Robe of the Weave. Astarion: Duellist's Prerogative (Legendary rapier) — a real build-fork decision, not just an upgrade. See [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
 
@@ -61,7 +61,7 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 | TMind | Heroes' Feast, Longstrider, **Death Ward**, **Freedom of Movement**, Shield of Devotion spell slot, Blood of Lathander light | **Aid** — new gap, shared by the whole party |
 | Lae'zel | Heroes' Feast, Longstrider, Death Ward, Freedom of Movement, critical-execution ring | **Aid**; also note **Elixir of Bloodlust has no spare bottle left anywhere in the save** |
 | Kao | Heroes' Feast, Longstrider, Death Ward, Freedom of Movement, Mage Armor, Absorb Elements resource, new Counterspell resource (Staff of Interruption) | **Aid** |
-| Astarion | Heroes' Feast, Longstrider, Death Ward, Freedom of Movement, Cat's Grace, Cloak of Displacement | **Aid**; carries a **new curse status** from The Tharchiate Codex — confirm it was a deliberate read |
+| Astarion | Heroes' Feast, Longstrider, Death Ward, Freedom of Movement, Cat's Grace, Cloak of Displacement | **Aid**; carries a **new curse status** from The Tharchiate Codex — reversible with Remove Curse/Greater Restoration whenever the trade-off stops being worth it |
 
 > [!note] Pass Without Trace is still not active on the party in this save. Re-cast it before a stealth-sensitive approach if wanted.
 
@@ -156,7 +156,7 @@ Counts refreshed from the current `Campsite - 115h 34m` save (see [Item and Stor
 | Murderous Cut | ✅ Resolved | No longer carried by anyone — only in storage now. |
 | Whispering Mask ×3 | ✅ Resolved | No longer carried — moved to storage-only. |
 | Reaper's Embrace | ⚠️ New — not free storage | Previously logged as free camp storage; now confirmed sitting with a different resurrected companion-type character, not the shared container. Check that companion's own inventory. |
-| The Tharchiate Codex (×3: TMind ×2, Astarion ×1 read) | ⚠️ Decision needed | Astarion's copy is already read and cursed. Decide whether TMind reads either of his — same Constitution-for-temp-HP-and-ghouls trade-off. |
+| The Tharchiate Codex (×3: TMind ×2, Astarion ×1 read) | ℹ️ Reversible | Astarion's copy is already read and cursed, but it's curable with Remove Curse/Greater Restoration if unwanted. Decide whether TMind reads either of his — same Constitution-for-temp-HP-and-ghouls trade-off. |
 
 Full effect text and sourcing for every item above is in [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Item and Storage Snapshot § Item Ratings and Redistribution]].
 
@@ -172,7 +172,7 @@ The party is split between camp and Ramazith's Tower. Regroup first — everythi
 4. Decide on **Astarion's Duellist's Prerogative** — dual-dagger Thief vs. one-handed duelist is a real build fork, not a drop-in upgrade.
 5. Equip **Markoheshkir** and **Robe of the Weave** on Kao if not already active.
 6. Replace the **Elixir of Bloodlust** supply — the save has zero spares left; Lae'zel's active dose has nothing behind it.
-7. Confirm whether reading **The Tharchiate Codex** on Astarion was intentional, and decide whether TMind should read either of his two copies.
+7. The Tharchiate Codex curse on Astarion is reversible (Remove Curse/Greater Restoration, TMind can likely self-cast it) — cure it if the trade-off isn't wanted, and decide whether TMind should read either of his two copies.
 8. Check on **Ring of Salving / Cloak of Protection / Helmet of Arcane Acuity / Bloodguzzler Garb** and **Reaper's Embrace**, both still sitting with unidentified companion-type characters rather than in shared storage.
 9. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
 10. Investigate **The Joltshooter and Gleamdance Dagger** — both gone from Astarion's inventory with no clear cause.

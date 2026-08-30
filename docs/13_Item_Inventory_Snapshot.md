@@ -118,7 +118,7 @@ Every named item picked up since the last full item audit is now verified agains
 | TMind | Scroll of Dethrone | ⭐⭐⭐ (situational) | Very Rare single-use scroll (or spellbook-transcribable, Level 5 slot, 1/long rest) | Save for a genuinely hard boss fight — verify its exact effect in game before relying on it, not fully confirmed here |
 | Lae'zel | Amulet of Windrider | ⭐⭐ | Very Rare. Ride the Winds (Level 3, 1/long rest) + Gust of Wind (Level 2, 1/short rest) | Good mobility/control utility pickup |
 | Lae'zel | Keepsake Ring | ⭐⭐ | Cast Dominate Beast, 1/long rest | Moved to her from TMind — decent flex control option for a frontliner |
-| Kao / TMind | The Tharchiate Codex (×4 copies total: 2 with TMind, 1 with Astarion, plus its curse status) | Legendary book | Necromancy of Thay: a Constitution penalty, 20 temp HP after long rest, and Danse Macabre (summon 4 ghouls 1/long rest) once read | **Astarion has already read a copy and carries the curse.** TMind's two copies are unread — reading one applies the same trade-off to him too. Decide who (if anyone else) should read it. |
+| Kao / TMind | The Tharchiate Codex (×4 copies total: 2 with TMind, 1 with Astarion, plus its curse status) | Legendary book | Necromancy of Thay: a Constitution penalty, 20 temp HP after long rest, and Danse Macabre (summon 4 ghouls 1/long rest) once read | **Astarion has already read a copy and carries the curse.** TMind's two copies are unread — reading one applies the same trade-off to him too. Not permanent: **Remove Curse or Greater Restoration cures it** (bg3.wiki-confirmed) — TMind can likely self-cast Remove Curse as a Cleric. Decide who (if anyone else) should read it. |
 
 **Confirmed done from last time**: the Hellfire Hand Crossbow, Shade-Slayer Cloak, and Vivacious Cloak moves all happened as recommended. The Ring of Salving / Cloak of Protection / Helmet of Arcane Acuity / Bloodguzzler Garb situation is unchanged — still with the same unidentified companion-type character near camp (same exact position both times checked now), not lost, not recoverable through this audit method. Murderous Cut is no longer carried by anyone (now only in storage) — the wrong-owner issue resolved itself.
 
@@ -144,7 +144,7 @@ Every named item picked up since the last full item audit is now verified agains
 | ⭐⭐ | Circle of Bones | TMind | defensive amulet |
 | ⭐⭐ | Adamantine Scale Mail | TMind | no-crit heavy armour |
 | ⭐⭐ | Boots of Speed | TMind | frontline mobility — he has no other boots, keep these rather than pass them along |
-| — (×2, unread) | The Tharchiate Codex | TMind | Legendary necromancy book — see Item Ratings above; reading it applies the same curse Astarion now carries |
+| — (×2, unread) | The Tharchiate Codex | TMind | Legendary necromancy book — see Item Ratings above; reading it applies the same curse Astarion now carries, curable with Remove Curse/Greater Restoration |
 
 No longer carried: Murderous Cut and all 3 copies of the Whispering Mask are gone from TMind (now only in storage) — both resolved without needing manual intervention. Ring of Salving, Keepsake Ring (now with Lae'zel), Cloak of Protection, Helmet of Arcane Acuity, and Bloodguzzler Garb remain with the same unidentified companion-type character near camp, unchanged from last pass.
 
