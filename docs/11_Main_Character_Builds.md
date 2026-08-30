@@ -150,6 +150,21 @@ Astarion currently works as a **Thief Rogue**: stealth opener, Sneak Attack, loc
 | Strong spell support | Greater Invisibility is excellent because it can maintain advantage across turns |
 | Trap to avoid | Magical Darkness does not help unless Astarion can see through it |
 
+### Legendary Weapon Decision: Duellist's Prerogative
+
+**Markers:** ⭐⭐⭐ ⚠️
+
+Astarion picked up **Duellist's Prerogative**, a Legendary +3 Rapier. Checked its exact mechanics against bg3.wiki rather than assuming a full playstyle change:
+
+| Property | Effect | Requirement |
+|---|---|---|
+| Elegant Duellist (passive) | Crit on a roll of 19; +1 extra Reaction per turn | Off-hand empty, no shield |
+| Withering Cut (passive) | Reaction: extra necrotic damage (= proficiency bonus) on any melee hit | None |
+| Dueller's Enthusiasm (bonus action) | An additional melee attack with the rapier itself | Off-hand empty, not dual-wielding |
+| Challenge to Duel (bonus action) | Force an enemy to attack only you; inflicts Bleeding | None |
+
+**This is a smaller decision than it first looks, not a subclass or feat change.** Thief's bonus-action-per-turn economy is preserved — Dueller's Enthusiasm replaces the usual off-hand attack one-for-one — and Sneak Attack (once per turn) is unaffected either way. The actual trade is narrower: whatever his current off-hand dagger provides gets given up for the crit-on-19, extra reaction, Withering Cut, and Challenge to Duel above. If that off-hand piece is Stillmaker, the real cost is losing easy access to its 1/long-rest Hold Person cast — otherwise there's little to give up. No feat or subclass changes needed either way; this is a loadout choice, not a build fork.
+
 ### Careful Review Note
 
 The common optimized assassin guide path is **Assassin Rogue 4 / Gloom Stalker Ranger 5 / Champion Fighter 3**. It is powerful because Gloom Stalker improves the opening round and Fighter adds Action Surge. For this party, do not switch blindly: if fights usually start after dialogue or without surprise, **Thief** may be more comfortable than Assassin.

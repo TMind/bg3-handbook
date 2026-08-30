@@ -78,7 +78,7 @@ Everyone's totals moved a lot this pass (a long shopping/looting stretch). Notab
 |---|---|---|---|---|
 | ⭐⭐⭐ | **Markoheshkir** | Kao | Kao | Legendary staff: +1 spell DC/attack, a free spell 1/long rest with no slot cost, elemental buff, Topple. Should be his main weapon now. |
 | ⭐⭐⭐ | Robe of the Weave | Kao | Kao | +2 AC, +1 spell DC/attack, heals on a successful spell save — upgrade over Infernal Robe |
-| ⭐⭐⭐ | **Duellist's Prerogative** | Astarion | Astarion | Legendary rapier: crits on 19, extra reaction, bonus-action taunt+bleed, bonus-action extra attack — but a build fork away from dual daggers, decide deliberately |
+| ⭐⭐⭐ | **Duellist's Prerogative** | Astarion | Astarion | Legendary rapier: crits on 19, extra reaction, bonus-action taunt+bleed, bonus-action extra attack — a loadout swap (empty off-hand), not a build fork; see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]] |
 | ⭐⭐⭐ | Devotee's Mace | TMind | TMind | healing-aura weapon |
 | ⭐⭐⭐ | Shield of Devotion | TMind | TMind | spell slot + shield |
 | ⭐⭐⭐ | The Whispering Promise | TMind | TMind | Bless on heal, concentration-free |
@@ -109,7 +109,7 @@ Every named item picked up since the last full item audit is now verified agains
 | Kao | Staff of Interruption | ⭐⭐ | Rare +2 Quarterstaff. Cast Counterspell 1/long rest, Topple action | Competes with Markoheshkir for his hands — situational swap vs caster-heavy fights, can't use both at once |
 | Kao | Fey Semblance Amulet | ⭐⭐ | Very Rare. Advantage on Intelligence, Wisdom, and Charisma saving throws | Solid defensive amulet, competes with Spineshudder/Strange Tendril for the slot |
 | Kao | *(boss-dropped shield, name withheld)* | ⭐ (off-build) | Rare. +2 AC, Advantage on DEX saves, +1 Spell Save DC/Attack — matches a flagged spoiler-sensitive term so the name is omitted here | A shield doesn't fit a two-handed staff caster — carry for sale/swap, not equip |
-| Astarion | **Duellist's Prerogative** | ⭐⭐⭐ (build fork) | Legendary +3 Rapier. Crits on 19 when not dual-wielding, an extra reaction/turn, bonus-action Challenge to Duel (taunt + Bleed), reaction Withering Cut (necrotic on hit), bonus-action extra attack | **Decide deliberately**: this is a one-handed rapier, not a dagger — it pulls him away from dual-dagger Thief toward a single-weapon duelist build. Very strong either way, but a real playstyle change. |
+| Astarion | **Duellist's Prerogative** | ⭐⭐⭐ | Legendary +3 Rapier. Crits on 19 when off-hand is empty, an extra reaction/turn, bonus-action Challenge to Duel (taunt + Bleed), reaction Withering Cut (necrotic on hit), bonus-action extra attack (Dueller's Enthusiasm, replaces the usual off-hand attack) | **Smaller decision than it looks**: Thief's bonus-action economy and Sneak Attack are unaffected — Dueller's Enthusiasm substitutes for the off-hand attack one-for-one. The real cost is whatever the current off-hand dagger provides (Stillmaker's 1/long-rest Hold Person, if that's the one in his off-hand). See [[11_Main_Character_Builds#^astarion-build\|Astarion's build]] for the full breakdown. |
 | Astarion | Salty Scimitar(rrr) | ⭐⭐ | Looted from Captain Grisly at The Blushing Mermaid. Command spell 1/long rest, Flourish/Lacerate actions if proficient | Decent, but outclassed by the rapier as a main-hand pick |
 | Astarion | Ring Of Blink | ⭐⭐ | Rare. Cast Blink 1/long rest | Good escape/repositioning tool |
 | Astarion | Winter's Clutches (gloves) | ⭐⭐ | Uncommon. Inflicts Encrusted with Frost on cold-damage hits | Minor rider, keep if he has cold sources |
@@ -242,7 +242,7 @@ Kao's scroll library has partially recovered (≈6 → 13) — some of what Asta
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
-| ⭐⭐⭐ (build fork) | Duellist's Prerogative | Astarion | Legendary rapier — see Item Ratings above, a deliberate build decision |
+| ⭐⭐⭐ | Duellist's Prerogative | Astarion | Legendary rapier — see Item Ratings above; a loadout swap (empty off-hand), not a build fork |
 | ⭐⭐⭐ | Cloak of Displacement | Astarion | miss-chance survival (active) |
 | ⭐⭐⭐ | The Graceful Cloth | Astarion | DEX / Cat's Grace (active) |
 | ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | on-demand Invisibility — ideal for a Hide → Sneak Attack loop |

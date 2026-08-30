@@ -50,7 +50,7 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 | Burst resources | 🚨 Depleted | **Elixir of Bloodlust is completely gone from the save** — Lae'zel's active dose has nothing left to refill it with. |
 | New status | ℹ️ Low pressure | Astarion carries a curse from reading a copy of The Tharchiate Codex (Constitution penalty for temp HP + a ghoul-summon feature) — **not permanent**, Remove Curse or Greater Restoration cures it (bg3.wiki-confirmed), and TMind can likely self-cast Remove Curse as a Cleric. TMind holds two more unread copies. |
 | Summons | ℹ️ Changed | The Cambion/Djinni Planar Ally was replaced by a **Deva (Planar Ally)** at camp; Kao's Conjure Elemental (Air) summon is still with him at the tower. |
-| New gear | ✅ Big upgrade | Kao: Markoheshkir (Legendary staff) + Robe of the Weave. Astarion: Duellist's Prerogative (Legendary rapier) — a real build-fork decision, not just an upgrade. See [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
+| New gear | ✅ Big upgrade | Kao: Markoheshkir (Legendary staff) + Robe of the Weave. Astarion: Duellist's Prerogative (Legendary rapier) — verified as a loadout swap, not a build fork; see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]]. See [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
 
 ## Active Buff Coverage
 
@@ -138,7 +138,7 @@ Counts refreshed from the current `Campsite - 115h 34m` save (see [Item and Stor
 |---|---|---|
 | Markoheshkir (Kao) | 🆕 Equip it | Legendary staff, free 1/long rest spell + elemental self-buff — best-in-slot, should already be his main weapon. |
 | Robe of the Weave (Kao) | 🆕 Equip it | Very Rare, +2 AC/+1 spell save/attack plus a save-triggered heal — upgrade over Infernal Robe. |
-| Duellist's Prerogative (Astarion) | 🆕 Build decision needed | Legendary rapier — strong, but pulls him from dual-dagger Thief toward a one-handed duelist build. Decide deliberately before respeccing anything around it. |
+| Duellist's Prerogative (Astarion) | ✅ Equip it (empty off-hand) | Legendary rapier — verified mechanics show Thief's bonus-action economy and Sneak Attack are unaffected (Dueller's Enthusiasm replaces the off-hand attack). Only real cost is the off-hand dagger's own perk, if any — see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]]. No respec needed. |
 | Shadowheart weapon trick | ✅ Done | Devotee's Mace is still with TMind, unchanged. |
 | Blood of Lathander | ✅ With TMind | Keep as the default cleric weapon unless the healing-aura plan is needed. |
 | Devotee's Mace | ✅ With TMind | Use as a swap for Healing Incense Aura and on-heal item synergies. |
@@ -169,7 +169,7 @@ The party is split between camp and Ramazith's Tower. Regroup first — everythi
 1. **Regroup TMind/Lae'zel with Kao/Astarion** before treating the party as fight-ready. Top priority; nothing else here matters until this happens.
 2. **Recast Aid on all four characters** — new gap, previously always covered. Shadowheart (at camp with TMind/Lae'zel) is the efficient source.
 3. ✅ Resolved: Death Ward, Freedom of Movement, and Mage Armor are all active on everyone — no action needed, just keep the streak going after the next long rest.
-4. Decide on **Astarion's Duellist's Prerogative** — dual-dagger Thief vs. one-handed duelist is a real build fork, not a drop-in upgrade.
+4. ✅ Resolved: **Astarion's Duellist's Prerogative** is verified as a loadout swap, not a build fork — equip it with an empty off-hand; Thief's bonus-action economy carries over via Dueller's Enthusiasm. Only real loss is his off-hand dagger's own perk (Stillmaker's Hold Person, if that's the one benched).
 5. Equip **Markoheshkir** and **Robe of the Weave** on Kao if not already active.
 6. Replace the **Elixir of Bloodlust** supply — the save has zero spares left; Lae'zel's active dose has nothing behind it.
 7. The Tharchiate Codex curse on Astarion is reversible (Remove Curse/Greater Restoration, TMind can likely self-cast it) — cure it if the trade-off isn't wanted, and decide whether TMind should read either of his two copies.
