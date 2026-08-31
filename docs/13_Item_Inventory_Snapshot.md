@@ -82,7 +82,7 @@ Big swings across the board this pass: TMind's total dropped 324 → 194 and Ast
 | ⭐⭐⭐ | Robe of the Weave | Kao | Kao | +2 AC, +1 spell DC/attack, heals on a successful spell save — upgrade over Infernal Robe |
 | ⭐⭐⭐ | **Duellist's Prerogative** | Astarion | Astarion | Legendary rapier: crits on 19, extra reaction, bonus-action taunt+bleed, bonus-action extra attack — a loadout swap (empty off-hand), not a build fork; see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]] |
 | ⭐⭐⭐ | **Circle of Bones** | TMind | TMind | Rare circlet: Animate Dead (1/long rest) + Undead Ward (nearby allied undead resist Bludgeoning/Slashing/Piercing) — a near-perfect fit for a Death Domain necromancer, only surfaced in the audit this pass |
-| ⭐⭐⭐ | **Adamantine Scale Mail** | TMind | TMind | Very Rare medium armour: all incoming damage -1, immune to critical hits, attacker gets Reeling for 2 turns — exceptional defensive upgrade, only surfaced this pass |
+| ⭐⭐⭐ | **Adamantine Scale Mail** | TMind (equipped, player-confirmed) | TMind | Very Rare medium armour: all incoming damage -1, immune to critical hits, attacker gets Reeling for 2 turns — exceptional defensive upgrade, only surfaced in this audit this pass |
 | ⭐⭐⭐ | Devotee's Mace | TMind | TMind | healing-aura weapon |
 | ⭐⭐⭐ | Shield of Devotion | TMind | TMind | spell slot + shield |
 | ⭐⭐⭐ | The Whispering Promise | TMind | TMind | Bless on heal, concentration-free |
@@ -135,7 +135,7 @@ Two kinds of rows below: genuinely new acquisitions this pass, and items confirm
 | Use | Item | Best fit | Note |
 |---|---|---|---|
 | ⭐⭐⭐ | Circle of Bones | TMind | Animate Dead + Undead Ward — see Item Ratings above, newly surfaced this pass |
-| ⭐⭐⭐ | Adamantine Scale Mail | TMind | no-crit medium armour, damage reduction, Reeling rider — see Item Ratings above |
+| ⭐⭐⭐ | Adamantine Scale Mail | TMind (equipped) | no-crit medium armour, damage reduction, Reeling rider — player-confirmed as his current armor, see Item Ratings above |
 | ⭐⭐⭐ | Devotee's Mace | TMind | healing-aura weapon |
 | ⭐⭐⭐ | Blood of Lathander | TMind | light aura / safety (no longer shows as an active status — likely not the currently equipped weapon) |
 | ⭐⭐⭐ | Shield of Devotion | TMind | spell slot + shield (active) |

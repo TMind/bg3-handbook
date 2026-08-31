@@ -139,7 +139,7 @@ Counts refreshed from the current `Lower City - 118h 27m` save (see [Item and St
 | Check | Status | Note |
 |---|---|---|
 | Circle of Bones (TMind) | 🆕 Equip it | Rare circlet — Animate Dead + Undead Ward, near-perfect fit for a Death Domain necromancer. Only surfaced in this audit this pass; likely already owned. |
-| Adamantine Scale Mail (TMind) | 🆕 Equip it | Very Rare medium armour — damage reduction, no crits, Reeling rider. One of the strongest defensive pieces available; only surfaced this pass. |
+| Adamantine Scale Mail (TMind) | ✅ Confirmed equipped | Very Rare medium armour — damage reduction, no crits, Reeling rider. Player-confirmed as his current armor; it was also his only chest-armor candidate in the save, so this checks out. |
 | TMind's five competing amulets | ⚠️ Pick one | The Spectator Eyes, Amulet of Restoration, Amulet of Misty Step, Spellcrux Amulet, Pearl of Power all want the same slot — see [[13_Item_Inventory_Snapshot#^inventory-tmind\|TMind's section]] for the comparison. |
 | Reaper's Embrace (Lae'zel) | ✅ Resolved | No longer a mystery-companion item — confirmed genuinely in her own inventory this pass. Now a real third armour option alongside Adamantine Splint Armour and Cerebral Citadel Armour. |
 | Markoheshkir / Robe of the Weave (Kao) | ✅ Equipped | Legendary staff + Very Rare robe, both confirmed rated and recommended equipped. |
@@ -167,7 +167,7 @@ The party is split between Lower City and Baldur's Mouth Basement. Regroup first
 3. **Recast Death Ward on TMind and Lae'zel** — lost this pass, while Kao/Astarion kept it.
 4. **Recast Aid on Astarion and Lae'zel** — Kao and TMind already have it.
 5. **Recast Longstrider on Lae'zel** — the only one missing it now.
-6. Equip **Circle of Bones** and **Adamantine Scale Mail** on TMind if not already active — both newly surfaced this pass and rate highly.
+6. Equip **Circle of Bones** on TMind if not already active — newly surfaced this pass and rates highly. **Adamantine Scale Mail is confirmed already equipped.**
 7. Pick one of TMind's five competing amulets rather than leaving it to chance — see Gear and Synergy Checks.
 8. Replace the **Elixir of Bloodlust** supply — still zero anywhere in the save, and the active buff has now actually run out.
 9. The Tharchiate Codex curse on Astarion is reversible (Remove Curse/Greater Restoration) — cure it if the trade-off isn't wanted, and decide whether TMind should read either of his two copies.
