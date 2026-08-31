@@ -28,6 +28,7 @@ This chapter keeps practical, spoiler-free build templates for the characters an
 |---|---|
 | Understand the build rules | [[#✅ Build Principles\|Build Principles]] |
 | Review the active party | [[11_Main_Character_Builds#^party-build-snapshot\|Party Snapshot]] |
+| Level up TMind or Lae'zel right now | [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] |
 | Build Lae'zel or Astarion | [[11_Main_Character_Builds#^laezel-build\|Lae'zel]] · [[11_Main_Character_Builds#^astarion-build\|Astarion]] |
 | Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] |
 | Configure camp support | [[11_Main_Character_Builds#^camp-options\|Bench and Camp]] · [[11_Main_Character_Builds#^hireling-bard\|Hireling Bard]] · [[11_Main_Character_Builds#^camp-specialists\|Camp Specialists]] |
@@ -69,7 +70,21 @@ These are the current main builds from the local character notes. The party plan
 | Gale remains available in camp | Use him when AoE damage matters more than stealth and trap utility |
 | Shadowheart remains available in camp | Use her as support/radiant backup, not as a Lae'zel replacement unless the frontline plan changes |
 | Sussur Bark was crafted into the Sussur Dagger, held by Astarion | Masterwork Weapon decision resolved; dagger provides caster silence utility |
-| Lae'zel is now Fighter 10 | Level 7/8 feat question has passed; exact feat/maneuver picks aren't reliably readable from the save extract — verify in game before assuming STR 20 or Sentinel |
+| TMind and Lae'zel have the XP for Level 12, not yet claimed | Both are still showing Level 11 in the save with enough total XP for 12 — go through the level-up screen for both; see [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] below |
+| Lae'zel is now Fighter 11, eligible for 12 | Exact feat/maneuver picks aren't reliably readable from the save extract — verify in game before assuming which of the four Fighter feat slots (4/6/8/12) are already spent |
+
+## 🆙 Leveling Up Right Now: TMind and Lae'zel to 12 ^level-12-now
+
+**Markers:** ⭐⭐⭐ ⏱️
+
+Both have enough XP saved up for Level 12 but the level-up screen hasn't been used yet (see [Current Save Snapshot](12_Current_Save_Snapshot.md)). Checked bg3.wiki for exactly what each level-up actually offers, so this is concrete rather than generic advice:
+
+| Character | What Level 12 unlocks | The one decision to make | What does *not* change |
+|---|---|---|---|
+| TMind (Cleric 11→12) | A Feat — Cleric's **third and final** feat slot (4/8/12) | If Wisdom isn't 20 yet, take the Ability Improvement to lock it in now — it's the last chance. If Wisdom is already 20, take War Caster or Resilient: Constitution if Concentration keeps breaking, otherwise Alert or Tough. See [[11_Main_Character_Builds#^tmind-build\|TMind's Recommended Feats table]] for the full reasoning. | No new spell level — 6th-level spells (Heroes' Feast) already unlocked at Cleric 11. Prepared-spell count and slots increase automatically; nothing else to pick, Clerics prepare fresh from the full class list each long rest. |
+| Lae'zel (Fighter 11→12) | A Feat — Fighter's **fourth and final** feat slot (4/6/8/12) | Take whichever of Great Weapon Master → Strength 20 → Sentinel is still outstanding; only reach for Savage Attacker/Alert if all three are already done. See the updated [[11_Main_Character_Builds#^laezel-build\|Feat Priority table]] below — this is genuinely her last feat, so don't spend it on a flavor pick if a core one is still missing. | No new Battle Master maneuvers or Superiority Dice — those come at Fighter 3/7/10, already resolved by 11. Improved Extra Attack (two extra attacks after the main-hand one) already unlocked at Fighter 11 too, so 12 is feat-only. |
+
+Practical order: level both up before regrouping the party (see [Current Readiness Audit](14_Current_Readiness_Audit.md)), check each character's sheet first to confirm which feats are actually already spent (the save extract can't read this reliably), then apply the table above.
 
 ## ⚔️ Lae'zel: Battle Master Frontline Pin ^laezel-build
 
@@ -93,12 +108,14 @@ Keep Lae'zel as a **Battle Master Fighter** unless you deliberately want a diffe
 
 ### Feat Priority
 
-| Timing | Pick | Effect (BG3 wording) | Reason |
+Fighter is one of only two classes (with Rogue) that gets a **bonus feat at level 6** on top of the standard 4/8/12 — four feats in total, confirmed on bg3.wiki. Exact picks already spent aren't reliably readable from the save extract (see the Local Notes Applied table above) — treat the level column as the intended order, and check her sheet in game to see which are already done.
+
+| Level | Pick | Effect (BG3 wording) | Reason |
 |---|---|---|---|
-| Already taken | Great Weapon Master | Bonus melee attack as a Bonus Action on a Critical Hit or a kill; two-handed/versatile attacks can trade -5 to hit for +10 damage | Main damage engine |
-| Next if Strength is not 20 | +1 Strength / +1 Constitution or another route to Strength 20 (Ability Improvement) | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | GWM needs accuracy before more control feats |
-| After Strength 20 | Sentinel | Reaction attack when an enemy in melee range attacks an ally; a hit from an Opportunity Attack stops the target's movement for the rest of its turn; Advantage on Opportunity Attacks | Locks enemies inside Web, Spirit Guardians, and chokepoints |
-| Later | Savage Attacker / Alert | Savage Attacker: reroll melee weapon damage dice, use the higher result. Alert: +5 Initiative, can't be Surprised | More damage consistency or better opening tempo |
+| 4 | Great Weapon Master | Bonus melee attack as a Bonus Action on a Critical Hit or a kill; two-handed/versatile attacks can trade -5 to hit for +10 damage | Main damage engine, take first |
+| 6 | Ability Improvement toward Strength 20 | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | GWM needs accuracy before more control feats |
+| 8 | Sentinel | Reaction attack when an enemy in melee range attacks an ally; a hit from an Opportunity Attack stops the target's movement for the rest of its turn; Advantage on Opportunity Attacks | Locks enemies inside Web, Spirit Guardians, and chokepoints |
+| 12 (her last feat) | Savage Attacker / Alert, or the Strength-20 Ability Improvement if not yet taken | Savage Attacker: reroll melee weapon damage dice, use the higher result. Alert: +5 Initiative, can't be Surprised | Whichever of the above three is still outstanding takes priority over a new flavor pick — this is the final Fighter feat slot |
 
 Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
 
@@ -482,6 +499,8 @@ These sources were used as reference points, then adjusted to the local party no
 
 | Source | Used for | Review decision |
 |---|---|---|
+| [bg3.wiki: Fighter](https://bg3.wiki/wiki/Fighter) and general feat-count references | Confirmed Fighter's exact feat levels (4/6/8/12, four total) and that Improved Extra Attack/Battle Master maneuvers are already resolved by level 11 | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] and add explicit levels to Lae'zel's Feat Priority table, which previously had no level column |
+| [bg3.wiki: Cleric](https://bg3.wiki/wiki/Cleric) | Confirmed Cleric's feat levels (4/8/12, three total), that 6th-level spells unlock at 11 (not 12), and that 12 adds no new spell tier | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] for TMind |
 | [PC Gamer: The best Baldur's Gate 3 builds for Patch 8 and beyond](https://www.pcgamer.com/baldurs-gate-3-multiclass-builds/) | Astarion-style stealth burst, Death Cleric / Stars Druid concept, multiclass tradeoffs | Useful, but not copied blindly; party synergy matters more than isolated burst |
 | [Polygon: Wizard subclass, feats, and build](https://www.polygon.com/baldurs-gate-3-guides/23814037/wizard-class-subclasses-stats-features-proficiencies) | Wizard role, Intelligence/Constitution priority, subclass framing | Supports keeping Kao as a spell-breadth control Wizard |
 | [bg3.wiki: Battle Master](https://bg3.wiki/wiki/Battle_Master) | Battle Master maneuver mechanics | Supports keeping Lae'zel as a tactical pin/control Fighter |

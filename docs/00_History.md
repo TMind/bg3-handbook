@@ -37,6 +37,10 @@ Group each date's entries into collapsible topic nodes using a callout, not `###
 > - Salty Scimitar(rrr) drifted from Astarion to TMind — doesn't fit either build (empty-off-hand rapier Astarion, mace-and-shield TMind), flagged to just sell it. Gold Wyrmling Staff is fully resolved (two copies now in storage, none carried). Scroll of Bestow Curse/Crown of Madness swung back onto Astarion — the fifth reversal of this same back-and-forth with Kao's scroll library.
 > - **The Ring of Salving cluster hit the limit of what position data can tell us**: the previously-nearby "unidentified companion" has now moved ~23 units away while the seven items stayed exactly where they were — evidence they were never in that companion's personal inventory, just near a fixed container. That's a second correction on the same fact, so per the standing house rule this wasn't patched a third time from inference alone — the docs now say plainly to check it in game instead of trusting another audit guess.
 
+> [!note]- 📖 Handbook Content & Builds (a level-12 leveling guide for TMind and Lae'zel)
+> - Added [[11_Main_Character_Builds#^level-12-now|Leveling Up Right Now]] — concrete, bg3.wiki-checked advice for the pending Level 12 up for TMind and Lae'zel: Cleric's feats are 4/8/12 (three total, TMind's last one) with no new spell tier at 12; Fighter's are 4/6/8/12 (four total, Lae'zel's last one) with Battle Master maneuvers and Improved Extra Attack already resolved by 11, so 12 is feat-only for both.
+> - Fixed a real formatting gap while there: Lae'zel's Feat Priority table had no explicit Level column (just "Already taken / Next / After / Later"), unlike Kao's, TMind's, and Astarion's — rewrote it with levels 4/6/8/12 to match the rest of the chapter's convention.
+
 ## 2026-08-30
 
 > [!note]- 🎒 Save Snapshots & Readiness (Campsite - 115h 34m, split party, all buff gaps resolved)
