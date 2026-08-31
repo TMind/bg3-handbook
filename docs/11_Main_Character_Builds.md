@@ -105,7 +105,7 @@ A Magic Initiate: Warlock feat (Booming Blade + Eldritch Blast + Hex) was review
 | Fighting style | Great Weapon Fighting or Defence |
 | Key feats | Great Weapon Master, Strength ASI to 20, Sentinel, Savage Attacker / Alert |
 | Core maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
-| Later maneuvers | Precision Attack for GWM accuracy, **Riposte** (confirmed — reaction damage on a melee hit against you), **Commander's Strike** — player-reported at Fighter 11, not save-verifiable (see note below); one maneuver slot left open to taste (Menacing Attack is a reasonable pick, Rally was considered and rejected — no self-target use for a frontliner) |
+| Later maneuvers | Precision Attack for GWM accuracy, **Riposte** (confirmed — reaction damage on a melee hit against you), **Commander's Strike** — costs one of her own attacks plus her bonus action, not a freebie (see note below); player-reported at Fighter 11, not save-verifiable; one maneuver slot left open to taste (Menacing Attack is a reasonable pick, Rally was considered and rejected — no self-target use for a frontliner) |
 | Buffs | Longstrider, Aid, Warding Bond if TMind can absorb the shared damage, Potion of Speed for serious fights |
 
 ### Feat Priority
@@ -162,15 +162,15 @@ Battle Master is source-supported as a tactical Fighter subclass because its man
 
 **Markers:** ⭐⭐⭐ 🎯
 
-Lae'zel's **Commander's Strike** maneuver (action + bonus action + Superiority Die) grants an ally a reaction to make a melee weapon attack — the maneuver's mechanics are confirmed on bg3.wiki, but whether she actually knows it is player-reported, not something this save index can verify (checked directly: known spells/maneuvers for player characters aren't captured in the `Globals.lsf` extraction this handbook uses — only items, positions, and active statuses are). Normally the granted reaction costs the ally their one reaction for the round, competing with an opportunity attack or another reaction-based effect.
+Lae'zel's **Commander's Strike** maneuver grants an ally a reaction to make a melee weapon attack. **Corrected after a user challenge, since an earlier version of this note overclaimed it was free**: BG3 changed this from tabletop (where it costs a full attack), but not as generously as first reported here. Per Larian forum testing, the real cost is **one of Lae'zel's own attacks, her bonus action, and a Superiority Die** — the game still evaluates her Extra Attack eligibility that turn, but one attack instance gets redirected to the ally instead of swung by her. Whether she actually knows the maneuver is player-reported, not something this save index can verify (known spells/maneuvers for player characters aren't captured in the `Globals.lsf` extraction this handbook uses).
 
-**With Astarion holding Duellist's Prerogative** (empty off-hand, see [[11_Main_Character_Builds#^astarion-build|Astarion's build]]), he has **two reactions per turn** instead of one. That means:
+**This is a real cost, not a freebie** — so it's only worth it because of a specific combo. With Astarion holding Duellist's Prerogative (empty off-hand, see [[11_Main_Character_Builds#^astarion-build|Astarion's build]]), he has **two reactions per turn** instead of one:
 
-1. Lae'zel uses Commander's Strike, targeting Astarion.
+1. Lae'zel uses Commander's Strike, spending one of her own attacks, her bonus action, and a Superiority Die, targeting Astarion.
 2. Astarion spends his **first** reaction on the granted attack — a free Sneak Attack opportunity if conditions are met (advantage, or an ally adjacent to the target).
 3. If that attack hits, Astarion still has his **second** reaction free for **Withering Cut** (extra necrotic damage, proficiency bonus) on the same hit, or held for a genuine opportunity attack later in the round.
 
-Net effect: Lae'zel's action economy buys Astarion an extra Sneak Attack without costing him his own reaction economy. Worth setting up deliberately in a hard fight rather than spending Commander's Strike on whoever is most convenient.
+Net effect: Lae'zel trades one of her own attacks (plus her bonus action and a Superiority Die) for an extra Sneak-Attack-eligible hit from Astarion that doesn't cost him his own reaction economy. Worth it in a hard fight where that extra Sneak Attack matters more than her own missing swing — not a no-cost combo, so don't spend it reflexively.
 
 ### Fighter Subclass Reference
 
