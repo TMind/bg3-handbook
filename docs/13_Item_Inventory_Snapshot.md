@@ -108,7 +108,7 @@ Two kinds of rows below: genuinely new acquisitions this pass, and items confirm
 | Character | Item | Rating | Effect | Note |
 |---|---|---|---|---|
 | TMind | **Circle of Bones** (catch-up) | ⭐⭐⭐ | Rare Circlet. Animate Dead 1/long rest; nearby allied undead resist Bludgeoning/Slashing/Piercing | Strong direct fit for the Death Domain necromancer identity |
-| TMind | **Adamantine Scale Mail** (catch-up) | ⭐⭐⭐ | Very Rare medium armour. All incoming damage -1, immune to Critical Hits, attacker gets Reeling (2 turns) on a melee hit against you | One of the best defensive pieces in the game; needs Medium Armour proficiency |
+| TMind | **Adamantine Scale Mail** (catch-up) | ⭐⭐⭐ | Very Rare medium armour. All incoming damage -1, immune to Critical Hits, attacker gets Reeling (2 turns) on a melee hit against you | One of the best defensive pieces in the game — confirmed wearable: Cleric has Medium Armour proficiency by default and Death Domain doesn't remove it |
 | TMind | Nymph Cloak (catch-up) | ⭐⭐ | Very Rare. Dominate Person, 1/long rest | Strong control option, competes for cloak slot |
 | TMind | The Spectator Eyes (catch-up) | ⭐⭐ | Very Rare Amulet. Ray of Fear and Wounding Ray, each 1/long rest | Competes with Amulet of Restoration / Pearl of Power / Amulet of Misty Step / Spellcrux Amulet — five amulets now, only one slot |
 | TMind | Amulet of Restoration (catch-up) | ⭐⭐ | Rare. Healing Word and Mass Healing Word, each 1/long rest, bonus action | Same amulet-slot competition as above |
