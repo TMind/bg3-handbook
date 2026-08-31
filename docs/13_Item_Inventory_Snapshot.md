@@ -328,6 +328,18 @@ Storage holds the overflow (2,968 item records, up from 2,860) — most of it is
 | Penumbral Armour | Rare | An unidentified NPC |
 | True Love's Embrace | Rare | Two separate copies exist, each on a different unidentified NPC — **not** freely available for pairing with TMind's True Love's Caress as previously claimed |
 
+**Cross-checked against Death Cleric build guides this pass** — several items named as best-in-slot for TMind's radiant-synergy plan (see [[11_Main_Character_Builds#^target-equipment|Final Target Equipment Watchlist]]) turned out to already exist in this save:
+
+| Item | Rarity | Held by |
+|---|---|---|
+| Luminous Armour | Very Rare | A **vendor** NPC, far away (a different act's region than the party's current location) — purchasable, not free |
+| Boots of Stormy Clamour | Rare | A **vendor** NPC, even farther away (Act 1 world map region) |
+| Hellrider Longbow | Rare | A **vendor** NPC near Baldur's Gate |
+| Callous Glow Ring | Rare | Sitting at the same position as the unidentified companion in the Ring of Salving cluster above — same "check in game, don't trust another position guess" caution applies |
+| Fabricated Arbalest | Rare | A non-trader NPC near Baldur's Gate — possibly lootable rather than for sale |
+
+Coruscation Ring, Ring of Spiteful Thunder, Amulet of Greater Health, Hood/Cloak of the Weave, Helldusk Gloves/Boots, and Amulet of the Devout were checked too and not found anywhere in the tracked save — either still sitting in an unvisited area's container (this save index only tracks globally-registered entities, not everything in every unloaded level), or not a fixed pickup this run.
+
 ### Storage Handling Routine
 
 1. Before a hard fight, check camp storage for the ⭐⭐⭐ priority pulls.

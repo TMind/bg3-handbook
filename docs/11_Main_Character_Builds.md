@@ -30,7 +30,7 @@ This chapter keeps practical, spoiler-free build templates for the characters an
 | Review the active party | [[11_Main_Character_Builds#^party-build-snapshot\|Party Snapshot]] |
 | Level up TMind or Lae'zel right now | [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] |
 | Build Lae'zel or Astarion | [[11_Main_Character_Builds#^laezel-build\|Lae'zel]] · [[11_Main_Character_Builds#^astarion-build\|Astarion]] |
-| Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] |
+| Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] · [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's spell-by-level plan]] |
 | Configure camp support | [[11_Main_Character_Builds#^camp-options\|Bench and Camp]] · [[11_Main_Character_Builds#^hireling-bard\|Hireling Bard]] · [[11_Main_Character_Builds#^camp-specialists\|Camp Specialists]] |
 | Check equipment goals | [[11_Main_Character_Builds#^target-equipment\|Target Equipment]] |
 | Use a generic role template | [[#⚔️ Frontliner Template\|Frontliner]] · [[#🗡️ Scout and Skill Template\|Scout and Skill]] |
@@ -293,8 +293,10 @@ TMind is not a backline healer. Treat him as an off-tank aura caster and necroma
 
 | Build | Role | When to use |
 |---|---|---|
-| Death Domain Cleric 12 | Simple aura cleric, full Cleric spell access, final feat | Best if TMind must provide Heroes' Feast and full Cleric utility |
-| Death Cleric 10 / Circle of Stars Druid 2 | Spirit Guardians specialist with stronger concentration support and Starry Form utility | Strong if another Cleric handles Heroes' Feast and late Cleric buffs |
+| **Death Domain Cleric 12 (confirmed path)** | Simple aura cleric, full Cleric spell access, final feat | **Decided** — full Cleric progression, no multiclass. See [[11_Main_Character_Builds#^tmind-spell-progression\|Recommended Spell Progression]] below for the level-by-level plan. |
+| Death Cleric 10 / Circle of Stars Druid 2 | Spirit Guardians specialist with stronger concentration support and Starry Form utility | Not taken — kept here for reference only; loses Cleric 11 Heroes' Feast access |
+
+A multiclass path (Cleric 8 / Wizard 2 Necromancy / Sorcerer 2 Draconic, for Twinned Spell + free necromancy casts) was also reviewed and rejected — its best-in-slot gear (Markoheshkir, Robe of the Weave, Ring of Mental Inhibition) is already claimed by [[11_Main_Character_Builds#^kao-build|Kao's build]], and pure Cleric avoids that conflict entirely.
 
 ### Practical Setup
 
@@ -307,6 +309,29 @@ TMind is not a backline healer. Treat him as an off-tank aura caster and necroma
 | Necromancer identity | Use Death Domain offense and summons as support, but do not let summons break party positioning |
 | Item synergy | Healing Word can trigger on-heal gear; this can add Bless-style value without using concentration |
 | Divine Intervention | Keep TMind's own use as an emergency button; use Shadowheart for the weapon trick instead |
+
+### Recommended Spell Progression (Pure Death Domain Cleric 12) ^tmind-spell-progression
+
+**Markers:** ⭐⭐⭐ ⏱️
+
+Confirmed as the build path. This level-by-level plan is transcript-read from a Patch 8-specific, January 2026 guide — the Fextralife Cleric video used elsewhere in this section predates Death Domain entirely, so this fills a real gap rather than duplicating it. Not independently cross-checked against bg3.wiki level-by-level the way the Feats table below is; treat it as a strong starting plan, not gospel.
+
+| Level | What unlocks | Recommended picks |
+|---|---|---|
+| 1 | Death Domain, Reaper | Cantrips: Bone Chill (domain) + Toll the Dead, Sacred Flame, Guidance |
+| 2 | Channel Divinity (Turn Undead), Touch of Death | Spells: Sanctuary, Bless, Command, Inflict Wounds, Guiding Bolt |
+| 3 | 2nd-level spells | Hold Person — sets up guaranteed crits for melee hits |
+| 4 | Cantrip choice, Feat | Cantrip: Bursting Sinew; Spells: Aid, Lesser Restoration; **Feat: +2 Wisdom, Alert, or War Caster** |
+| 5 | Spirit Guardians, Animate Dead + Vampiric Touch (auto), Glyph of Warding | Concentrate Spirit Guardians (switch to the necrotic variant once Inescapable Destruction lands at 6) |
+| 6 | Inescapable Destruction (necrotic ignores resistance) | Spells: Mass Healing Word or Revivify |
+| 7 | Blight + Death Ward (domain), 4th-level spells | Banishment or Guardian of Faith |
+| 8 | Divine Strike: Necrotic, Feat | **+2 Wisdom to 18 or 20** |
+| 9 | Cloudkill (domain), 5th-level spells | Insect Plague or Contagion |
+| 10 | Divine Intervention, cantrip | Planar Binding (situational) |
+| 11 | Planar Ally + Heroes' Feast (domain, 6th-level spells unlock) | — |
+| 12 | Final prepared spell, final Feat | Heal or Blade Barrier; **+2 Wisdom**, or Dual Wielder (for two staves) / Lucky as flavor alternates |
+
+Source: [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`).
 
 ### Necromancer Logistics
 
@@ -360,7 +385,7 @@ Cleric gets the standard three feats (levels 4, 8, 12). Per Fextralife's Cleric 
 | 8 | Ability Improvement (if Wisdom isn't 20 yet), or repeat the level-4 choice | — | Keep pushing Wisdom, or double down on Concentration protection if Spirit Guardians keeps dropping |
 | 12 | Ability Improvement to reach 20 Wisdom, otherwise repeat an earlier pick | Increase one ability score by 2, up to 20 | Lock in max Wisdom before settling into a flavor pick |
 
-Alert (+5 Initiative, can't be Surprised) and Tough (+2 HP per character level) aren't named in this particular video, but both remain reasonable general picks if getting Spirit Guardians active first, or raw survivability, matters more than closing the Concentration-save gap.
+Alert (+5 Initiative, can't be Surprised) and Tough (+2 HP per character level) aren't named in this particular video, but both remain reasonable general picks if getting Spirit Guardians active first, or raw survivability, matters more than closing the Concentration-save gap. A Death-Domain-specific 2026 guide (see [[11_Main_Character_Builds#^tmind-spell-progression\|Recommended Spell Progression]] above) names the same Wisdom-first priority independently, and adds **Dual Wielder** (for two staves) or **Lucky** as flavor picks once Wisdom is locked at 20 — consistent with, not contradicting, the table below.
 
 Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats), [Baldur's Gate 3 Cleric Guide - All Subclasses - Fextralife](https://www.youtube.com/watch?v=O9TbZZ3N48w) (verified against the video's transcript).
 
@@ -404,13 +429,15 @@ This is not a shopping checklist for every run. It is the final-target watchlist
 
 | Character | Final target items | Why they fit |
 |---|---|---|
-| TMind | Blood of Lathander; Devotee's Mace as swap; Luminous Armour; Boots of Stormy Clamour; Gloves of Belligerent Skies or Radiating Orb Gloves; Coruscation Ring; Ring of Spiteful Thunder; Cloak of Protection; Amulet of Greater Health or Fey Semblance Amulet | Spirit Guardians, Radiating Orb, Reverberation, concentration, and survivability |
+| TMind | Blood of Lathander; Devotee's Mace as swap; Luminous Armour; Boots of Stormy Clamour; Gloves of Belligerent Skies or Radiating Orb Gloves (already has the latter); Coruscation Ring; Callous Glow Ring; Ring of Spiteful Thunder; Cloak of Protection; Amulet of Greater Health or Fey Semblance Amulet | Spirit Guardians, Radiating Orb, Reverberation, concentration, and survivability |
 | Lae'zel | Best available two-handed weapon; Moonlight Glaive until a clear upgrade; Killer's Sweetheart; Legacy of the Masters; Helldusk Gloves; Boots of Speed or Disintegrating Night Walkers; Cloak of Protection | Fighter damage, GWM accuracy, frontline mobility, and defensive consistency |
 | Lae'zel throw variant | Dwarven Thrower or Nyrulna; Ring of Flinging; Gloves of Uninhibited Kushigo; Caustic Band | Only use this if respeccing toward thrown-weapon play; do not mix it halfway into the current Battle Master plan |
 | Kao | Markoheshkir; Staff of Spellpower; Robe of the Weave or Potent Robe; Cloak of the Weave or Cloak of Protection; Hood of the Weave; Quickspell Gloves; Spellcrux Amulet or Amulet of Greater Health | More spell DC, more spell slots, better concentration, and stronger control casting |
 | Astarion | Knife of the Undermountain King; Bloodthirst; The Dead Shot or Gontr Mael; Risky Ring; Caustic Band; Elegant Studded Leather or Yuan-Ti Scale Mail; Disintegrating Night Walkers; Legacy of the Masters or Helldusk Gloves | Stealth opener, crit range, ranged accuracy, Sneak Attack reliability, and mobility |
 
 Priority rule: current build synergy beats theoretical best-in-slot. If an item weakens the aura blender plan, keep it as a swap rather than forcing it onto the character.
+
+**Availability check (this pass)**: cross-referenced TMind's radiant-synergy watchlist against the current save. Luminous Armour, Boots of Stormy Clamour, and Callous Glow Ring are all confirmed to exist this run — see [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]] for holder details (a mix of distant vendors and one unidentified companion, not free camp storage). Coruscation Ring, Ring of Spiteful Thunder, and the Amulet of Greater Health / Cloak of Protection options weren't found anywhere in the tracked save — either still uncollected in an unvisited area, or not a fixed pickup this run.
 
 ## 🎵 Hireling Bard: Camp Support ^hireling-bard
 
@@ -499,6 +526,8 @@ These sources were used as reference points, then adjusted to the local party no
 
 | Source | Used for | Review decision |
 |---|---|---|
+| [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`) | Patch 8-specific level-by-level spell and feat progression for a pure Death Domain Cleric 12 | Adopted as [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's Recommended Spell Progression]] — the existing Fextralife Cleric source predates Death Domain, so this closed a real content gap. Confirmed as the chosen build after comparing against a rejected multiclass alternative. |
+| [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`) | A Cleric 8 / Wizard 2 (Necromancy) / Sorcerer 2 (Draconic) multiclass alternative, reviewed for comparison | **Rejected** — its best-in-slot gear (Markoheshkir, Robe of the Weave, Ring of Mental Inhibition) is already claimed by Kao's build; pure Cleric avoids the conflict |
 | [bg3.wiki: Fighter](https://bg3.wiki/wiki/Fighter) and general feat-count references | Confirmed Fighter's exact feat levels (4/6/8/12, four total) and that Improved Extra Attack/Battle Master maneuvers are already resolved by level 11 | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] and add explicit levels to Lae'zel's Feat Priority table, which previously had no level column |
 | [bg3.wiki: Cleric](https://bg3.wiki/wiki/Cleric) | Confirmed Cleric's feat levels (4/8/12, three total), that 6th-level spells unlock at 11 (not 12), and that 12 adds no new spell tier | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] for TMind |
 | [PC Gamer: The best Baldur's Gate 3 builds for Patch 8 and beyond](https://www.pcgamer.com/baldurs-gate-3-multiclass-builds/) | Astarion-style stealth burst, Death Cleric / Stars Druid concept, multiclass tradeoffs | Useful, but not copied blindly; party synergy matters more than isolated burst |
