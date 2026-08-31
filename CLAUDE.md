@@ -19,7 +19,7 @@ You are an expert on Baldur's Gate 3, acting as a tactical advisor and knowledge
 
 ## Current Game State
 - **Act**: Act 3 — Baldur's Gate
-- **Last known location**: party level 11, split across two spots — Lae'zel and TMind are back at **camp**, Kao and Astarion are at **Sorcerous Sundries, Ramazith's Tower**, Lower City (previously Wyrm's Rock Fortress, `WYR_Fortress_SUB`, ~106h playtime)
+- **Last known location**: split across two spots in Lower City — TMind and Lae'zel are in **Lower City proper** (Level 11, both eligible for Level 12 but not yet leveled up); Kao and Astarion are at **Baldur's Mouth Basement**, already **Level 12** (~118h playtime, previously Sorcerous Sundries/Ramazith's Tower)
 - **Act 2 complete**: Moonrise Towers cleared, Gauntlet of Shar complete, Nightsong freed, Shadowheart chose Selûne
 
 See `characters/` for full character details and `party/strategy.md` for party synergy notes.

@@ -33,11 +33,12 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Scope
 
-- Source: `Campsite - 115h 34m`, modified `2026-08-30 01:29:40 +02:00`, synced into the handbook at `2026-08-30 01:34:23 +02:00`. A huge stretch of play happened (+10,500 XP each) and the party is split: Lae'zel and TMind at camp, Astarion and Kao at Ramazith's Tower (Sorcerous Sundries). Kao and Astarion each picked up a Legendary weapon this pass — see [[13_Item_Inventory_Snapshot#^inventory-new-finds|Item Ratings]] below.
+- Source: `Lower City - 118h 27m`, modified `2026-08-31 01:13:19 +02:00`, synced into the handbook at `2026-08-31 08:42:08 +02:00`. The party's split flipped location: TMind and Lae'zel are together in Lower City proper; Kao and Astarion are together at Baldur's Mouth Basement (already Level 12, ahead of TMind/Lae'zel who have the XP but haven't leveled up yet — see [Current Save Snapshot](12_Current_Save_Snapshot.md)).
 - Item names were resolved from the game's own root templates and localization, so display names match in game.
 - Holder is position-based: an item counts for TMind, Lae'zel, Kao, or Astarion when it sits at that character's active-party position; everything else is bucketed as `storage`. **`storage` is not the same as "in camp storage"** — it also includes items still lying uncollected in the world and items held by NPCs (companions, vendors, enemies) who aren't one of the four tracked characters. The bulk counts in Character Summary, the resource spot check, and Camp Storage below inherit this imprecision; only individually-verified items (like [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]]) have been checked against the save's `Level` field and nearby `Character` nodes to confirm they're actually sitting in the party's own storage.
 - Only build-relevant magic gear is listed per character. Generic default weapons/armour, camp clothes, books, and keys are omitted.
 - Exact equipped-vs-carried slots still need in-game confirmation; this is a carried/available snapshot.
+- **This pass also caught a coverage gap, not just a state change**: several items on TMind and Kao (Circle of Bones, The Spectator Eyes, Adamantine Scale Mail, Strange Tendril Amulet, and others below) turn out to have already been sitting in their inventories in prior snapshots without ever being listed here. They're written up now as a backlog catch-up, not as new acquisitions — noted per item where relevant.
 
 ## Rating Key
 
@@ -49,28 +50,29 @@ This note summarizes practical active-party and camp-storage items visible in th
 
 ## Character Summary
 
-Totals are position-based item records from the current save (approximate category labels).
+Totals are position-based item records from the current save (approximate category labels — recomputed this pass with a slightly different heuristic than before, so treat the sub-category split as directional, not exact).
 
 | Character | Total | Equipment | Potions / elixirs | Scrolls | Combat consumables | Alchemy | Utility / keys |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| TMind | 324 | 29 | 19 | 26 | 25 | 30 | 195 |
-| Lae'zel | 65 | 18 | 6 | 1 | 3 | 1 | 36 |
-| Kao | 137 | 37 | 13 | 13 | 10 | 0 | 64 |
-| Astarion | 199 | 49 | 17 | 36 | 23 | 3 | 71 |
+| TMind | 194 | 33 | 7 | 28 | 7 | 2 | 117 |
+| Lae'zel | 149 | 23 | 36 | 14 | 5 | 1 | 70 |
+| Kao | 269 | 27 | 13 | 13 | 5 | 33 | 178 |
+| Astarion | 143 | 32 | 19 | 29 | 7 | 1 | 55 |
 
-Everyone's totals moved a lot this pass (a long shopping/looting stretch). Notably: TMind's Scrolls jumped 15 → 26 and Combat consumables 4 → 25 — worth a look in game since this is a big unexplained gain. Kao's Scrolls partially recovered (6 → 13), consistent with some of the long-standing hand-back from Astarion finally happening — see the resource spot check below. Murderous Cut is fully gone from both TMind and Astarion's carried lists (now only in storage) — the "wrong owner" issue resolved itself, one way or another.
+Big swings across the board this pass: TMind's total dropped 324 → 194 and Astarion's dropped 199 → 143, while Kao's roughly doubled (137 → 269) and Lae'zel's more than doubled (65 → 149). Consistent with a long, active stretch of play across two different locations rather than a single anomaly — a lot moved between characters and into/out of storage. Individual moves worth knowing about are called out per character below.
 
 ## Current Resource Spot Check
 
 | Resource | Latest visible count | Current holder(s) | Practical note |
 |---|---:|---|---|
-| Scroll of Revivify | 10 | Kao 1; storage 9 | Unchanged across five snapshots — still strong emergency stock; put one on at least two active characters. |
-| Potion of Speed | 5 | Lae'zel 1; TMind 1; storage 3 | Up from 4. Still enough for a Haste opener. |
-| Elixir of Bloodlust | 0 | — | **All spare bottles are gone** — Lae'zel's active buff is running on her last dose with no backup left. Restock before the next hard fight. |
-| Potion of Invisibility | 6 | Kao 1; TMind 1; storage 4 | Up from 5. Workable for scouting/escapes. |
-| Scroll of Globe of Invulnerability | 4 | TMind 2; Astarion 2 | Up from 2 and partially recovered — 2 are now with TMind instead of all on Astarion. Still worth consolidating onto Kao, who casts it. |
-| Scroll of Conjure Elemental | 3 | TMind 1; Astarion 1; storage 1 | Up from 2, same partial-recovery pattern as above. |
-| Healing potions | 42 | TMind 7; Astarion 8; Lae'zel 4; Kao 5; storage 18 | Up slightly from 39; nobody under-supplied. |
+| Scroll of Revivify | 11 | TMind 2; Lae'zel 1; Kao 1; Astarion 1; storage 6 | Up from 10 and now spread across **all four** characters plus storage — the best distribution yet, no action needed. |
+| Potion of Speed | 4 | TMind 1; Astarion 1; storage 2 | Down slightly from 5, still enough for a Haste opener. |
+| Elixir of Bloodlust | 0 | — | **Still zero anywhere in the save.** Lae'zel's active buff finally ran out this pass with nothing to refill it — see her Active Practical Buffs. |
+| Potion of Invisibility | 7 | Lae'zel 2; Kao 1; Astarion 1; storage 3 | Up from 6, healthy stock. |
+| Scroll of Globe of Invulnerability | 2 | TMind 2 | Down from 4 — Astarion's 2 copies are gone (used or moved, not tracked elsewhere). Still not with Kao, who casts it. |
+| Scroll of Conjure Elemental | 3 | TMind 1; Astarion 1; storage 1 | Unchanged. |
+| Scroll of Bestow Curse | 2 | Astarion 2 | **Reversed again** — this had moved back to Kao last pass, now it's on Astarion once more. Same long-running back-and-forth as the rest of Kao's scroll library. |
+| Healing potions (basic/greater/superior/supreme) | 36 | TMind 5; Lae'zel 4; Kao 5; Astarion 5; storage 17 | Down from 42 but evenly spread; nobody under-supplied. |
 
 ## Best Immediate Uses ^inventory-best-uses
 
@@ -79,50 +81,52 @@ Everyone's totals moved a lot this pass (a long shopping/looting stretch). Notab
 | ⭐⭐⭐ | **Markoheshkir** | Kao | Kao | Legendary staff: +1 spell DC/attack, a free spell 1/long rest with no slot cost, elemental buff, Topple. Should be his main weapon now. |
 | ⭐⭐⭐ | Robe of the Weave | Kao | Kao | +2 AC, +1 spell DC/attack, heals on a successful spell save — upgrade over Infernal Robe |
 | ⭐⭐⭐ | **Duellist's Prerogative** | Astarion | Astarion | Legendary rapier: crits on 19, extra reaction, bonus-action taunt+bleed, bonus-action extra attack — a loadout swap (empty off-hand), not a build fork; see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]] |
+| ⭐⭐⭐ | **Circle of Bones** | TMind | TMind | Rare circlet: Animate Dead (1/long rest) + Undead Ward (nearby allied undead resist Bludgeoning/Slashing/Piercing) — a near-perfect fit for a Death Domain necromancer, only surfaced in the audit this pass |
+| ⭐⭐⭐ | **Adamantine Scale Mail** | TMind | TMind | Very Rare medium armour: all incoming damage -1, immune to critical hits, attacker gets Reeling for 2 turns — exceptional defensive upgrade, only surfaced this pass |
 | ⭐⭐⭐ | Devotee's Mace | TMind | TMind | healing-aura weapon |
 | ⭐⭐⭐ | Shield of Devotion | TMind | TMind | spell slot + shield |
 | ⭐⭐⭐ | The Whispering Promise | TMind | TMind | Bless on heal, concentration-free |
-| ⭐⭐⭐ | Amulet of Restoration | TMind | TMind | healing support amulet |
+| ⭐⭐⭐ | Reaper's Embrace | Lae'zel | Lae'zel | Very Rare heavy armour: forced-movement immunity, fear aura, flat damage reduction — now confirmed in her own inventory, no longer a mystery |
 | ⭐⭐⭐ | Moonlight Glaive | Lae'zel | Lae'zel | martial weapon |
 | ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | Lae'zel | frontline crit |
 | ⭐⭐⭐ | Boots of Psionic Movement | Lae'zel | Lae'zel | Githyanki-only Fly + psychic damage |
 | ⭐⭐⭐ | Cloak of Elemental Absorption | Kao | Kao | caster defense |
-| ⭐⭐⭐ | Spineshudder Amulet | Kao | Kao | Reverberation rider |
 | ⭐⭐⭐ | Cloak of Displacement | Astarion | Astarion | miss-chance survival |
 | ⭐⭐⭐ | The Graceful Cloth | Astarion | Astarion | DEX / Cat's Grace |
-| ⭐⭐⭐ | Scroll of Revivify | Kao | Any | emergency revive |
+| ⭐⭐⭐ | Scroll of Revivify | TMind / Lae'zel / Kao / Astarion | Any | emergency revive — now spread across all four, keep it that way |
 | ⭐⭐⭐ | Sword of the Emperor | Lae'zel | Lae'zel | +2 longsword, +2 to all saves vs spells — strong vs Act 3's caster-heavy fights |
 | ⭐⭐⭐ | Chancer's Carcanet | Lae'zel | Lae'zel | reaction Advantage on an attack or save, 1/long rest |
 | ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | Astarion | on-demand Invisibility — ideal for a Hide → Sneak Attack loop |
 | ⭐⭐⭐ | Disintegrating Night Walkers | Astarion | Astarion | terrain immunity + free Misty Step every short rest |
 
-The Incandescent Staff and The Joltshooter have dropped off this list — not because they got worse, but because Markoheshkir and Duellist's Prerogative are straightforwardly better weapons for Kao and Astarion respectively. Both old items are still fine backups (see their character sections).
+Spineshudder Amulet dropped off this list — it rewards ranged *spell attack* hits, but Kao's core kit (Web, Grease, Hold Person) mostly forces saves rather than rolling attacks, so it's a weaker fit than it first looked. See the Kao section for the full amulet comparison; he now has five competing amulet options.
 
-## Item Ratings and Redistribution — this pass's new finds ^inventory-new-finds
+## Item Ratings and Redistribution — this pass's new finds and coverage catch-up ^inventory-new-finds
 
-Every named item picked up since the last full item audit is now verified against bg3.wiki and rated below. Effects are summarized in the table; **current holder** is where the save shows it right now, **recommended** is where it should go.
+Two kinds of rows below: genuinely new acquisitions this pass, and items confirmed against bg3.wiki that turned out to already be in someone's inventory from an earlier snapshot but were never rated (marked **catch-up**).
 
 | Character | Item | Rating | Effect | Note |
 |---|---|---|---|---|
-| Kao | **Markoheshkir** | ⭐⭐⭐ | Legendary +2 Quarterstaff. +1 Spell Save DC/Attack, **Arcane Battery** (cast one spell 1/long rest for free, no slot spent), Kereska's Favour (elemental self-buff, short rest), Topple weapon action | **Equip as main weapon** — this is a top-tier staff |
-| Kao | Robe of the Weave | ⭐⭐⭐ | Very Rare. +2 AC, +1 Spell Save DC/Attack, heals 1d6 HP when you succeed a spell saving throw | Upgrade over Infernal Robe |
-| Kao | Staff of Interruption | ⭐⭐ | Rare +2 Quarterstaff. Cast Counterspell 1/long rest, Topple action | Competes with Markoheshkir for his hands — situational swap vs caster-heavy fights, can't use both at once |
-| Kao | Fey Semblance Amulet | ⭐⭐ | Very Rare. Advantage on Intelligence, Wisdom, and Charisma saving throws | Solid defensive amulet, competes with Spineshudder/Strange Tendril for the slot |
-| Kao | *(boss-dropped shield, name withheld)* | ⭐ (off-build) | Rare. +2 AC, Advantage on DEX saves, +1 Spell Save DC/Attack — matches a flagged spoiler-sensitive term so the name is omitted here | A shield doesn't fit a two-handed staff caster — carry for sale/swap, not equip |
-| Astarion | **Duellist's Prerogative** | ⭐⭐⭐ | Legendary +3 Rapier. Crits on 19 when off-hand is empty, an extra reaction/turn, bonus-action Challenge to Duel (taunt + Bleed), reaction Withering Cut (necrotic on hit), bonus-action extra attack (Dueller's Enthusiasm, replaces the usual off-hand attack) | **Smaller decision than it looks**: Thief's bonus-action economy and Sneak Attack are unaffected — Dueller's Enthusiasm substitutes for the off-hand attack one-for-one. The real cost is whatever the current off-hand dagger provides (Stillmaker's 1/long-rest Hold Person, if that's the one in his off-hand). See [[11_Main_Character_Builds#^astarion-build\|Astarion's build]] for the full breakdown. |
-| Astarion | Salty Scimitar(rrr) | ⭐⭐ | Looted from Captain Grisly at The Blushing Mermaid. Command spell 1/long rest, Flourish/Lacerate actions if proficient | Decent, but outclassed by the rapier as a main-hand pick |
-| Astarion | Ring Of Blink | ⭐⭐ | Rare. Cast Blink 1/long rest | Good escape/repositioning tool |
-| Astarion | Winter's Clutches (gloves) | ⭐⭐ | Uncommon. Inflicts Encrusted with Frost on cold-damage hits | Minor rider, keep if he has cold sources |
-| Astarion | Coldbrim Hat | ⭐ | Uncommon. Applies Encrusted with Frost when inflicting any condition | Minor, situational |
-| Astarion | Gold Wyrmling Staff | ⭐ (off-build) | Rare +1 Quarterstaff, Fire Bolt cantrip | Not useful for a Rogue — sell |
-| TMind | Scroll of Dethrone | ⭐⭐⭐ (situational) | Very Rare single-use scroll (or spellbook-transcribable, Level 5 slot, 1/long rest) | Save for a genuinely hard boss fight — verify its exact effect in game before relying on it, not fully confirmed here |
-| Lae'zel | Amulet of Windrider | ⭐⭐ | Very Rare. Ride the Winds (Level 3, 1/long rest) + Gust of Wind (Level 2, 1/short rest) | Good mobility/control utility pickup |
-| Lae'zel | Keepsake Ring | ⭐⭐ | Cast Dominate Beast, 1/long rest | Moved to her from TMind — decent flex control option for a frontliner |
-| Kao / TMind | The Tharchiate Codex (×4 copies total: 2 with TMind, 1 with Astarion, plus its curse status) | Legendary book | Necromancy of Thay: a Constitution penalty, 20 temp HP after long rest, and Danse Macabre (summon 4 ghouls 1/long rest) once read | **Astarion has already read a copy and carries the curse.** TMind's two copies are unread — reading one applies the same trade-off to him too. Not permanent: **Remove Curse or Greater Restoration cures it** (bg3.wiki-confirmed) — TMind can likely self-cast Remove Curse as a Cleric. Decide who (if anyone else) should read it. |
+| TMind | **Circle of Bones** (catch-up) | ⭐⭐⭐ | Rare Circlet. Animate Dead 1/long rest; nearby allied undead resist Bludgeoning/Slashing/Piercing | Strong direct fit for the Death Domain necromancer identity |
+| TMind | **Adamantine Scale Mail** (catch-up) | ⭐⭐⭐ | Very Rare medium armour. All incoming damage -1, immune to Critical Hits, attacker gets Reeling (2 turns) on a melee hit against you | One of the best defensive pieces in the game; needs Medium Armour proficiency |
+| TMind | Nymph Cloak (catch-up) | ⭐⭐ | Very Rare. Dominate Person, 1/long rest | Strong control option, competes for cloak slot |
+| TMind | The Spectator Eyes (catch-up) | ⭐⭐ | Very Rare Amulet. Ray of Fear and Wounding Ray, each 1/long rest | Competes with Amulet of Restoration / Pearl of Power / Amulet of Misty Step / Spellcrux Amulet — five amulets now, only one slot |
+| TMind | Amulet of Restoration (catch-up) | ⭐⭐ | Rare. Healing Word and Mass Healing Word, each 1/long rest, bonus action | Same amulet-slot competition as above |
+| TMind | Amulet of Misty Step (catch-up) | ⭐⭐ | Uncommon. Misty Step, 1/short rest | Same amulet-slot competition |
+| TMind | Eversight Ring (catch-up; save shows it as `MAG_Shadow_BlindImmunity_Ring`, unresolved display name) | ⭐⭐ | Uncommon. Immune to Blinded; also sees through magical darkness | Solid defensive/utility ring |
+| TMind | Pearl of Power Amulet (catch-up) | ⭐ | Uncommon. Restore one spell slot of 3rd level or lower, 1/long rest | Lowest priority of the five competing amulets |
+| TMind | Luminous Gloves (catch-up) | ⭐ | Uncommon. +1 Strength save; Radiating Orb on radiant damage dealt | Minor — depends on TMind actually dealing radiant damage |
+| TMind | Salty Scimitar(rrr) | ⭐ (off-build) | Moved here from Astarion this pass. Command 1/long rest, Flourish/Lacerate if proficient | Doesn't fit a mace-and-shield Cleric — carry for sale or hand to whoever ends up using a scimitar |
+| Lae'zel | **Reaper's Embrace** | ⭐⭐⭐ | Very Rare heavy armour: forced-movement immunity, fear aura, flat damage reduction | Now physically confirmed in her inventory — the "unidentified companion" mystery resolved itself for this one item, see Camp Storage below |
+| Kao | Strange Tendril Amulet (catch-up) | ⭐⭐ | Rare. Evard's Black Tentacles, 1/long rest | Good control option, fits his Conjuration identity; competes with Fey Semblance for the amulet slot |
+| Kao | Ring of Mental Inhibition (catch-up) | ⭐⭐ | Uncommon. On a target's failed save against your spell/ability, apply Mental Fatigue (2 turns; stacking penalty to INT/WIS/CHA saves, can trigger 1d4 Psychic damage) | Synergizes with a control Wizard forcing saves constantly — bg3.wiki notes it also affects allies, so use with care |
+| Kao | Circlet of Mental Anguish (catch-up) | ⭐⭐ | Rare. Heal 1d4 HP when a target fails an INT/WIS/CHA save against your spell/cantrip | Passive sustain that rewards the same save-forcing playstyle |
+| Kao | Hr'a'cknir Bracers (catch-up) | ⭐⭐ | Very Rare gloves. Mage Hand as a Bonus Action; Telekinesis 1/short rest | Solid utility, Telekinesis is a genuinely useful control/environment tool |
+| Kao | Spineshudder Amulet (catch-up) | ⭐ | Uncommon. Reverberation (2 turns) on a ranged spell *attack* hit | Weaker than it looks — most of Kao's core spells force saves, not attack rolls |
+| Astarion | Fetish of Callarduran Smoothhands (save shows it as `UND_DeadInWater_CallarduranTrinket`, unresolved display name) | ⭐ | Rare Ring. Invisibility, 1/long rest | Backup Invisibility source, but ring slots are already crowded (Ring of Shadows, Ring Of Blink, Shifting Corpus Ring) |
+| Astarion | Summon Golem Bell, Spider's Lyre, *(a secret-elevator ring, name withheld — spoiler-flagged location)*, Lute of the Merryweather Bard | — | Quest/location-specific or cosmetic items tied to areas or NPCs likely behind the party now (a boss-adjacent summon, a Shadow-Cursed Lands guide item, a secret-passage ring, a cosmetic instrument) | Safe to leave in storage or discard, not rated as active-build equipment |
 
-**Confirmed done from last time**: the Hellfire Hand Crossbow, Shade-Slayer Cloak, and Vivacious Cloak moves all happened as recommended. The Ring of Salving / Cloak of Protection / Helmet of Arcane Acuity / Bloodguzzler Garb situation is unchanged — still with the same unidentified companion-type character near camp (same exact position across three syncs now) — and this pass confirmed that companion also holds Reaper's Embrace and Lae'zel's missing Cerebral Citadel Gloves, seven items total. Not lost, not recoverable through this audit method. Murderous Cut is no longer carried by anyone (now only in storage) — the wrong-owner issue resolved itself.
-
-**Redistribution to make**: Astarion still holds part of Kao's old scroll library, though some has come back — see the resource spot check above; Kao should still end up with the rest.
+**Confirmed done from last time**: Duellist's Prerogative and Markoheshkir are both equipped and rated. **Reversed this pass**: Scroll of Bestow Curse and Scroll of Crown of Madness moved back onto Astarion after coming home to Kao last time — the scroll-library hand-off between them keeps flip-flopping (now five snapshots running); worth a deliberate one-time decision instead of letting it keep drifting. **Gold Wyrmling Staff is resolved** — the one copy previously flagged "off-build, sell" on Astarion is gone from him, and two copies now sit in storage (sold or stored, consistent with the earlier recommendation either way).
 
 ## TMind ^inventory-tmind
 
@@ -130,39 +134,40 @@ Every named item picked up since the last full item audit is now verified agains
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
+| ⭐⭐⭐ | Circle of Bones | TMind | Animate Dead + Undead Ward — see Item Ratings above, newly surfaced this pass |
+| ⭐⭐⭐ | Adamantine Scale Mail | TMind | no-crit medium armour, damage reduction, Reeling rider — see Item Ratings above |
 | ⭐⭐⭐ | Devotee's Mace | TMind | healing-aura weapon |
-| ⭐⭐⭐ | Blood of Lathander | TMind | light aura / safety (effect active) |
+| ⭐⭐⭐ | Blood of Lathander | TMind | light aura / safety (no longer shows as an active status — likely not the currently equipped weapon) |
 | ⭐⭐⭐ | Shield of Devotion | TMind | spell slot + shield (active) |
 | ⭐⭐⭐ | The Whispering Promise | TMind | Bless-on-heal ring, concentration-free |
-| ⭐⭐⭐ | Amulet of Restoration | TMind | healing-support amulet |
-| ⭐⭐ | Luminous Gloves | TMind | radiant / Radiating Orb synergy |
-| ⭐⭐ | Pearl of Power Amulet | TMind / Kao | slot recovery |
-| ⭐⭐ | Spellcrux Amulet | TMind / Kao | slot recovery |
-| ⭐⭐ | Amulet of Misty Step | TMind | free repositioning |
-| ⭐⭐ | Nymph Cloak | Kao / TMind | control utility |
-| ⭐⭐ | The Spectator Eyes | TMind / Kao | spell utility |
-| ⭐⭐ | Circle of Bones | TMind | defensive amulet |
-| ⭐⭐ | Adamantine Scale Mail | TMind | no-crit heavy armour |
-| ⭐⭐ | Boots of Speed | TMind | frontline mobility — he has no other boots, keep these rather than pass them along |
-| — (×2, unread) | The Tharchiate Codex | TMind | Legendary necromancy book — see Item Ratings above; reading it applies the same curse Astarion now carries, curable with Remove Curse/Greater Restoration |
+| ⭐⭐ | The Spectator Eyes | TMind | Ray of Fear + Wounding Ray — competes for amulet slot, see below |
+| ⭐⭐ | Amulet of Restoration | TMind | Healing Word + Mass Healing Word — competes for amulet slot |
+| ⭐⭐ | Amulet of Misty Step | TMind | free repositioning — competes for amulet slot |
+| ⭐⭐ | Spellcrux Amulet | TMind / Kao | slot recovery — competes for amulet slot |
+| ⭐⭐ | Nymph Cloak | TMind / Kao | Dominate Person control |
+| ⭐⭐ | Eversight Ring | TMind | Blind immunity, sees through magical darkness |
+| ⭐ | Pearl of Power Amulet | TMind | slot recovery, lowest priority of the amulet options |
+| ⭐ | Luminous Gloves | TMind | radiant / Radiating Orb synergy |
+| ⭐ | Boots of Speed | TMind | frontline mobility — he has no other boots, keep these rather than pass them along |
+| ⭐ (off-build) | Salty Scimitar(rrr) | TMind | moved here from Astarion this pass; doesn't fit a mace Cleric, carry for sale |
+| — (×2, unread) | The Tharchiate Codex | TMind | Legendary necromancy book — see Item Ratings above; reading it applies the same curse Astarion carries, curable with Remove Curse/Greater Restoration |
 
-No longer carried: Murderous Cut and all 3 copies of the Whispering Mask are gone from TMind (now only in storage) — both resolved without needing manual intervention. Ring of Salving, Keepsake Ring (now with Lae'zel), Cloak of Protection, and Helmet of Arcane Acuity remain with the same unidentified companion-type character near camp — see [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]] for the full seven-item consolidated list.
+**TMind now has five items competing for one amulet slot**: The Spectator Eyes, Amulet of Restoration, Amulet of Misty Step, Spellcrux Amulet, and Pearl of Power. All five are genuinely useful in different ways (utility spells, healing backup, mobility, slot recovery, minor slot recovery) — worth picking one deliberately rather than leaving it to whichever was equipped last. Spellcrux Amulet (spell slot restoration at higher levels) is likely still the strongest pick for a support Cleric, with The Spectator Eyes or Amulet of Restoration as the next-best alternatives depending on whether utility spells or backup healing matters more that day.
+
+No longer carried: Murderous Cut and all 3 copies of the Whispering Mask are gone from TMind (now only in storage) — both resolved without needing manual intervention.
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
 | ⭐⭐⭐ | Scroll of Dethrone | 1 | TMind | Save for a genuinely hard boss fight — see Item Ratings above |
-| ⭐⭐⭐ | Scroll of Globe of Invulnerability | 2 | Kao | New this pass — worth handing to Kao, who casts it |
-| ⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | New this pass, same reasoning |
-| ⭐⭐⭐ | Potion of Speed | 1 | Lae'zel / group | decisive Haste — back after being gone a snapshot |
-| ⭐⭐ | Potion of Invisibility | 1 | Astarion / scout | New this pass |
-| ⭐⭐ | Elixir of Heroism | 1 | Any | temp HP + fear immunity opener — unchanged |
-| ⭐ | Potion of Superior Healing | 2 | Any | situational — unchanged |
-| ⭐ | Potion of Greater Healing | 1 | Any | situational — unchanged |
-| ⭐ | Potion of Healing | 4 | Any | situational — up from 3 |
+| ⭐⭐⭐ | Scroll of Revivify | 2 | TMind | Now spread across the whole party, see resource spot check above |
+| ⭐⭐ | Scroll of Globe of Invulnerability | 2 | Kao | Still not with Kao, who actually casts it |
+| ⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | Same reasoning |
+| ⭐⭐⭐ | Potion of Speed | 1 | Lae'zel / group | decisive Haste opener |
+| ⭐ | Healing potions (basic/greater/superior) | ~4 | Any | steady, no action needed |
 
-TMind's alchemy stock is holding at ≈30 records, still well below the ≈116 it was several snapshots ago. His Scrolls (15 → 26) and Combat consumables (4 → 25) both jumped a lot this pass — worth a look in game to see what specifically came in, beyond what's itemized above.
+TMind's inventory shrank a lot this pass (324 → 194 total records) even as several previously-uncatalogued equipment pieces surfaced — consistent with a large redistribution/shopping stretch rather than losses. Worth a look in game to confirm nothing important dropped out unintentionally.
 
 ## Lae'zel ^inventory-laezel
 
@@ -170,34 +175,35 @@ TMind's alchemy stock is holding at ≈30 records, still well below the ≈116 i
 
 | Use | Item | Best fit | Note |
 |---|---|---|---|
+| ⭐⭐⭐ | **Reaper's Embrace** | Lae'zel | Very Rare heavy armour — now confirmed in her own inventory, see Item Ratings above |
 | ⭐⭐⭐ | Moonlight Glaive | Lae'zel | martial weapon |
 | ⭐⭐⭐ | Killer's Sweetheart | Lae'zel | frontline crit (active) |
-| ⭐⭐⭐ | Adamantine Splint Armour | Lae'zel | no-crit heavy armour |
+| ⭐⭐⭐ | Adamantine Splint Armour | Lae'zel | no-crit heavy armour — now has a real alternative in Reaper's Embrace, worth comparing |
+| ⭐⭐⭐ | Sword of the Emperor | Lae'zel | +2 longsword, +2 saves vs spells |
+| ⭐⭐⭐ | Boots of Psionic Movement | Lae'zel | Githyanki-only Fly + psychic damage |
+| ⭐⭐⭐ | Chancer's Carcanet | Lae'zel | guaranteed Advantage on a save or attack, 1/long rest |
 | ⭐⭐ | Amulet of Branding | Lae'zel | melee debuff |
 | ⭐⭐ | Braindrain Gloves | Lae'zel | psychic-rider option |
 | ⭐⭐ | Crossbow of Arcane Force | Lae'zel | ranged fallback |
-| ⭐⭐ | Corpsegrinder | Lae'zel | martial weapon option |
-| ⭐ | Grymskull Helm | Lae'zel | situational helm |
-| ⭐⭐⭐ | Sword of the Emperor | Lae'zel | +2 longsword, +2 saves vs spells — see Item Ratings above |
-| ⭐⭐⭐ | Boots of Psionic Movement | Lae'zel | Githyanki-only Fly + psychic damage — correctly replaced Boots of Speed |
-| ⭐⭐⭐ | Chancer's Carcanet | Lae'zel | guaranteed Advantage on a save or attack, 1/long rest |
-| ⭐⭐ | Cerebral Citadel Armour | Lae'zel | compare its AC to Adamantine Splint Armour before swapping |
+| ⭐⭐ | Cerebral Citadel Armour | Lae'zel | compare its AC to Adamantine Splint Armour / Reaper's Embrace before swapping |
+| ⭐⭐ | Amulet of Windrider | Lae'zel | Ride the Winds + Gust of Wind |
+| ⭐⭐ | Keepsake Ring | Lae'zel | Dominate Beast 1/long rest |
 | ⭐⭐ (bench) | Cindermoth Cloak | Lae'zel | unreliable retaliation burn |
+| ⭐ | Grymskull Helm | Lae'zel | situational helm |
 | ⭐ | Vivacious Cloak | Lae'zel | guaranteed temp HP on initiative, the better default cloak over Cindermoth |
-| ⭐⭐ | Amulet of Windrider | Lae'zel | new this pass — Ride the Winds + Gust of Wind, see Item Ratings above |
-| ⭐⭐ | Keepsake Ring | Lae'zel | new this pass, moved from TMind — Dominate Beast 1/long rest |
 
-**Two corrections from re-checking her position this pass**: Corpsegrinder is no longer with her — checked its `Level` field (empty) and confirmed no NPC nearby, so it's genuinely in **camp storage**, not lost. And the earlier claim that Cerebral Citadel Gloves was "gone, not found elsewhere" was wrong in a different way than expected: it's not in storage either — it's sitting with the **same unidentified resurrected companion** who also holds Reaper's Embrace (see [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]]), not freely recoverable from a container.
+**Armour decision now has three options**: Adamantine Splint Armour (no-crit), Reaper's Embrace (forced-movement immunity + fear aura + flat reduction), and Cerebral Citadel Armour — worth comparing all three in game against her current build rather than assuming the no-crit piece is automatically best now that Reaper's Embrace is actually available.
+
+No longer carried: Corpsegrinder is confirmed in genuine camp storage (checked last pass, still true). Cerebral Citadel Gloves' status is unresolved — see [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]] for a methodology note on that one rather than a repeated claim.
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Potion of Speed | 1 | Lae'zel / group | unchanged |
-| ⭐ | Potion of Superior Healing | 1 | Any | situational — unchanged |
-| ⭐ | Potion of Greater Healing | 1 | Any | situational — unchanged |
+| ⭐⭐⭐ | Potion of Invisibility | 2 | Lae'zel / scout | new this pass |
+| ⭐ | Healing potions | 4 | Any | steady |
 
-No longer carried: her **Elixir of Bloodlust spare bottle is gone** — this was the last one in the entire party's inventory (see the resource spot check above). The active buff is running on borrowed time with no backup left.
+No longer carried: her **Elixir of Bloodlust spare bottle is gone**, and now the active buff itself has expired too (no longer in her Active Practical Buffs) — the last dose in the entire party's inventory finally ran out. Restock before relying on it again.
 
 ## Kao ^inventory-kao
 
@@ -208,13 +214,13 @@ No longer carried: her **Elixir of Bloodlust spare bottle is gone** — this was
 | ⭐⭐⭐ | Markoheshkir | Kao | Legendary staff — see Item Ratings above, equip as main weapon |
 | ⭐⭐⭐ | Robe of the Weave | Kao | +2 AC, +1 spell DC/attack, heals on spell-save success |
 | ⭐⭐⭐ | Cloak of Elemental Absorption | Kao | caster defense (Absorb Elements, active) |
-| ⭐⭐⭐ | Spineshudder Amulet | Kao | Reverberation on spell hit |
-| ⭐⭐ | Staff of Interruption | Kao | Counterspell 1/long rest — situational swap-in, see Item Ratings above |
-| ⭐⭐ | Fey Semblance Amulet | Kao | Advantage on INT/WIS/CHA saves |
+| ⭐⭐ | Staff of Interruption | Kao | Counterspell 1/long rest — situational swap-in |
+| ⭐⭐ | Strange Tendril Amulet | Kao | Evard's Black Tentacles 1/long rest — competes for amulet slot |
+| ⭐⭐ | Fey Semblance Amulet | Kao | Advantage on INT/WIS/CHA saves — competes for amulet slot |
 | ⭐⭐ | Circlet of Mental Anguish | Kao | psychic control rider |
-| ⭐⭐ | Ring of Mental Inhibition | Kao | psychic support |
-| ⭐⭐ | Hr'a'cknir Bracers | Kao | telekinesis / utility |
-| ⭐⭐ | Strange Tendril Amulet | Kao | control amulet |
+| ⭐⭐ | Ring of Mental Inhibition | Kao | psychic support, applies to allies too — use carefully |
+| ⭐⭐ | Hr'a'cknir Bracers | Kao | Mage Hand bonus action + Telekinesis 1/short rest |
+| ⭐ | Spineshudder Amulet | Kao | rewards spell *attacks*, weaker fit than it looks — competes for amulet slot |
 | ⭐ | Incandescent Staff | Kao | now a backup weapon, outclassed by Markoheshkir |
 | ⭐ | Infernal Robe | Kao | now a backup robe, outclassed by Robe of the Weave |
 | ⭐ | Bonespike Boots | Kao | situational boots |
@@ -222,19 +228,18 @@ No longer carried: her **Elixir of Bloodlust spare bottle is gone** — this was
 | ⭐ | Swiresy Shoes | Kao | +5ft jump, +1 Acrobatics — exploration convenience only |
 | ⭐ (off-build) | *(boss-dropped shield, name withheld)* | Kao | doesn't fit a two-handed staff caster — carry for sale, not equip |
 
-No longer carried: Necklace of Elemental Augmentation has moved to Astarion's position — an odd fit for a Rogue, worth moving back to Kao if it was accidental.
+**Kao now has three items competing for the amulet slot**: Strange Tendril Amulet (control), Fey Semblance Amulet (defensive saves), and Spineshudder Amulet (weaker fit, low priority). Fey Semblance or Strange Tendril are the two worth actually alternating; Spineshudder can go to storage.
+
+No longer carried: Necklace of Elemental Augmentation is still on Astarion's position, unchanged — an odd fit for a Rogue, still worth moving to Kao if it was accidental (see Astarion's section).
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Scroll of Revivify | 1 | Any | emergency revive — unchanged |
-| ⭐⭐ | Scroll of Bestow Curse | 2 | Kao | back with Kao this pass |
-| ⭐⭐ | Scroll of Crown of Madness | 1 | Kao | back with Kao this pass |
-| ⭐ | Antitoxin | 2 | Any | unchanged |
-| ⭐ | Potion of Superior / Greater Healing | 3 | Any | situational — up from 2 |
+| ⭐⭐⭐ | Scroll of Revivify | 1 | Any | emergency revive |
+| ⭐ | Potion of Superior / Greater Healing | ~2 | Any | situational |
 
-Kao's scroll library has partially recovered (≈6 → 13) — some of what Astarion was holding has come back, though the Globe of Invulnerability and Conjure Elemental scrolls specifically are still split between TMind and Astarion (see the resource spot check above). No longer carried: his Elixir of Universal Resistance is still gone, unchanged from before.
+Kao's total item count roughly doubled this pass (137 → 269, mostly alchemy and utility records) — most of the gain is generic stock, not build-relevant. His scroll library is still split with Astarion and TMind (Globe of Invulnerability, Conjure Elemental) and now Bestow Curse/Crown of Madness have swung back to Astorion — see the resource spot check above.
 
 ## Astarion ^inventory-astarion
 
@@ -247,64 +252,61 @@ Kao's scroll library has partially recovered (≈6 → 13) — some of what Asta
 | ⭐⭐⭐ | The Graceful Cloth | Astarion | DEX / Cat's Grace (active) |
 | ⭐⭐⭐ | Shadow of Menzoberranzan | Astarion | on-demand Invisibility — ideal for a Hide → Sneak Attack loop |
 | ⭐⭐⭐ | Disintegrating Night Walkers | Astarion | terrain immunity + free Misty Step every short rest |
-| ⭐⭐ | Salty Scimitar(rrr) | Astarion | looted from Captain Grisly at The Blushing Mermaid — good but outclassed by the rapier as main-hand |
+| ⭐⭐⭐ | Shade-Slayer Cloak | Astarion | lower crit threshold while Hiding |
 | ⭐⭐ | Ring Of Blink | Astarion | cast Blink 1/long rest |
 | ⭐⭐ | Stillmaker | Astarion | poison dagger option |
 | ⭐⭐ | Ring of Shadows | Astarion | stealth / shadow utility |
 | ⭐⭐ | Stalker Gloves | Astarion | on-hit sneak-attack support |
 | ⭐⭐ | Periapt of Wound Closure | Astarion | scout survival |
 | ⭐⭐ | Shifting Corpus Ring | Astarion | miss-chance defensive ring |
-| ⭐⭐ | Winter's Clutches | Astarion | frost-rider gloves, new this pass |
+| ⭐⭐ | Winter's Clutches | Astarion | frost-rider gloves |
 | ⭐⭐ | Hellfire Hand Crossbow | Astarion | burn chance while Hiding/Invisible |
-| ⭐⭐⭐ | Shade-Slayer Cloak | Astarion | lower crit threshold while Hiding |
 | ⭐ | King's Knife | Astarion | dagger option |
-| ⭐ | Coldbrim Hat | Astarion | minor frost rider, new this pass |
+| ⭐ | Coldbrim Hat | Astarion | minor frost rider |
+| ⭐ | Fetish of Callarduran Smoothhands | Astarion | backup Invisibility ring — ring slots already crowded, see Item Ratings above |
 | ⭐ | *(radiant-themed ring, name withheld)* | Astarion | Light cantrip on demand — utility only, matches a flagged spoiler-sensitive term so the name is omitted here |
-| ⭐ (off-build) | Gold Wyrmling Staff | Astarion | a caster weapon, no use for a Rogue — sell |
-| ⭐⭐ (misplaced) | Necklace of Elemental Augmentation | Kao | landed on Astarion this pass — elemental cantrip boost belongs on Kao, not a Rogue |
+| ⭐⭐ (misplaced) | Necklace of Elemental Augmentation | Kao | still landed on Astarion, unchanged — elemental cantrip boost belongs on Kao, not a Rogue |
 
-No longer carried: **The Joltshooter and Gleamdance Dagger are both gone** from his position — not found elsewhere in the save either. Worth checking in game whether these were sold, given away, or are just equipped in a way this extraction doesn't catch.
+No longer carried: **Salty Scimitar(rrr) moved to TMind** this pass — see TMind's section (a genuine downgrade fit-wise; consider moving it to storage instead, since neither current holder can really use it). **The Joltshooter and Gleamdance Dagger are still gone**, unconfirmed elsewhere. **Gold Wyrmling Staff is resolved** — no longer with him, two copies now sit in storage. Also newly present but not rated as build gear: Summon Golem Bell, Spider's Lyre, a secret-elevator ring (name withheld above), and Lute of the Merryweather Bard — see Item Ratings above for why these are quest/cosmetic leftovers rather than active equipment.
 
 ### Consumables and Scrolls
 
 | Use | Item | Qty | Best fit | Note |
 |---|---|---:|---|---|
-| ⭐⭐ | Scroll of Invisibility | 1 | Kao / Astarion | escape or setup — unchanged |
+| ⭐⭐ | Scroll of Bestow Curse | 2 | Kao | **back on Astarion this pass** — reversed from last snapshot, see the resource spot check above |
+| ⭐⭐ | Scroll of Crown of Madness | 1 | Kao | same reversal |
 | ⭐⭐ | Elixir of Fire / Psychic Resistance | 2 | Any | elemental prep — unchanged (1 Fire, 1 Psychic) |
-| ⭐⭐ | Scroll of Protection from Energy | 1 | Any | elemental defense — unchanged |
-| ⭐⭐ | Full elemental arrow set | 9 (1 each) | Astarion | fire, ice, acid, darkness, detonation, teleportation, antimagic, smokepowder, construct- and monstrosity-slaying — unchanged |
-| ⭐ | Potion of Superior / Greater Healing | 6 | Any | unchanged |
-| ⭐ | Antitoxin | 1 | Any | unchanged |
+| ⭐⭐ | Full elemental arrow set | ~9 | Astarion | fire, ice, acid, darkness, detonation, teleportation, antimagic, smokepowder, construct- and monstrosity-slaying — unchanged |
+| ⭐ | Potion of Superior / Greater Healing | ~5 | Any | unchanged |
 
-Good news: the Globe of Invulnerability, Conjure Elemental, Bestow Curse, and Crown of Madness scrolls he'd been holding are **no longer all stuck here** — most have moved back toward Kao/TMind this pass (see the resource spot check above and Kao's section). No longer carried: Murderous Cut is gone (now only in storage) — the earlier wrong-owner issue resolved itself.
+No longer carried: Murderous Cut is gone (now only in storage) — the earlier wrong-owner issue stays resolved.
 
 ## Camp Storage ^camp-storage
 
-Storage holds the overflow (2,860 item records, up from ~2,650) — most of it is generic gear and crafting stock. Pull only what supports the next fight, the current build, or the camp-buff routine.
+Storage holds the overflow (2,968 item records, up from 2,860) — most of it is generic gear and crafting stock. Pull only what supports the next fight, the current build, or the camp-buff routine.
 
 ### Priority Pulls from Storage
 
 | Use | Item | Qty seen | Best fit | Why pull it |
 |---|---|---:|---|---|
-| ⭐⭐⭐ | Scroll of Revivify | 9 | Any | Unchanged. Emergency revive stock; spread across active characters. |
-| ⭐⭐⭐ | Potion of Speed | 3 | Lae'zel / group | Up from 2 — TMind's carried copy landed here. Extra decisive-Haste openers. |
-| ⭐⭐ | Potion of Invisibility | 4 | Astarion / scout | Down from 8 (half used). Scouting, resets, and escapes. |
-| ⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | Down from 2. Extra action economy for hard fights. |
-| ⭐⭐ | Potion of Supreme Healing | 2 | Any | Unchanged. Highest-tier emergency heal. |
+| ⭐⭐⭐ | Scroll of Revivify | 6 | Any | Down from 9 (more copies moved into active carry, a good sign). |
+| ⭐⭐⭐ | Potion of Speed | 2 | Lae'zel / group | Down from 3. Extra decisive-Haste openers. |
+| ⭐⭐ | Potion of Invisibility | 3 | Astarion / scout | Down from 4. Scouting, resets, and escapes. |
+| ⭐⭐ | Scroll of Conjure Elemental | 1 | Kao | Unchanged. Extra action economy for hard fights. |
 | ⭐⭐ | Scroll of Speak with Dead | 4 | Any | Unchanged. Investigation utility. |
-| ⭐ | Healing potions (basic/greater/superior) | 15 | Split across party | Top up anyone before leaving camp. |
+| ⭐⭐ | Gold Wyrmling Staff | 2 | — | Now confirmed in storage (moved off Astarion) — sell, not a fit for anyone in the current party. |
+| ⭐ | Healing potions (basic/greater/superior) | 17 | Split across party | Top up anyone before leaving camp. |
+| ⭐ | Corpsegrinder | 1 | — | Confirmed genuinely in storage since last pass (drifted off Lae'zel). |
 | ⭐ | Assorted caster scrolls | many | Kao | Blur, Mirror Image, Hold Person, Fireball, Misty Step, etc. — browse before a caster fight. |
-
-No longer in storage: the spare Elixir of Bloodlust that was here is gone — the only remaining bottle is the one Lae'zel is now carrying herself (see her Consumables and Scrolls above). Newly arrived in storage this pass: **Corpsegrinder** (⭐⭐ martial weapon option), which drifted off Lae'zel — genuinely in the shared container, confirmed by `Level`/`Character`-node check, not with an NPC.
 
 ### Notable Gear Sitting in Storage ^storage-notable-gear
 
-**Re-checked this pass** against the new save with the same `Level`-field-plus-`Character`-node method used to catch the earlier mistake. Two changes since last audit:
+**A methodology note worth reading before trusting this section further**: this cluster of items has now been re-labeled twice — first "genuinely in storage," then corrected to "held by an unidentified companion" after a `Character` node showed up at the exact same coordinates, and now this pass that companion node has moved roughly 23 units away while the items stayed exactly where they were. That's evidence the items were never actually *in the companion's personal inventory* — more likely a stationary container the companion happened to be standing near in an earlier snapshot. Rather than re-label this a third time from position data alone, the honest answer is: **check this cluster directly in game** (both the nearby companion's portrait and the camp storage chest) rather than trust another position-based inference here.
 
-- **The Tharchiate Codex is resolved** — it's no longer sitting uncollected. Two copies are now confirmed in inventory: one with TMind (unread), one that Astarion picked up and read (source of his new curse — see his Equipment section above).
-- **Reaper's Embrace is no longer genuinely free storage** — and it turns out to be the same companion already flagged for the Ring of Salving cluster. It shares the *exact* position of a `Character` node that is none of the four tracked party members (resurrected, unidentified) — the same node holding Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, and both Bloodguzzler Garb copies. Re-checking Lae'zel's position this pass also turned up a seventh item on that same companion: **Cerebral Citadel Gloves**, previously assumed sold when it disappeared from her inventory. All seven are consolidated into one row below instead of being tracked separately.
-
-**Genuinely in storage**: none confirmed this pass — the one item that qualified last time (Reaper's Embrace) no longer does, per above.
+| Item | Rarity | Status |
+|---|---|---|
+| Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Cerebral Citadel Gloves | Mixed | Still sitting at the same fixed camp coordinates as the last two audits. The previously-nearby companion has since moved away from that spot — check both the companion and camp storage directly in game rather than relying on this audit's location guess. |
+| **Reaper's Embrace** | Very Rare | **Resolved** — no longer part of this cluster; confirmed this pass as genuinely in Lae'zel's own inventory. |
 
 **Still lying uncollected in the world** (never picked up — not accessible from storage or any character):
 
@@ -325,7 +327,6 @@ No longer in storage: the spare Elixir of Bloodlust that was here is gone — th
 | Woe | Very Rare | An unidentified NPC — its internal save-data name references a late-game vampire-lord boss |
 | Penumbral Armour | Rare | An unidentified NPC |
 | True Love's Embrace | Rare | Two separate copies exist, each on a different unidentified NPC — **not** freely available for pairing with TMind's True Love's Caress as previously claimed |
-| Reaper's Embrace, Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Cerebral Citadel Gloves | Mixed | **One consolidated companion, seven items**: all seven sit at the identical camp position of a single resurrected, unidentified `Character` node — confirmed by exact coordinate match, not a guess. Ring of Salving especially is worth recovering (direct healing upgrade for TMind). Check that companion's own inventory in game rather than the shared storage container. |
 
 ### Storage Handling Routine
 
@@ -341,6 +342,7 @@ No longer in storage: the spare Elixir of Bloodlust that was here is gone — th
 
 - The save shows storage-like inventories, but exact in-game container labels should be confirmed at camp.
 - If an item cannot be found quickly in game, search camp storage by item name instead of by container.
+- The Ring of Salving cluster above is a concrete example of this audit method's limits — see the note in Notable Gear Sitting in Storage.
 
 ## Hidden From This Practical List ^inventory-omissions
 

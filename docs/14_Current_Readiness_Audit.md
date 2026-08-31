@@ -36,21 +36,21 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 
 **Markers:** ⭐⭐⭐ ⚠️ ⚔️
 
-**Best buff coverage this campaign, but the party is split, and three Legendary-tier items just landed.** A huge stretch of play happened (~+10,500 XP each) — the whole party is now Level 11, back to full health on daily buffs, and Kao/Astarion each picked up a Legendary-rarity weapon at Ramazith's Tower. The catch: TMind and Lae'zel are at **camp**, while Kao and Astarion are still at the **tower** — they are not grouped, so this is not "ready for a hard fight" as-is, it's "ready once reunited." One new gap appeared (Aid, party-wide), and Astarion picked up a real curse from a book he read.
+**Two characters are sitting on an unclaimed level-up, and the party split flipped direction.** Kao and Astarion are already Level 12 and together at Baldur's Mouth Basement; TMind and Lae'zel have the XP for Level 12 too but the save still shows them at 11 in Lower City — the level-up screen just hasn't been used yet for those two. Buff coverage now splits by location rather than by character: the Baldur's Mouth pair kept Death Ward, the Lower City pair lost it. Elixir of Bloodlust is now fully and confirmedly out of stock.
 
 | Area | Status | Reason |
 |---|---|---|
-| Core party | ⚠️ Split | TMind and Lae'zel are at `CAMP_SUB`; Kao and Astarion are at `LOW_SorcerousSundries_RamazithsTower_SUB`. Regroup before any hard fight. |
-| Daily movement | ✅ Good | Longstrider is active on TMind, Lae'zel, Kao, and Astarion. |
-| Death protection | ✅ Resolved | Death Ward is active on **all four** for the first time this campaign. |
-| Control protection | ✅ Resolved | Freedom of Movement is active on **all four** for the first time this campaign. |
+| Core party | ⚠️ Split | TMind and Lae'zel are at `LOW_City_SUB`; Kao and Astarion are at `LOW_BaldursMouth_Basement_SUB`. Regroup before any hard fight. |
+| Pending level-ups | ⚠️ Action needed | TMind and Lae'zel both have enough XP for Level 12 but the save still shows Level 11 — go through the level-up screen for both. |
+| Death protection | ⚠️ Split by location | Kao and Astarion (Baldur's Mouth) still have Death Ward; TMind and Lae'zel (Lower City) both lost it this pass. |
+| Control protection | ✅ Good | Freedom of Movement is active on all four, still universal. |
+| Maximum HP (Aid) | ⚠️ Split by location | Kao and TMind have it; Astarion and Lae'zel don't. Not a clean party-wide gap or resolution — recast for whoever's missing it before regrouping. |
+| Daily movement | ⚠️ Mostly good | Longstrider covers TMind, Kao, and Astarion; **Lae'zel lost it** this pass. |
 | Mage Armor (Kao) | ✅ Good | Still holding, unchanged. |
-| Maximum HP | ⚠️ New gap | **Aid has dropped off all four characters** — previously always covered, now needs recasting before a hard fight. |
 | Stealth aura | ⚠️ Unchanged gap | Pass Without Trace is still not active on the party. |
-| Burst resources | 🚨 Depleted | **Elixir of Bloodlust is completely gone from the save** — Lae'zel's active dose has nothing left to refill it with. |
-| New status | ℹ️ Low pressure | Astarion carries a curse from reading a copy of The Tharchiate Codex (Constitution penalty for temp HP + a ghoul-summon feature) — **not permanent**, Remove Curse or Greater Restoration cures it (bg3.wiki-confirmed), and TMind can likely self-cast Remove Curse as a Cleric. TMind holds two more unread copies. |
-| Summons | ℹ️ Changed | The Cambion/Djinni Planar Ally was replaced by a **Deva (Planar Ally)** at camp; Kao's Conjure Elemental (Air) summon is still with him at the tower. |
-| New gear | ✅ Big upgrade | Kao: Markoheshkir (Legendary staff) + Robe of the Weave. Astarion: Duellist's Prerogative (Legendary rapier) — verified as a loadout swap, not a build fork; see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]]. See [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
+| Burst resources | 🚨 Depleted | Elixir of Bloodlust remains at zero anywhere in the save — Lae'zel's active buff has now actually expired (confirmed missing from her status list this pass), not just low on spares. |
+| New status | ℹ️ Low pressure | Astarion's Tharchiate Codex curse is still present (status ID renamed internally, likely the same curse) — reversible with Remove Curse/Greater Restoration whenever wanted. |
+| Coverage catch-up | ℹ️ Informational | This pass surfaced several TMind and Kao items (Circle of Bones, Adamantine Scale Mail, The Spectator Eyes, Strange Tendril Amulet, and others) that were apparently already owned but never rated in past audits — not new gear, just newly documented. See [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
 
 ## Active Buff Coverage
 
@@ -58,10 +58,10 @@ This note summarizes whether the current save is ready for a hard fight. It is b
 
 | Character | Confirmed useful buffs | Missing before hard fights |
 |---|---|---|
-| TMind | Heroes' Feast, Longstrider, **Death Ward**, **Freedom of Movement**, Shield of Devotion spell slot, Blood of Lathander light | **Aid** — new gap, shared by the whole party |
-| Lae'zel | Heroes' Feast, Longstrider, Death Ward, Freedom of Movement, critical-execution ring | **Aid**; also note **Elixir of Bloodlust has no spare bottle left anywhere in the save** |
-| Kao | Heroes' Feast, Longstrider, Death Ward, Freedom of Movement, Mage Armor, Absorb Elements resource, new Counterspell resource (Staff of Interruption) | **Aid** |
-| Astarion | Heroes' Feast, Longstrider, Death Ward, Freedom of Movement, Cat's Grace, Cloak of Displacement | **Aid**; carries a **new curse status** from The Tharchiate Codex — reversible with Remove Curse/Greater Restoration whenever the trade-off stops being worth it |
+| TMind | Heroes' Feast, **Aid**, Freedom of Movement, Longstrider, Shield of Devotion spell slot | **Death Ward** — lost this pass |
+| Lae'zel | Heroes' Feast, Freedom of Movement, critical-execution ring, a Bane-style weapon oil | **Death Ward, Longstrider, and Aid** — the most gaps of the four this pass; also her Elixir of Bloodlust has fully expired |
+| Kao | Heroes' Feast, Death Ward, Freedom of Movement, Mage Armor, **Aid**, Warding Bond, Absorb Elements, Counterspell resource | No major gap — best-covered character this pass |
+| Astarion | Heroes' Feast, Death Ward, Freedom of Movement, Longstrider, Cat's Grace, Cloak of Displacement | **Aid**; still carries the Tharchiate Codex curse (reversible whenever wanted) |
 
 > [!note] Pass Without Trace is still not active on the party in this save. Re-cast it before a stealth-sensitive approach if wanted.
 
@@ -73,11 +73,11 @@ This table is about **spell access**, not currently active buffs. It answers who
 
 | Character | Current role | Camp-buff spells or features they can provide | Practical note |
 |---|---|---|---|
-| TMind | Death Cleric 11 | Aid, Protection from Poison, Warding Bond, Death Ward, Freedom of Movement, Heroes' Feast; Divine Intervention: Arm Thy Servant if unused | Strong Cleric buffer, but using him as the active cleric means these spell slots come from the adventuring party. |
-| Shadowheart | Camp Light Cleric 10 | Aid, Protection from Poison, Warding Bond, Death Ward, Freedom of Movement | Best current camp source for Cleric buffs because she can spend camp spell slots and then leave the active party. She's benched at camp this pass — a good time to have her recast the party-wide **Aid** gap before anyone leaves. |
-| Kao | Human Wizard 11 | Longstrider, Mage Armor, Darkvision, See Invisibility, Counterspell (Staff of Interruption item charge); short utility such as Feather Fall, Enhance Leap, Invisibility if known and prepared | Excellent Wizard utility buffer. Does not naturally cover Aid, Warding Bond, Death Ward, Freedom of Movement, or Heroes' Feast. |
+| TMind | Death Cleric 11 (eligible for 12) | Aid, Protection from Poison, Warding Bond, Death Ward, Freedom of Movement, Heroes' Feast; Divine Intervention: Arm Thy Servant if unused | Strong Cleric buffer, but using him as the active cleric means these spell slots come from the adventuring party. |
+| Shadowheart | Camp Light Cleric 10 | Aid, Protection from Poison, Warding Bond, Death Ward, Freedom of Movement | Best current camp source for Cleric buffs because she can spend camp slots and then leave the active party. With TMind's own Death Ward now missing, she's a good source to recast it before he leaves camp again. |
+| Kao | Human Wizard 12 | Longstrider, Mage Armor, Darkvision, See Invisibility, Counterspell (Staff of Interruption item charge); short utility if known and prepared | Excellent Wizard utility buffer. Does not naturally cover Aid, Warding Bond, Death Ward, Freedom of Movement, or Heroes' Feast. |
 | Gale | Camp Wizard, if used | Longstrider, Mage Armor, Darkvision, See Invisibility; short utility if known and prepared | Same practical job as Kao: free the active Wizard from routine utility casting. |
-| Bard hireling | Bard support | Longstrider; Freedom of Movement at Bard 7; Death Ward only if selected through Magical Secrets at Bard 10; Song of Rest as a day-extension feature | Good support hireling, but not a full camp buffer unless multiclassed into Cleric/Wizard. |
+| Bard hireling | Bard support | Longstrider; Freedom of Movement at Bard 7; Death Ward only if selected through Magical Secrets at Bard 10; Song of Rest as a day-extension feature | Good support hireling, but not a full camp buffer unless multiclassed into Cleric/Wizard. Worth using for Lae'zel's dropped Longstrider specifically. |
 | Lae'zel | Battle Master Fighter | None from the current build | Receives buffs; does not provide spell-based camp buffs. |
 | Astarion | Thief Rogue | None from the current build | Receives buffs; does not provide spell-based camp buffs unless rebuilt into a caster subclass or multiclass. |
 
@@ -91,14 +91,15 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 | Buff or setup | Best caster | Main targets | Why this assignment is best |
 |---|---|---|---|
-| Longstrider | Bard hireling first; Gale or Kao as backup | TMind, Lae'zel, Kao, Astarion, summons | Ritual casting makes this cheap. A camp Bard or camp Wizard keeps Kao's active resources cleaner. |
+| Death Ward | Shadowheart first; TMind or Kao as backup | TMind and Lae'zel (both currently missing it) | **Top priority for the Lower City pair** — they lost it this pass while the Baldur's Mouth pair kept it. |
+| Aid | Shadowheart first; TMind or Kao as backup | Astarion and Lae'zel (both currently missing it) | Kao and TMind already have it; fill the other two before a hard fight. |
+| Longstrider | Bard hireling first; Gale or Kao as backup | Lae'zel specifically (the only one currently missing it) | Ritual casting makes this cheap — a quick fix for a single-character gap. |
 | Mage Armor | Gale if available; Kao as backup | Kao if unarmored; eligible summons or unarmored allies | Wizard utility job. Skip armored characters because the spell does nothing for them. |
-| Aid | Shadowheart first (she's at camp this pass); TMind only as backup | All four active characters, then summons if included | **Top priority right now** — the gap is party-wide. Shadowheart can spend camp slots while TMind keeps his Cleric slots for the active day. Upcast when practical. |
 | Darkvision | Gale or Kao | Anyone without natural or item-based Darkvision | Useful exploration comfort. |
 | See Invisibility | Gale or Kao | Kao or the character expected to reveal invisible enemies | Keep this on the scout/caster who is most likely to notice or expose targets. |
 | Protection from Poison | Shadowheart first; TMind only if poison risk is high and she is unavailable | Frontline and anyone likely to fail poison saves | Situational daily buff. Do not spend time on it every day unless the area calls for it. |
 | Warding Bond | Shadowheart, selectively | Lae'zel first; optionally TMind or Astarion for a hard fight | Strong but risky because Shadowheart receives shared damage. Use on one key target unless her HP and healing setup are managed. |
-| Death Ward / Freedom of Movement | Already covering all four | — | No action needed this pass — both are fully resolved for the first time. Just recast before the *next* long rest so the streak holds. |
+| Freedom of Movement | Already covering all four | — | No action needed — still universal after this pass. Just recast before the *next* long rest so the streak holds. |
 | Heroes' Feast | TMind (Cleric 11) | Whole party and summons | Cast it at camp before a big fight — the party's best pre-fight investment, especially before regrouping for something hard. |
 | Song of Rest | Bard hireling | Whole party after short-rest resources are spent | Not a buff spell, but it extends the adventuring day and should be used after meaningful short-rest value is missing. |
 
@@ -106,29 +107,30 @@ Default principle: let camp characters pay for daily utility first, then keep th
 
 | Character | Daily job |
 |---|---|
-| Shadowheart | Primary Cleric camp buffer: Aid, Death Ward, Freedom of Movement, Warding Bond only when worth the risk. |
-| Bard hireling | Longstrider routine, Freedom of Movement at Bard 7+, Death Ward only if Bard 10 Magical Secrets selected it, Song of Rest for day extension. |
+| Shadowheart | Primary Cleric camp buffer: Death Ward and Aid for whichever pair is missing them, Warding Bond only when worth the risk. |
+| Bard hireling | Longstrider routine (especially for Lae'zel right now), Freedom of Movement at Bard 7+, Death Ward only if Bard 10 Magical Secrets selected it, Song of Rest for day extension. |
 | Gale | Camp Wizard utility: Longstrider backup, Mage Armor, Darkvision, See Invisibility. |
 | Kao | Active Wizard utility backup only; avoid spending his slots if Gale or Bard can cover the same setup. |
 | TMind | Active Cleric fallback; use his slots only when Shadowheart cannot cover the buff or the fight needs immediate recasting. |
-| Lae'zel | Main recipient for movement, Aid, Death Ward, Freedom of Movement, and selective Warding Bond. |
-| Astarion | Recipient for Longstrider, Aid, Death Ward, Freedom of Movement when control or restraint is expected. |
+| Lae'zel | Main recipient for movement, Death Ward, Aid, and selective Warding Bond — currently the most gap-heavy of the four. |
+| Astarion | Recipient for Aid when control or restraint is expected; otherwise well-covered this pass. |
 
 ## Consumable Readiness ^consumable-readiness
 
 **Markers:** ⭐⭐⭐ 🍷 ⚔️
 
-Counts refreshed from the current `Campsite - 115h 34m` save (see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) for the full audit).
+Counts refreshed from the current `Lower City - 118h 27m` save (see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) for the full audit).
 
 | Resource | Save count | Current holder pattern | Readiness call |
 |---|---:|---|---|
-| Scroll of Revivify | 10 | Kao 1, storage 9 | Unchanged; strong stock, put one on at least two active characters |
-| Potion of Speed | 5 | TMind 1, Lae'zel 1, storage 3 | Enough for one decisive Haste opener |
-| Elixir of Bloodlust | 0 | none | 🚨 **Gone from the save entirely** — Lae'zel's active buff has no spare bottle behind it; consider crafting or buying a replacement before a hard fight |
-| Potion of Invisibility | 6 | Kao 1, TMind 1, storage 4 | Workable but don't over-rely on it |
-| Scroll of Globe of Invulnerability | 4 | TMind 2, Astarion 2 | Split evenly between the two locations — fine as-is while the party is split |
-| Scroll of Conjure Elemental | 3 | TMind 1, Astarion 1, storage 1 | Reasonable spread; regroup before assuming Kao has quick access |
-| Healing potions (basic/greater/superior/supreme) | 42 | spread across all four plus storage | Well-supplied, no action needed |
+| Scroll of Revivify | 11 | TMind 2, Lae'zel 1, Kao 1, Astarion 1, storage 6 | Best distribution yet — spread across all four plus storage, no action needed |
+| Potion of Speed | 4 | TMind 1, Astarion 1, storage 2 | Enough for one decisive Haste opener |
+| Elixir of Bloodlust | 0 | none | 🚨 **Still gone from the save entirely**, and Lae'zel's active buff has now actually expired — this is a real gap now, not just "no spares" |
+| Potion of Invisibility | 7 | Lae'zel 2, Kao 1, Astarion 1, storage 3 | Healthy stock |
+| Scroll of Globe of Invulnerability | 2 | TMind 2 | Down from 4 (Astarion's copies used or lost); still not with Kao, who casts it |
+| Scroll of Conjure Elemental | 3 | TMind 1, Astarion 1, storage 1 | Unchanged |
+| Scroll of Bestow Curse | 2 | Astarion 2 | Swung back to Astarion after coming home to Kao last pass — fifth snapshot of this back-and-forth |
+| Healing potions (basic/greater/superior/supreme) | 36 | spread across all four plus storage | Well-supplied, no action needed |
 
 ## Gear and Synergy Checks ^gear-synergies
 
@@ -136,27 +138,21 @@ Counts refreshed from the current `Campsite - 115h 34m` save (see [Item and Stor
 
 | Check | Status | Note |
 |---|---|---|
-| Markoheshkir (Kao) | 🆕 Equip it | Legendary staff, free 1/long rest spell + elemental self-buff — best-in-slot, should already be his main weapon. |
-| Robe of the Weave (Kao) | 🆕 Equip it | Very Rare, +2 AC/+1 spell save/attack plus a save-triggered heal — upgrade over Infernal Robe. |
-| Duellist's Prerogative (Astarion) | ✅ Equip it (empty off-hand) | Legendary rapier — verified mechanics show Thief's bonus-action economy and Sneak Attack are unaffected (Dueller's Enthusiasm replaces the off-hand attack). Only real cost is the off-hand dagger's own perk, if any — see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]]. No respec needed. |
-| Shadowheart weapon trick | ✅ Done | Devotee's Mace is still with TMind, unchanged. |
-| Blood of Lathander | ✅ With TMind | Keep as the default cleric weapon unless the healing-aura plan is needed. |
-| Devotee's Mace | ✅ With TMind | Use as a swap for Healing Incense Aura and on-heal item synergies. |
-| Hellrider's Pride | ✅ With TMind | Works well with multi-target healing and rescue turns. |
-| Spell Slot Restoration Amulet (Spellcrux Amulet) | ✅ With TMind | Strong day-extension tool; consider whether Kao needs it more before a caster-heavy fight. |
-| The Whispering Promise | ✅ With TMind | Confirmed present — pairs with Devotee's Mace aura for concentration-free Bless-style value. |
-| Sword of the Emperor (Lae'zel) | ✅ Rated ⭐⭐⭐ | +2 longsword, +2 to all saves vs spells — keep, strong vs Act 3's caster-heavy fights. |
-| Boots of Psionic Movement (Lae'zel) | ✅ Rated ⭐⭐⭐ | Githyanki-only Fly + psychic damage rider. |
-| Chancer's Carcanet (Lae'zel) | ✅ Rated ⭐⭐⭐ | Guaranteed Advantage on a save or attack, 1/long rest — keep. |
-| Amulet of Windrider (Lae'zel) | 🆕 Keep | Very Rare mobility/control utility pickup this pass. |
-| Shadow of Menzoberranzan / Disintegrating Night Walkers (Astarion) | ✅ Rated ⭐⭐⭐ | On-demand Invisibility and free Misty Step + terrain immunity respectively — both strong, keep equipped. |
-| The Joltshooter / Gleamdance Dagger (Astarion) | ⚠️ Missing | Both are no longer found anywhere in the save — worth checking in game whether they were sold or given away. |
+| Circle of Bones (TMind) | 🆕 Equip it | Rare circlet — Animate Dead + Undead Ward, near-perfect fit for a Death Domain necromancer. Only surfaced in this audit this pass; likely already owned. |
+| Adamantine Scale Mail (TMind) | 🆕 Equip it | Very Rare medium armour — damage reduction, no crits, Reeling rider. One of the strongest defensive pieces available; only surfaced this pass. |
+| TMind's five competing amulets | ⚠️ Pick one | The Spectator Eyes, Amulet of Restoration, Amulet of Misty Step, Spellcrux Amulet, Pearl of Power all want the same slot — see [[13_Item_Inventory_Snapshot#^inventory-tmind\|TMind's section]] for the comparison. |
+| Reaper's Embrace (Lae'zel) | ✅ Resolved | No longer a mystery-companion item — confirmed genuinely in her own inventory this pass. Now a real third armour option alongside Adamantine Splint Armour and Cerebral Citadel Armour. |
+| Markoheshkir / Robe of the Weave (Kao) | ✅ Equipped | Legendary staff + Very Rare robe, both confirmed rated and recommended equipped. |
+| Duellist's Prerogative (Astarion) | ✅ Equip it (empty off-hand) | Legendary rapier — verified mechanics show Thief's bonus-action economy and Sneak Attack are unaffected (Dueller's Enthusiasm replaces the off-hand attack). See [[11_Main_Character_Builds#^astarion-build\|Astarion's build]]. |
+| Salty Scimitar(rrr) | ⚠️ Off-build wherever it lands | Moved from Astarion to TMind this pass — doesn't fit either build (rapier-and-empty-off-hand Astarion, mace-and-shield TMind). Sell it instead of letting it keep drifting. |
+| Kao's three competing amulets | ⚠️ Pick one | Strange Tendril Amulet, Fey Semblance Amulet, and Spineshudder Amulet all want the same slot — Spineshudder is the weakest fit (rewards spell attacks, not the saves Kao mostly forces). |
+| Sword of the Emperor / Boots of Psionic Movement / Chancer's Carcanet (Lae'zel) | ✅ Rated ⭐⭐⭐ | All three keep, unchanged. |
+| Shadow of Menzoberranzan / Disintegrating Night Walkers / Shade-Slayer Cloak (Astarion) | ✅ Rated ⭐⭐⭐ | Keep equipped, unchanged. |
+| The Joltshooter / Gleamdance Dagger (Astarion) | ⚠️ Still missing | Neither found anywhere in the save across two syncs now — worth checking in game. |
 | *(boss-dropped shield, name withheld)* (Kao) | ⭐ Off-build | A shield doesn't fit a two-handed staff caster — carry for sale, don't equip. |
-| Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Reaper's Embrace, Cerebral Citadel Gloves | ⚠️ Unchanged — location uncertain | **Consolidated this pass**: all seven items sit at the identical position of one unidentified, resurrected companion-type character near camp (confirmed by exact coordinate match, not separate guesses). Not recoverable through this audit method; check that companion's inventory in game. |
-| Murderous Cut | ✅ Resolved | No longer carried by anyone — only in storage now. |
-| Whispering Mask ×3 | ✅ Resolved | No longer carried — moved to storage-only. |
-| Reaper's Embrace | ⚠️ New — not free storage | Previously logged as free camp storage; now confirmed sitting with a different resurrected companion-type character, not the shared container. Check that companion's own inventory. |
-| The Tharchiate Codex (×3: TMind ×2, Astarion ×1 read) | ℹ️ Reversible | Astarion's copy is already read and cursed, but it's curable with Remove Curse/Greater Restoration if unwanted. Decide whether TMind reads either of his — same Constitution-for-temp-HP-and-ghouls trade-off. |
+| Ring of Salving cluster (Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Cerebral Citadel Gloves) | ⚠️ Method exhausted | The "unidentified companion" holding these has moved ~23 units away from the items this pass while they stayed put — evidence they were never in that companion's personal inventory, just near a fixed container. Two prior re-labels plus this new twist means position data alone can't resolve this: **check in game directly** rather than expect another audit correction. |
+| Murderous Cut / Whispering Mask ×3 | ✅ Resolved | Both stay resolved — storage-only, not carried by anyone. |
+| The Tharchiate Codex (×3: TMind ×2, Astarion ×1 read) | ℹ️ Reversible | Astarion's copy is already read and cursed, but curable with Remove Curse/Greater Restoration if unwanted. Decide whether TMind reads either of his. |
 
 Full effect text and sourcing for every item above is in [[13_Item_Inventory_Snapshot#^inventory-new-finds\|Item and Storage Snapshot § Item Ratings and Redistribution]].
 
@@ -164,18 +160,19 @@ Full effect text and sourcing for every item above is in [[13_Item_Inventory_Sna
 
 **Markers:** ⭐⭐⭐ ⏱️ ⚔️
 
-The party is split between camp and Ramazith's Tower. Regroup first — everything else follows from that.
+The party is split between Lower City and Baldur's Mouth Basement. Regroup first — everything else follows from that.
 
-1. **Regroup TMind/Lae'zel with Kao/Astarion** before treating the party as fight-ready. Top priority; nothing else here matters until this happens.
-2. **Recast Aid on all four characters** — new gap, previously always covered. Shadowheart (at camp with TMind/Lae'zel) is the efficient source.
-3. ✅ Resolved: Death Ward, Freedom of Movement, and Mage Armor are all active on everyone — no action needed, just keep the streak going after the next long rest.
-4. ✅ Resolved: **Astarion's Duellist's Prerogative** is verified as a loadout swap, not a build fork — equip it with an empty off-hand; Thief's bonus-action economy carries over via Dueller's Enthusiasm. Only real loss is his off-hand dagger's own perk (Stillmaker's Hold Person, if that's the one benched).
-5. Equip **Markoheshkir** and **Robe of the Weave** on Kao if not already active.
-6. Replace the **Elixir of Bloodlust** supply — the save has zero spares left; Lae'zel's active dose has nothing behind it.
-7. The Tharchiate Codex curse on Astarion is reversible (Remove Curse/Greater Restoration, TMind can likely self-cast it) — cure it if the trade-off isn't wanted, and decide whether TMind should read either of his two copies.
-8. Check on the **seven-item cluster** (Ring of Salving, Cloak of Protection, Helmet of Arcane Acuity, Bloodguzzler Garb ×2, Reaper's Embrace, Cerebral Citadel Gloves) — all confirmed on one unidentified companion this pass, not in shared storage.
-9. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
-10. Investigate **The Joltshooter and Gleamdance Dagger** — both gone from Astarion's inventory with no clear cause.
+1. **Regroup TMind/Lae'zel with Kao/Astarion** before treating the party as fight-ready. Top priority.
+2. **Level up TMind and Lae'zel to 12** — both already have the XP, just need the level-up screen.
+3. **Recast Death Ward on TMind and Lae'zel** — lost this pass, while Kao/Astarion kept it.
+4. **Recast Aid on Astarion and Lae'zel** — Kao and TMind already have it.
+5. **Recast Longstrider on Lae'zel** — the only one missing it now.
+6. Equip **Circle of Bones** and **Adamantine Scale Mail** on TMind if not already active — both newly surfaced this pass and rate highly.
+7. Pick one of TMind's five competing amulets rather than leaving it to chance — see Gear and Synergy Checks.
+8. Replace the **Elixir of Bloodlust** supply — still zero anywhere in the save, and the active buff has now actually run out.
+9. The Tharchiate Codex curse on Astarion is reversible (Remove Curse/Greater Restoration) — cure it if the trade-off isn't wanted, and decide whether TMind should read either of his two copies.
+10. Re-apply **Pass Without Trace** before a stealth approach if wanted (still not active this save).
+11. The Ring of Salving cluster needs an in-game check, not another position-based guess — see Gear and Synergy Checks for why.
 
 ## Before a Hard Fight ^before-hard-fight
 
@@ -188,7 +185,7 @@ The party is split between camp and Ramazith's Tower. Regroup first — everythi
 | 3 | If using Potion of Speed on multiple characters, throw it only immediately before combat. |
 | 4 | Put Globe of Invulnerability and Conjure Elemental scrolls on whichever caster is present at the fight. |
 | 5 | Put invisibility tools, anti-caster arrows, and poisons on Astarion. |
-| 6 | Line up a Bloodlust/Colossus elixir alternative for Lae'zel before initiative matters — Bloodlust is out of stock. |
+| 6 | Line up a Bloodlust/Colossus elixir alternative for Lae'zel before initiative matters — Bloodlust is out of stock and her buff has expired. |
 | 7 | Keep TMind's Divine Intervention unused unless the fight collapses. |
 | 8 | Cast Heroes' Feast at camp before committing to the fight, if it hasn't been used yet this rest cycle. |
 | 9 | With Astarion on Duellist's Prerogative (two reactions/turn), have Lae'zel spend Commander's Strike on him deliberately — see [[11_Main_Character_Builds#^laezel-build\|Lae'zel's build § Commander's Strike → Astarion Reaction Combo]] for the full sequence. |
@@ -199,9 +196,9 @@ The party is split between camp and Ramazith's Tower. Regroup first — everythi
 
 | Field | Current value |
 |---|---|
-| Save name | Campsite - 115h 34m |
-| Save modified | 2026-08-30 01:29:40 +02:00 |
-| Synced into handbook | 2026-08-30 01:34:23 +02:00 |
+| Save name | Lower City - 118h 27m |
+| Save modified | 2026-08-31 01:13:19 +02:00 |
+| Synced into handbook | 2026-08-31 08:42:08 +02:00 |
 | Game version | 4.1.1.7398727 |
 | Difficulty | DifficultyMedium / RulesetLarian |
 | Source record | `tools/save-extract/source_manifest.json` |
@@ -213,9 +210,11 @@ The party is split between camp and Ramazith's Tower. Regroup first — everythi
 - This audit used the current `.lsf` index, not a refreshed `Globals.lsx` text export.
 - Active buff detection is reliable for the four named party members because it reads their current status managers.
 - Character identity was confirmed by matching each `Character` node's exact `Translate` position against the position reported for that character in `SaveInfo.json`; no decoy/duplicate nodes were found at any of the four positions this pass.
-- The party split across two locations meant position-matching had to be checked against two distinct coordinate sets (`CAMP_SUB` for TMind/Lae'zel, the tower subregion for Kao/Astarion) rather than one.
-- The Tharchiate Codex curse status (`CURSEDTOME_THARCHIATE_CODEX`) and TMind's unchanged partial-ceremorphosis status (`TAD_PARTIAL_CEREMORPH`) were both confirmed directly against the raw status list, not inferred.
-- Storage-bucket items were re-verified with the `Level` field plus a nearby-`Character`-node check before being called "genuinely in storage" — this caught Reaper's Embrace moving out of that bucket this pass (see the Item and Storage Snapshot's Camp Storage section for the correction).
+- The party split across two *different* locations than last pass (Lower City proper and Baldur's Mouth Basement, not camp and the tower), so position-matching was re-derived from this save's own `SaveInfo.json`, not reused from the prior snapshot's coordinates.
+- **TMind and Lae'zel's `Level: 11` despite XP over the Level 12 threshold is read as a pending level-up, not an extraction bug** — Kao and Astarion, with less total XP, already show Level 12, which only makes sense if they've already used the level-up screen and TMind/Lae'zel haven't.
+- Astarion's curse status changed internal ID from `CURSEDTOME_THARCHIATE_CODEX` to `CURSEDTOME_THARCHIATE_TECHNICAL` between snapshots — treated as the same curse (a common BG3 pattern: a display status paired with an internal `_TECHNICAL` marker) but not independently re-confirmed against bg3.wiki this pass.
+- **Lae'zel's known maneuvers (e.g. Commander's Strike) are not verifiable from this save index** — known spells/maneuvers for player characters aren't captured by the `Globals.lsf` extraction this handbook uses, only items, positions, and active statuses. Anything about her maneuver picks is player-reported, not save-confirmed.
+- The Ring of Salving cluster's position-based inference has now been corrected twice and contradicted a third time (the nearby companion moved away from the stationary items) — flagged in Gear and Synergy Checks as a case where this audit method has reached its limit; needs in-game confirmation instead of another position-based guess.
 - The broader save contains many `DYING` statuses on old or non-active entities; the active-party status managers for the four named characters do not show `DYING` in this save.
-- Item counts are reliable for practical stock checks, but exact equipped slots still need in-game confirmation.
+- Item counts are reliable for practical stock checks, but exact equipped slots still need in-game confirmation. This pass surfaced several previously-uncatalogued TMind and Kao items that were apparently already owned — a coverage gap in past audits, now corrected.
 - Camp storage and world/storage-like inventories are summarized as "elsewhere" rather than by raw container or position.

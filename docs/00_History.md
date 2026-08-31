@@ -21,6 +21,22 @@ Where the change lives in a specific section, link the exact heading (`[[11_Main
 
 Group each date's entries into collapsible topic nodes using a callout, not `### Added`/`### Changed`/`### Fixed` headings: `> [!note]- 🎒 Topic Name` followed by `> `-prefixed bullets. **Don't use raw `<details>` HTML** — the site's renderer passes that through untouched and never resolves the wikilinks/markdown links inside it; only the `> [!note]-` callout form runs the bullets through the real parser. Reuse a topic across dates rather than inventing new ones — the recurring set so far: 🎒 Save Snapshots & Readiness, 🗡️ Gear Ratings & Redistribution, 📖 Handbook Content & Builds, 🛠️ Tooling & Site Infrastructure, 🔒 Corrections & Maintenance.
 
+## 2026-08-31
+
+> [!note]- 🎒 Save Snapshots & Readiness (Lower City - 118h 27m, split flipped, pending level-ups)
+> - Synced forward to `Lower City - 118h 27m` and rewrote [Current Save Snapshot](12_Current_Save_Snapshot.md), the [[13_Item_Inventory_Snapshot#^inventory-best-uses|Item and Storage Snapshot]], and [[14_Current_Readiness_Audit#^readiness-verdict|Readiness Audit]] against it.
+> - **The party's split flipped location**: TMind and Lae'zel are now together in Lower City proper; Kao and Astarion are together at Baldur's Mouth Basement (a different spot than last pass's Ramazith's Tower).
+> - **Kao and Astarion are already Level 12**; TMind and Lae'zel have the XP for it too but the save still shows them at Level 11 — read as a pending, unclaimed level-up rather than an extraction bug, since the two with *more* total XP are the ones still showing the lower level.
+> - Buff coverage now splits along **location**, not by character: Death Ward stayed with the Baldur's Mouth pair (Kao, Astarion) and dropped off the Lower City pair (TMind, Lae'zel). Aid split the same way but paired differently (Kao and TMind have it; Astarion and Lae'zel don't). Longstrider dropped off Lae'zel specifically, and her Elixir of Bloodlust has now actually **expired** — not just out of spares, confirmed missing from her status list.
+> - Astarion's Tharchiate Codex curse status changed internal ID (`CURSEDTOME_THARCHIATE_CODEX` → `CURSEDTOME_THARCHIATE_TECHNICAL`) — treated as the same curse rather than a new effect, flagged as unconfirmed rather than asserted.
+
+> [!note]- 🗡️ Gear Ratings & Redistribution (a coverage-gap catch-up, not just new finds)
+> - **Found a real gap in past audits**: several items on TMind (Circle of Bones, Adamantine Scale Mail, The Spectator Eyes, Amulet of Restoration, Amulet of Misty Step, Eversight Ring, Pearl of Power Amulet, Luminous Gloves, Nymph Cloak) and Kao (Strange Tendril Amulet, Ring of Mental Inhibition, Circlet of Mental Anguish, Hr'a'cknir Bracers, Spineshudder Amulet) turn out to have already been in their inventories in prior snapshots without ever being rated here. All now researched against bg3.wiki and added — most notably **Circle of Bones** and **Adamantine Scale Mail** for TMind, both ⭐⭐⭐ and a near-perfect fit for his Death Domain necromancer build.
+> - **Reaper's Embrace is resolved** — no longer a mystery-companion item, confirmed genuinely in Lae'zel's own inventory this pass, giving her a real third armour option alongside Adamantine Splint Armour and Cerebral Citadel Armour.
+> - TMind now has **five items competing for one amulet slot** and Kao has **three** — documented as explicit slot competitions rather than listing them as if all equipped simultaneously.
+> - Salty Scimitar(rrr) drifted from Astarion to TMind — doesn't fit either build (empty-off-hand rapier Astarion, mace-and-shield TMind), flagged to just sell it. Gold Wyrmling Staff is fully resolved (two copies now in storage, none carried). Scroll of Bestow Curse/Crown of Madness swung back onto Astarion — the fifth reversal of this same back-and-forth with Kao's scroll library.
+> - **The Ring of Salving cluster hit the limit of what position data can tell us**: the previously-nearby "unidentified companion" has now moved ~23 units away while the seven items stayed exactly where they were — evidence they were never in that companion's personal inventory, just near a fixed container. That's a second correction on the same fact, so per the standing house rule this wasn't patched a third time from inference alone — the docs now say plainly to check it in game instead of trusting another audit guess.
+
 ## 2026-08-30
 
 > [!note]- 🎒 Save Snapshots & Readiness (Campsite - 115h 34m, split party, all buff gaps resolved)

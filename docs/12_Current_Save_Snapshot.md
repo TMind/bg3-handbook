@@ -24,9 +24,9 @@ This note summarizes the current save state extracted from the local save file. 
 
 ## Save
 
-- Save name: `Campsite - 115h 34m`
-- Save modified: `2026-08-30 01:29:40 +02:00`
-- Synced into handbook: `2026-08-30 01:34:23 +02:00`
+- Save name: `Lower City - 118h 27m`
+- Save modified: `2026-08-31 01:13:19 +02:00`
+- Synced into handbook: `2026-08-31 08:42:08 +02:00`
 - Game version: `4.1.1.7398727` (unchanged since the last sync)
 - Difficulty: `DifficultyMedium / RulesetLarian`
 - Current region: `CTY_Main_A`
@@ -35,39 +35,35 @@ This note summarizes the current save state extracted from the local save file. 
 
 | Character | Level / build | XP | Current subregion | Practical note |
 |---|---|---:|---|---|
-| TMind | **Level 11** Cleric / Death Domain | 93,152 total; 17,152 into level | `CAMP_SUB` | +10,641 XP since last sync — a lot happened. **Death Ward and Freedom of Movement are both back** — no gap left on him. |
-| Lae'zel | **Level 11** Fighter / Battle Master | 93,152 total; 17,152 into level | `CAMP_SUB` | Death Ward, Freedom of Movement, Heroes' Feast all active. Picked up the **Amulet of Windrider** (very rare) this pass. |
-| Kao | **Level 11** Wizard / Conjuration School | 92,677 total; 16,677 into level | `LOW_SorcerousSundries_RamazithsTower_SUB` | Death Ward, Freedom of Movement, Mage Armor all still active. **Picked up Markoheshkir (legendary staff) and Robe of the Weave (very rare)** — see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md). |
-| Astarion | **Level 11** Rogue / Thief | 92,507 total; 16,507 into level | `LOW_SorcerousSundries_RamazithsTower_SUB` | Death Ward and Freedom of Movement active. **Picked up Duellist's Prerogative (legendary rapier)** — verified mechanics show this is a loadout swap (empty off-hand), not a subclass/feat fork, see [[11_Main_Character_Builds#^astarion-build\|Astarion's build]]. Also now carries a **cursed status from the Tharchiate Codex** he apparently read. |
+| TMind | **Level 11** Cleric / Death Domain | 101,877 total; 1,877 into level | `LOW_City_SUB` | **Has enough XP for Level 12 but hasn't leveled up yet** — go through the level-up screen. Lost Death Ward this pass; still has Freedom of Movement. |
+| Lae'zel | **Level 11** Fighter / Battle Master | 101,707 total; 1,707 into level | `LOW_City_SUB` | **Also eligible for Level 12, not yet claimed.** Lost Death Ward and Longstrider. **Reaper's Embrace is now confirmed in her own inventory** — no longer a mystery-companion item. |
+| Kao | **Level 12** Wizard / Conjuration School | 101,232 total | `LOW_BaldursMouth_Basement_SUB` | Already leveled to 12. Still has Death Ward, Freedom of Movement, Mage Armor, Warding Bond. Used Benign Transposition (level-6 Conjuration feature) at some point this pass. |
+| Astarion | **Level 12** Rogue / Thief | 101,062 total | `LOW_BaldursMouth_Basement_SUB` | Already leveled to 12. Still has Death Ward and Freedom of Movement. Tharchiate Codex curse status is still present (internal ID changed from `CURSEDTOME_THARCHIATE_CODEX` to `CURSEDTOME_THARCHIATE_TECHNICAL` — likely just a tracking-marker rename, not a new effect). |
 
-**The party is split across two locations**: Lae'zel and TMind are at camp, Astarion and Kao are at **Ramazith's Tower** (Sorcerous Sundries, Lower City). A huge amount happened since the last sync (+10,500 XP each) — this looks like a major shopping/looting stretch at the wizard's tower, given the legendary-tier gear that showed up on both Kao and Astarion. **Every previous buff gap is now resolved** — Death Ward, Freedom of Movement, and Mage Armor are active on all four for the first time this campaign. The one new gap: **Aid has dropped off everyone**, not previously a concern. Summons: the Cambion/Djinni Planar Ally is gone, replaced by a **Deva (Planar Ally)** — a different, higher-tier celestial — at camp with Lae'zel and TMind; Kao still has his Conjure Elemental (Air) summon with him at the tower.
+**The party has partly regrouped, but the split flipped**: TMind and Lae'zel are together in **Lower City** proper; Kao and Astarion are together at **Baldur's Mouth Basement**, a different spot than last pass's Ramazith's Tower. Kao and Astarion have already leveled to 12; TMind and Lae'zel have the XP for it but the save still shows them at 11 — the level-up screen just hasn't been used for them yet. **Death Ward split down location lines**: Kao and Astarion (Baldur's Mouth) still have it, TMind and Lae'zel (Lower City) both lost it. **Aid is now split too**: Kao and TMind have it, Astarion and Lae'zel don't. Freedom of Movement and Heroes' Feast remain universal across all four. Longstrider dropped off Lae'zel specifically. Summons: the Deva (Planar Ally) is still with the Lower City pair; Kao's Conjure Elemental (Air) summon is no longer active.
 
 ## Active Practical Buffs
 
 ### TMind
 
 - Heroes' Feast
-- **Death Ward** (back)
-- **Freedom of Movement** (back)
+- **Aid** (back)
+- Freedom of Movement
 - Longstrider
-- Blood of Lathander light aura (item)
-- Lathander's Blessing resurrection resource (class feature, unused)
 - Shield of Devotion extra spell slot (item)
 - Undead-presence effect (item)
-- Partial ceremorphosis status (unchanged from last snapshot)
-- Fox's Cunning elixir effect
-- **No longer shows Aid or Darkvision** — see Extraction Notes
-- Still no Warding Bond
+- Partial ceremorphosis status (unchanged)
+- **No longer shows Death Ward** — lost this pass, see Extraction Notes
+- No longer shows Blood of Lathander's light aura as an active status (item is still carried — likely just not the equipped weapon right now)
 
 ### Lae'zel
 
 - Heroes' Feast
-- **Elixir of Bloodlust** (active — note the last spare bottle is gone, see [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md))
-- Death Ward
 - Freedom of Movement
 - Killer's Sweetheart / critical-execution ring effect
-- Partial ceremorphosis status
-- **No longer shows Aid, Longstrider, Darkvision, or the temp-HP buff from last snapshot**
+- An Oil of Bane-style weapon buff (`ALCH_OIL_BANE`) — applied to her weapon, imposes a save penalty on hit
+- Partial ceremorphosis status (unchanged)
+- **No longer shows Death Ward, Longstrider, or Elixir of Bloodlust** — the elixir's active dose finally ran out with no spare bottle anywhere in the save (confirmed again this pass)
 
 ### Kao
 
@@ -75,12 +71,14 @@ This note summarizes the current save state extracted from the local save file. 
 - Death Ward
 - Freedom of Movement
 - Mage Armor
-- Longstrider
-- Warding Bond (received, back after being absent last snapshot)
+- Warding Bond (received)
+- **Aid**
 - Absorb Elements cloak resource
-- **Counterspell resource** (new — matches picking up the Staff of Interruption)
-- An item-effect marker tied to a "Chromatic" item (new — matches picking up Markoheshkir)
-- **No longer shows Aid or Darkvision**
+- Counterspell resource (Staff of Interruption)
+- Markoheshkir's item-effect marker
+- Benign Transposition used marker (level-6 Conjuration feature — self/ally teleport swap)
+- A Greater Elixir of Meditation effect (short-rest-style recovery)
+- No longer shows Longstrider as an active status
 
 ### Astarion
 
@@ -90,24 +88,25 @@ This note summarizes the current save state extracted from the local save file. 
 - Longstrider
 - Cat's Grace / Graceful Cloth effect
 - Cloak of Displacement (item)
-- **Cursed status from the Tharchiate Codex** (new — see Extraction Notes)
-- **No longer shows Aid or Darkvision**
+- Tharchiate Codex curse status (still present, ID renamed — see Extraction Notes)
+- A weapon-oil damage buff (`ALCH_OIL_DAMAGEATTACKBUFF`) — generic oil name, exact oil unconfirmed
+- **No longer shows Aid**
 
 ## Confirmed Item-Sourced Buffs
 
-- TMind has Shield of Devotion spell-slot support, Blood of Lathander light, and an undead-presence item effect active.
-- Lae'zel has the Killer's Sweetheart / critical-execution ring support active.
-- Kao has the Absorb Elements cloak resource active, plus new resources from Markoheshkir and the Staff of Interruption.
-- Astarion has Cat's Grace / Graceful Cloth and the Cloak of Displacement support active.
+- TMind has Shield of Devotion spell-slot support and an undead-presence item effect active.
+- Lae'zel has the Killer's Sweetheart / critical-execution ring support active, plus a new weapon oil (Bane-style).
+- Kao has the Absorb Elements cloak resource, Markoheshkir's resource, and Counterspell (Staff of Interruption) active.
+- Astarion has Cat's Grace / Graceful Cloth, the Cloak of Displacement support, and a weapon oil active.
 
 ## Extraction Notes
 
 - The source save for generated snapshots is recorded in `tools/save-extract/source_manifest.json`.
 - Active buff extraction is reliable because it reads the active character status managers directly.
-- **Every previous buff gap is resolved this pass**: Death Ward and Freedom of Movement are active on all four (including TMind, who had newly lost both last snapshot), and Kao's Mage Armor is still holding.
-- **New gap: Aid is missing from all four characters**, along with Darkvision. Both are typical "until long rest" utility buffs — likely just expired rather than a readiness concern, but worth recasting before the next hard fight regardless.
-- **Astarion carries a cursed status from the Tharchiate Codex** (`CURSEDTOME_THARCHIATE_CODEX`) — this is the same Legendary book flagged as "lying uncollected in the world" two audits ago; he's evidently picked it up and read it since. The book trades a Constitution penalty for temp HP on long rest and a ghoul-summoning ability — a real, deliberate-feeling trade-off worth confirming was intentional. **Confirmed on bg3.wiki: the curse is not permanent — Remove Curse or Greater Restoration cures it**, and TMind can likely cast Remove Curse himself as a Cleric if the trade-off turns out unwanted.
-- TMind's partial-ceremorphosis status (`TAD_PARTIAL_CEREMORPH`) is unchanged from last snapshot, still noted factually without narrative detail, consistent with how Lae'zel's has always been handled.
+- **TMind and Lae'zel have enough total XP for Level 12** (both over the 100,000 threshold) but the save's `Level` field still shows 11 for both, while Kao and Astarion — with *less* total XP — already show Level 12. The most likely explanation: Kao and Astarion have already gone through the in-game level-up screen and TMind/Lae'zel haven't yet, not an extraction error. Worth confirming in game.
+- **Death Ward and Aid coverage now splits along the party's physical location** rather than by character — worth checking whether this is because different casters are covering each subgroup, or because Death Ward simply wasn't recast before the party split.
+- **Astarion's Tharchiate Codex curse status ID changed** from `CURSEDTOME_THARCHIATE_CODEX` to `CURSEDTOME_THARCHIATE_TECHNICAL` between snapshots. Treated as the same underlying curse (BG3 statuses commonly pair a display status with an internal `_TECHNICAL` tracking marker) rather than a new effect, but flagged since it wasn't confirmed against bg3.wiki this pass.
+- TMind's partial-ceremorphosis status (`TAD_PARTIAL_CEREMORPH`) is unchanged, still noted factually without narrative detail.
 - An Act 3 story-state status flag (`TAD_PEACE_BREAKER`) is present on the whole party; omitted here as spoiler-sensitive story state rather than a practical buff.
-- Inventory extraction works, but exact equipped-slot mapping still needs a separate pass; many carried items share the character position.
+- Inventory extraction works, but exact equipped-slot mapping still needs a separate pass; many carried items share the character position. This pass surfaced several TMind and Kao items that were apparently already in their inventories in prior snapshots but hadn't been listed in [Item and Storage Snapshot](13_Item_Inventory_Snapshot.md) — a coverage gap in past audits, not new acquisitions, corrected this pass.
 - Current hard-fight readiness is summarized in [Current Readiness Audit](14_Current_Readiness_Audit.md).
