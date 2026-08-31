@@ -71,7 +71,7 @@ These are the current main builds from the local character notes. The party plan
 | Shadowheart remains available in camp | Use her as support/radiant backup, not as a Lae'zel replacement unless the frontline plan changes |
 | Sussur Bark was crafted into the Sussur Dagger, held by Astarion | Masterwork Weapon decision resolved; dagger provides caster silence utility |
 | TMind and Lae'zel have the XP for Level 12, not yet claimed | Both are still showing Level 11 in the save with enough total XP for 12 — go through the level-up screen for both; see [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] below |
-| Lae'zel is now Fighter 11, eligible for 12 | Exact feat/maneuver picks aren't reliably readable from the save extract — verify in game before assuming which of the four Fighter feat slots (4/6/8/12) are already spent |
+| Lae'zel is now Fighter 11, eligible for 12 | **Player-confirmed feats**: Ability Improvement, Heavy Armour Master, Sentinel — GWM was never taken, so her last feat slot (12) is the only chance left for it. Exact maneuver picks are still not save-verifiable. |
 
 ## 🆙 Leveling Up Right Now: TMind and Lae'zel to 12 ^level-12-now
 
@@ -82,7 +82,7 @@ Both have enough XP saved up for Level 12 but the level-up screen hasn't been us
 | Character | What Level 12 unlocks | The one decision to make | What does *not* change |
 |---|---|---|---|
 | TMind (Cleric 11→12) | A Feat — Cleric's **third and final** feat slot (4/8/12) | If Wisdom isn't 20 yet, take the Ability Improvement to lock it in now — it's the last chance. If Wisdom is already 20, take War Caster or Resilient: Constitution if Concentration keeps breaking, otherwise Alert or Tough. See [[11_Main_Character_Builds#^tmind-build\|TMind's Recommended Feats table]] for the full reasoning. | No new spell level — 6th-level spells (Heroes' Feast) already unlocked at Cleric 11. Prepared-spell count and slots increase automatically; nothing else to pick, Clerics prepare fresh from the full class list each long rest. |
-| Lae'zel (Fighter 11→12) | A Feat — Fighter's **fourth and final** feat slot (4/6/8/12) | Take whichever of Great Weapon Master → Strength 20 → Sentinel is still outstanding; only reach for Savage Attacker/Alert if all three are already done. See the updated [[11_Main_Character_Builds#^laezel-build\|Feat Priority table]] below — this is genuinely her last feat, so don't spend it on a flavor pick if a core one is still missing. | No new Battle Master maneuvers or Superiority Dice — those come at Fighter 3/7/10, already resolved by 11. Improved Extra Attack (two extra attacks after the main-hand one) already unlocked at Fighter 11 too, so 12 is feat-only. |
+| Lae'zel (Fighter 11→12) | A Feat — Fighter's **fourth and final** feat slot (4/6/8/12) | **Player-confirmed**: she already has Ability Improvement, Heavy Armour Master, and Sentinel — no Great Weapon Master. Take it now; this is the only slot left for it, and Precision Attack (already in her maneuver list) helps offset the -5 to-hit penalty. See the updated [[11_Main_Character_Builds#^laezel-build\|Feat Priority table]]. | No new Battle Master maneuvers or Superiority Dice — those come at Fighter 3/7/10, already resolved by 11. Improved Extra Attack (two extra attacks after the main-hand one) already unlocked at Fighter 11 too, so 12 is feat-only. |
 
 Practical order: level both up before regrouping the party (see [Current Readiness Audit](14_Current_Readiness_Audit.md)), check each character's sheet first to confirm which feats are actually already spent (the save extract can't read this reliably), then apply the table above.
 
@@ -103,21 +103,21 @@ A Magic Initiate: Warlock feat (Booming Blade + Eldritch Blast + Hex) was review
 | Choice | Recommendation |
 |---|---|
 | Fighting style | Great Weapon Fighting or Defence |
-| Key feats | Great Weapon Master, Strength ASI to 20, Sentinel, Savage Attacker / Alert |
+| Key feats | Ability Improvement, Heavy Armour Master, Sentinel already taken (player-confirmed); **Great Weapon Master at 12 — her last chance at it** |
 | Core maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
 | Later maneuvers | Precision Attack for GWM accuracy, **Riposte** (confirmed — reaction damage on a melee hit against you), **Commander's Strike** — costs one of her own attacks plus her bonus action, not a freebie (see note below); player-reported at Fighter 11, not save-verifiable; one maneuver slot left open to taste (Menacing Attack is a reasonable pick, Rally was considered and rejected — no self-target use for a frontliner) |
 | Buffs | Longstrider, Aid, Warding Bond if TMind can absorb the shared damage, Potion of Speed for serious fights |
 
 ### Feat Priority
 
-Fighter is one of only two classes (with Rogue) that gets a **bonus feat at level 6** on top of the standard 4/8/12 — four feats in total, confirmed on bg3.wiki. Exact picks already spent aren't reliably readable from the save extract (see the Local Notes Applied table above) — treat the level column as the intended order, and check her sheet in game to see which are already done.
+Fighter is one of only two classes (with Rogue) that gets a **bonus feat at level 6** on top of the standard 4/8/12 — four feats in total, confirmed on bg3.wiki. **Player-confirmed actual picks (this replaces an earlier assumed order that had GWM going first, which was wrong):**
 
-| Level | Pick | Effect (BG3 wording) | Reason |
+| Level | Pick | Effect (BG3 wording) | Note |
 |---|---|---|---|
-| 4 | Great Weapon Master | Bonus melee attack as a Bonus Action on a Critical Hit or a kill; two-handed/versatile attacks can trade -5 to hit for +10 damage | Main damage engine, take first |
-| 6 | Ability Improvement toward Strength 20 | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | GWM needs accuracy before more control feats |
-| 8 | Sentinel | Reaction attack when an enemy in melee range attacks an ally; a hit from an Opportunity Attack stops the target's movement for the rest of its turn; Advantage on Opportunity Attacks | Locks enemies inside Web, Spirit Guardians, and chokepoints |
-| 12 (her last feat) | Savage Attacker / Alert, or the Strength-20 Ability Improvement if not yet taken | Savage Attacker: reroll melee weapon damage dice, use the higher result. Alert: +5 Initiative, can't be Surprised | Whichever of the above three is still outstanding takes priority over a new flavor pick — this is the final Fighter feat slot |
+| 4 (or 6) | Ability Improvement | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | Already taken — exact ability raised and exact level unconfirmed |
+| 4 (or 6) | Heavy Armour Master | Reduce non-magical Bludgeoning/Piercing/Slashing damage taken by 3; +1 Strength | Already taken — not part of the originally documented plan, a real gap this correction closes |
+| 8 | Sentinel | Reaction attack when an enemy in melee range attacks an ally; a hit from an Opportunity Attack stops the target's movement for the rest of its turn; Advantage on Opportunity Attacks | Already taken — locks enemies inside Web, Spirit Guardians, and chokepoints |
+| **12 (her last feat)** | **Great Weapon Master** | Bonus melee attack as a Bonus Action on a Critical Hit or a kill; two-handed/versatile attacks can trade -5 to hit for +10 damage | **Not yet taken, and this is the only Fighter feat slot left — her last chance at it.** Precision Attack (already in her maneuver list) helps offset the -5 to-hit penalty. |
 
 Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
 
@@ -125,22 +125,22 @@ Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
 
 **Markers:** ⭐⭐⭐ ⏱️
 
-Confirmed as the build path — pure Fighter 12, no multiclass. Read from a September 2025 guide that explicitly re-checked Battle Master against the final patch before recommending it; cross-referenced against, not copied wholesale from, the Feat Priority table above (this handbook's feat order is kept as the source of truth where the two differ). Not independently cross-checked against bg3.wiki level-by-level; treat it as a strong plan, not gospel.
+Confirmed as the build path — pure Fighter 12, no multiclass. Read from a September 2025 guide that explicitly re-checked Battle Master against the final patch before recommending it; cross-referenced against, not copied wholesale from, the Feat Priority table above (this handbook's feat order is kept as the source of truth where the two differ). Not independently cross-checked against bg3.wiki level-by-level; treat it as a strong plan, not gospel. **Levels 1–8 below are already in the past** — the feat order shown is what actually happened (player-confirmed: Ability Improvement, Heavy Armour Master, Sentinel), not the originally-assumed GWM-first order.
 
 | Level | What unlocks | This handbook's picks |
 |---|---|---|
 | 1 | Fighter, Second Wind, fighting style | Great Weapon Fighting or Defence |
 | 2 | Action Surge | — |
 | 3 | Battle Master, 3 maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
-| 4 | Feat | **Great Weapon Master** |
+| 4 | Feat | Ability Improvement *(actual — level uncertain, could be 4 or 6)* |
 | 5 | Extra Attack | — |
-| 6 | Feat | **Ability Improvement toward Strength 20** |
+| 6 | Feat | Heavy Armour Master *(actual — level uncertain, could be 4 or 6)* |
 | 7 | 4th Superiority Die, 2 more maneuvers | Precision Attack, **Riposte** |
-| 8 | Feat | **Sentinel** |
+| 8 | Feat | Sentinel *(actual, confirmed)* |
 | 9 | Indomitable | — |
 | 10 | Superiority Die → d10, 2 more maneuvers | **Commander's Strike** (player-reported, see below), one slot open to taste — not Rally, no self-target use for a frontliner |
 | 11 | Improved Extra Attack (3 attacks/action) | — |
-| 12 | Feat (her last) | Savage Attacker / Alert, or the Strength-20 Ability Improvement if not yet taken |
+| 12 | Feat (her last) | **Great Weapon Master — not yet taken, this is the only slot left for it** |
 
 A **Magic Initiate: Warlock** feat (Booming Blade + Eldritch Blast cantrips, Hex spell) was reviewed and **rejected** — it would cost one of the four feat slots above, and Lae'zel has no other route to Booming Blade: it's a Sorcerer/Wizard/Warlock cantrip, not something Battle Master grants, and she's Githyanki rather than a High Elf/Half-Elf (the two races that get it free).
 
