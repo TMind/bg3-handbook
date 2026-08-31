@@ -333,12 +333,13 @@ Storage holds the overflow (2,968 item records, up from 2,860) — most of it is
 | Item | Rarity | Held by |
 |---|---|---|
 | Luminous Armour | Very Rare | A **vendor** NPC, far away (a different act's region than the party's current location) — purchasable, not free |
+| *(a faction-themed amulet, name withheld — spoiler-flagged)* | Rare | The **same vendor** as Luminous Armour, above — restores a spell slot |
 | Boots of Stormy Clamour | Rare | A **vendor** NPC, even farther away (Act 1 world map region) |
 | Hellrider Longbow | Rare | A **vendor** NPC near Baldur's Gate |
 | Callous Glow Ring | Rare | Sitting at the same position as the unidentified companion in the Ring of Salving cluster above — same "check in game, don't trust another position guess" caution applies |
 | Fabricated Arbalest | Rare | A non-trader NPC near Baldur's Gate — possibly lootable rather than for sale |
 
-Coruscation Ring, Ring of Spiteful Thunder, Amulet of Greater Health, Hood/Cloak of the Weave, Helldusk Gloves/Boots, and Amulet of the Devout were checked too and not found anywhere in the tracked save — either still sitting in an unvisited area's container (this save index only tracks globally-registered entities, not everything in every unloaded level), or not a fixed pickup this run.
+Coruscation Ring, Ring of Spiteful Thunder, Amulet of Greater Health, Hood/Cloak of the Weave, Helldusk Gloves/Boots, Amulet of the Devout, Gauntlets of the Warmaster, and Crusher's Ring were checked too and not found anywhere in the tracked save — either still sitting in an unvisited area's container (this save index only tracks globally-registered entities, not everything in every unloaded level), or not a fixed pickup this run.
 
 ### Storage Handling Routine
 

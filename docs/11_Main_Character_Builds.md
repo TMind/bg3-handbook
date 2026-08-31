@@ -94,7 +94,9 @@ Keep Lae'zel as a **Battle Master Fighter** unless you deliberately want a diffe
 
 | Level plan | Role | Why it works |
 |---|---|---|
-| Battle Master Fighter 12 | Frontline tank, GWM damage, control maneuvers | Keeps Fighter feats, Action Surge, Improved Extra Attack, and strong maneuver scaling |
+| **Battle Master Fighter 12 (confirmed path)** | Frontline tank, GWM damage, control maneuvers | **Decided** — pure Fighter 12, no multiclass. A September 2025 guide explicitly checked this against the latest patch and reached the same conclusion: stay pure rather than dip War Cleric or Warlock. See [[11_Main_Character_Builds#^laezel-level-plan\|Recommended Level-by-Level Plan]] below. |
+
+A Magic Initiate: Warlock feat (Booming Blade + Eldritch Blast + Hex) was reviewed as an alternative feat pick and **rejected** — it would mean dropping one of the four confirmed feats below, and the martial-only plan stays simpler.
 
 ### Practical Setup
 
@@ -103,7 +105,7 @@ Keep Lae'zel as a **Battle Master Fighter** unless you deliberately want a diffe
 | Fighting style | Great Weapon Fighting or Defence |
 | Key feats | Great Weapon Master, Strength ASI to 20, Sentinel, Savage Attacker / Alert |
 | Core maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
-| Later maneuvers | Precision Attack for GWM accuracy, Menacing Attack or Riposte by taste, **Commander's Strike** — player-reported at Fighter 11, not save-verifiable (see note below) |
+| Later maneuvers | Precision Attack for GWM accuracy, **Riposte** (confirmed — reaction damage on a melee hit against you), **Commander's Strike** — player-reported at Fighter 11, not save-verifiable (see note below); one maneuver slot left open to taste (Menacing Attack is a reasonable pick, Rally was considered and rejected — no self-target use for a frontliner) |
 | Buffs | Longstrider, Aid, Warding Bond if TMind can absorb the shared damage, Potion of Speed for serious fights |
 
 ### Feat Priority
@@ -118,6 +120,31 @@ Fighter is one of only two classes (with Rogue) that gets a **bonus feat at leve
 | 12 (her last feat) | Savage Attacker / Alert, or the Strength-20 Ability Improvement if not yet taken | Savage Attacker: reroll melee weapon damage dice, use the higher result. Alert: +5 Initiative, can't be Surprised | Whichever of the above three is still outstanding takes priority over a new flavor pick — this is the final Fighter feat slot |
 
 Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
+
+### Recommended Level-by-Level Plan ^laezel-level-plan
+
+**Markers:** ⭐⭐⭐ ⏱️
+
+Confirmed as the build path — pure Fighter 12, no multiclass. Read from a September 2025 guide that explicitly re-checked Battle Master against the final patch before recommending it; cross-referenced against, not copied wholesale from, the Feat Priority table above (this handbook's feat order is kept as the source of truth where the two differ). Not independently cross-checked against bg3.wiki level-by-level; treat it as a strong plan, not gospel.
+
+| Level | What unlocks | This handbook's picks |
+|---|---|---|
+| 1 | Fighter, Second Wind, fighting style | Great Weapon Fighting or Defence |
+| 2 | Action Surge | — |
+| 3 | Battle Master, 3 maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
+| 4 | Feat | **Great Weapon Master** |
+| 5 | Extra Attack | — |
+| 6 | Feat | **Ability Improvement toward Strength 20** |
+| 7 | 4th Superiority Die, 2 more maneuvers | Precision Attack, **Riposte** |
+| 8 | Feat | **Sentinel** |
+| 9 | Indomitable | — |
+| 10 | Superiority Die → d10, 2 more maneuvers | **Commander's Strike** (player-reported, see below), one slot open to taste — not Rally, no self-target use for a frontliner |
+| 11 | Improved Extra Attack (3 attacks/action) | — |
+| 12 | Feat (her last) | Savage Attacker / Alert, or the Strength-20 Ability Improvement if not yet taken |
+
+A **Magic Initiate: Warlock** feat (Booming Blade + Eldritch Blast cantrips, Hex spell) was reviewed and **rejected** — it would cost one of the four feat slots above, and Lae'zel has no other route to Booming Blade: it's a Sorcerer/Wizard/Warlock cantrip, not something Battle Master grants, and she's Githyanki rather than a High Elf/Half-Elf (the two races that get it free).
+
+Source: [Still the BEST Fighter? Battle Master Build (UPDATED)](https://www.youtube.com/watch?v=NuLOJuPmjfI) (Wayfaring Nomad, 2025-09-04; transcript: `tools/video-transcripts/NuLOJuPmjfI.en.vtt`).
 
 ### Party Role
 
@@ -430,7 +457,7 @@ This is not a shopping checklist for every run. It is the final-target watchlist
 | Character | Final target items | Why they fit |
 |---|---|---|
 | TMind | Blood of Lathander; Devotee's Mace as swap; Luminous Armour; Boots of Stormy Clamour; Gloves of Belligerent Skies or Radiating Orb Gloves (already has the latter); Coruscation Ring; Callous Glow Ring; Ring of Spiteful Thunder; Cloak of Protection; Amulet of Greater Health or Fey Semblance Amulet | Spirit Guardians, Radiating Orb, Reverberation, concentration, and survivability |
-| Lae'zel | Best available two-handed weapon; Moonlight Glaive until a clear upgrade; Killer's Sweetheart; Legacy of the Masters; Helldusk Gloves; Boots of Speed or Disintegrating Night Walkers; Cloak of Protection | Fighter damage, GWM accuracy, frontline mobility, and defensive consistency |
+| Lae'zel | Best available two-handed weapon; Moonlight Glaive until a clear upgrade; Killer's Sweetheart; Legacy of the Masters; Helldusk Gloves; Boots of Speed or Disintegrating Night Walkers; Cloak of Protection; Gauntlets of the Warmaster (disadvantage on saves against her maneuvers — not found in this save yet); a faction-themed spell-slot-restoring amulet (name withheld, spoiler-flagged — confirmed available, see [[13_Item_Inventory_Snapshot#^storage-notable-gear\|Notable Gear Sitting in Storage]]) | Fighter damage, GWM accuracy, frontline mobility, and defensive consistency |
 | Lae'zel throw variant | Dwarven Thrower or Nyrulna; Ring of Flinging; Gloves of Uninhibited Kushigo; Caustic Band | Only use this if respeccing toward thrown-weapon play; do not mix it halfway into the current Battle Master plan |
 | Kao | Markoheshkir; Staff of Spellpower; Robe of the Weave or Potent Robe; Cloak of the Weave or Cloak of Protection; Hood of the Weave; Quickspell Gloves; Spellcrux Amulet or Amulet of Greater Health | More spell DC, more spell slots, better concentration, and stronger control casting |
 | Astarion | Knife of the Undermountain King; Bloodthirst; The Dead Shot or Gontr Mael; Risky Ring; Caustic Band; Elegant Studded Leather or Yuan-Ti Scale Mail; Disintegrating Night Walkers; Legacy of the Masters or Helldusk Gloves | Stealth opener, crit range, ranged accuracy, Sneak Attack reliability, and mobility |
@@ -526,6 +553,9 @@ These sources were used as reference points, then adjusted to the local party no
 
 | Source | Used for | Review decision |
 |---|---|---|
+| [Still the BEST Fighter? Battle Master Build (UPDATED)](https://www.youtube.com/watch?v=NuLOJuPmjfI) (Wayfaring Nomad, 2025-09-04; transcript: `tools/video-transcripts/NuLOJuPmjfI.en.vtt`) | Pure Fighter 12 Battle Master, re-checked against the latest patch | Adopted as [[11_Main_Character_Builds#^laezel-level-plan\|Lae'zel's Recommended Level-by-Level Plan]] — confirmed pure Fighter 12 over multiclassing, added **Riposte** to the maneuver list (kept alongside Sentinel, not instead of it), reviewed and rejected **Rally** and **Magic Initiate: Warlock** |
+| [MOST OP Lae'zel Build Guide for Patch 8](https://www.youtube.com/watch?v=N6rX3fT5jJ8) (Jay Dunna, 2025-05-25; transcript: `tools/video-transcripts/N6rX3fT5jJ8.en.vtt`) | An Eldritch Knight (Booming Blade) + 1-level Paladin dip alternative, reviewed for comparison | **Rejected** — abandons the Battle Master maneuver identity the party's control plan depends on |
+| [The CONSISTENT KILLER — Eldritch Knight Thrower Honour Build Guide](https://www.youtube.com/watch?v=pd8mQNq8xbE) (Cephalopocalypse, 2025-08-23; transcript: `tools/video-transcripts/pd8mQNq8xbE.en.vtt`) | A full Eldritch Knight Thrower respec, reviewed for comparison | **Rejected** — same reason; also a much larger playstyle change (ranged thrower) than anything else considered for this party |
 | [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`) | Patch 8-specific level-by-level spell and feat progression for a pure Death Domain Cleric 12 | Adopted as [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's Recommended Spell Progression]] — the existing Fextralife Cleric source predates Death Domain, so this closed a real content gap. Confirmed as the chosen build after comparing against a rejected multiclass alternative. |
 | [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`) | A Cleric 8 / Wizard 2 (Necromancy) / Sorcerer 2 (Draconic) multiclass alternative, reviewed for comparison | **Rejected** — its best-in-slot gear (Markoheshkir, Robe of the Weave, Ring of Mental Inhibition) is already claimed by Kao's build; pure Cleric avoids the conflict |
 | [bg3.wiki: Fighter](https://bg3.wiki/wiki/Fighter) and general feat-count references | Confirmed Fighter's exact feat levels (4/6/8/12, four total) and that Improved Extra Attack/Battle Master maneuvers are already resolved by level 11 | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] and add explicit levels to Lae'zel's Feat Priority table, which previously had no level column |
