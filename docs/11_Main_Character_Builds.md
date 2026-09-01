@@ -57,7 +57,7 @@ These are the current main builds from the local character notes. The party plan
 
 | Character | Current role | Build direction | Main job |
 |---|---|---|---|
-| Lae'zel | Frontline pin and damage engine | Battle Master Fighter 11 / War Domain Cleric 1 | Trip, push, disarm, and keep enemies inside the danger zone |
+| Lae'zel | Frontline pin and damage engine | Battle Master Fighter 12 | Trip, push, disarm, and keep enemies inside the danger zone |
 | Astarion | Scout, lockpicker, precision damage | Thief Rogue now; optional Gloom Stalker / Assassin upgrade | Start fights, delete weak targets, handle traps and locks |
 | Kao | Human Mage / control caster | Conjuration Wizard | Web, Grease, Hold Person, Counterspell, utility casting |
 | TMind | Drow Cleric / necromancer aura | Death Domain Cleric; optional Stars Druid dip | Spirit Guardians, Warding Bond, Healing Word, necrotic/radiant pressure |
@@ -71,7 +71,7 @@ These are the current main builds from the local character notes. The party plan
 | Shadowheart remains available in camp | Use her as support/radiant backup, not as a Lae'zel replacement unless the frontline plan changes |
 | Sussur Bark was crafted into the Sussur Dagger, held by Astarion | Masterwork Weapon decision resolved; dagger provides caster silence utility |
 | TMind and Lae'zel are both now Level 12 (save-confirmed) | Done — see [[11_Main_Character_Builds#^level-12-now\|Leveling Up TMind and Lae'zel to 12]] below for what each level-up actually offered |
-| Lae'zel respecced to Fighter 11 / War Domain Cleric 1 | **Save-confirmed** (the `Classes` list now shows both). Only 3 feats total, not 4, since Fighter 12 is never reached — see [[11_Main_Character_Builds#^laezel-build\|her build section]] for the full reasoning. Exact maneuver picks are still not save-verifiable. |
+| Lae'zel briefly respecced to Fighter 11 / War Domain Cleric 1, then back to pure Fighter 12 | Same-day round trip: tried the Cleric 1 dip for War Priest, weighed it against Sentinel, reverted. See [[11_Main_Character_Builds#^laezel-build\|her build section]] for the reasoning. Exact maneuver picks are still not save-verifiable. |
 
 ## 🆙 Leveling Up TMind and Lae'zel to 12 — Done ^level-12-now
 
@@ -82,7 +82,7 @@ Both are now confirmed Level 12 in the save. What happened, for reference:
 | Character | What Level 12 offered | Outcome |
 |---|---|---|
 | TMind (Cleric 11→12) | A Feat — Cleric's **third and final** feat slot (4/8/12) | ✅ Leveled to 12 (save-confirmed). No new spell level — 6th-level spells (Heroes' Feast) already unlocked at Cleric 11; prepared-spell count and slots just increase automatically. See [[11_Main_Character_Builds#^tmind-build\|TMind's Recommended Feats table]] for the level-12 pick reasoning. |
-| Lae'zel (Fighter 11→12) | Would have been Fighter's fourth feat slot | **Took a different path**: respecced into Fighter 11 / War Domain Cleric 1 instead of pure Fighter 12 (save-confirmed via the `Classes` list). This means the would-be Fighter-12 feat is never reached at all — she has 3 feats total, not 4. See [[11_Main_Character_Builds#^laezel-build\|her build section]] for the full reasoning and trade-offs. |
+| Lae'zel (Fighter 11→12) | Fighter's fourth feat slot | **Briefly detoured, then reverted**: respecced into Fighter 11 / War Domain Cleric 1 for War Priest, then back to pure Fighter 12 the same day once that trade-off was weighed against Sentinel. Final four feats: Great Weapon Master, Ability Improvement, Sentinel, and Savage Attacker/Alert — see [[11_Main_Character_Builds#^laezel-build\|her build section]] for the full reasoning. |
 
 ## ⚔️ Lae'zel: Battle Master Frontline Pin ^laezel-build
 
@@ -92,30 +92,28 @@ Keep Lae'zel as a **Battle Master** unless you deliberately want a different mar
 
 | Level plan | Role | Why it works |
 |---|---|---|
-| **Battle Master Fighter 11 / War Domain Cleric 1 (confirmed path)** | Frontline damage and control, plus War Priest bonus-action charges | **Decided and now save-confirmed** — superseding an earlier "stay pure Fighter 12" call. The current save's own `Classes` list shows exactly this: Fighter (BattleMaster) + Cleric (WarDomain), total character level 12. Sourced from an older (Nov 2024) Jay Dunna guide the user specifically wanted checked. See [[11_Main_Character_Builds#^laezel-level-plan\|Recommended Level-by-Level Plan]] below for the real cost of this dip. |
-
-**A real trade-off, not a free upgrade**: feats in BG3 are tied to individual class levels, not total character level (confirmed on bg3.wiki) — Fighter's 4th feat only triggers at *Fighter* level 12. Stopping at Fighter 11 to take Cleric 1 means that slot is never reached: **she ends up with 3 feats total instead of 4.** Decided to spend all three on **Ability Improvement, Ability Improvement, Great Weapon Master** — no Sentinel, no Savage Attacker/Alert. This means she loses the Sentinel-based reaction-lockdown synergy with Web/Spirit Guardians that the rest of this section still describes as her job; the maneuver list below picks up some of that slack instead.
+| **Battle Master Fighter 12 (confirmed path, reverted)** | Frontline tank, GWM damage, control maneuvers | **Decided** — respeccing back to pure Fighter 12, undoing the Fighter 11/War Domain Cleric 1 dip from earlier the same day. Reason: Sentinel directly reinforces the party's control plan (locks enemies inside Web/Spirit Guardians) every single fight, all day; War Priest is just more damage, capped at 3 uses per long rest (Cleric 1's tier), and competes with GWM's own bonus-action attack for the same bonus action anyway. See [[11_Main_Character_Builds#^laezel-level-plan\|Recommended Level-by-Level Plan]] below. |
 
 ### Practical Setup
 
 | Choice | Recommendation |
 |---|---|
 | Fighting style | Great Weapon Fighting or Defence |
-| Key feats | **Ability Improvement ×2, Great Weapon Master** — 3 total (see the class-level note above for why there's no 4th). No Sentinel, no Savage Attacker/Alert. |
+| Key feats | **Great Weapon Master, Ability Improvement (Strength to 20), Sentinel, Savage Attacker / Alert** — the full 4, back to pure Fighter 12. |
 | Core maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
-| Later maneuvers | Precision Attack for GWM accuracy, **Riposte** (reaction damage on a melee hit against you), **Menacing Attack** (extra damage + a Frighten chance), **Commander's Strike** — costs one of her own attacks plus her bonus action, not a freebie (see note below); player-reported at Fighter 11, not save-verifiable. **Rally was added in game after all** (player-reported, reversing an earlier "rejected" call in this section) — since all 7 maneuver slots were already assigned, one of the picks above was presumably dropped in its favor, but exactly which one isn't save-verifiable (checked directly: this save's index has zero references to maneuvers of any kind, only items/positions/statuses) — check her sheet in game to confirm which one Rally replaced. |
-| Cleric 1 (War Domain) | Cantrips: Resistance, Guidance, Light. Prepared: Create Water, Sanctuary, Command. The actual point of the dip is **War Priest** — a few bonus-action attacks per long rest, on top of GWM's own bonus-action-on-crit/kill. |
+| Later maneuvers | Precision Attack for GWM accuracy, **Riposte** (reaction damage on a melee hit against you), **Menacing Attack** (extra damage + a Frighten chance), **Commander's Strike** — costs one of her own attacks plus her bonus action, not a freebie (see note below); player-reported at Fighter 11, not save-verifiable. **Rally was added in game** (player-reported) — since all 7 maneuver slots were already assigned, one of the picks above was presumably dropped in its favor, but exactly which one isn't save-verifiable (checked directly: this save's index has zero references to maneuvers of any kind, only items/positions/statuses) — check her sheet in game to confirm which one Rally replaced. |
 | Buffs | Longstrider, Aid, Warding Bond if TMind can absorb the shared damage, Potion of Speed for serious fights |
 
 ### Feat Priority
 
-Fighter's feats are tied to *Fighter* class level specifically (4/6/8/12, four total if you reach Fighter 12) — confirmed on bg3.wiki, and the reason stopping at Fighter 11 costs a feat outright. Her pre-respec picks were Ability Improvement, Heavy Armour Master, and Sentinel; all three are being respecced away except the Ability Improvement, per the decision above.
+Fighter is one of only two classes (with Rogue) that gets a **bonus feat at level 6** on top of the standard 4/8/12 — four feats in total, confirmed on bg3.wiki. Back to the full 4 now that the Cleric dip is reverted.
 
 | Level | Pick | Effect (BG3 wording) | Reason |
 |---|---|---|---|
-| 4 | Ability Improvement | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | Push Strength up before GWM needs the accuracy |
-| 6 | Great Weapon Master | Bonus melee attack as a Bonus Action on a Critical Hit or a kill; two-handed/versatile attacks can trade -5 to hit for +10 damage | Main damage engine — stacks with War Priest's own bonus-action attacks from the Cleric dip |
-| 8 | Ability Improvement | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | Finishes what the level-4 pick started (e.g. Strength to 20, or split with Constitution) |
+| 4 | Great Weapon Master | Bonus melee attack as a Bonus Action on a Critical Hit or a kill; two-handed/versatile attacks can trade -5 to hit for +10 damage | Main damage engine, take first |
+| 6 | Ability Improvement toward Strength 20 | Increase one ability by 2, or two abilities by 1, up to a maximum of 20 | GWM needs accuracy before more control feats |
+| 8 | **Sentinel** | Reaction attack when an enemy in melee range attacks an ally; a hit from an Opportunity Attack stops the target's movement for the rest of its turn; Advantage on Opportunity Attacks | Locks enemies inside Web, Spirit Guardians, and chokepoints — the reason this respec reverted back |
+| 12 | Savage Attacker / Alert | Savage Attacker: reroll melee weapon damage dice, use the higher result. Alert: +5 Initiative, can't be Surprised | Flex pick once the three core feats above are secured |
 
 Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
 
@@ -123,26 +121,26 @@ Source: [bg3.wiki: Feats](https://bg3.wiki/wiki/Feats).
 
 **Markers:** ⭐⭐⭐ ⏱️
 
-Confirmed as the build path: Fighter 11 / War Domain Cleric 1. Read from an older (November 2024) Jay Dunna guide — his last "lore-accurate Battle Master" video before he pivoted to recommending Eldritch Knight in a later, Patch 8-specific one (reviewed and rejected earlier in this same process). Not independently cross-checked against bg3.wiki level-by-level; treat it as a strong plan, not gospel. Maneuver and feat picks below are this handbook's own final decisions, not copied wholesale from the video (e.g. it recommends Rally; this build doesn't).
+Confirmed as the build path — pure Fighter 12, no multiclass (reverted back from a same-day Fighter 11/War Domain Cleric 1 detour once the War Priest trade-off was weighed against Sentinel and Sentinel won). Read from a September 2025 guide that explicitly re-checked Battle Master against the final patch before recommending it. Not independently cross-checked against bg3.wiki level-by-level; treat it as a strong plan, not gospel.
 
 | Level | What unlocks | This handbook's picks |
 |---|---|---|
 | 1 | Fighter, Second Wind, fighting style | Great Weapon Fighting or Defence |
 | 2 | Action Surge | — |
 | 3 | Battle Master, 3 maneuvers | Trip Attack, Pushing Attack, Disarming Attack |
-| 4 | Feat | **Ability Improvement** |
+| 4 | Feat | **Great Weapon Master** |
 | 5 | Extra Attack | — |
-| 6 | Feat | **Great Weapon Master** |
+| 6 | Feat | **Ability Improvement toward Strength 20** |
 | 7 | 4th Superiority Die, 2 more maneuvers | Precision Attack, **Riposte** |
-| 8 | Feat | **Ability Improvement** (her last feat — Fighter 12 is never reached, see above) |
+| 8 | Feat | **Sentinel** |
 | 9 | Indomitable | — |
-| 10 | Superiority Die → d10, 2 more maneuvers | **Commander's Strike**, **Menacing Attack** — but **Rally was added in game after all** (reversing the earlier rejection); with all 7 slots already spoken for, one of these picks was likely swapped out, exact one not save-verifiable |
+| 10 | Superiority Die → d10, 2 more maneuvers | **Commander's Strike**, **Menacing Attack** — but **Rally was added in game** (player-reported); with all 7 slots already spoken for, one of these picks was likely swapped out, exact one not save-verifiable |
 | 11 | Improved Extra Attack (3 attacks/action) | — |
-| 12 (character level) | **Cleric 1, War Domain** — no Fighter feat here, this level is spent on the dip instead | Cantrips: Resistance, Guidance, Light. Prepared: Create Water, Sanctuary, Command. War Priest charges are the actual payoff. |
+| 12 | Feat (her last) | Savage Attacker / Alert |
 
-A **Magic Initiate: Warlock** feat (Booming Blade + Eldritch Blast cantrips, Hex spell) was reviewed earlier and **rejected** — moot now anyway, since there's no spare feat slot left to spend on it.
+A **Magic Initiate: Warlock** feat (Booming Blade + Eldritch Blast cantrips, Hex spell) and a **Fighter 11/War Domain Cleric 1** dip (for War Priest bonus-action charges) were both reviewed and **rejected** — the Cleric dip specifically because Sentinel's every-fight control synergy with the party's Web/Spirit Guardians plan beat War Priest's damage-only, 3-charges-per-long-rest payoff, and because it would permanently forfeit the Fighter-12 feat slot (feats are tied to class level, not character level).
 
-Sources: [Still the BEST Fighter? Battle Master Build (UPDATED)](https://www.youtube.com/watch?v=NuLOJuPmjfI) (Wayfaring Nomad, 2025-09-04; transcript: `tools/video-transcripts/NuLOJuPmjfI.en.vtt`) for the maneuver/feat reasoning; [MOST OP LAE'ZEL Build Guide](https://www.youtube.com/watch?v=08FTRbPkdhQ) (Jay Dunna, 2024-11-24; transcript: `tools/video-transcripts/08FTRbPkdhQ.en.vtt`) for the War Domain Cleric 1 dip, confirmed as the build path.
+Source: [Still the BEST Fighter? Battle Master Build (UPDATED)](https://www.youtube.com/watch?v=NuLOJuPmjfI) (Wayfaring Nomad, 2025-09-04; transcript: `tools/video-transcripts/NuLOJuPmjfI.en.vtt`).
 
 ### Party Role
 
@@ -553,6 +551,8 @@ These sources were used as reference points, then adjusted to the local party no
 |---|---|---|
 | [Still the BEST Fighter? Battle Master Build (UPDATED)](https://www.youtube.com/watch?v=NuLOJuPmjfI) (Wayfaring Nomad, 2025-09-04; transcript: `tools/video-transcripts/NuLOJuPmjfI.en.vtt`) | Pure Fighter 12 Battle Master, re-checked against the latest patch | Adopted as [[11_Main_Character_Builds#^laezel-level-plan\|Lae'zel's Recommended Level-by-Level Plan]] — confirmed pure Fighter 12 over multiclassing, added **Riposte** to the maneuver list (kept alongside Sentinel, not instead of it), reviewed and rejected **Rally** and **Magic Initiate: Warlock** |
 | [MOST OP Lae'zel Build Guide for Patch 8](https://www.youtube.com/watch?v=N6rX3fT5jJ8) (Jay Dunna, 2025-05-25; transcript: `tools/video-transcripts/N6rX3fT5jJ8.en.vtt`) | An Eldritch Knight (Booming Blade) + 1-level Paladin dip alternative, reviewed for comparison | **Rejected** — abandons the Battle Master maneuver identity the party's control plan depends on |
+| [MOST OP LAE'ZEL Build Guide](https://www.youtube.com/watch?v=08FTRbPkdhQ) (Jay Dunna, 2024-11-24; transcript: `tools/video-transcripts/08FTRbPkdhQ.en.vtt`) | A Fighter 11 / War Domain Cleric 1 dip for War Priest bonus-action charges, briefly adopted mid-session | **Adopted, then reverted the same day** — the respec actually happened in game, but was walked back to pure Fighter 12 once War Priest's damage-only, 3-charges-per-long-rest payoff was weighed against Sentinel's every-fight control synergy with the party's plan |
+| [OP BATTLE MASTER Fighter "Duellist Prerogative" Build](https://www.youtube.com/watch?v=Fw2rSiOZwyU) (Jay Dunna, 2026-02-15; transcript: `tools/video-transcripts/Fw2rSiOZwyU.en.vtt`) | A Riposte-focused Battle Master build for whoever wields Duellist's Prerogative | Not applicable to Lae'zel — that weapon is Astarion's in this party, not hers; read while searching for a genuine Battle Master source, kept for reference only |
 | [The CONSISTENT KILLER — Eldritch Knight Thrower Honour Build Guide](https://www.youtube.com/watch?v=pd8mQNq8xbE) (Cephalopocalypse, 2025-08-23; transcript: `tools/video-transcripts/pd8mQNq8xbE.en.vtt`) | A full Eldritch Knight Thrower respec, reviewed for comparison | **Rejected** — same reason; also a much larger playstyle change (ranged thrower) than anything else considered for this party |
 | [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`) | Patch 8-specific level-by-level spell and feat progression for a pure Death Domain Cleric 12 | Adopted as [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's Recommended Spell Progression]] — the existing Fextralife Cleric source predates Death Domain, so this closed a real content gap. Confirmed as the chosen build after comparing against a rejected multiclass alternative. |
 | [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`) | A Cleric 8 / Wizard 2 (Necromancy) / Sorcerer 2 (Draconic) multiclass alternative, reviewed for comparison | **Rejected** — its best-in-slot gear (Markoheshkir, Robe of the Weave, Ring of Mental Inhibition) is already claimed by Kao's build; pure Cleric avoids the conflict |

@@ -21,6 +21,13 @@ Where the change lives in a specific section, link the exact heading (`[[11_Main
 
 Group each date's entries into collapsible topic nodes using a callout, not `### Added`/`### Changed`/`### Fixed` headings: `> [!note]- 🎒 Topic Name` followed by `> `-prefixed bullets. **Don't use raw `<details>` HTML** — the site's renderer passes that through untouched and never resolves the wikilinks/markdown links inside it; only the `> [!note]-` callout form runs the bullets through the real parser. Reuse a topic across dates rather than inventing new ones — the recurring set so far: 🎒 Save Snapshots & Readiness, 🗡️ Gear Ratings & Redistribution, 📖 Handbook Content & Builds, 🛠️ Tooling & Site Infrastructure, 🔒 Corrections & Maintenance.
 
+## 2026-09-01
+
+> [!note]- 📖 Handbook Content & Builds (Lae'zel's Cleric dip reverted back to pure Fighter 12)
+> - After weighing [[11_Main_Character_Builds#^laezel-build|Sentinel against War Priest]] directly, the user decided to respec back — the Fighter 11/War Domain Cleric 1 dip from the day before is reverted to **pure Battle Master Fighter 12**. Checked the actual numbers first: War Priest gives a fixed 3 bonus-action attacks per long rest at the Cleric-1 tier (confirmed on bg3.wiki — it scales to 4/5/6 only at Cleric 5/8/11, which a 1-level dip never reaches), and competes with GWM's own bonus-action attack for the same bonus action anyway. Sentinel reinforces the party's control plan every fight, all day, with no charge limit — judged the better fit for this party specifically.
+> - Restored the full four-feat plan (Great Weapon Master, Ability Improvement, **Sentinel**, Savage Attacker/Alert) across the [[11_Main_Character_Builds#^laezel-build|Level plan]], [[11_Main_Character_Builds#^laezel-build|Feat Priority table]], and [[11_Main_Character_Builds#^laezel-level-plan|Recommended Level-by-Level Plan]]. Added citation rows for the two videos read during the detour (Jay Dunna's Nov 2024 Cleric-dip guide, and a Duellist's Prerogative Battle Master build that turned out to be for Astarion's weapon, not Lae'zel's) so the research trail stays intact even though the conclusion changed.
+> - Note: this reverts the *documented plan* only. The in-game respec back to pure Fighter is something the user still needs to do — [Current Save Snapshot](12_Current_Save_Snapshot.md) and [Current Readiness Audit](14_Current_Readiness_Audit.md) still report the Fighter/Cleric multiclass from yesterday's sync until the next save check confirms the reversal actually happened.
+
 ## 2026-08-31
 
 > [!note]- 🎒 Save Snapshots & Readiness (Lower City - 118h 27m, split flipped, pending level-ups)
