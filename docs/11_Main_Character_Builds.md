@@ -450,6 +450,21 @@ Checked every named item and scroll from the video against the current save. Rea
 - [ ] **Hood of the Weave, Cloak of the Weave, Amulet of the Devout, Ring of Fey Wild Sparks, Helldusk Gloves, Helldusk Boots** — none of these were found anywhere in the tracked save. Either still sitting in an unvisited area's container, or need a vendor/location check this audit method can't do from save data alone.
 - [ ] **The respec itself** — TMind is currently pure Death Domain Cleric 12 (confirmed, save-verified). Getting to this build means a Withers respec into Cleric 8 / Wizard 2 / Sorcerer 2, losing his last two Cleric levels' worth of progression (Heroes' Feast access, 6th-level domain spells) in the process.
 
+#### Substitutes for the Items Not Yet Found
+
+Until the six missing pieces above turn up, these are the best stand-ins actually confirmed in the current save.
+
+| Slot wanted | What it does | Best current substitute | Status |
+|---|---|---|---|
+| Hood of the Weave (+2 spell DC/attack) | Flat caster boost | **Helmet of Arcane Acuity** — stacks a spell-save-DC bonus per spell hit | Confirmed to exist, but tied to the same unresolved companion cluster as the Ring of Salving items — needs an in-game check, not a location |
+| Cloak of the Weave (+1 spell DC/attack, buggy Absorb Elements) | Flat caster boost | **Nymph Cloak** — Dominate Person, 1/long rest | Already in TMind's own inventory — a real control spell instead of a flat bonus, arguably a better pick regardless |
+| Amulet of the Devout (+2 spell DC, extra Channel Divinity) | Caster boost + resource | **Spellcrux Amulet** (spell slot restoration) or a faction-themed amulet (name withheld, spoiler-flagged; also restores a spell slot) | TMind already owns Spellcrux; the faction-themed one is confirmed with the same Act 2 vendor as Luminous Armour. Neither boosts spell DC directly — this is the one slot with no real substitute for the flat bonus, only for the utility half |
+| Ring of Fey Wild Sparks (hidden +1 spell DC) | Flat caster boost | **Eversight Ring** | Already TMind's only ring option — no DC-boosting ring confirmed available; Callous Glow Ring exists (same vendor) but is a radiant-build ring, not a fit for a necromancer |
+| Helldusk Gloves (+1 spell DC/attack, fire rider) | Flat caster boost | **Luminous Gloves** — Radiating Orb on radiant damage | Already TMind's own — a minor rider, not a DC boost, since he mostly deals necrotic rather than radiant damage |
+| Helldusk Boots (fire teleport, Infernal Evasion) | Mobility + defense | **Boots of Speed** | Already his only boots — pure mobility, no defensive reaction like Infernal Evasion |
+
+Net effect: **the amulet and ring slots are the real gaps** — nothing currently available replicates their flat spell-DC bonus, only their secondary utility. The cloak, gloves, and boots substitutes are perfectly serviceable since TMind already owns them.
+
 ### Necromancer Logistics
 
 **Markers:** ⭐⭐ ⚠️ 🎯
