@@ -322,7 +322,7 @@ Storage holds the overflow (2,968 item records, up from 2,860) — most of it is
 |---|---|---|
 | Voss' Silver Sword | Very Rare | **Voss**, a live Githyanki NPC (also carrying a Githyanki Crossbow and Leather Half-Plate) |
 | Silver Sword of the Astral Plane | Legendary | Also on Voss |
-| Staff of Cherished Necromancy | Very Rare | An unidentified NPC |
+| Staff of Cherished Necromancy | Very Rare | A **vendor** in Baldur's Gate (`CTY_Main_A`) — purchasable, not a fight/pickpocket target as previously logged |
 | Robe of Supreme Defences | Very Rare | An unidentified NPC |
 | Woe | Very Rare | An unidentified NPC — its internal save-data name references a late-game vampire-lord boss |
 | Penumbral Armour | Rare | An unidentified NPC |

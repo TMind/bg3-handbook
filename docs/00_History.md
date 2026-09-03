@@ -21,6 +21,12 @@ Where the change lives in a specific section, link the exact heading (`[[11_Main
 
 Group each date's entries into collapsible topic nodes using a callout, not `### Added`/`### Changed`/`### Fixed` headings: `> [!note]- 🎒 Topic Name` followed by `> `-prefixed bullets. **Don't use raw `<details>` HTML** — the site's renderer passes that through untouched and never resolves the wikilinks/markdown links inside it; only the `> [!note]-` callout form runs the bullets through the real parser. Reuse a topic across dates rather than inventing new ones — the recurring set so far: 🎒 Save Snapshots & Readiness, 🗡️ Gear Ratings & Redistribution, 📖 Handbook Content & Builds, 🛠️ Tooling & Site Infrastructure, 🔒 Corrections & Maintenance.
 
+## 2026-09-03
+
+> [!note]- 📖 Handbook Content & Builds (TMind's rejected multiclass documented anyway, with a task list)
+> - Added [[11_Main_Character_Builds#^tmind-multiclass-alt|the Cleric 8/Wizard 2/Sorcerer 2 multiclass alternative]] for TMind as a full documented option, at the user's explicit request, even though it's not the confirmed path (pure Death Domain Cleric 12 stays decided — this build's best-in-slot gear still conflicts with Kao's). Re-read the previously-downloaded transcript rather than re-fetching it.
+> - Cross-checked every named item and scroll from the video against the current save for a concrete [[11_Main_Character_Builds#^tmind-multiclass-tasks|task list]]: Scroll of Dethrone is already owned, two Scrolls of Misty Step are with vendors, and **Staff of Cherished Necromancy turns out to be vendor stock too** — a correction from an earlier pass that logged it as just "an unidentified NPC," implying a fight or pickpocket was needed. Fixed in [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]]. Scroll of Circle of Death and six named gear pieces (Hood/Cloak of the Weave, Amulet of the Devout, Ring of Fey Wild Sparks, Helldusk Gloves/Boots) remain genuinely not found anywhere in the tracked save.
+
 ## 2026-09-01
 
 > [!note]- 📖 Handbook Content & Builds (Lae'zel's Cleric dip reverted back to pure Fighter 12)

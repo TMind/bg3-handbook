@@ -30,7 +30,7 @@ This chapter keeps practical, spoiler-free build templates for the characters an
 | Review the active party | [[11_Main_Character_Builds#^party-build-snapshot\|Party Snapshot]] |
 | What TMind/Lae'zel's Level 12 looked like | [[11_Main_Character_Builds#^level-12-now\|Leveling Up TMind and Lae'zel to 12]] |
 | Build Lae'zel or Astarion | [[11_Main_Character_Builds#^laezel-build\|Lae'zel]] · [[11_Main_Character_Builds#^astarion-build\|Astarion]] |
-| Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] · [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's spell-by-level plan]] |
+| Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] · [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's spell-by-level plan]] · [[11_Main_Character_Builds#^tmind-multiclass-alt\|TMind's multiclass alternative]] · [[11_Main_Character_Builds#^tmind-multiclass-tasks\|its task list]] |
 | Configure camp support | [[11_Main_Character_Builds#^camp-options\|Bench and Camp]] · [[11_Main_Character_Builds#^hireling-bard\|Hireling Bard]] · [[11_Main_Character_Builds#^camp-specialists\|Camp Specialists]] |
 | Check equipment goals | [[11_Main_Character_Builds#^target-equipment\|Target Equipment]] |
 | Use a generic role template | [[#⚔️ Frontliner Template\|Frontliner]] · [[#🗡️ Scout and Skill Template\|Scout and Skill]] |
@@ -356,6 +356,46 @@ Confirmed as the build path. This level-by-level plan is transcript-read from a 
 
 Source: [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`).
 
+### Alternative: Cleric 8 / Wizard 2 (Necromancy) / Sorcerer 2 (Draconic) ^tmind-multiclass-alt
+
+**Markers:** ⭐⭐⭐ ⚠️ ⏱️
+
+**Not the confirmed path** — the pure Death Domain Cleric 12 plan above is still what's documented as decided, for the reason already on record: this multiclass's best-in-slot gear (Markoheshkir, Robe of the Weave, Ring of Mental Inhibition) is already claimed by [[11_Main_Character_Builds#^kao-build|Kao's build]]. Documented here anyway at the user's request, as a real option with its own task list if that conflict is ever worth accepting — e.g. if Kao finds his own upgrades later and can give these up.
+
+The idea: front-load Death Domain's necrotic pressure through Cleric 8, then dip Wizard 2 (Necromancy, for Grim Harvest and half-price scroll learning) and Sorcerer 2 (Draconic Bloodline, for unarmored AC and Twinned Spell) to turn key single-target spells into double-target ones.
+
+| Level | Class level | What it gives | Picks |
+|---|---|---|---|
+| 1 | Cleric 1 | Death Domain, Reaper | Guiding Bolt, Command, Bless, Inflict Wounds |
+| 2 | Cleric 2 | Channel Divinity, Touch of Death | — |
+| 3 | Cleric 3 | Blindness/Ray of Enfeeblement (domain) | Aid, Warding Bond, Spiritual Weapon, Hold Person |
+| 4 | Cleric 4 | Cantrip, Feat | Cantrip: Resistance; **Feat: War Caster**; Lesser Restoration/Silence/Calm Emotions |
+| 5 | Cleric 5 | Animate Dead + Vampiric Touch (auto), Spirit Guardians, Glyph of Warding, Destroy Undead | Concentrate Spirit Guardians |
+| 6 | Cleric 6 | Inescapable Destruction, 2nd Channel Divinity | Prepare Silence |
+| 7 | Cleric 7 | Blight + Death Ward (domain) | Banishment |
+| 8 | Cleric 8 | Divine Strike: Necrotic, Feat | **Dual Wielder** (for two staves); Calm Emotions or Remove Curse |
+| 9 | Wizard 1 | Cantrips, spells | Mage Hand, Minor Illusion, Fire Bolt; Shield (priority), Longstrider, Magic Missile |
+| 10 | Wizard 2 (Necromancy) | Necromancy Savant, Grim Harvest | Transcribe **Dethrone** and **Circle of Death** from scrolls, plus Misty Step |
+| 11 | Sorcerer 1 (Draconic Bloodline) | Unarmored AC 13 + HP bonus | Swap in Sorcerer's Shield |
+| 12 | Sorcerer 2 | Metamagic | **Twinned Spell** (Dethrone/Inflict Wounds/Blight/Banish/Hold Person), Extended Spell as alt |
+
+Gear it wants: Hood of the Weave, Cloak of the Weave, Robe of the Weave, Helldusk Gloves, Helldusk Boots, Amulet of the Devout, Ring of Fey Wild Sparks, Ring of Mental Inhibition, Staff of Cherished Necromancy (main-hand) + Markoheshkir (off-hand, via Dual Wielder), Fabricated Arbalest (ranged/bonus-action option).
+
+Source: [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`).
+
+#### Task List to Actually Get There ^tmind-multiclass-tasks
+
+Checked every named item and scroll from the video against the current save. Real progress already exists — this isn't starting from zero.
+
+- [x] **Scroll of Dethrone** — already in TMind's inventory, ready to transcribe once he has Wizard levels.
+- [ ] **Scroll of Circle of Death** — not found anywhere in the tracked save yet. Three possible locations per the source: a buried chest in a Rivington barn (the same barn as the strange axe, if it survived), the basement of Phil Grave's mansion, or an opulent chest in the Cloister of Somber Embrace. Check all three; only one held it when the source checked.
+- [ ] **Scroll of Misty Step** — two copies confirmed, both with **vendors** (Act 2 and Baldur's Gate respectively) — purchasable now, not a search.
+- [ ] **Staff of Cherished Necromancy** — confirmed with a **vendor** in Baldur's Gate (`CTY_Main_A`) — also purchasable, not an NPC to fight or pickpocket as earlier notes implied. Worth a correction pass on [[13_Item_Inventory_Snapshot#^storage-notable-gear|Notable Gear Sitting in Storage]] since it was previously logged as just "an unidentified NPC" without noting the Trader flag.
+- [ ] **Fabricated Arbalest** — confirmed with a non-trader NPC near Baldur's Gate; likely needs looting or pickpocketing rather than buying.
+- [ ] **Resolve the Kao gear conflict** — Markoheshkir, Robe of the Weave, and Ring of Mental Inhibition are all currently equipped on Kao. Either both characters can't have best-in-slot simultaneously, or Kao needs his own replacements found first (his current amulet options — Strange Tendril, Fey Semblance — are already a full slot's worth without these).
+- [ ] **Hood of the Weave, Cloak of the Weave, Amulet of the Devout, Ring of Fey Wild Sparks, Helldusk Gloves, Helldusk Boots** — none of these were found anywhere in the tracked save. Either still sitting in an unvisited area's container, or need a vendor/location check this audit method can't do from save data alone.
+- [ ] **The respec itself** — TMind is currently pure Death Domain Cleric 12 (confirmed, save-verified). Getting to this build means a Withers respec into Cleric 8 / Wizard 2 / Sorcerer 2, losing his last two Cleric levels' worth of progression (Heroes' Feast access, 6th-level domain spells) in the process.
+
 ### Necromancer Logistics
 
 **Markers:** ⭐⭐ ⚠️ 🎯
@@ -555,7 +595,7 @@ These sources were used as reference points, then adjusted to the local party no
 | [OP BATTLE MASTER Fighter "Duellist Prerogative" Build](https://www.youtube.com/watch?v=Fw2rSiOZwyU) (Jay Dunna, 2026-02-15; transcript: `tools/video-transcripts/Fw2rSiOZwyU.en.vtt`) | A Riposte-focused Battle Master build for whoever wields Duellist's Prerogative | Not applicable to Lae'zel — that weapon is Astarion's in this party, not hers; read while searching for a genuine Battle Master source, kept for reference only |
 | [The CONSISTENT KILLER — Eldritch Knight Thrower Honour Build Guide](https://www.youtube.com/watch?v=pd8mQNq8xbE) (Cephalopocalypse, 2025-08-23; transcript: `tools/video-transcripts/pd8mQNq8xbE.en.vtt`) | A full Eldritch Knight Thrower respec, reviewed for comparison | **Rejected** — same reason; also a much larger playstyle change (ranged thrower) than anything else considered for this party |
 | [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`) | Patch 8-specific level-by-level spell and feat progression for a pure Death Domain Cleric 12 | Adopted as [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's Recommended Spell Progression]] — the existing Fextralife Cleric source predates Death Domain, so this closed a real content gap. Confirmed as the chosen build after comparing against a rejected multiclass alternative. |
-| [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`) | A Cleric 8 / Wizard 2 (Necromancy) / Sorcerer 2 (Draconic) multiclass alternative, reviewed for comparison | **Rejected** — its best-in-slot gear (Markoheshkir, Robe of the Weave, Ring of Mental Inhibition) is already claimed by Kao's build; pure Cleric avoids the conflict |
+| [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`) | A Cleric 8 / Wizard 2 (Necromancy) / Sorcerer 2 (Draconic) multiclass alternative | Initially **rejected** as the confirmed path (its best-in-slot gear conflicts with Kao's), but documented anyway at the user's request as [[11_Main_Character_Builds#^tmind-multiclass-alt\|a full alternative]] with a [[11_Main_Character_Builds#^tmind-multiclass-tasks\|task list]] cross-checked against the current save |
 | [bg3.wiki: Fighter](https://bg3.wiki/wiki/Fighter) and general feat-count references | Confirmed Fighter's exact feat levels (4/6/8/12, four total) and that Improved Extra Attack/Battle Master maneuvers are already resolved by level 11 | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] and add explicit levels to Lae'zel's Feat Priority table, which previously had no level column |
 | [bg3.wiki: Cleric](https://bg3.wiki/wiki/Cleric) | Confirmed Cleric's feat levels (4/8/12, three total), that 6th-level spells unlock at 11 (not 12), and that 12 adds no new spell tier | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] for TMind |
 | [PC Gamer: The best Baldur's Gate 3 builds for Patch 8 and beyond](https://www.pcgamer.com/baldurs-gate-3-multiclass-builds/) | Astarion-style stealth burst, Death Cleric / Stars Druid concept, multiclass tradeoffs | Useful, but not copied blindly; party synergy matters more than isolated burst |
