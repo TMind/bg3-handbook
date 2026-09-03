@@ -364,22 +364,76 @@ Source: [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtu
 
 The idea: front-load Death Domain's necrotic pressure through Cleric 8, then dip Wizard 2 (Necromancy, for Grim Harvest and half-price scroll learning) and Sorcerer 2 (Draconic Bloodline, for unarmored AC and Twinned Spell) to turn key single-target spells into double-target ones.
 
-| Level | Class level | What it gives | Picks |
-|---|---|---|---|
-| 1 | Cleric 1 | Death Domain, Reaper | Guiding Bolt, Command, Bless, Inflict Wounds |
-| 2 | Cleric 2 | Channel Divinity, Touch of Death | — |
-| 3 | Cleric 3 | Blindness/Ray of Enfeeblement (domain) | Aid, Warding Bond, Spiritual Weapon, Hold Person |
-| 4 | Cleric 4 | Cantrip, Feat | Cantrip: Resistance; **Feat: War Caster**; Lesser Restoration/Silence/Calm Emotions |
-| 5 | Cleric 5 | Animate Dead + Vampiric Touch (auto), Spirit Guardians, Glyph of Warding, Destroy Undead | Concentrate Spirit Guardians |
-| 6 | Cleric 6 | Inescapable Destruction, 2nd Channel Divinity | Prepare Silence |
-| 7 | Cleric 7 | Blight + Death Ward (domain) | Banishment |
-| 8 | Cleric 8 | Divine Strike: Necrotic, Feat | **Dual Wielder** (for two staves); Calm Emotions or Remove Curse |
-| 9 | Wizard 1 | Cantrips, spells | Mage Hand, Minor Illusion, Fire Bolt; Shield (priority), Longstrider, Magic Missile |
-| 10 | Wizard 2 (Necromancy) | Necromancy Savant, Grim Harvest | Transcribe **Dethrone** and **Circle of Death** from scrolls, plus Misty Step |
-| 11 | Sorcerer 1 (Draconic Bloodline) | Unarmored AC 13 + HP bonus | Swap in Sorcerer's Shield |
-| 12 | Sorcerer 2 | Metamagic | **Twinned Spell** (Dethrone/Inflict Wounds/Blight/Banish/Hold Person), Extended Spell as alt |
+**Race and stats**: any Elf works — Fey Ancestry's sleep immunity matters later (self-casting Glyph of Warding's sleep variant while surrounded, without falling asleep yourself). Wisdom and Constitution first; Intelligence needs to be decent too since it's the spellcasting stat for the Wizard dip. Dump Strength and Charisma — this build isn't the party's face.
 
-Gear it wants: Hood of the Weave, Cloak of the Weave, Robe of the Weave, Helldusk Gloves, Helldusk Boots, Amulet of the Devout, Ring of Fey Wild Sparks, Ring of Mental Inhibition, Staff of Cherished Necromancy (main-hand) + Markoheshkir (off-hand, via Dual Wielder), Fabricated Arbalest (ranged/bonus-action option).
+#### Level 1 — Cleric 1, Death Domain
+
+- Class feature: **Reaper** (necromancy cantrips that target one creature hit an extra creature).
+- Spells to prepare: **Guiding Bolt** (ranged single-target, grants Advantage on the next attack against the target), **Command**, **Bless**, **Inflict Wounds** (melee attack roll, 3d10 necrotic — guarantee a crit by using it on a sleeping or Hold Person'd target).
+
+#### Level 2 — Cleric 2
+
+- Channel Divinity: **Turn Undead** (1 charge) and **Touch of Death** (melee hit → extra necrotic damage = 5 + 2×Cleric level; won't trigger if the hit would already kill the target).
+
+#### Level 3 — Cleric 3
+
+- Domain spells (auto-prepared): **Blindness** (no concentration needed) and **Ray of Enfeeblement** (halves Strength-based melee damage).
+- New prepared-spell options: **Aid**, **Warding Bond**, **Spiritual Weapon** (a bleed/gaping-wounds source; also lets you threaten a target from range so a rogue ally can get Sneak Attack), **Hold Person**.
+
+#### Level 4 — Cleric 4
+
+- New cantrip: **Resistance** (saving-throw help outside combat/dialogue).
+- **Feat: War Caster** — Advantage on Concentration saves, plus a Shocking Grasp reaction (using Wisdom, not a flat cantrip roll) against anyone leaving melee. This is what protects Spirit Guardians once it comes online next level.
+- New prepared-spell options: Lesser Restoration, Silence, or Calm Emotions (a genuinely underrated pick — removes several enrage-type buffs enemies get in specific Act 1/Act 2 fights, not just a charm counter).
+
+#### Level 5 — Cleric 5 (the big power spike)
+
+- Domain auto-grants: **Animate Dead** (raised zombies spread a "Crawling Gnaw" condition — a kill under it spawns another newborn zombie, chain-raising an army that fades on its own after a few turns) and **Vampiric Touch** (3d6 necrotic, heals half — fine sustain against a few enemies, weaker than Spirit Guardians against many).
+- New 3rd-level spell: **Spirit Guardians** — pick the radiant or necrotic variant per fight (Inescapable Destruction at level 6 makes necrotic ignore resistance, so default to necrotic once that's live).
+- **Glyph of Warding** — the sleep variant is an AoE crowd-control tool; melee hits against a sleeping target auto-crit. Cast it on yourself if surrounded (safe only with Fey Ancestry).
+- Passive: **Destroy Undead** — a successful Turn Undead also deals 4d6 radiant to the turned creature.
+- Cantrips gain an extra damage die at this level (Toll the Dead → 2d12, Bursting Sinew → 2d10, Bone Chill → 2d8) — combined with Reaper hitting two targets, each cantrip effectively adds two full extra dice of damage.
+
+#### Level 6 — Cleric 6
+
+- **Inescapable Destruction** — your necrotic damage now ignores Necrotic resistance entirely.
+- 2nd Channel Divinity charge (more Touch of Death / Turn Undead uses per rest).
+- New prepared-spell option: Silence.
+
+#### Level 7 — Cleric 7
+
+- Domain auto-grants (always prepared): **Blight** (8d8 necrotic single-target, ignores resistance for you specifically, and deals maximum damage against plant-type enemies) and **Death Ward**.
+- New 4th-level spell option: **Banishment** — situational but strong utility against certain self-destructing or channel-heavy enemies later in the run.
+
+#### Level 8 — Cleric 8
+
+- **Divine Strike: Necrotic** — once per turn, +1d8 necrotic on a melee *or ranged* weapon hit. A ranged bonus-action attack (hand crossbow, or Fabricated Arbalest's own bonus-action shot) can trigger this on top of your normal action.
+- **Feat: Dual Wielder** — lets you hold two staves at once (Staff of Cherished Necromancy + Markoheshkir) instead of needing a free hand for a shield; also +1 AC while dual-wielding melee weapons.
+- New prepared-spell option: Calm Emotions or Remove Curse, depending on what's needed.
+
+#### Level 9 — Wizard 1
+
+- Cantrips (utility, not damage): **Mage Hand** (throw potions/water bottles at range, grab distant objects), **Minor Illusion** (group enemies before a fight starts), **Fire Bolt** (ignite smoke powder or explosive barrels from a distance).
+- Spells (more than you can prepare at once — rotate as needed): **Shield** (top priority, +5 AC as a reaction), Longstrider, Magic Missile (no attack roll, guaranteed damage — good for finishing low-health targets), Feather Fall, Enhance Leap, Disguise Self.
+
+#### Level 10 — Wizard 2, Necromancy School
+
+- **Necromancy Savant** — halves the gold cost to learn Necromancy spells from scrolls (25gp per spell level instead of 50).
+- **Grim Harvest** — killing a creature with a spell regains HP equal to 2× the spell slot level used (3× for a Necromancy spell) — e.g. 15 HP back from a 5th-level-slot Necromancy kill.
+- Transcribe **Scroll of Dethrone** and **Scroll of Circle of Death** into the wizard spellbook here (see the task list below for where to find them) — this lets you cast them repeatedly instead of burning the single-use scroll.
+- Also learn **Misty Step** from a scroll — this build has no other route to it.
+
+#### Level 11 — Sorcerer 1, Draconic Bloodline
+
+- Base AC becomes 13 + Dexterity while unarmored (this build doesn't wear armor once dual-wielding staves) — plus +1 HP per Sorcerer level.
+- Re-prepare **Shield** from the Sorcerer spell list — swap out the Wizard-learned copy to free a wizard spell slot for something else, since you only need one copy of the spell regardless of which class list it's prepared from.
+
+#### Level 12 — Sorcerer 2
+
+- **Metamagic: Twinned Spell** — the headline pick. Lets you duplicate a single-target spell onto a second target for extra sorcery points, turning Dethrone, Inflict Wounds, Blight, Banishment, or Hold Person into two-target spells.
+- Alternate Metamagic: **Extended Spell** — doubles the duration of Vampiric Touch, Spiritual Weapon, Banishment, or similar, if action-economy damage matters less than a specific fight's length.
+
+Gear it wants: Hood of the Weave, Cloak of the Weave, Robe of the Weave, Helldusk Gloves, Helldusk Boots, Amulet of the Devout, Ring of Fey Wild Sparks, Ring of Mental Inhibition, Staff of Cherished Necromancy (main-hand — its own Life Essence Harvest resource lets you cast one Necromancy spell without a slot per kill) + Markoheshkir (off-hand, via Dual Wielder — Arcane Battery for a free spell, Caresca's Favor for Bone Shaking Thunder's necrotic Destructive Wave), Fabricated Arbalest (ranged — its Illuminating Shot bonus action inflicts Radiating Orb and can trigger Divine Strike: Necrotic on the same turn as your main action).
 
 Source: [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`).
 
