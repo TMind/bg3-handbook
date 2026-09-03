@@ -364,7 +364,7 @@ Source: [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtu
 
 The idea: front-load Death Domain's necrotic pressure through Cleric 8, then dip Wizard 2 (Necromancy, for Grim Harvest and half-price scroll learning) and Sorcerer 2 (Draconic Bloodline, for unarmored AC and Twinned Spell) to turn key single-target spells into double-target ones.
 
-**Race and stats**: any Elf works — Fey Ancestry's sleep immunity matters later (self-casting Glyph of Warding's sleep variant while surrounded, without falling asleep yourself). Wisdom and Constitution first; Intelligence needs to be decent too since it's the spellcasting stat for the Wizard dip. Dump Strength and Charisma — this build isn't the party's face.
+**Race and stats**: **Wood Half-Elf** specifically in the source (any Elf/Half-Elf works for Fey Ancestry's sleep immunity — matters later for self-casting Glyph of Warding's sleep variant while surrounded, without falling asleep yourself). The spoken narration only gives a priority order (Wisdom and Constitution first, Intelligence "decent too," dump Strength and Charisma), but the video's own character-creation screen shows the exact numbers on screen at ~1:28 — confirmed directly rather than inferred from the audio: **STR 8, DEX 14, CON 16, INT 12, WIS 16, CHA 8**. Intelligence stays relevant despite Wisdom driving everything else because it's the casting stat for Dethrone and Circle of Death once they're transcribed into the Wizard spellbook.
 
 #### Level 1 — Cleric 1, Death Domain
 
