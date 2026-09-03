@@ -430,8 +430,8 @@ The idea: front-load Death Domain's necrotic pressure through Cleric 8, then dip
 
 #### Level 12 — Sorcerer 2
 
-- **Metamagic: Twinned Spell** — the headline pick. Lets you duplicate a single-target spell onto a second target for extra sorcery points, turning Dethrone, Inflict Wounds, Blight, Banishment, or Hold Person into two-target spells.
-- Alternate Metamagic: **Extended Spell** — doubles the duration of Vampiric Touch, Spiritual Weapon, Banishment, or similar, if action-economy damage matters less than a specific fight's length.
+- **Metamagic: Twinned Spell** — the headline pick. Costs 1 Sorcery Point per spell slot level used to cast the spell (confirmed on bg3.wiki) — cheap for Inflict Wounds or Hold Person (1st/2nd level, 1-2 points), but Dethrone at 5th level costs 5 points outright, more than the 2 points Sorcerer 2 starts with. **Font of Magic covers the gap**: spending an unused spell slot refunds Sorcery Points equal to its level, so converting a spare slot (or a couple of smaller ones) before the fight buys the points to twin Dethrone too — it costs extra slots on top of the one used to actually cast it, but it's a real option for a hard fight, not a hard wall.
+- Alternate Metamagic: **Extended Spell** — flat 1 Sorcery Point regardless of spell level, far cheaper than Twinned Spell — doubles the duration of Vampiric Touch, Spiritual Weapon, Banishment, or similar, if action-economy damage matters less than a specific fight's length.
 
 Gear it wants: Hood of the Weave, Cloak of the Weave, Robe of the Weave, Helldusk Gloves, Helldusk Boots, Amulet of the Devout, Ring of Fey Wild Sparks, Ring of Mental Inhibition, Staff of Cherished Necromancy (main-hand — its own Life Essence Harvest resource lets you cast one Necromancy spell without a slot per kill) + Markoheshkir (off-hand, via Dual Wielder — Arcane Battery for a free spell, Caresca's Favor for Bone Shaking Thunder's necrotic Destructive Wave), Fabricated Arbalest (ranged — its Illuminating Shot bonus action inflicts Radiating Orb and can trigger Divine Strike: Necrotic on the same turn as your main action).
 
