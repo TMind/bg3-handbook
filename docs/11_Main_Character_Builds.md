@@ -30,7 +30,7 @@ This chapter keeps practical, spoiler-free build templates for the characters an
 | Review the active party | [[11_Main_Character_Builds#^party-build-snapshot\|Party Snapshot]] |
 | What TMind/Lae'zel's Level 12 looked like | [[11_Main_Character_Builds#^level-12-now\|Leveling Up TMind and Lae'zel to 12]] |
 | Build Lae'zel or Astarion | [[11_Main_Character_Builds#^laezel-build\|Lae'zel]] · [[11_Main_Character_Builds#^astarion-build\|Astarion]] |
-| Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] · [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's spell-by-level plan]] · [[11_Main_Character_Builds#^tmind-multiclass-alt\|TMind's multiclass alternative]] · [[11_Main_Character_Builds#^tmind-multiclass-tasks\|its task list]] |
+| Build Kao or TMind | [[11_Main_Character_Builds#^kao-build\|Kao]] · [[11_Main_Character_Builds#^tmind-build\|TMind]] · [[11_Main_Character_Builds#^tmind-lich-queen\|TMind's confirmed Lich Queen of Shar build]] · [[11_Main_Character_Builds#^tmind-spell-progression\|pure-Cleric alternative]] · [[11_Main_Character_Builds#^tmind-multiclass-alt\|another multiclass alternative]] · [[11_Main_Character_Builds#^tmind-multiclass-tasks\|its task list]] |
 | Configure camp support | [[11_Main_Character_Builds#^camp-options\|Bench and Camp]] · [[11_Main_Character_Builds#^hireling-bard\|Hireling Bard]] · [[11_Main_Character_Builds#^camp-specialists\|Camp Specialists]] |
 | Check equipment goals | [[11_Main_Character_Builds#^target-equipment\|Target Equipment]] |
 | Use a generic role template | [[#⚔️ Frontliner Template\|Frontliner]] · [[#🗡️ Scout and Skill Template\|Scout and Skill]] |
@@ -81,7 +81,7 @@ Both are now confirmed Level 12 in the save. What happened, for reference:
 
 | Character | What Level 12 offered | Outcome |
 |---|---|---|
-| TMind (Cleric 11→12) | A Feat — Cleric's **third and final** feat slot (4/8/12) | ✅ Leveled to 12 (save-confirmed). No new spell level — 6th-level spells (Heroes' Feast) already unlocked at Cleric 11; prepared-spell count and slots just increase automatically. See [[11_Main_Character_Builds#^tmind-build\|TMind's Recommended Feats table]] for the level-12 pick reasoning. |
+| TMind (Cleric 11→12) | A Feat — Cleric's **third and final** feat slot (4/8/12) | ✅ Leveled to 12 (save-confirmed) as pure Cleric at the time. No new spell level — 6th-level spells (Heroes' Feast) already unlocked at Cleric 11; prepared-spell count and slots just increase automatically. **Since superseded**: TMind was later respecced into Wizard 1 / Cleric 11 — see [[11_Main_Character_Builds#^tmind-lich-queen\|the Lich Queen of Shar build]] for the current state. |
 | Lae'zel (Fighter 11→12) | Fighter's fourth feat slot | **Briefly detoured, then reverted**: respecced into Fighter 11 / War Domain Cleric 1 for War Priest, then back to pure Fighter 12 the same day once that trade-off was weighed against Sentinel. Final four feats: Great Weapon Master, Ability Improvement, Sentinel, and Savage Attacker/Alert — see [[11_Main_Character_Builds#^laezel-build\|her build section]] for the full reasoning. |
 
 ## ⚔️ Lae'zel: Battle Master Frontline Pin ^laezel-build
@@ -316,10 +316,13 @@ TMind is not a backline healer. Treat him as an off-tank aura caster and necroma
 
 | Build | Role | When to use |
 |---|---|---|
-| **Death Domain Cleric 12 (confirmed path)** | Simple aura cleric, full Cleric spell access, final feat | **Decided** — full Cleric progression, no multiclass. See [[11_Main_Character_Builds#^tmind-spell-progression\|Recommended Spell Progression]] below for the level-by-level plan. |
+| **Wizard 1 / Cleric 11 "Lich Queen of Shar" (confirmed path, respecced into)** | Full Wizard scroll-scribing (cast off Wisdom, since Cleric comes after) plus full Death Domain progression, built around free level-6 spell spam off the Staff of Cherished Necromancy | **Decided** — respecced from the pure-Cleric-12 plan below into this order. See [[11_Main_Character_Builds#^tmind-lich-queen\|Lich Queen of Shar]] below for the level-by-level plan. |
+| Death Domain Cleric 12 (previous confirmed path, superseded) | Simple aura cleric, full Cleric spell access, final feat | No longer active — kept as [[11_Main_Character_Builds#^tmind-spell-progression\|an alternative]] for reference |
 | Death Cleric 10 / Circle of Stars Druid 2 | Spirit Guardians specialist with stronger concentration support and Starry Form utility | Not taken — kept here for reference only; loses Cleric 11 Heroes' Feast access |
 
-A multiclass path (Cleric 8 / Wizard 2 Necromancy / Sorcerer 2 Draconic, for Twinned Spell + free necromancy casts) was also reviewed and rejected — its best-in-slot gear (Markoheshkir, Robe of the Weave, Ring of Mental Inhibition) is already claimed by [[11_Main_Character_Builds#^kao-build|Kao's build]], and pure Cleric avoids that conflict entirely.
+A separate multiclass path (Cleric 8 / Wizard 2 Necromancy / Sorcerer 2 Draconic, for Twinned Spell + free necromancy casts) was also reviewed and rejected for the same gear conflict noted below — see [[11_Main_Character_Builds#^tmind-multiclass-alt|its own section]].
+
+**Gear conflict with Kao, now an accepted tradeoff:** the confirmed Lich Queen of Shar build's best-in-slot gear — Markoheshkir, Hood of the Weave, Robe of the Weave, and the Spellcrux Amulet — overlaps directly with [[11_Main_Character_Builds#^kao-build|Kao's build]]'s own want-list. This was the reason the earlier Cleric 8/Wizard 2/Sorcerer 2 alternative got rejected; going ahead with Lich Queen of Shar means that conflict now needs active coordination between the two characters (who holds which item, and when) rather than being avoided outright. Markoheshkir and the Spellcrux Amulet can at least be used once and handed off to the other character the same day, which softens the conflict somewhat — see the tips below.
 
 ### Practical Setup
 
@@ -333,11 +336,48 @@ A multiclass path (Cleric 8 / Wizard 2 Necromancy / Sorcerer 2 Draconic, for Twi
 | Item synergy | Healing Word can trigger on-heal gear; this can add Bless-style value without using concentration |
 | Divine Intervention | Keep TMind's own use as an emergency button; use Shadowheart for the weapon trick instead |
 
-### Recommended Spell Progression (Pure Death Domain Cleric 12) ^tmind-spell-progression
+### Lich Queen of Shar: Wizard 1 / Cleric 11 (confirmed path) ^tmind-lich-queen
+
+**Markers:** ⭐⭐⭐ ⏱️ ✨
+
+The confirmed, respecced-into build. Takes a single Wizard level *first* specifically so every later scroll/item/staff cast runs off Wisdom instead of Intelligence, then goes full Death Domain Cleric for the remaining 11 levels — keeping Cleric's own 6th-level spell access (Planar Ally, Heroes' Feast) while also gaining a full Wizard spellbook to scribe from scrolls. Character level is offset by one from Cleric class level throughout (Wizard 1 eats the first character level), so the 6th-level *spell slot* arrives at character level 11 (via the combined multiclass caster table), one level before the Death Domain's own 6th-level *domain* spells (Planar Ally, Heroes' Feast) unlock at character level 12, when Cleric itself reaches level 11.
+
+**Race:** flexible — any works since weapon/armor proficiencies come from class, not race. Halfling (reroll 1s) or Wood Elf/Half-Elf (movement speed) are the suggested flavor picks.
+
+**Ability scores:** **INT 8** (deliberately dumped — scroll/item casts use Wisdom instead once Cleric levels come online; prop INT to 17 with the **Warped Headband of Intellect** so 4 Wizard spells can be prepared instead of 1), **WIS 17** (odd — pairs with a single +1 item to hit 20 without spending two feats on it), **STR 10**, **DEX 16**, remaining points to CON; dump CHA. Swap the headband for the **Amulet of Greater Health** later and move those points into INT once CON is capped, freeing the head slot for the **Hood of the Weave**.
+
+| Char. level | Class level | Unlocks |
+|---|---|---|
+| 1 | Wizard 1 | Cantrips: Booming Blade (ignores casting stat — use a dagger/shortsword with Dexterity), Minor Illusion, Mage Hand. Ritual spells (free, no slot): Longstrider, Enhanced Leap. Also Shield, Magic Missile, Mage Armor |
+| 2 | Cleric 1 (Death Domain) | Reaper. Cantrips: Bone Chill (domain) + Toll the Dead, Guidance, Bursting Sinew. Spells: Command, Sanctuary, Healing Word, Inflict Wounds |
+| 3 | Cleric 2 | Channel Divinity: Touch of Death (works off any melee hit, including a Booming Blade dagger swing — not just weapon attacks), Turn Undead. 2nd-level Wizard spells (e.g. Cloud of Daggers) |
+| 4 | Cleric 3 | Domain (auto): Blindness, Ray of Enfeeblement. Spells: Spiritual Weapon, Hold Person |
+| 5 | Cleric 4 | 3rd-level Wizard spells from scrolls (Haste is the priority). Cantrip: Resistance. **Feat: Alert** (recommended regardless of difficulty) |
+| 6 | Cleric 5 | Domain (auto): Animate Dead. Spirit Guardians, Glyph of Warding |
+| 7 | Cleric 6 | Inescapable Destruction (necrotic ignores resistance). 2nd Channel Divinity charge. Prepare Silence |
+| 8 | Cleric 7 | Domain (auto): Blight, Death Ward. 4th-level Wizard spells. Banishment, Freedom of Movement |
+| 9 | Cleric 8 | Divine Strike: Necrotic. **Feat: +2 Wisdom**. 5th-level Wizard spells (Conjure Elemental) |
+| 10 | Cleric 9 | Domain (auto): Cloudkill. Mop-up picks: Mass Healing Word, Aid |
+| 11 | Cleric 10 | 6th-level spell slot unlocks. 6th-level Wizard spells (Globe of Invulnerability via scroll) |
+| 12 | Cleric 11 | Domain (auto, 6th-level): **Planar Ally**, **Heroes' Feast**, Create Undead access |
+
+**Gear:** Main hand **Staff of Cherished Necromancy** (Life Essence Harvest — a spell kill grants a free Necromancy spell cast, which is what makes normally-weak scrolled spells like Dethrone and Circle of Death worth learning and spamming). Shield: **Sentinel Shield** (+3 Initiative) or an Act 2 boss-drop shield that adds spell save DC instead, depending on whether closing the initiative gap or landing saves matters more. Early buff-on-heal set: Hell Rider's Pride (Blade Ward on heal) + Whispering Promise (Bless on heal) — works via thrown potions too, not just Healing Word — swap Hell Rider's Pride for **Reviving Hands** late game for the same effect on yourself plus a free Revivify. Alternative endgame armor route if debuffing matters more than the free-cast engine: Luminous Armour + Callous Glow Ring + Coruscation Ring (Radiating Orb) plus Gloves of Belligerent Skies + Boots of Stormy Clamour (Reverberation) — same radiant-synergy set already tracked for TMind elsewhere in this doc.
+
+**Tips and tricks:**
+- Touch of Death doesn't require a weapon attack — it works off Inflict Wounds or a Booming Blade hit. Hold Person + Inflict Wounds guarantees a crit, and adding Touch of Death's flat bonus averages out to roughly a Paladin-tier smite.
+- Domain-granted spells (Blindness, Animate Dead, Blight, Contagion, Cloudkill, Create Undead, Planar Ally) are always prepared for free — cast them in situations where a real prepared-spell slot wouldn't be worth it. Blight in particular does max damage to necrotic-resistant plant enemies specifically *because* Inescapable Destruction cancels that resistance.
+- Haste + self-cast Sanctuary: cast Haste on an ally, then Sanctuary yourself so enemies can't legally target you and break your concentration on their Haste.
+- Markoheshkir and the Spellcrux Amulet can be used once and handed to a different party member the same day — each character triggers their own free spell/slot refresh instead of one person hoarding the item, which is the practical way to share them with Kao.
+- **Arcane Recovery is capped at 5th level by the game itself** ("You cannot restore spell slots above 5th level") — that's the native Wizard feature, not a bug, and not the same ability as the Spellcrux Amulet, which has no such cap and can restore a spent 6th-level slot specifically. If the amulet "isn't working" for a 6th-level slot, check (a) that it's actually the amulet's own action-bar icon being used, not Arcane Recovery, and (b) that the slot was actually spent already — the amulet restores an expended slot, it cannot create a new one.
+- If the Warped Headband of Intellect was missed (Act 1 only, dropped by an Ogre Mage in the Blighted Village — permanently unavailable once past Act 1), the fallback is a Withers respec to put a few more points directly into Intelligence, or picking up **Auntie Ethel's Hair** or **Khalid's Gift** (Jaheira's basement, Lower City) for a flat +1 to whichever stat is short.
+
+Source: [The LICH QUEEN OF SHAR - BG3 Shadowheart Death Cleric / Wizard Honour Build Guide](https://www.youtube.com/watch?v=hZAbp5ZecVs) (Cephalopocalypse, 2025-09-22; transcript: `tools/video-transcripts/hZAbp5ZecVs.en.vtt`). Built around Shadowheart in the source video, adapted here for TMind.
+
+### Alternative: Pure Death Domain Cleric 12 ^tmind-spell-progression
 
 **Markers:** ⭐⭐⭐ ⏱️
 
-Confirmed as the build path. This level-by-level plan is transcript-read from a Patch 8-specific, January 2026 guide — the Fextralife Cleric video used elsewhere in this section predates Death Domain entirely, so this fills a real gap rather than duplicating it. Not independently cross-checked against bg3.wiki level-by-level the way the Feats table below is; treat it as a strong starting plan, not gospel.
+No longer the confirmed path (see [[11_Main_Character_Builds#^tmind-lich-queen\|Lich Queen of Shar]] above) — kept for reference since it's a simpler, no-multiclass alternative if the Wizard-dip's gear conflict with Kao ever becomes a problem. This level-by-level plan is transcript-read from a Patch 8-specific, January 2026 guide — the Fextralife Cleric video used elsewhere in this section predates Death Domain entirely, so this fills a real gap rather than duplicating it. Not independently cross-checked against bg3.wiki level-by-level the way the Feats table below is; treat it as a strong starting plan, not gospel.
 
 | Level | What unlocks | Recommended picks |
 |---|---|---|
@@ -663,8 +703,9 @@ These sources were used as reference points, then adjusted to the local party no
 | [MOST OP LAE'ZEL Build Guide](https://www.youtube.com/watch?v=08FTRbPkdhQ) (Jay Dunna, 2024-11-24; transcript: `tools/video-transcripts/08FTRbPkdhQ.en.vtt`) | A Fighter 11 / War Domain Cleric 1 dip for War Priest bonus-action charges, briefly adopted mid-session | **Adopted, then reverted the same day** — the respec actually happened in game, but was walked back to pure Fighter 12 once War Priest's damage-only, 3-charges-per-long-rest payoff was weighed against Sentinel's every-fight control synergy with the party's plan |
 | [OP BATTLE MASTER Fighter "Duellist Prerogative" Build](https://www.youtube.com/watch?v=Fw2rSiOZwyU) (Jay Dunna, 2026-02-15; transcript: `tools/video-transcripts/Fw2rSiOZwyU.en.vtt`) | A Riposte-focused Battle Master build for whoever wields Duellist's Prerogative | Not applicable to Lae'zel — that weapon is Astarion's in this party, not hers; read while searching for a genuine Battle Master source, kept for reference only |
 | [The CONSISTENT KILLER — Eldritch Knight Thrower Honour Build Guide](https://www.youtube.com/watch?v=pd8mQNq8xbE) (Cephalopocalypse, 2025-08-23; transcript: `tools/video-transcripts/pd8mQNq8xbE.en.vtt`) | A full Eldritch Knight Thrower respec, reviewed for comparison | **Rejected** — same reason; also a much larger playstyle change (ranged thrower) than anything else considered for this party |
-| [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`) | Patch 8-specific level-by-level spell and feat progression for a pure Death Domain Cleric 12 | Adopted as [[11_Main_Character_Builds#^tmind-spell-progression\|TMind's Recommended Spell Progression]] — the existing Fextralife Cleric source predates Death Domain, so this closed a real content gap. Confirmed as the chosen build after comparing against a rejected multiclass alternative. |
+| [PURE 12 DEATH DOMAIN CLERIC Build in Baldur's Gate 3](https://www.youtube.com/watch?v=VNOqGrKMXxA) (Jay Dunna, 2026-01-19; transcript: `tools/video-transcripts/VNOqGrKMXxA.en.vtt`) | Patch 8-specific level-by-level spell and feat progression for a pure Death Domain Cleric 12 | **Adopted, then superseded** as [[11_Main_Character_Builds#^tmind-spell-progression\|an alternative]] — the existing Fextralife Cleric source predates Death Domain, so this closed a real content gap and was the confirmed build for a time, before the respec into Lich Queen of Shar below. |
 | [This Patch 8 Death Cleric Build is COMPLETELY INSANE in Baldur's Gate 3](https://www.youtube.com/watch?v=QbzOvronXoI) (Toyhouze, 2025-12-05; transcript: `tools/video-transcripts/QbzOvronXoI.en.vtt`) | A Cleric 8 / Wizard 2 (Necromancy) / Sorcerer 2 (Draconic) multiclass alternative | Initially **rejected** as the confirmed path (its best-in-slot gear conflicts with Kao's), but documented anyway at the user's request as [[11_Main_Character_Builds#^tmind-multiclass-alt\|a full alternative]] with a [[11_Main_Character_Builds#^tmind-multiclass-tasks\|task list]] cross-checked against the current save |
+| [The LICH QUEEN OF SHAR - BG3 Shadowheart Death Cleric / Wizard Honour Build Guide](https://www.youtube.com/watch?v=hZAbp5ZecVs) (Cephalopocalypse, 2025-09-22; transcript: `tools/video-transcripts/hZAbp5ZecVs.en.vtt`) | A Wizard 1 / Cleric 11 build, taking Wizard first specifically to cast scrolls/items off Wisdom while keeping full Cleric spell progression (Planar Ally, Heroes' Feast at Cleric 11) | **Adopted as the confirmed path** — the user respecced their character into this order. Built around Shadowheart in the source video; adapted here for TMind. Shares the same Kao gear conflict as the rejected alternative above (Markoheshkir, Robe/Hood of the Weave, Spellcrux Amulet), now accepted as a tradeoff rather than a rejection reason. |
 | [bg3.wiki: Fighter](https://bg3.wiki/wiki/Fighter) and general feat-count references | Confirmed Fighter's exact feat levels (4/6/8/12, four total) and that Improved Extra Attack/Battle Master maneuvers are already resolved by level 11 | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] and add explicit levels to Lae'zel's Feat Priority table, which previously had no level column |
 | [bg3.wiki: Cleric](https://bg3.wiki/wiki/Cleric) | Confirmed Cleric's feat levels (4/8/12, three total), that 6th-level spells unlock at 11 (not 12), and that 12 adds no new spell tier | Used to write [[11_Main_Character_Builds#^level-12-now\|Leveling Up Right Now]] for TMind |
 | [PC Gamer: The best Baldur's Gate 3 builds for Patch 8 and beyond](https://www.pcgamer.com/baldurs-gate-3-multiclass-builds/) | Astarion-style stealth burst, Death Cleric / Stars Druid concept, multiclass tradeoffs | Useful, but not copied blindly; party synergy matters more than isolated burst |
